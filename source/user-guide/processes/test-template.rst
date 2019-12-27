@@ -1,4 +1,4 @@
-Test the template with your data
+Test template with your data
 ================================
 
 Once you `created a new process <create-process.html>`_ and configured a template you can test it with your data. Just click the "Test template" button in the left bottom corner of the "Configure template" step:

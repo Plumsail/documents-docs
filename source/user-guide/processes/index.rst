@@ -6,13 +6,13 @@ Processes are an easy way to automate the creation of documents from templates. 
 .. toctree::   
   :name: toc-processes  
   :titlesonly:
-  :maxdepth: 2
+  :maxdepth: 1
     
   create-template
   create-process
   test-template
   create-delivery
-  start-process
+  start-process 
 
 .. note::
 

@@ -17,6 +17,7 @@ Plumsail Documents Documentation
     :caption: Getting started
     :name: toc-getting-started
     :maxdepth: 1
+    :titlesonly:
     
     Create documents from template <getting-started/use-processes>    
     getting-started/use-from-flow
@@ -27,16 +28,18 @@ Plumsail Documents Documentation
     :caption: User guide
     :name: toc-user-guide
     :maxdepth: 1
+    :titlesonly:
     
     Processes <user-guide/processes/index>
     user-guide/api-keys
     user-guide/reports
-    user-guide/manage-email-notifications
+    user-guide/manage-email-notifications  
 
   .. toctree::
     :caption: Document generation
     :name: toc-document-generation
     :maxdepth: 1
+    :titlesonly:
     
     document-generation/docx/index
     document-generation/xlsx/index
@@ -46,7 +49,8 @@ Plumsail Documents Documentation
   .. toctree::     
     :name: toc-document-generation-hidden
     :maxdepth: 1            
-    :hidden:        
+    :hidden:
+    :titlesonly:
                       
     document-generation/common-docx-xlsx/formatters
     document-generation/common-docx-xlsx/value-properties        
@@ -56,7 +60,7 @@ Plumsail Documents Documentation
     .. toctree::
       :caption: Microsoft Flow actions    
       :name: toc-microsoft-flow-actions
-      :maxdepth: 2
+      :maxdepth: 2      
       
       flow/actions/document-processing    
 
@@ -66,6 +70,7 @@ Plumsail Documents Documentation
     :caption: General 
     :name: generaltoc
     :maxdepth: 1
+    :titlesonly:
     
     general/version-history
     general/licensing-details
@@ -79,6 +84,7 @@ Plumsail Documents Documentation
     :caption: REST API
     :name: toc-test-api
     :maxdepth: 2
+    :titlesonly:
     
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
 
@@ -86,10 +92,11 @@ Plumsail Documents Documentation
     :caption: Microsoft Flow examples
     :name: toc-microsoft-flow-examples
     :maxdepth: 2
+    :titlesonly:
 
     flow/how-tos/documents/index-create-documents-from-template
     flow/how-tos/documents/index-convert-documents
     flow/how-tos/documents/index-process-pdf
     flow/how-tos/documents/index-integrations
     flow/how-tos/documents/index-E-signature
-    flow/how-tos/documents/index-other
+    flow/how-tos/documents/index-other  

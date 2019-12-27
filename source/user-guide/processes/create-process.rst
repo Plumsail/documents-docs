@@ -56,11 +56,9 @@ It is a file of your template. If you want to change the template, upload it her
 Output filename
 ~~~~~~~~~~~~~~~
 
-Filename of the result document. You can use tokens inside the
+Filename of the result document. You can use tokens inside this field.
 
-- :code:`{{@date}}` - Full date with time.
-- :code:`{{@date}:format(dd.MM.yyyy hh:mm)}` - Formatted date.
-- :code:`{{FieldName}}` - Or reference data submitted to process.
+.. include:: tokens-description-part.rst
 
 .. _output-type:
 

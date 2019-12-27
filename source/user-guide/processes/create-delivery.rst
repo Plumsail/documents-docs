@@ -1,6 +1,12 @@
 Deliver generated documents
 ===========================
 
+.. contents:: Table of Contents
+    :local:
+
+Add new delivery
+----------------
+
 Once your document is generated you may want to save it somewhere or send it to somebody. That is where deliveries can help. You can save the result document to OneDrive, Dropbox, send it by email, etc.
 
 Click the "Add delivery" button on the left side of your process. You will see the list of available deliveries:
