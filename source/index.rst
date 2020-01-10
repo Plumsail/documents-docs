@@ -43,8 +43,8 @@ Plumsail Documents Documentation
     
     document-generation/docx/index
     document-generation/xlsx/index
+    Fillable PDF <document-generation/fillable-pdf/index>
     document-generation/html/index
-    document-generation/templates-feature
 
   .. toctree::     
     :name: toc-document-generation-hidden

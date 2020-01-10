@@ -33,25 +33,8 @@ In this example, we will store the initial fillable PDF form and filled PDF docu
 
 Create fillable PDF
 ~~~~~~~~~~~~~~~~~~~
-You can use `Nitro Pro`_ to create your own PDF file with a form.
 
-First, we need to create a new PDF file:
-
-|nitro-pro-new-file|
-
-Then we need to add text which will indicate a field name (click on Type Text in Home section):
-
-|nitro-pro-add-text|
-
-After that, we should add a field to our PDF file (Forms section):
-
-|nitro-pro-add-field|
-
-Finally, we should specify this field's name which we could use later on in the action (click on the field -> Properties section):
-
-|nitro-pro-specify-name|
-
-`Download the template file`_ for this article. that we are using in this article.
+Follow `this instruction <../../../document-generation/fillable-pdf/index.html>`_ to create a fillable PDF. `Download the template file`_ for this article.
 
 |fill-in-pdf-form-template|
 
@@ -109,17 +92,12 @@ Now you should have an idea how to use Fill in PDF form action from `Plumsail Do
 .. _Plumsail Form: https://plumsail.com/forms/public-forms/
 .. _form submission: https://plumsail.com/docs/forms/microsoft-flow.html
 .. _extract data from incoming email messages: use-regex-match-to-extract-values.html
-.. _Nitro Pro: https://www.gonitro.com/nps/pro/create-pdf-creator
 .. _Download the template file: ../../../_static/files/flow/how-tos/fill-in-pdf-form-template.pdf
 .. _registering an account: ../../../getting-started/sign-up.html
 .. _Get Form from PDF: ../../actions/document-processing.html#get-form-from-pdf
 .. _collect data from fillable PDF: collect-data-pdf-form.html
 
 .. |fill-in-pdf-form-result| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-result.png
-.. |nitro-pro-new-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-nitro-new.png
-.. |nitro-pro-add-text| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-nitro-add-text.png
-.. |nitro-pro-add-field| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-nitro-add-field.png
-.. |nitro-pro-specify-name| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-nitro-specify-name.png
 .. |fill-in-pdf-form-template| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-template.png
 .. |fill-in-pdf-form-flow| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow.png
 .. |fill-in-pdf-form-flow-get-file| image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-flow-get-file.png
