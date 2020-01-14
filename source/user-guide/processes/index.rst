@@ -1,6 +1,9 @@
 Processes
 =========
 
+.. image:: ../../_static/img/user-guide/processes/processes-list.png
+   :alt: List of processes
+
 Processes are an easy way to automate the creation of documents from templates. You can generate and deliver documents in a few simple steps:
 
 .. toctree::   
@@ -12,7 +15,7 @@ Processes are an easy way to automate the creation of documents from templates. 
   create-process
   test-template
   create-delivery
-  start-process 
+  start-process
 
 .. note::
 

@@ -1,9 +1,12 @@
 HTML templates
 ==============
 
-This article explains HTML templates syntax. It can be used in HTML generation Microsoft Flow actions and in Documents API calls. For example, in the `Create HTML from template <../../flow/actions/document-processing.html#create-html-from-template>`_ action.
+You can create documents from HTML templates using Plumsail Documents. There are at least two ways to apply data to an HTML template:
 
-Template syntax is quite similar to syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 
+- `Create a process <../../user-guide/processes/index.html>`_ and start it using Microsoft Flow, Web form or REST API
+- Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
+
+This article explains HTML templates syntax. It is quite similar to the syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 
 
 .. code:: 
 
@@ -127,4 +130,4 @@ Here, the :code:`Customer.Address` property will be searched first for the place
 
 .. note::
 
-    Template engine is implemented based on `mustache# <https://github.com/jehugaleahsa/mustache-sharp>`_
+    The template engine is implemented based on `mustache# <https://github.com/jehugaleahsa/mustache-sharp>`_

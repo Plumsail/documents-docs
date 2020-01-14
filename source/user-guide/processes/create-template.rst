@@ -1,7 +1,7 @@
 Prepare a template for your document
 ====================================
 
-First of all, you need to prepare template for your document. Plumsail Documents support four types of templates. Select any type and follow the instructions below to prepare your template:
+First of all, you need to prepare a template for your document. Plumsail Documents support four types of templates. Select any type and follow the instructions below to prepare your template:
 
 - `DOCX template <../../document-generation/docx/index.html>`_
 - `XLSX template <../../document-generation/xlsx/index.html>`_

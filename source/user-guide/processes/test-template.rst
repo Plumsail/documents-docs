@@ -11,6 +11,6 @@ You will see the dialog where you can put your data in JSON format:
 .. image:: ../../_static/img/user-guide/processes/template-test-dialog.png
     :alt: Test template dialog
 
-Just click "Create document" to apply this data to your template. The resulting document will be downloaded automatically.
+Just click "Create document" to apply this data to your template and review the resulting document.
 
 .. Note:: Once you tested the template you can `configure how to deliver the result document <create-delivery.html>`_ (email, OneDrive, etc). Just click the "Save & Next" button in the "Configure template" step.

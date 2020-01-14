@@ -14,3 +14,5 @@ Use tokens inside email
 -----------------------
 
 .. include:: ../tokens-description-part.rst
+
+.. note:: Review `the full list of available deliveries <../create-delivery.html#list-of-deliveries>`_.

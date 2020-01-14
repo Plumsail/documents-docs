@@ -1,4 +1,4 @@
-You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsail/plumsail-documents/>`_ for Microsoft Flow to start a process. Start from `creating an API key <../user-guide/api-keys.html>`_. You will need it in your flow.
+You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsail/plumsail-documents/>`_ for Microsoft Flow to start a process. Start by `creating an API key <../user-guide/api-keys.html>`_. You will need it in your flow.
 
 Then add the `Start process <#>`_ action to your flow. You will be asked for *'Connection Name'* and for *'Access Key'*. You can type any name for the connection. For example, *'Plumsail Documents'*. Then paste API key that you created earlier to *'Access Key'*.
 

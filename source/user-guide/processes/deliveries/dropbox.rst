@@ -17,3 +17,5 @@ Use tokens in folder path and filename
 --------------------------------------
 
 .. include:: ../tokens-description-part.rst
+
+.. note:: Review `the full list of available deliveries <../create-delivery.html#list-of-deliveries>`_.

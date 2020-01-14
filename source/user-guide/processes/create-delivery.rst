@@ -16,6 +16,8 @@ Click the "Add delivery" button on the left side of your process. You will see t
 
 Create as many deliveries as you need. For example, you may want to save the document to OneDrive and then send it as an email message attachment.
 
+.. _list-of-deliveries: 
+
 List of available deliveries
 ----------------------------
 

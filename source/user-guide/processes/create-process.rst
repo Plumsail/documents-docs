@@ -56,7 +56,7 @@ It is a file of your template. If you want to change the template, upload it her
 Output filename
 ~~~~~~~~~~~~~~~
 
-Filename of the result document. You can use tokens inside this field.
+The filename of the result document. You can use tokens inside this field.
 
 .. include:: tokens-description-part.rst
 
@@ -77,11 +77,7 @@ You can see this option if you selected PDF as an output type. Click on the "Add
 .. image:: ../../_static/img/user-guide/processes/add-watermark-dialog.png
     :alt: Watermark dialog
 
-There are a few settings that you can change:
-- Position - It specifies how to align the watermark on a page. By default, it will be centered.
-- Opacity - It is a number from 0 to 100 that specifies opacity in percents.
-- Image width - It is the width of the watermark image. Use it if you want to change the width of your watermark image.
-- Image height - It is the height of the watermark image. Use it if you want to change the height of your watermark image.
+You can specify position and opacity of your watermark.
 
 .. _protect-pdf: 
 
