@@ -9,9 +9,10 @@ Optionally, once the action is executed you can get the result document as an ou
 
 Here is an example of a simple flow that starts a process and then uploads it to OneDrive:
 
-[Picture of Flow]
+.. image:: ../../_static/img/user-guide/processes/start-process-flow.png
+    :alt: Start process flow
 
-Review other examples of Microsoft Flows:
+.. rubric:: Review other examples of Microsoft Flows:
 
 .. toctree::      
   :name: toc-processes-flow-examples

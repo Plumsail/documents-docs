@@ -29,14 +29,14 @@ Then select the form you created earlier in the dialog:
 .. image:: ../../_static/img/user-guide/processes/form-bind-dialog.png
     :alt: Form bind dialog
 
-You can bind a few forms to the same process. All of them will start the process.
+You can bind a few forms to the same process. Any of those forms will start the process.
 
 Understand the structure of data sent by a form
 -----------------------------------------------
 
-The form sends JSON data to process when it is submitted. This data will be applied to your template. It is crucial to understand the structure of this JSON object to create the correct document template.
+The form sends JSON data to the process when it is submitted. This data will be applied to your template. It is crucial to understand the structure of this JSON object to create the correct document template.
 
-Each control and field that you added to your form has an internal name. This internal name will represent the property in the JSON object. You can change it in the designer like this:
+Each control and field that you added to your form has an internal name. This internal name will represent the property in the JSON object submitted by your form. You can change it in the designer like this:
 
 .. image:: ../../_static/img/user-guide/processes/change-internal-name-forms.png
     :alt: Change internal name

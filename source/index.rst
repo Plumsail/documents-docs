@@ -89,7 +89,7 @@ Plumsail Documents Documentation
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
 
   .. toctree::    
-    :caption: Microsoft Flow examples
+    :caption: How-tos
     :name: toc-microsoft-flow-examples
     :maxdepth: 2
     :titlesonly:

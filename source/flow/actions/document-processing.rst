@@ -7,6 +7,91 @@ This connector helps you to automatically generate and convert documents with th
    :local:
    :depth: 1
 
+Start document generation process
+---------------------------------
+
+Created Word DOCX document from template. Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.
+
+We have `an article <../how-tos/documents/create-docx-from-template.html>`_ describing how to work with this action in case of managing documents.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result .docx file.
+       -  It is the content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .docx template file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.          
+
+          Example of simple table template:
+
+          .. image:: ../../_static/img/flow/documents/simple-table-template.png
+             :alt: Simple table template         
+
+    *  -  Template name
+       -  You can use predefined user templates. `See more <../../document-generation/templates/index.html>`_
+       -  .. code::
+          invoice.docx
+
+    *  -  Template data
+       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            [
+                {        
+                    "firstName": "Efren",
+                    "lastName": "Gaskill",
+                    "email": "egaskill0@opensource.org",                        
+                    "payments": [
+                        {
+                            "date": "3/10/2018",
+                            "amount": "$8.91"
+                        },
+                        {
+                            "date": "1/7/2018",
+                            "amount": "$0.56"
+                        }
+                    ]
+                }
+            ]
+    *  -  Locale
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don't specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -  
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/create-docx-from-template-example.png
+   :alt: Create document from DOCX template Example
+
 Create DOCX document from template
 ----------------------------------
 
@@ -84,8 +169,8 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
                 }
             ]
     *  -  Locale
-       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
-       -
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don't specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -  
 
 .. rubric:: Example
 
