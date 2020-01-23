@@ -95,8 +95,8 @@ Plumsail Documents Documentation
     :titlesonly:
 
     flow/how-tos/documents/index-create-documents-from-template
+    flow/how-tos/documents/index-form-integrations
+    flow/how-tos/documents/index-E-signature
     flow/how-tos/documents/index-convert-documents
     flow/how-tos/documents/index-process-pdf
-    flow/how-tos/documents/index-integrations
-    flow/how-tos/documents/index-E-signature
-    flow/how-tos/documents/index-other  
+    flow/how-tos/documents/index-other 

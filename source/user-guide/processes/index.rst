@@ -16,6 +16,7 @@ Processes are an easy way to automate the creation of documents from templates. 
   test-template
   create-delivery
   start-process
+  examples
 
 .. note::
 

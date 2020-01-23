@@ -1,4 +1,4 @@
-You can insert data from you data using tokens. Let us assume, your data has property "invoiceNumber". In this case you can include it using token :code:`{{invoiceNumber}}`. 
+You can insert values from you data using tokens. Let us assume, your data has property "invoiceNumber". In this case you can include it using token :code:`{{invoiceNumber}}`. 
 
 .. We use global URLs here to guarantee they are not broken when rst is included in other files.
 
