@@ -19,10 +19,10 @@ Plumsail Documents Documentation
     :maxdepth: 1
     :titlesonly:
     
-    getting-started/sign-up
+    Create documents from template <getting-started/use-processes>    
     getting-started/use-from-flow
     getting-started/use-as-rest-api
-    getting-started/license-activation 
+    getting-started/license-activation  
 
   .. toctree::
     :caption: User guide
