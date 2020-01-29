@@ -5,10 +5,8 @@ Word DOCX templates in Plumsail Documents use a different approach than most oth
 
 First of all, pick how you will apply templates:
 
-- Use Microsoft Flow action `Create DOCX document from template <../../flow/actions/document-processing.html#create-docx-document-from-template>`_
-- User rich `REST API <../../getting-started/use-as-rest-api.html>`_.
-
-If you decide to use Microsoft Flow, learn `how to create your first flow <../../getting-started/use-from-flow.html>`_.
+- `Create a process <../../user-guide/processes/index.html>`_ and start it using Microsoft Flow, Web form or REST API
+- Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
 
 Basic syntax
 ------------

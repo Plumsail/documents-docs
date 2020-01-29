@@ -1,5 +1,5 @@
-Create documents from template
-==============================
+Create documents from a template
+================================
 
 .. toctree::      
       :name: howtotoc

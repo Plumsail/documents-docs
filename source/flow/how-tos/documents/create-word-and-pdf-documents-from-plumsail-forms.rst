@@ -1,5 +1,5 @@
 How to create Word and PDF documents from Plumsail Forms in Microsoft Flow and Azure Logic Apps
-	===============================================================================================
+===============================================================================================
 
 Let's suppose you want to automate the generation of documents in your company. For example, applications, orders, invoices, etc. By going through this article you will learn how to create a DOCX document from a template and convert it to PDF on Plumsail Forms submission with help of `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow and Azure Logic Apps.
 
