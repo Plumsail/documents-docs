@@ -3,9 +3,9 @@ Processes examples
 
 Review examples of processes to get started:
 
-- `Create DOCX document from template <../../flow/how-tos/documents/create-docx-from-template.html>`_
-- `Create XLSX document from template <../../flow/how-tos/documents/create-xlsx-from-template.html>`_
-- `Create HTML from template <../../flow/how-tos/documents/create-html-from-template.html>`_
-- `Create text document from template <../../flow/how-tos/documents/create-text-from-template.html>`_         
-- `Create PDF from DOCX template <../../flow/how-tos/documents/create-pdf-from-docx-template.html>`_
-- `Create PDF from HTML template <../../flow/how-tos/documents/create-pdf-from-html-template.html>`_
+- `Create DOCX document from template <../../user-guide/processes/examples/create-docx-from-template-processes.html>`_
+- `Create XLSX document from template <../../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_
+- `Create HTML from template <../../user-guide/processes/examples/create-html-from-template-processes.html>`_
+- `Create text document from template <../../user-guide/processes/examples/create-text-from-template-processes.html>`_         
+- `Create PDF from DOCX template <../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_
+- `Create PDF from HTML template <../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_
