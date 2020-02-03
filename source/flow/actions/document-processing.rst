@@ -12,6 +12,8 @@ This connector helps you to automatically generate and convert documents with th
 Start document generation process
 ---------------------------------
 
+.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. If you want to use this action, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
+
 Starts a `process <../../user-guide/processes/index.html>`_ of document generation. Processes are an easy way to automate the creation of documents from templates. You just configure template, test it and specify how to deliver results (email, OneDrive, etc.).
 
 We have `an article <../../user-guide/processes/start-process-ms-flow.html>`_ describing how to use this action.
@@ -309,6 +311,8 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
                 </ul>    
             </body>
             </html>
+
+
 
     *  -  Template data
        -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
