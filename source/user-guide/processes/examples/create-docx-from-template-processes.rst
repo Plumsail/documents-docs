@@ -1,38 +1,37 @@
 How to create DOCX document from a template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ==============================================================================================================
-Let’s suppose you want to automate the process of generating invoices in your company. This article will describe how to create a DOCX document from a template with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ feature called `Processes <../../../user-guide/processes/index.html>`_. We will use `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_ to start the process of creating DOCX documents from a template.
+Let’s suppose you want to automate the process of generating invoices in your company. This article will describe how to create a DOCX document from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature. 
 
-This is how the result document will look at the end in our case:
+The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
+
+With its help, we'll create an invoice from a template, and this is how the result document will look:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/invoice-result-document.png
     :alt: create docx from template
 
-As everything will be prepared in the Plumsail account, the Flow itself will have just one step and will look like in the picture below:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-docx-from-template.png
-    :alt: create docx from template
-
-Let’s take a closer look and go through each step from the very beginning. 
+Let’s go through each step from the very beginning. 
 
 Configuring the Process
 -----------------------
 
-1. First, register or login to your `Plumsail account`_. Then select *Documents* and go to the *Processes* section. 
+First, register or login to your `Plumsail account`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
 
-2. Click on the *Add Process* button.
+Create a new process
+~~~~~~~~~~~~~~~~~~~~
+
+Click on the *Add Process* button.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-3. Give a name to the Process to recognize it later.
+Give a name to the Process to recognize it later.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-new-process.png
     :alt: create docx from template
 
-4. Upload the template you want to use. Here is the `link for downloading the template`_ we use in this example. 
+Upload the template you want to use. Here is the `link for downloading the template`_ we use in this example. 
 
-
-Mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+When creating your own ones, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 To learn more about the templating engine, check out `the documentation article`_.
 
@@ -46,16 +45,27 @@ The templating engine is smart enough to identify what content to duplicate. It 
 
 You can learn more about table rendering in `the tables section`_ of the documentation.
 
-5. Submit and you’ll proceed to the next step – *Configure Template*:
+Configure a template
+~~~~~~~~~~~~~~~~~~~~
+
+Once you're done with the fisrt step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
 
 - Fill in the name of the result file
 - Select DOCX format for the output file 
 - Test the template to see how it will look at the end by clicking the *Test template* button. 
 
+Test the template
+~~~~~~~~~~~~~~~~~
+
 .. image:: ../../../_static/img/user-guide/processes/how-tos/configure-template.png
     :alt: create docx from template
 
-For that, you can insert this JSON data for the template from our example:
+To test a template, you need to insert source data in JSON format into the window like in the picture below. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
+    :alt: create docx from template
+
+To test the template from our example, you can copy and paste this JSON data:
 
 .. code:: json
 
@@ -112,10 +122,9 @@ For that, you can insert this JSON data for the template from our example:
         "total": 18872.94
     }
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
-    :alt: create docx from template
-
-6. The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
+Delivery
+~~~~~~~~
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
 
 - `Sending by e-mail <../../../user-guide/processes/deliveries/send-email.html>`_
 
@@ -123,14 +132,17 @@ For that, you can insert this JSON data for the template from our example:
 
 And others are coming soon. 
 
-Select the folder where the ready document will be saved. And fill in the name of it. Don't forget to put the extension type :code:`.docx`.
+Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/store-onedrive.png
     :alt: create docx from template
 
 You can configure as many deliveries as you need.
 
-7. The last thing to do is to start the Process. We will start it using Power Automate (Microsoft Flow). You can check out `other options`_.
+Start the Process
+~~~~~~~~~~~~~~~~~
+
+The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options`_ as well.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
     :alt: create docx from template
@@ -139,6 +151,11 @@ You can configure as many deliveries as you need.
 Creating the Flow
 -----------------
 
+As everything is prepared in the Plumsail account, the Flow itself has just one step and looks like in the picture below:
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-docx-from-template.png
+    :alt: create docx from template
+
 **Flow trigger** 
 
 You can actually pick any trigger. We are using "*Manually trigger a flow*" trigger here to simplify the Flow.
@@ -146,6 +163,8 @@ You can actually pick any trigger. We are using "*Manually trigger a flow*" trig
 **Start document generation process**
 
 This is the action from `Plumsail Documents connector`_. This action is suitable for starting the Process of generating documents from a template. You can find more information about this action by visiting `this page`_.
+
+.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. To use it, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
 
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 
@@ -156,17 +175,17 @@ You can type any name for the connection. For example, *''Plumsail Documents''*.
 
 Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
 
-There are two parameters:
+The action has two parameters:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
     :alt: start generation documents action
 
-- *Process name*. Select the one process you need among available. 
-- *Template data*. Specify your data in JSON format as we did on the step of testing the template. 
+- *Process name*. Select the process you need from available ones. 
+- *Template data*. Specify source data in JSON format as we did on `the step of testing the template <../../../user-guide/processes/examples/create-docx-from-template-processes.html#test-the-template>`_. 
 
 That's it! Run the Flow any time you need to generate DOCX documents from a template.
 
-.. note:: There is another - a little bit more complicated - way to create DOCX documents from a template. Check `the article <../../flow/how-tos/documents/create-docx-from-template.html>`_.
+.. note:: There is another - a little bit more complicated - way to create DOCX documents from a template. Check `the article <../../../flow/how-tos/documents/create-docx-from-template.html>`_.
 
 
 
