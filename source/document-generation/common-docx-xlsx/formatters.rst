@@ -17,6 +17,10 @@ It formats a tag value. You can use it with or without parameters:
 - :code:`format` - if encountered on date value it will format it as short date string.
 - :code:`format(val)` - formats current value using specified format string. For example, you can use :code:`N2` for a numbers with two decimals.
 
+.. note:: If you want to use colon character ":" with the formatter then it must be escaped with a backslash "\"
+- :code:`{{date}:format(hh\:mm)}`
+
+
 It uses standard format strings. You can find more information in Microsoft documentation:
 
 - `Numeric format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
@@ -127,6 +131,8 @@ offset
 :code:`offset(d)` - date and time value will be offset by :code:`d` days. 
 
 :code:`offset(d.hh\:mm\:ss)` - advanced approach for offsetting :code:`d` days, :code:`hh` hours, :code:`mm` minutes, :code:`ss` seconds. 
+
+.. note:: If you want to use colon character ":" with the formatter then it must be escaped with a backslash "\"
 
 Just replace :code:`d`, :code:`hh`, :code:`mm` and :code:`ss` by the required number of days, hours, minutes and seconds in this string pattern :code:`d.hh\:mm\:ss`.
 
