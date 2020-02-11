@@ -33,7 +33,7 @@ Examples
         - Result
     *   - .. code-block:: json
     
-            Date: {{date}:format(d MMM yyyy)}
+            Date: {{date}:format(dd.MM.yyyy hh\:mm)}
             Date: {{date}:format(MM/dd)}
             Date: {{date}:format(U)}
             Number: {{num}:format(C)}
