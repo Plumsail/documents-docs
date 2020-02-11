@@ -9,7 +9,11 @@ With its help, we'll create an invoice from a template, and this is how the resu
 .. image:: ../../../_static/img/user-guide/processes/how-tos/invoice-result-document.png
     :alt: create docx from template
 
-Let’s go through each step from the very beginning. 
+Let’s go through each step from the very beginning:
+
+.. contents::
+    :local:
+    :depth: 2
 
 Configuring the Process
 -----------------------
