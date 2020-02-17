@@ -12,6 +12,11 @@ With its help, we'll create a purchase order from a template. This is how the re
 
 Let’s go through each step from the very beginning.
 
+.. contents::
+    :local:
+    :depth: 2
+
+
 Configuring the Process
 -----------------------
 First, register or login to your `Plumsail account`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
@@ -144,13 +149,7 @@ To test the template from our example, you can copy and paste this JSON data:
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
-
-- `Sending by e-mail <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/send-email.html>`_
-
-- `Saving to DropBox <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/dropbox.html>`_
-
-And others are coming soon. 
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
 Select the folder where the ready document will be saved. And fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
 
@@ -169,10 +168,13 @@ The last thing to do is to start the Process. We will start it using `Power Auto
 Creating the Flow
 -----------------
 
-As everything is prepared in the Plumsail account, the Flow itself has just one step and looks like in the picture below:
+We'll create a Flow that will start the document generation process and will send the ready document for approval. As everything is prepared in the Plumsail account, the Flow itself has just a couple of steps and looks like in the picture below:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-xlsx-from-template.png
     :alt: create xlsx from template flow
+
+Start the Process from Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Flow trigger** 
 
@@ -201,7 +203,21 @@ The action has two parameters:
 - *Process name*. Select the one process you need among available. 
 - *Template data*. Specify your data in JSON format as we did on `the step of testing the template <../../../user-guide/processes/examples/create-xlsx-from-template-processes.html#test-the-template>`_.
 
-That's it! Run the Flow any time you need to generate XLSX documents from a template.
+Use the generated document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow. 
+
+Let’s send the ready document for approval with the *Approvals* connector - action *Create an approval*.
+
+Add the output of the previous step as an attachment. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/approval-step-xlsx.png
+    :alt: create XLSX document from a template
+
+This is just one example out of many others. 
+
+Our Flow is ready. Run it any time you need to generate XLSX documents from a template.
 
 .. note:: There is another - a little bit more complicated - way to create XLSX documents from a template. Check `the article <../../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
 

@@ -52,7 +52,7 @@ You can learn more about table rendering in `the tables section`_ of the documen
 Configure a template
 ~~~~~~~~~~~~~~~~~~~~
 
-Once you're done with the fisrt step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
 
 - Fill in the name of the result file
 - Select DOCX format for the output file 
@@ -128,13 +128,7 @@ To test the template from our example, you can copy and paste this JSON data:
 
 Delivery
 ~~~~~~~~
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
-
-- `Sending by e-mail <../../../user-guide/processes/deliveries/send-email.html>`_
-
-- `Saving to DropBox <../../../user-guide/processes/deliveries/dropbox.html>`_
-
-And others are coming soon. 
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
 Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
 
@@ -146,7 +140,7 @@ You can configure as many deliveries as you need.
 Start the Process
 ~~~~~~~~~~~~~~~~~
 
-The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options`_ as well.
+The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <../../user-guide/processes/start-process.html>`_ as well.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
     :alt: create docx from template
@@ -155,10 +149,13 @@ The last thing to do is to start the Process. We will start it using `Power Auto
 Creating the Flow
 -----------------
 
-As everything is prepared in the Plumsail account, the Flow itself has just one step and looks like in the picture below:
+We'll create a Flow that will start the document generation process and will send the ready document for approval. As everything is prepared in the Plumsail account, the Flow itself has just a couple of steps and looks like in the picture below:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-docx-from-template.png
-    :alt: create docx from template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval-docx.png
+    :alt: create WORD document from a template
+
+Start the Process from Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Flow trigger** 
 
@@ -187,7 +184,21 @@ The action has two parameters:
 - *Process name*. Select the process you need from available ones. 
 - *Template data*. Specify source data in JSON format as we did on `the step of testing the template <../../../user-guide/processes/examples/create-docx-from-template-processes.html#test-the-template>`_. 
 
-That's it! Run the Flow any time you need to generate DOCX documents from a template.
+Use the generated document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow. 
+
+Let’s send the ready document for approval with the *Approvals* connector - action *Create an approval*.
+
+Add the output of the previous step as an attachment. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/approval-step-docx.png
+    :alt: Create Word from a template
+
+This is just one example out of many others. 
+
+Our Flow is ready. Run it any time you need to generate DOCX documents from a template.
 
 .. note:: There is another - a little bit more complicated - way to create DOCX documents from a template. Check `the article <../../../flow/how-tos/documents/create-docx-from-template.html>`_.
 
@@ -197,6 +208,5 @@ That's it! Run the Flow any time you need to generate DOCX documents from a temp
 .. _link for downloading the template: ../../../_static/files/document-generation/demos/invoice-template.docx
 .. _the documentation article: ../../../document-generation/docx/how-it-works.html
 .. _the tables section: ../../document-generation/docx/tables.html>
-.. _other options: ../../user-guide/processes/start-process.html
 .. _Plumsail Documents connector: ../docs/documents/v1.x/getting-started/use-from-flow.html
 .. _this page: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#start-document-generation-process

@@ -12,6 +12,10 @@ In this article, we will generate PDF invoice based on some data. This is how ou
 
 Here is a step-by-step description on how to create such a process of generating PDF's from a DOCX template.
 
+.. contents::
+    :local:
+    :depth: 2
+
 Configuring the Process
 -----------------------
 
@@ -136,13 +140,7 @@ To test the template from our example, you can copy and paste this JSON data:
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
-
-- `Sending by e-mail <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/send-email.html>`_
-
-- `Saving to DropBox <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/dropbox.html>`_
-
-And others are coming soon. 
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
 Select the folder where the ready document will be saved. And fill in its name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
 
@@ -162,12 +160,15 @@ The last thing to do is to start the Process. We will start it using `Power Auto
 Creating the Flow
 -----------------
 
-Now we need to create the Power Automate Flow that will start our process of creating PDF documents from a DOCX template and apply data to this template. This is how the complete flow looks:
+We'll create a Flow that will start the document generation process and will send the ready document for approval. This is how the complete flow looks:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/pdf-invoices-flow.png
    :alt: Create PDF from DOCX template
 
 Here is the step-by-step description.
+
+Start the Process from Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Flow trigger**
 
@@ -196,7 +197,21 @@ The action has two parameters:
 - *Process name*. Select the one process you need among available. 
 - *Template data*. Specify your data in JSON format as we did on the `the step of testing the template <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html#test-the-template>`_.
 
-That's it! Run the Flow any time you need to generate PDF documents from a DOCX template.
+Use the generated document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow. 
+
+Let’s send the ready document for approval with the *Approvals* connector - action *Create an approval*.
+
+Add the output of the previous step as an attachment. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
+    :alt: send pdf for approval
+
+This is just one example out of many others. 
+
+Our Flow is ready. Run the Flow any time you need to generate PDF documents from a DOCX template.
 
 .. note:: There is another - a little bit more complicated - way to create PDF documents from a DOCX template. Check `the article <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-pdf-from-docx-template.html>`_.
 
