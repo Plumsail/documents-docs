@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="" Css="" SubmitToFlow="true" FormId="6dfb5e21-603d-4de7-9fff-986c237273a5" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="6" Offset="0">
+            <TextBlock Text="Employee information form" TextType="Header1" InternalName="Text1" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Name" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="name" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Title" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="title" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="3" Offset="0">
+            <Field Title="Department" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="department" Required="False" Items="[&quot;Administration&quot;,&quot;IT&quot;,&quot;Marketing&quot;,&quot;HR&quot;,&quot;Sales&quot;,&quot;Research&quot;]" IsMultiple="False" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Manager" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="manager" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Hire date" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Width="240" Type="Date" InternalName="dateOfHire" Required="False" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Address" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="address" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Phone number" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="cell" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Date of birth" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Width="240" Type="Date" InternalName="dateOfBirth" Required="False" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="SIN" TitleFontStyle="Normal" TitleFontWeight="Bold" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="SIN" Required="False" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0" PaddingLeft="400">
+            <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button0" />
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>
