@@ -44,7 +44,7 @@ Your link should look something like this: https://yourDomain.sharepoint.com/_la
 
 Let's check out next example.
 
-I have a list with employees in my SharePoint tenant and each time new emplyee is added to the library I want to create a docx file
+I have a list with employees in my SharePoint tenant and each time new employee is added to the library I want to create a docx file
 with some information about this new member.
 
 .. image:: ../../../_static/img/flow/how-tos/employees-list.png
