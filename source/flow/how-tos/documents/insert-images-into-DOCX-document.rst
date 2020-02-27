@@ -44,6 +44,12 @@ Your link should look something like this: https://yourDomain.sharepoint.com/_la
 
 Let's check out next example.
 
+I have a list with employees in my SharePoint tenant and each time new emplyee is added to the library I want to create a docx file
+with some information about this new member.
+
+.. image:: ../../../_static/img/flow/how-tos/employees-list.png
+   :alt: Employees List
+
 I created this Microsoft flow 
 
 
@@ -51,27 +57,28 @@ I created this Microsoft flow
    :alt: Microsoft Flow
 
 
-It's started from context menu of a file library "TestLib"
+The flow is started automatically when a new item is added to the employees list.
 
-.. image:: ../../../_static/img/flow/how-tos/file-context-menu.png
-   :alt: Context menu
+.. image:: ../../../_static/img/flow/how-tos/new-employee.png
+   :alt: Adding new employee
 
-When you select the flow it asks to select a file, we can select any image and pass it to the flow
+Then it downloads a prepared docx template from OneDrive folder
 
-.. image:: ../../../_static/img/flow/how-tos/select-image.png
-   :alt: Select image
+.. image:: ../../../_static/img/flow/how-tos/download-template.png
+   :alt: Download template
 
+On the next step I use `Create DOCX from template connector`_  with `Picture formatter`_.
+I use dynamic content from SharePoint connector.
 
-Also I created a docx template where placed the picture formatter
+.. image:: ../../../_static/img/flow/how-tos/create-docx.png
+   :alt: Create DOCX
 
-.. image:: ../../../_static/img/flow/how-tos/picture-formatter-word-template.png
-   :alt: Word template
+On the last step The flow creates a result DOCX file with the information from Employees list.
 
-The flow runs and creates a docx result file with the picture placed into the template
+.. image:: ../../../_static/img/flow/how-tos/result-docx.png
+   :alt: Result DOCX
 
-.. image:: ../../../_static/img/flow/how-tos/picture-test-result.png
-   :alt: Word template
-
+You can download the DOCX template `here`_ .
 
 Conclusion
 ##################################################################
@@ -81,3 +88,4 @@ Plumsail `Picture formatter`_ helps to achieve the goal and it's a usefull addit
 
 .. _Create DOCX from template connector: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template
 .. _Picture formatter: https://docs.microsoft.com/en-us/connectors/signnow/
+.. _here: ./../../_static/files/flow/how-tos/EmployeeTemplate.pdf
