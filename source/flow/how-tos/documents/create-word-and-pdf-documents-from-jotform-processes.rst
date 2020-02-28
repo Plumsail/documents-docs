@@ -5,25 +5,23 @@ This article demonstrates how to create PDF documents from a DOCX template on a 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
-**Typeform** is an online form builder that allows you to create forms with a drag and drop creation tool and an option to encrypt user data.
+**JotForm** is an online form builder that allows you to create forms with a drag and drop creation tool and an option to encrypt user data.
 
-Let’s see how to connect them to optimize your document generation.
+We'll connect them in Power Automate (Flow) to automatically collect data from a JotForm, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a JotForm, apply the data to our template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
-
 Configure the Process
 ---------------------
 
-To create a process, which will generate PDF documents from a DOCX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Before creating the Flow, we need to set a Process, which will generate PDF documents from a DOCX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 

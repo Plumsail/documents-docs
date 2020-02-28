@@ -1,29 +1,27 @@
 How to create Word and PDF documents from Microsoft Forms in Power Automate (MS Flow) and Azure Logic Apps
 ==========================================================================================================
 
-This article demonstrates how to create PDF documents from a DOCX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
+This article demonstrates how to create PDF documents from a DOCX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
-**Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collects other information.
+**Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collect other information.
 
-Let’s see how to connect them to optimize your document generation.
+Let’s see how to connect them with the help of Power Automate (Microsoft Flow) to automatically collect data from a Microsoft Form, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Microsoft Form, apply the data to our template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
-
 Configure the Process
 ---------------------
 
-To create a process, which will generate PDF documents from a DOCX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Before creating the Flow, we need to configure the Process, which will generate PDF documents from a DOCX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 

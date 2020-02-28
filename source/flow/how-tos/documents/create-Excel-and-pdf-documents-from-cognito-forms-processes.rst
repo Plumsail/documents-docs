@@ -7,15 +7,12 @@ This article shows how to create PDF documents from an XLSX template on a `Cogni
 
 **Cognito Forms** are an online form builder that allows you to create powerful forms for your website.
 
-Let’s see how to connect them to optimize your document generation.
+In this example, we will collect data from a Cognito Form, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Cognito Form, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 Configure the Process
 ---------------------

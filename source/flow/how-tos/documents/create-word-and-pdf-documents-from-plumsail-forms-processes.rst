@@ -31,7 +31,7 @@ Set the Process name.
 .. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
     :alt: generate PDF from Plumsail Forms 
 
-Upload the template you're gonna use. In this example, we'll create a short employee information sheet. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/Create-DOCX-and-PDF-template-1.docx>`_. 
+Upload the template you're gonna use. In this example, we'll create a short employee information sheet. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/Create_DOCX_and_PDF_template.docx>`_. 
 
 .. image:: ../../../_static/img/flow/how-tos/template_emp_info.png
     :alt: Docx template
@@ -98,7 +98,7 @@ Prepare a Form
 
 We've already prepared a Plumsail form and will use data from its submission. To learn how to create and publish Plumsail forms, read `the documentation article <https://plumsail.com/docs/forms/design.html>`_.
 
-Below is a screenshot of our form. You may download this form `here <../../../_static/files/flow/how-tos/Employee-info-sheet.xfds>`_, import it into `Plumsail Forms designer <https://account.plumsail.com/forms/designer>`_ and use as a template.
+Below is a screenshot of our form. You may download this form `here <../../../_static/files/flow/how-tos/Employee_info_sheet.xfds>`_ , import it into `Plumsail Forms designer <https://account.plumsail.com/forms/designer>`_ and use as a template.
 
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Form.png
     :alt: Plumsail Form

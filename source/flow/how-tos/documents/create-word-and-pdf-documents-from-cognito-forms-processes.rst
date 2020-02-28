@@ -7,23 +7,22 @@ In this article, you will learn how to automate the generation of documents in y
 
 **Cognito Forms** are an online form builder that allows you to create powerful forms for your website.
 
-Let’s see how to connect them to optimize the creation of documents. 
+We'll connect them in Power Automate (Flow) to automatically collect data from a Cognito Form, apply it to our template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Cognito Form, apply the data to our template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 Configure the Process
------------------------
+---------------------
 
-To create a process, which will generate PDF documents from a DOCX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
-
+Before creating the Flow, we need to set a Process, which will generate PDF documents from a DOCX template.
+ 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 

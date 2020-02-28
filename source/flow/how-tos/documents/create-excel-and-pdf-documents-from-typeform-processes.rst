@@ -2,29 +2,28 @@ How to create Excel and PDF documents from Typeform in Power Automate (Microsoft
 ===========================================================================================================
 
 
-This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
+This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
 **Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-Let’s see how to connect them to optimize your document generation.
+Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our Excel template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Typeform, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 Configure the Process
 ---------------------
 
-To create a process, which will generate PDF documents from an XLSX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Before setting the Flow, we need to create a process, which will generate PDF documents from an XLSX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 

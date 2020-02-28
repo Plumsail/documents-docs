@@ -7,23 +7,21 @@ This article shows how to create PDF documents from an XLSX template on a `Micro
 
 **Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collects other information.
 
-Let’s see how to use them together to automate the process of creating documents.
+In this example, we will collect data from a Microsoft Form, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Microsoft Form, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
-
 Configure the Process
 ---------------------
 
-To create a process, which will generate PDF documents from an XLSX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Before creating the Flow, we need to set a Process, which will generate PDF documents from an XLSX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 

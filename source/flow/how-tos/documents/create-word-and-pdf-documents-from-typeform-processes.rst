@@ -7,23 +7,21 @@ This article demonstrates how to create PDF documents from a DOCX template on `T
 
 **Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-Let’s see how to connect them to optimize your document generation.
+Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
-Description
------------
-In this example, we will collect data from a Typeform, apply the data to our template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
-
 Configure the Process
 ---------------------
 
-To create a process, which will generate PDF documents from a DOCX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Before creating the Flow, we need to configure the Process, which will generate PDF documents from a DOCX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
+
+Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 
