@@ -36,7 +36,7 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name and upload the template you've prepared. We will use the template from the step `Create fillable PDF <../../../flow/how-tos/documents/fill-pdf-form-processes.html#create-fillable-pdf>`_.
+Set the Process name and upload the template you've prepared. We will use the template from the step `Create fillable PDF <../../../flow/how-tos/documents/fill-pdf-form-processes.html#create-a-fillable-pdf>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
     :alt: Create a new process to populate PDF form
