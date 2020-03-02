@@ -10,6 +10,8 @@ This is how the final PDF document with the form will look in our case:
 .. image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-result.png
     :alt: fill in pdf form result
 
+Here is a step-by-step description on how to create such a process.
+
 .. contents::
     :local:
     :depth: 2
