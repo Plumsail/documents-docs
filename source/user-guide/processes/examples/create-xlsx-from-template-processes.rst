@@ -1,38 +1,44 @@
 How to create Excel XLSX document from template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ==================================================================================================================
 If you want to automate the generation of purchase orders in your company, this article will help you achieve that. 
-After going through it you will know how to create an XLSX file from a template with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ feature called `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_. We will use `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_ to start the process of creating XLSX documents from a template.
+After going through it you will know how to create an XLSX file from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
 
-This is how the result document will look at the end:
+The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
+
+With its help, we'll create a purchase order from a template. This is how the result document will look at the end:
 
 .. image:: ../../../_static/img/flow/how-tos/create-xlsx-from-template-result.png
     :alt: create xlsx from template
 
-As everything will be prepared in Plumsail account, the Flow itself will have just one step and will look like in the picture below:
+Let’s go through each step from the very beginning.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-xlsx-from-template.png
+.. contents::
+    :local:
+    :depth: 2
 
-Let’s take a closer look and go through each step from the very beginning.
 
 Configuring the Process
 -----------------------
-1. First, register or login to your `Plumsail account`_. Then select *Documents* and go to the *Processes* section. 
+First, register or login to your `Plumsail account`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
 
-2. Click on the *Add Process* button.
+Create a new process
+~~~~~~~~~~~~~~~~~~~~
+
+Click on the *Add Process* button.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
 
-3. Give a name to the Process to recognize it later.
+Give a name to the Process to recognize it later.
 
 
-4. Upload the template you want to use. Here is `the link for downloading the template`_ we use in this example.
+Upload the template you want to use. Here is `the link for downloading the template`_ we use in this example.
 
 |create-xlsx-process|
 
 
-Mind the templating language. 
+When creating your own ones, mind the templating language. 
 
 Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
@@ -59,7 +65,10 @@ Please also note that we are using these formulas to calculate the total cost fo
 - :code:`=SUM(D14)` - for all of the items
 
 
-5. Once you've created the Process and submited the template, you'll proceed to the next step - *Configure template*:
+Configure a template
+~~~~~~~~~~~~~~~~~~~~
+
+Once you've created the Process and submited the template, you'll proceed to the next step - *Configure template*:
 
 - Fill in the name of the result file;
 
@@ -67,9 +76,16 @@ Please also note that we are using these formulas to calculate the total cost fo
 
 - Test the template to see how it will look at the end by clicking the *Test template* button.
 
+Test the template
+~~~~~~~~~~~~~~~~~
+
 |configure-template-xlsx|
 
-For that, you can insert this JSON data for the template from our example:
+To test a template, you need to insert source data in JSON format into the window like in the picture below. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template.
+
+|test-template-xlsx|
+
+To test the template from our example, you can copy and paste this JSON data:
 
 .. code:: json
 
@@ -130,31 +146,35 @@ For that, you can insert this JSON data for the template from our example:
     }
 
 
-|test-template-xlsx|
+Delivery
+~~~~~~~~
 
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
-5. The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are other options:
-
-- `Sending by e-mail <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/send-email.html>`_
-
-- `Saving to DropBox <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/dropbox.html>`_
-
-And others are coming soon. 
-
-Select the folder where the ready document will be saved. And fill in the name of it. Don't forget to put the extension type :code:`.xlsx`.
+Select the folder where the ready document will be saved. And fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
 
 |store-onedrive|
 
 You can configure as many deliveries as you need.
 
+Start the Process
+~~~~~~~~~~~~~~~~~
 
-6. The last thing to do is to start the Process. We will start using Power Automate (Microsoft Flow). You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
+The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_ as well.
 
 
 |start-process|
 
 Creating the Flow
 -----------------
+
+We'll create a Flow that will start the document generation process and will send the ready document for approval. As everything is prepared in the Plumsail account, the Flow itself has just a couple of steps and looks like in the picture below:
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/flow-create-xlsx-from-template.png
+    :alt: create xlsx from template flow
+
+Start the Process from Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Flow trigger** 
 
@@ -163,6 +183,8 @@ You can actually pick any trigger. We are using "*Manually trigger a flow*" trig
 **Start document generation process**
 
 This is the action from `Plumsail Documents connector <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html?%20connector#start-document-generation-process>`_. This action is suitable for starting the Process of generating documents from a template.
+
+.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. To use it, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
 
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 
@@ -173,17 +195,31 @@ You can type any name for the connection. For example, *''Plumsail Documents''*.
 
 Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
 
-There are two parameters:
+The action has two parameters:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
     :alt: start generation documents action
 
 - *Process name*. Select the one process you need among available. 
-- *Template data*. Specify your data in JSON format as we did on the step of testing the template. 
+- *Template data*. Specify your data in JSON format as we did on `the step of testing the template <../../../user-guide/processes/examples/create-xlsx-from-template-processes.html#test-the-template>`_.
 
-That's it! Run the Flow any time you need to generate XLSX documents from a template.
+Use the generated document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: There is another - a little bit more complicated - way to create DOCX documents from a template. Check `the article <../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
+On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow. 
+
+Let’s send the ready document for approval with the *Approvals* connector - action *Create an approval*.
+
+Add the output of the previous step as an attachment. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/approval-step-xlsx.png
+    :alt: create XLSX document from a template
+
+This is just one example out of many others. 
+
+Our Flow is ready. Run it any time you need to generate XLSX documents from a template.
+
+.. note:: There is another - a little bit more complicated - way to create XLSX documents from a template. Check `the article <../../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
 
 
 .. _Plumsail account: https://account.plumsail.com/
