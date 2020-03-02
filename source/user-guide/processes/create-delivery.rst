@@ -30,6 +30,7 @@ Use the links below to learn more about each delivery:
   deliveries/send-email
   deliveries/one-drive
   deliveries/dropbox
+  deliveries/sharepoint
 
 .. Note:: 
 

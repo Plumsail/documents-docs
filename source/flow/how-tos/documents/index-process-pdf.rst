@@ -9,7 +9,7 @@ Process PDF
       Convert HTML to PDF <convert-html-to-pdf>      
       Convert email message to PDF <convert-email-to-pdf>
       Add watermark to PDF <add-watermark-to-pdf>
-      Automatically populate fillable PDF <fill-pdf-form>
+      Automatically populate fillable PDF <fill-pdf-form-processes>
       Collect data from fillable PDF <collect-data-pdf-form>
       Split PDF files <split-pdf-files>
       Merge PDF files <merge-pdf-files>
