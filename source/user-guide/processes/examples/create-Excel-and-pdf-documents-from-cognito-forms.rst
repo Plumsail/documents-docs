@@ -13,6 +13,20 @@ In this example, we will collect data from a Cognito Form, apply the data to our
     :local:
     :depth: 2
 
+Create a Form
+-------------
+
+We have already prepared a Cognito form for ordering stationery and office supplies. We will use data from its submission to apply to our template. If you haven't created any Cognito Forms before, you can learn how to do it `here <https://www.cognitoforms.com/support/15/building-forms/creating-forms>`_.
+
+Below is a screenshot of our form:
+
+.. image:: ../../../_static/img/flow/how-tos/stationery-request-cognito-form.png
+    :alt: Cognito Form image
+
+We used the *Repeating Section* layout to allow users to add more products. You may also use the *Basic Sales Form* template to add this functionality:
+
+.. image:: ../../../_static/img/flow/how-tos/add-repeating-section-cognito.png
+    :alt: Cognito Form repeating section
 
 Configure the Process
 ---------------------
@@ -107,19 +121,6 @@ Check out the Flow steps described below.
 Form is submitted
 ~~~~~~~~~~~~~~~~~
 
-We've already created a Cognito form and we will use data from its submission in our Flow. If you haven't created any Cognito Forms before, you can learn how to do it `here <https://www.cognitoforms.com/support/15/building-forms/creating-forms>`_.
-
-We used the *Repeating Section* layout to allow users to add more products. You may also use the *Basic Sales Form* template to add this functionality:
-
-
-.. image:: ../../../_static/img/flow/how-tos/add-repeating-section-cognito.png
-    :alt: Cognito Form repeating section
-
-Below is a screenshot of our form:
-
-.. image:: ../../../_static/img/flow/how-tos/stationery-request-cognito-form.png
-    :alt: Cognito Form image
-
 We need to start the Flow everytime somebody submits our stationery request form. For that, search for  *Cognito Forms* in Power Automate and add *Cognito Forms - When a new entry is created* as a trigger.
 
 If this is your first Flow with Cognito Forms, on this step, sign in to your Cognito Account from MS Flow to use your forms inside Flows.
@@ -177,22 +178,24 @@ We also added the current date using a standard MS Flow expression:
 
     formatDateTime(utcNow(),'yyyy-MM-dd')
 
-Send an email
-~~~~~~~~~~~~~
+Use the ready document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow.
 
-We'll send the ready document by email with the *Office 365 Outlook* connector - action *Send an email*.
+We'll send the ready document for approval with the *Approvals* connector - action *Create an approval*.
 
-Add the output of the previous step as an attachment: 
+Add the output of the previous step as an attachment. 
 
-.. image:: ../../../_static/img/flow/how-tos/send-email-cognito.png
-    :alt: send an email
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
+    :alt: send pdf for approval
 
 
 Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent by email as an attachment. 
 
 .. image:: ../../../_static/img/flow/how-tos/result-file-cognito-xlsx.png
     :alt: Final document
+
+As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Cognito Forms.
 
 .. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.

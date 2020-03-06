@@ -3,7 +3,7 @@ How to create a document from a template in Microsoft Flow and sign it using Ado
 
 This article is a ready-to-use solution on how to create a PDF document from a template and sign it using `AdobeSign <https://acrobat.adobe.com/us/en/sign.html>`_.
 
-With the help of `Processes <source\user-guide\processes\index.html>`_, we will create a purchase agreement from a DOCX template, save in SharePoint document library and send for signing using the **AdobeSign** connector for Power Automate (Flow). 
+With the help of `Processes <../../../user-guide/processes/index.html>`_, we will create a purchase agreement from a DOCX template, save in SharePoint document library and send for signing using the **AdobeSign** connector for Power Automate (Flow). 
 
 This is how the result document will look after signing:
 
@@ -147,9 +147,6 @@ Then `create an API key in your Plumsail Account page <../../../getting-started/
 
 The **Start document generation process** action has two parameters:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
-    :alt: start generation documents action
-
 - *Process name*. Select the process you need from available ones. 
 - *Template data*. Specify source data in JSON format as we did on `the step of testing <../../../flow/how-tos/documents/create-a-document-from-template-and-sign-Abobesign-processes.html#json-data>`_ the template. 
 
@@ -204,7 +201,7 @@ Don’t forget to specify a file extension with :code:`.PDF`
 .. image:: ../../../_static/img/flow/how-tos/adobe_sign_action.png
     :alt: adobesign_action
 
-The Flow is ready. Now you know how to simplify your workflow processes with the help of Processes by Plumsail Documents and its connector for Power Automate (Flow). 
+The Flow is ready. Now you know how to simplify your workflow processes with the help of Processes by Plumsail Documents and its connector for Power Automate (Flow). If you haven't a Plumsail account yet, `sign up <https://auth.plumsail.com/Account/Register>`_ to get started.
 
 .. hint:: If you use a SignNow system for e-signs or just want to compare AdobeSign with an alternative, read our article `How to create a document from a template and sign it using SignNow <../../../flow/how-tos/documents/create-document-from-template-and-SignNow-processes.html>`_.
 

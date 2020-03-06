@@ -1,24 +1,33 @@
-How to create Word and PDF documents from Cognito Forms in Power Automate (Microsoft Flow) and Azure Logic Apps
-===============================================================================================================
+How to create Word and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
+==========================================================================================================
 
-In this article, you will learn how to automate the generation of documents in your company. For example, applications, orders, invoices, cards and others. We’ll show you a simple way how to create a PDF document from a DOCX template on a `Cognito Form <https://www.cognitoforms.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (Microsoft Flow) and Azure Logic Apps. 
+This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 
-**Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates. 
+**Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
-**Cognito Forms** are an online form builder that allows you to create powerful forms for your website.
+**Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-We'll connect them in Power Automate (Flow) to automatically collect data from a Cognito Form, apply it to our template, and generate a new PDF document.
+Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
     :depth: 2
 
+Create a Form
+-------------
+
+We've already created a Typeform. We will use data from its submission in our Flow. If you haven't created Typeforms before, follow `this link <https://www.typeform.com/help/my-1st-typeform/>`_ to learn how to do it.
+
+Below is a screenshot of our form:
+
+.. image:: ../../../_static/img/flow/how-tos/Typeform.png
+    :alt: Typeform
 
 Configure the Process
 ---------------------
 
-Before creating the Flow, we need to set a Process, which will generate PDF documents from a DOCX template.
- 
+Then, let's configure the Process, which will generate PDF documents from a DOCX template.
+
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -32,7 +41,7 @@ Click on the *Add process* button.
 Set the Process name. 
 
 .. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
-    :alt: generate PDF from Plumsail Forms 
+    :alt: generate PDF from Typeform
 
 Upload the template you're gonna use. Here is the `link for downloading the template <../../../_static/files/flow/how-tos/Create-Word-and-PDF-template.docx>`_ we use in this example:
 
@@ -41,7 +50,7 @@ Upload the template you're gonna use. Here is the `link for downloading the temp
     :alt: Docx template
 
 
-When creating your own ones, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
 Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
@@ -74,7 +83,7 @@ You can test a template as well, to see how it will look at the end. After click
 .. image:: ../../../_static/img/flow/how-tos/test-template-forms-processes.png
     :alt: test template
 
-It’s testing. We’re going to apply the data from the Cognito form to our template. 
+It’s testing. We’re going to apply the data from the Typeform to our template. 
 
 Delivery
 ~~~~~~~~
@@ -96,8 +105,8 @@ Create a Flow
 -------------
 This is how our Flow looks:
 
-.. image:: ../../../_static/img/flow/how-tos/cognito-forms-processes.png
-    :alt: pdf from cognito form flow
+.. image:: ../../../_static/img/flow/how-tos/typeform-processes.png
+    :alt: pdf from Typeform flow
 
 
 Check out the Flow steps described below.
@@ -105,14 +114,14 @@ Check out the Flow steps described below.
 Flow trigger
 ~~~~~~~~~~~~
 
-We need to start the Flow everytime somebody submits our Cognito Form. For that, search for *Cognito Forms* in Power Automate and set *Cognito Forms - When a new entry is created* as a trigger.
+We need to start the Flow everytime somebody submits our Typeform. For that, search for *Typeform* in Power Automate and set *Typeform - When a response is submitted* as a trigger.
 
-If this is your first Flow with Cognito Forms, on this step, sign in to your Cognito Account from MS Flow to use your forms inside Flows.
+If this is your first Flow with Typeform, on this step, sign in to your Typeform Account from MS Flow to use your forms inside Flows.
 
 Then, you'll need to pick the form you want to track in the dropdown.
 
-.. image:: ../../../_static/img/flow/how-tos/cognito-form-trigger.png
-    :alt: cognito form trigger
+.. image:: ../../../_static/img/flow/how-tos/typeform-trigger.png
+    :alt: typeform trigger
 
 Start document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -137,16 +146,16 @@ The action has two parameters:
 - *Process name*. Select the process you need from available ones. 
 - *Template data*. Specify source data in JSON format:
 
-.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-data.png
-    :alt: dynamic content of Cognito form is submitted
+.. image:: ../../../_static/img/flow/how-tos/Typeform-DOCX-PDF-data.png
+    :alt: dynamic content of Typeform is submitted
 
-This object contains information from our form. We selected the dynamic content from the output of *Cognito Forms - When a new entry is created* action:
+This object contains information from our form. We selected the dynamic content from the output of *Typeform - When a response is submitted* action:
 
-.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-DOCX-PDF-Dynamic-content.png
-    :alt: dynamic content of Cognito form is submitted
+.. image:: ../../../_static/img/flow/how-tos/Typeform-DOCX-PDF-Dynamic-content.png
+    :alt: dynamic content of Typeform is submitted
 
-Send for approval
-~~~~~~~~~~~~~~~~~
+Use the ready document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow.
 
@@ -160,7 +169,8 @@ Add the output of the previous step as an attachment.
 Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent for approval as an attachment. 
 
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-Template-PDF.png
-    :alt: pdf from Cognito form result file
+    :alt: pdf from Typeform result file
+
+As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Typeforms.
 
 .. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
-

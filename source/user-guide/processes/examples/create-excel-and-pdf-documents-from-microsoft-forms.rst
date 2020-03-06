@@ -1,24 +1,34 @@
-How to create Excel and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
-===========================================================================================================
+How to create Excel and PDF documents from Microsoft Forms in Power Automate and Azure Logic Apps
+=================================================================================================
 
-
-This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
+This article shows how to create PDF documents from an XLSX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
-**Typeform** is an online form builder that allows you to create modern responsive forms for your website.
+**Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collects other information.
 
-Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our Excel template, and generate a new PDF document.
+In this example, we will collect data from a Microsoft Form, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 .. contents::
     :local:
     :depth: 2
 
+Create a Form
+-------------
+
+We have already created a Microsoft Form for a short employee information sheet. We will use data from its submission. If you haven't created MS Forms before, follow `this link <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_ to learn how to do it.
+
+It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `this link <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRUREdDS0RUQ0pWNVZTSFJOWEJZN1c0UTJZRy4u&sharetoken=myrEdz9F27iuAWGKqSd6>`_ to duplicate the form. After duplicating you'll be able to use the form as your own. 
+
+Below is a screenshot of our form:
+
+.. image:: ../../../_static/img/flow/how-tos/MSform.png
+    :alt: Microsoft Form
 
 Configure the Process
 ---------------------
 
-Before setting the Flow, we need to create a process, which will generate PDF documents from an XLSX template.
+Before creating the Flow, we need to set a Process, which will generate PDF documents from an XLSX template.
 
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
@@ -40,7 +50,7 @@ Upload the template you're gonna use. In this example, we'll create a short empl
 .. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-template.png
     :alt: Excel template
 
-When creating your own ones, mind the templating language. Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+When creating your own templates, mind the templating language. Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
 Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
@@ -77,7 +87,7 @@ You can test a template as well, to see how it will look at the end. After click
 .. image:: ../../../_static/img/flow/how-tos/test-template-plumsail-forms-processes.png
     :alt: test template
 
-It’s testing. We’re going to apply the data from the Typeform to our template. 
+It’s testing. We’re going to apply the data from the MS Form to our template. 
 
 Delivery
 ~~~~~~~~
@@ -100,29 +110,29 @@ Create a Flow
 -------------
 This is how our Flow looks:
 
-.. image:: ../../../_static/img/flow/how-tos/typeform-excel-pdf-flow.png
-    :alt: pdf from  Typeform flow
+.. image:: ../../../_static/img/flow/how-tos/MSform-flow-xlsx-pdf.png
+    :alt: pdf from MS form flow
 
 Check out the Flow steps described below.
 
 Form is submitted
 ~~~~~~~~~~~~~~~~~
 
-We've already created a Typeform. We will use data from its submission in our Flow. If you haven't created Typeforms before, follow `this link <https://www.typeform.com/help/my-1st-typeform/>`_ to learn how to do it.
+We need to start the Flow every time somebody submits our form. For that, search for *Microsoft Forms* in Power Automate and set *Microsoft Forms - When a response is submitted* as a trigger.
 
-Below is a screenshot of our form:
-
-.. image:: ../../../_static/img/flow/how-tos/type-xlsx-pdf-form.png
-    :alt: Typeform image
-
-We need to start the Flow everytime somebody submits our Typeform. For that, search for *Typeform* in Power Automate and set *Typeform - When a response is submitted* as a trigger.
-
-If this is your first Flow with Typeform, on this step, sign in to your Typeform Account from MS Flow to use your forms inside Flows.
+If this is your first Flow with Microsoft Forms, on this step, sign in to your Microsoft Forms Account from MS Flow to use your forms inside Flows.
 
 Then, you'll need to pick the form you want to track in the dropdown.
 
-.. image:: ../../../_static/img/flow/how-tos/typeform-trigger-xlsx.png
-    :alt: typeform trigger
+.. image:: ../../../_static/img/flow/how-tos/microsoft-form-trigger-xlsx.png
+    :alt: Microsoft Form trigger
+
+Get response details
+~~~~~~~~~~~~~~~~~~~~
+As we want to get the submitted data, we need to add *Microsoft Forms - Get response details* action. On this action, we select the same **Form Id** that we used in the trigger. Then, we click in the **Response Id** text box and pick **List of response notifications - Response Id** in the Dynamic content menu on the right:
+
+.. image:: ../../../_static/img/flow/how-tos/Microsoft-Forms-Response-ID.png
+    :alt: Get response details
 
 
 Start document generation process
@@ -148,30 +158,32 @@ The action has two parameters:
 - *Process name*. Select the process you need from available ones. 
 - *Template data*. Specify source data in JSON format:
 
-.. image:: ../../../_static/img/flow/how-tos/JSON-data-typeform.png
-    :alt: dynamic content of Typeform is submitted
+.. image:: ../../../_static/img/flow/how-tos/JSON-msform-xlsx-pdf.png
+    :alt: dynamic content of MS Form is submitted
 
-This object contains information from our form. We selected the dynamic content from the output of *Typeform - When a response is submitted* action:
+This object contains information from our form. We selected the dynamic content from the output of *Microsoft Forms - Get response details* action:
 
-.. image:: ../../../_static/img/flow/how-tos/dynamic-content-xlsx-typeform.png
-    :alt: dynamic content of Typeform is submitted
+.. image:: ../../../_static/img/flow/how-tos/msform-dynamic-content.png
+    :alt: dynamic content of Microsoft Form is submitted
 
-Send an email
-~~~~~~~~~~~~~
+Use the ready document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow.
 
-We'll send the ready document by email with the *Office 365 Outlook* connector - action *Send an email*.
+We'll send the ready document for approval with the *Approvals* connector - action *Create an approval*.
 
-Add the output of the previous step as an attachment: 
+Add the output of the previous step as an attachment. 
 
-.. image:: ../../../_static/img/flow/how-tos/send-email-typeform.png
-    :alt: send an email
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
+    :alt: send pdf for approval
 
 
-Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent by email as an attachment. 
+Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent for approval as an attachment. 
 
 .. image:: ../../../_static/img/flow/how-tos/resultfile-employee-info.png
     :alt: Final document
+
+As you can see, it's simple to automize the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms.
 
 .. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.

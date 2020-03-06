@@ -10,7 +10,7 @@ This is how the final PDF document with the form will look in our case:
 .. image:: ../../../_static/img/flow/how-tos/fill-in-pdf-form-result.png
     :alt: fill in pdf form result
 
-Here is a step-by-step description on how to create such a process.
+Here is a step-by-step description.
 
 .. contents::
     :local:
@@ -38,9 +38,9 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name and upload the template you've prepared. We will use the template from the step `Create fillable PDF <../../../flow/how-tos/documents/fill-pdf-form-processes.html#create-fillable-pdf>`_.
+Set the Process name and upload the template you've prepared. We will use the template from the step `Create a fillable PDF <../../../flow/how-tos/documents/fill-pdf-form-processes.html#create-fillable-pdf>`_.
 
-.. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
+.. image:: ../../../_static/img/flow/how-tos/create-process-fillin-pdf.png
     :alt: Create a new process to populate PDF form
 
 Configure a template
@@ -89,7 +89,16 @@ It’s testing. We’re going to apply the data from the SharePoint list.
 Delivery
 --------
 
-The next step is delivery. You can configure as many of them as you need, or skip the step. Check all the available options and how to handle them `here <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purposes, let us set an email delivery. 
+
+Fill-in a recipient email. Add recipients for a copy or blind copy if you need. Define the subject of the letter. And write an email body. 
+
+You can use tokens from your template to specify details in the email subject as we did, or in the body. The submitted data will be applied to them as well. Learn more by following `this link <../../../user-guide/processes/tokens-in-process-fields.html>`_.
+
+.. image:: ../../../_static/img/flow/how-tos/send-email-populate-pdf.png
+    :alt: send email delivery
+
+You can configure as many deliveries as you need, or even skip the step. Check all the available options and how to handle them `here <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
 Start the Process
 -----------------
@@ -107,7 +116,7 @@ This is how our Flow looks:
 Flow trigger
 ------------
 
-You can pick any trigger. For example, you can start your Flow on `form submission <https://plumsail.com/docs/forms/microsoft-flow.html>`_. We use “When an item is created” trigger to get the newest created item from the SharePoint list.
+You can pick any trigger. For example, you can start your Flow on `form submission <https://plumsail.com/docs/forms/microsoft-flow.html>`_. We use “When an item is created” trigger to get data of the latest created item from the SharePoint list.
 
 Our SharePoint list has the same columns as fields in our fillable PDF file.
 
@@ -124,9 +133,6 @@ Then `create an API key in your Plumsail Account page <../../../getting-started/
 
 The **Start document generation process** action has two parameters:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
-    :alt: start generation documents action
-
 - *Process name*. Select the process you need from available ones. 
 - *Template data*. Specify source data in JSON format.
 
@@ -138,16 +144,19 @@ This object contains information from an item newly created in the SharePoint li
 .. image:: ../../../_static/img/flow/how-tos/dynamic-content-fillable-pdf.png
     :alt: dynamic content of SharePoint - When an item is created
 
-Send an Email action
---------------------
+Use the ready PDF in Flow
+-------------------------
 
-Now we send the PDF file with filled-in form. In our example, we use 'Send an Email' action from the Office 365 Outlook connector. Select an output of *Start document generation process* from Dynamic content as an attachment to the email.
+Now we upload our ready and filled-in PDF to the SharePoint document library to see how to use the output of the *Start document generation process* action right in the Flow.
 
-Please notice how we specified the PDF file. It is essential to specify the attachment name with the correct extension.
+Add a Create file action from the SharePoint connector. 
+For the File content, select :code:`Result file` in Dynamic content from *Start document generation process*.
 
-.. image:: ../../../_static/img/flow/how-tos/send-email-fillable-pdf.png
-    :alt: send an email with fillable PDF attached
+Please notice how we specified the File name with :code:`.PDF`. It is essential to specify the file name with the correct extension.
 
-Our Flow is ready. Now you know how to automatically populate fillable PDFs with the help of Plumsail Documents in Power Automate (Flow).
+.. image:: ../../../_static/img/flow/how-tos/create-file-fillable-pdf.png
+    :alt: create file in SharePoint document library
+
+Our Flow is ready. Now you know how to automatically populate fillable PDFs with the help of Plumsail Documents in Power Automate (Flow). If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article. To get started is easy. 
 
 .. hint:: Check `another article <../../../flow/how-tos/documents/fill-pdf-form.html>`_ with the video describing an advanced scenario on How to automatically populate fillable PDF.

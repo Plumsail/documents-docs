@@ -8,6 +8,6 @@ Review examples of processes to get started:
   :titlesonly:
   :maxdepth: 2
     
-  ../../user-guide/processes/examples/index-create-documents-from-template-processes
-  ../../flow/how-tos/documents/index-form-integrations
-  ../../flow/how-tos/documents/index-E-signature
+  ../../user-guide/processes/examples/index-processes-examples
+  ../../how-tos/index-form-integrations
+  ../../how-tos/index-E-signature
