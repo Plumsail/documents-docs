@@ -165,8 +165,6 @@ You can actually pick any trigger. We are using "*Manually trigger a flow*" trig
 
 This is the action from `Plumsail Documents connector`_. This action is suitable for starting the Process of generating documents from a template. You can find more information about this action by visiting `this page`_.
 
-.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. To use it, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
-
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 
 .. image:: ../../../_static/img/getting-started/create-flow-connection.png

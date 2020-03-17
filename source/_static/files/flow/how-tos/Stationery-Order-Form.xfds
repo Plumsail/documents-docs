@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="" Css="" SubmitToFlow="true" FormId="68989fa5-2d68-4b50-ba8c-ffeb2883f7c6" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="8" Offset="0">
+            <TextBlock Text="Stationery Order Form" TextType="Header1" InternalName="Text1" FontColor="#000000" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <Field Title="Full Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="name" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <Field Title="Department" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="department" Required="True" Items="[&quot;Administration&quot;,&quot;Sales&quot;,&quot;Quality&quot;,&quot;Marketing&quot;,&quot;Financial&quot;,&quot;Human Resources&quot;,&quot;IT&quot;]" IsMultiple="False" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <Field Title="Email" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="email" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <Field Title="Phone" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="phone" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <TextBlock Text="My Order" TextType="Header2" InternalName="My" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <DataTable InternalName="items" NewLinePosition="Top" DeleteButtonPosition="Last">
+              <DataTableColumn Name="Select item" Type="Dropdown" Required="True" InternalName="Product" Properties="{&quot;Items&quot;:[&quot;Pen&quot;,&quot;Pencil&quot;,&quot;Highlighter&quot;,&quot;Paper clip (box)&quot;,&quot;Stapler (with staples)&quot;,&quot;Scissors&quot;,&quot;Envelope&quot;,&quot;Paper (pack)&quot;]}" />
+              <DataTableColumn Name="Quantity" Type="Number" Width="150" Required="True" InternalName="Quantity" Properties="{&quot;Items&quot;:[&quot;Item1&quot;,&quot;Item2&quot;,&quot;Item3&quot;]}" />
+            </DataTable>
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="8" Offset="0">
+            <Field Title="Special instructions" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultilineTextBox" InternalName="instructions" Required="True" Mode="Rich" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button1" />
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>

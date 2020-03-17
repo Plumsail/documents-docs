@@ -54,7 +54,10 @@ Once you're done with the first step *Create Process*, press the *Submit* button
     :alt: Configure template
 
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be:
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. 
+
+To understand what JSON to feed, you need to look at tokens in your template. In our template we have :code:`{{name}}`, :code:`{{title}}`, etc, that's how the sample JSON for testing might look in our case:
+
 
 .. code:: json
 
@@ -116,7 +119,7 @@ Bind the Form
 
 To start the process by submitting our Plumsail Form, we need to bind it. It's easy to do.
 
-Press the *Bind* button and select the process you need from the list. 
+Press the *Bind* button and select the form to bind from the list. 
 
 .. image:: ../../../_static/img/flow/how-tos/start-plumsail-forms-process.png
     :alt: create pdfs from docx on plumsail form submission
@@ -135,6 +138,9 @@ See how the result file looks:
 .. image:: ../../../_static/img/flow/how-tos/result-pdf-plumsail-forms.png
     :alt: create pdfs from docx on plumsail form submission
 
-As you can see, it's simple to automize the generation of documents on Plumsail Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Plumsail Forms.
+Sign up for Plumsail Documents
+------------------------------
+
+As you can see, it's simple to automize the generation of documents on Plumsail Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Plumsail Forms. A 30-day trial is free.
 
 .. hint:: It's possible to implement more complex scenarios using Power Automate (Microsoft Flow). For example, you can generate PDF documents from a DOCX template on Plumsail Forms submission and use the result file right in the Flow.  Trigger your Flow with Plumsail `Form is submitted <https://plumsail.com/docs/forms-web/microsoft-flow.html>`_ and follow the steps described in `this article <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_.

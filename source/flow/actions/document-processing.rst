@@ -12,8 +12,6 @@ This connector helps you to automatically generate and convert documents with th
 Start document generation process
 ---------------------------------
 
-.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. If you want to use this action, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
-
 Starts a `process <../../user-guide/processes/index.html>`_ of document generation. Processes are an easy way to automate the creation of documents from templates. You just configure template, test it and specify how to deliver results (email, OneDrive, etc.).
 
 We have `an article <../../user-guide/processes/start-process-ms-flow.html>`_ describing how to use this action.
@@ -461,8 +459,6 @@ Convert XLSX to PDF
 
 Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -510,8 +506,6 @@ Convert DOC to DOCX
 -------------------
 
 Converts .doc document to .docx document with the help of Microsoft Flow.
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
 
 .. rubric:: Output Parameters
 
@@ -559,9 +553,7 @@ Converts .doc document to .docx document with the help of Microsoft Flow.
 Convert XLS to XLSX
 -------------------
 
-Converts .xls document to .xlsx document with the help of Microsoft Flow.
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
+Converts .xls document to .xlsx document with the help of Microsoft Flow. Find the description of how to bulk convert .xls to .xlsx in `this article <../../../flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -610,8 +602,6 @@ Convert PPT to PPTX
 -------------------
 
 Converts .ppt document to .pptx document with the help of Microsoft Flow.
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
 
 .. rubric:: Output Parameters
 
@@ -661,8 +651,6 @@ Convert PPTX to PDF
 
 Converts .pptx document to PDF document with the help of Microsoft Flow.
 
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -710,8 +698,6 @@ Convert HTML to PDF
 -------------------
 
 Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
-
-.. note:: At this moment options: Header HTML, Footer HTML and Margins are only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. note:: There could be an issue converting certain symbols such as £. Add the following line in the HTML head element
 
@@ -1621,8 +1607,6 @@ Parse CSV
 
 Parses a CSV file into an array of objects with properties in Microsoft Flow.
 Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
-
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Output Parameters
 

@@ -69,7 +69,9 @@ Once you're done with the first step *Create Process*, press the *Submit* button
     :alt: Configure template
 
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be:
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. To understand what JSON to feed, you need to look at tokens in your template. 
+In our template we have :code:`{{name}}`, :code:`{{department}}`, etc, that's how the sample JSON for testing might look in our case:
+
 
 .. code:: json
 
@@ -145,8 +147,6 @@ Start document generation process
 
 This is the action from `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_. This action is suitable for starting the Process of generating documents from a template. You can find more information about this action by visiting `this page <../../../flow/actions/document-processing.html#start-document-generation-process>`_.
 
-.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. To use it, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
-
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 
 .. image:: ../../../_static/img/getting-started/create-flow-connection.png
@@ -181,20 +181,24 @@ We also added the current date using a standard MS Flow expression:
 Use the ready document in Flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow.
+You can stop on the step **Start document generation process**. 
 
-We'll send the ready document for approval with the *Approvals* connector - action *Create an approval*.
+Steps described above are enough for generating PDFs from an XSLX template based on the Cognito Form submission. Your result file will be saved to OneDrive in this case. See how it will look:
 
-Add the output of the previous step as an attachment. 
+.. image:: ../../../_static/img/flow/how-tos/result-file-cognito-xlsx.png
+    :alt: Final document
+
+But if you need an advanced logic, it's possible to work with the result file right in the Flow. 
+
+Here is an example of how you can send the ready document for approval. 
+
+Add an action *Create an approval* from the *Approvals* connector. Select an output of the previous step for an attachment.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
     :alt: send pdf for approval
 
-
-Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent by email as an attachment. 
-
-.. image:: ../../../_static/img/flow/how-tos/result-file-cognito-xlsx.png
-    :alt: Final document
+Sign up for Plumsail Documents
+------------------------------
 
 As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Cognito Forms.
 

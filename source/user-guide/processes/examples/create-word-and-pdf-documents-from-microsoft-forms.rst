@@ -70,7 +70,10 @@ Once you're done with the first step *Create Process*, press the *Submit* button
     :alt: Configure template
 
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be:
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. 
+To understand what JSON to feed, you need to look at tokens in your template. 
+In our template we have :code:`{{Fullname}}`, :code:`{{PhoneNumber}}`, etc, that's how the sample JSON for testing might look in our case:
+
 
 .. code:: json
 
@@ -137,8 +140,6 @@ Start document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is the action from `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_. This action is suitable for starting the Process of generating documents from a template. You can find more information about this action by visiting `this page <../../../flow/actions/document-processing.html#start-document-generation-process>`_.
 
-.. important:: This action is not available in `the global Microsoft Flow connector <https://docs.microsoft.com/en-us/connectors/plumsail/>`_ yet. To use it, you need to `add Plumsail Documents as a custom connector <../create-custom-connector.html>`_.
-
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 
 .. image:: ../../../_static/img/getting-started/create-flow-connection.png
@@ -167,20 +168,25 @@ This object contains information from our form. We selected the dynamic content 
 Use the ready document in Flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow.
+You can stop on the step **Start document generation process**. 
 
-We'll send the ready document for approval with the *Approvals* connector - action *Create an approval*.
-
-Add the output of the previous step as an attachment. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
-    :alt: send pdf for approval
-
-Our Flow is ready. This is how the result document generated from the form's data looks. It'll be stored in OneDrive and sent for approval as an attachment. 
+Steps described above are enough for generating PDFs from a DOCX template based on the Microsoft Form submission. Your result file will be saved to OneDrive in this case. See how it will look:
 
 .. image:: ../../../_static/img/flow/how-tos/JotForms-DOCX-PDF-result.png
     :alt: Final document
 
-As you can see, it's simple to automize the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms.
+But if you need an advanced logic, it's possible to work with the result file right in the Flow. 
+
+Here is an example of how you can send the ready document for approval. 
+
+Add an action *Create an approval* from the *Approvals* connector. Select an output of the previous step for an attachment.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
+    :alt: send pdf for approval
+
+Sign up for Plumsail Documents
+------------------------------
+
+As you can see, it's simple to automize the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms. A 30-day trial is free.
 
 .. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
