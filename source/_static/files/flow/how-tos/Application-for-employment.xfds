@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Form JavaScript="" Css="" SubmitToFlow="true" FormId="e031c8c1-5eee-4115-ac2b-c45344f9a706" Theme="">
+<Form JavaScript="" Css="" SubmitToFlow="true" FormId="a1fc72e4-cee4-49ef-9ee5-4159e27631d2" Theme="">
   <PCView>
     <Layout Version="1.0.0.0">
       <Grid Stacked="Small" DefaultChildWidth="6">
@@ -57,7 +57,7 @@
             <TextBlock Text="My employment history" TextType="Header3" InternalName="Text4" />
           </Cell>
           <Cell Width="6" Offset="0">
-            <Field Title="Are you currently working?" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="250" Type="Checkboxes" InternalName="Checkboxes2" Required="False" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="3" />
+            <Field Title="Are you currently working?" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="250" Type="Checkboxes" InternalName="CurrentlyWorking" Required="False" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="3" />
           </Cell>
         </Row>
         <Row>
@@ -105,7 +105,7 @@
             <TextBlock Text="Can we contact them?" TextType="Text" InternalName="Text6" />
           </Cell>
           <Cell Width="6" Offset="0">
-            <Field Title="Checkboxes1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Checkboxes" InternalName="Checkboxes1" Required="False" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="2" />
+            <Field Title="Checkboxes1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Checkboxes" InternalName="HistoryContact" Required="False" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="2" />
           </Cell>
         </Row>
         <Row>
