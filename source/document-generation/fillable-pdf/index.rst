@@ -27,7 +27,7 @@ We should specify the field's name. Later you will want to automatically populat
 
 For example, you have a field with the name "Text1". In this case, you will need to submit an object with the structure like this to fill this field:
 
-.. code::
+.. code:: json
 
     {
       "Text1": "Some value"
@@ -40,15 +40,15 @@ Click on the field -> Properties section to change field name:
 
 
 
-You can add and edit speciphic fields like checkboxes and radiobuttons the same way. 
-In order to check a checkbox, you'll need to submit an object with the structure:
-.. code::
+You can add and edit speciphic fields like **checkboxes** and **radiobuttons** the same way. 
+In order to check a checkbox, you'll need to submit an object with the **true** or **false** value. Use the following structure:
+.. code:: json
 
     {
       "Checkbox1": true
     }
 
-In order to choose a radiobutton, you'll need to create a radiobutton group in your pdf. To do this, just give the same Name to several radiobuttons and a group will be created automatically. Please note that you can style radiobuttons as checkboxes for a better "paper-like" visualization:
+In order to choose a **radiobutton**, you'll need to create a **radiobutton group** in your pdf. To do this, just give the same **Name** to several radiobutton fields and a group will be created automatically. Then you need to speciphy the "Radio Button Choice" field for each option of the radiobutton group. This is the value you need to submit to check the radiobutton. Please note that you can style radiobuttons as checkboxes for a better "paper-like" visualization:
 
 .. image:: ../../_static/img/document-generation/fill-in-pdf-style-radiobutton.png
     :alt: Style Radiobuttons
