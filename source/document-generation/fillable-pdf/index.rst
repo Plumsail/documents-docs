@@ -18,12 +18,12 @@ Then we need to add text which will indicate a field name (click on **Edit Pdf**
 .. image:: ../../_static/img/document-generation/fill-in-pdf-add-text-acrobat.png
     :alt: Acrobat Pro add text
 
-After that, we should add a field to our PDF file (Forms section):
+After that, we should add a field to our PDF file (Prepare Form).
+We should specify the field's name. Later you will want to automatically populate values to this form. That is why it is important to assign the correct field name. When populating the form you will submit some object with values. The field name has to match property names in this object. 
 
-.. image:: ../../_static/img/document-generation/fill-in-pdf-form-add-field-acrobat.png
+.. image:: ../../_static/img/document-generation/fill-in-pdf-add-field-acrobat.png
     :alt: Acrobat Pro add field
 
-Finally, we should specify this field's name. Later you will want to automatically populate values to this form. That is why it is important to assign the correct field name. When populating the form you will submit some object with values. The field name has to match property names in this object. 
 
 For example, you have a field with the name "Text1". In this case, you will need to submit an object with the structure like this to fill this field:
 
@@ -36,12 +36,9 @@ For example, you have a field with the name "Text1". In this case, you will need
 Click on the field -> Properties section to change field name:
 
 .. image:: ../../_static/img/document-generation/fill-in-pdf-change-field-nama-acrobat.png
-    :alt: Nitro Pro specify name
+    :alt: Acrobat Pro specify name
 
-`Download the example of a fillable PDF <../../_static/files/document-generation/demos/fill-in-pdf-form-template.pdf>`_ for this article.
 
-.. image:: ../../_static/img/document-generation/fill-in-pdf-form-template.png
-    :alt: Fillable PDF example
 
 You can add and edit speciphic fields like checkboxes and radiobuttons the same way. 
 In order to check a checkbox, you'll need to submit an object with the structure:
@@ -55,6 +52,12 @@ In order to choose a radiobutton, you'll need to create a radiobutton group in y
 
 .. image:: ../../_static/img/document-generation/fill-in-pdf-style-radiobutton.png
     :alt: Style Radiobuttons
+
+
+`Download the example of a fillable PDF <../../_static/files/document-generation/demos/fill-in-pdf-form-template.pdf>`_ for this article.
+
+.. image:: ../../_static/img/document-generation/fill-in-pdf-form-template.png
+    :alt: Fillable PDF example
 
 
 Here is the example of the data object that could be used for populating this form:
