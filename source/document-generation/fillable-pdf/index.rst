@@ -83,6 +83,9 @@ as checkboxes for a better "paper-like" visualization:
     :alt: Style Radiobuttons
 
 
+Example
+--------
+
 `Download the example of a fillable PDF <../../_static/files/document-generation/demos/fill-in-pdf-form-template.pdf>`_ for this article.
 
 .. image:: ../../_static/img/document-generation/fill-in-pdf-form-template.png
@@ -116,8 +119,8 @@ Here is the example of the data object that could be used for populating this fo
   	"PersonalDataConsent" : false
   }
 
-Examples
---------
+Use cases
+---------
 Please review examples to learn how to set up an automatically Fillable pdf:
 
 - Using `Microsoft PowerAutomate <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/fill-pdf-form.html>`_
