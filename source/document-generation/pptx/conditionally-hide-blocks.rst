@@ -1,7 +1,7 @@
 Conditionally hide blocks in DOCX templates
 ===========================================
 
-You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks of a document. 
+You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks in a presentation. 
 
 The formatter checks if a value for current tag is equal to a value of the parameter, then finds closest collapsible block and hides it:
 

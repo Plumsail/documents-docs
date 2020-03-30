@@ -1,4 +1,4 @@
-Links and endnotes
+External links
 ==================
 
 .. contents:: Content
@@ -9,13 +9,8 @@ Links and endnotes
 
 **Create PPTX document from template** action allows you to add dynamic hyperlinks to a location on the web, as well as endnotes and footnotes.
 
-You can download the source document and the result document for the example described below in `links and endnotes demo <./demos.html#links-and-endnotes>`_.
-
-Links
------
-
+You can download the source document and the result document for the example described below in `links  <./demos.html#links>`_.
 Let us assume we have a list of online learning resources.
-
 JSON representation of the object:
 
 .. code:: json
@@ -58,17 +53,3 @@ To create a hyperlink to a location on the web we select the text that we want t
 .. image:: ../../_static/img/document-generation/insert-hyperlink-url.png
     :alt: Insert hyperlink: URL
 
-Endnotes
---------
-
-We have also added endnotes to our template. To do that please click where you want to add an endnote, click **References** in the top ribbon and **Insert Endnote**.
-
-.. image:: ../../_static/img/document-generation/insert-endnote.png
-    :alt: Insert endnote
-
-Endnotes and footnotes maintain the context of their definition. This allows the template engine to replace multiple tags which belong to the same context.
-
-You can see the result of rendering below. The templating engine created web hyperlinks and endnotes in the document:
-
-.. image:: ../../_static/img/document-generation/external-links-result.png
-    :alt: External links result
