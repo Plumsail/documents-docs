@@ -690,6 +690,8 @@ picture
 :code:`picture` - it resolves URL or base64 string and converts it to an image. 
 :code:`picture` formatter can be used with resizing options, for example,  {{value}:picture(100,100)}.
 
+.. important:: This formatter can not be used in PPTX templates.
+
 Examples
 ~~~~~~~~
 
