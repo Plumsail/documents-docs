@@ -28,11 +28,38 @@ We have already designed an application for employment form. Here it is:
 .. image:: ../../../_static/img/flow/how-tos/application-employment-form.png
     :alt: Plumsail Form image
 
-You can create such a form yourself, follow `this link <https://plumsail.com/docs/forms/design.html>`_ to learn more about how to design Plumsail Web Forms. 
+You can use our ready form template for an employment application. `Download the file <../../../_static/files/flow/how-tos/Application-for-employment.xfds>`_ and import it to the Plumsail Forms designer. 
 
-While creating a Form, pay attention to the internal names of fields. They must be the same as fillable PDF fields to match them while populating. To understand better the form data structure, check `this link <../../../user-guide/processes/start-process-web-form.html#understand-the-structure-of-data-sent-by-a-form>`_.
+To create such a form yourself, follow `this link <https://plumsail.com/docs/forms/design.html>`_ to learn more about how to design Plumsail Web Forms. 
 
-It's possible to use our ready form template for an employment application. `Download the file <../../../_static/files/flow/how-tos/Application-for-employment.xfds>`_ and import it to the Plumsail Forms designer. 
+**Understanding Internal Names of Form's fields**
+
+It’s crucial to understand the **internal names** of Form's fields. They must correspond to fields' names in a fillable PDF. You can set internal names for Form’s fields in its general propeties:
+
+.. image:: ../../../_static/img/flow/how-tos/internalname.png
+    :alt: Internal names of form's fields
+
+Data from this field will fill in the corresponding field in our fillable PDF. Its name is **FirstName** as well.
+
+.. image:: ../../../_static/img/flow/how-tos/field-name-fillable-pdf.png
+    :alt: Fillable PDF field and its name
+
+SingleChoice fields in our Plumsail Form correspond to radio buttons in the fillable PDF. So, they should have not only the same general name but the same options. 
+
+**Example**: We have a SingleChoice in the Plumsail form with **Yes** and **No** options. Its internal name is **CurrentlyWorking**. 
+
+.. image:: ../../../_static/img/flow/how-tos/single_choice.png
+    :alt: single choice in Form
+
+In fillable PDF we create **two** radio buttons. The general name is the same for two of them – **CurrentlyWorking**. 
+
+.. image:: ../../../_static/img/flow/how-tos/general_name_rudiobutton.png
+    :alt: name of radiobutton in PDF form
+
+In properties options, we set a radio button choice – **Yes** for one and **No** for another radio button.
+
+.. image:: ../../../_static/img/flow/how-tos/radiobutton_choice.png
+    :alt: name of radiobutton in PDF form
 
 Configure the Process
 -----------------------

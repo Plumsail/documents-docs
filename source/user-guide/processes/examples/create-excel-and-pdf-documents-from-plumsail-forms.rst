@@ -14,7 +14,7 @@ With **Plumsail Forms**, you can design elegant, responsive, and highly customiz
 Create a Form
 -------------
 
-We will design a form for a stationery and office supplies request. Here is our result form:
+We have already designed a form for a stationery and office supplies request. Here is our result form:
 
 .. image:: ../../../_static/img/flow/how-tos/stationery-order-plumsail-form.png
     :alt: Plumsail Form image
@@ -27,11 +27,21 @@ You see, that the form includes information:
 -	under the table with order items, we place a **multiline textbox** for special instructions 
 -	and, finally, a **submit button**
 
-You can create such a form yourself, follow `this link <https://plumsail.com/docs/forms/design.html>`_ to learn more about how to design Plumsail Web Forms. 
-
-While creating a Form, pay attention to the internal names of fields. They must correspond to the tokens in your XLSX template. To understand better the form data structure, check `this link <../../../user-guide/processes/start-process-web-form.html#understand-the-structure-of-data-sent-by-a-form>`_.
-
 You can use our ready form template for a stationery order request as well. `Download the file <../../../_static/files/flow/how-tos/Stationery-Order-Form.xfds>`_ and import it to the Plumsail Forms designer. 
+
+To create such a form yourself, follow `this link <https://plumsail.com/docs/forms/design.html>`_ to learn more about how to design Plumsail Web Forms. 
+
+**Understanding Internal Names of Form's fields**
+
+It’s crucial to understand the **Internal Names** of Form's fields. They must correspond to tokens in a template. You can set internal names for Form’s fields in its general propeties:
+
+.. image:: ../../../_static/img/flow/how-tos/name-of-PlumsailForms-field.png
+    :alt: setting of the form's fields
+
+Our data table’s name is **items**. And its columns have their names as well - **Product** and **Quantity**. 
+
+In our XLSX template, we'll put such tokens :code:`{{items.Product}}` and :code:`{{items.Quatity}}`. The templating engine will iterate through all objects in the array to render them and add the rows automatically. 
+
 
 Configure the Process
 ---------------------
@@ -86,10 +96,16 @@ To understand what JSON to feed, you need to look at tokens in your template. In
       "name": "John Doe",
       "department": "IT",
       "email": "j.doe@contoso.com",
-      "items": {
+      "items": [
+        {
           "Product": "Pen",
           "Quantity": 10
           },
+        {
+          "Product": "Pencil",
+          "Quantity": 10
+          }
+      ],
       "instructions": "Delivery before Thursday",
       "phone": "(206)-564-96-97",
       "date": "25/02/2020"
@@ -105,9 +121,9 @@ Delivery
 
 The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
-Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
+Just set the folder's name where the ready document will be saved.
 
-.. image:: ../../../_static/img/flow/how-tos/store-onedrive.png
+.. image:: ../../../_static/img/flow/how-tos/onedrive-forms.png
     :alt: create pdf from template on form submission
 
 You can configure as many deliveries as you need.
@@ -123,6 +139,8 @@ This is how our Flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/excel-pdf-plumsail-forms-flow.png
     :alt: xlsx to pdf from Plumsail Forms flow
+
+Below is a step-by-step description.
 
 Form is submitted
 ~~~~~~~~~~~~~~~~~
@@ -141,14 +159,13 @@ Find and copy it in **General** settings in Forms Designer.
 .. image:: ../../../_static/img/flow/how-tos/Form-ID.gif
     :alt: How to find Plumsail Form ID
 
-Initialize variable
-~~~~~~~~~~~~~~~~~~~
+Current time
+~~~~~~~~~~~~
 
-We need to build an array with the data from the Data Table to use it in the JSON **Template data** in *Start document generation process* action. So, we create an array of variable *items*. 
+It's a simple action to get the current date. We'll use its output in the next step.
 
-
-.. image:: ../../../_static/img/flow/how-tos/initialize-variable-plumsail-forms.png
-    :alt: Initialize variable
+.. image:: ../../../_static/img/flow/how-tos/current_time.png
+    :alt: current time action
 
 Start document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,16 +192,11 @@ The action has two parameters:
 .. image:: ../../../_static/img/flow/how-tos/JSON-data-Plumsail-Forms.png
     :alt: dynamic content of Plumsail form is submitted
 
-This object contains information from our form. We selected the dynamic content from the output of *Plumsail Forms - Form is submitted* action and from the *Initialize variable* step:
+This object contains information from our form. We selected the dynamic content from the output of *Plumsail Forms - Form is submitted* and *Current time* action.
 
 .. image:: ../../../_static/img/flow/how-tos/dynamic-content-excel-plumsail.png
     :alt: dynamic content of Plumsail Form is submitted
 
-We also added the current date using a standard MS Flow expression:
-
-.. code:: json
-
-    formatDateTime(utcNow(),'yyyy-MM-dd')
 
 Use the ready document in Flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

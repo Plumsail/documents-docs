@@ -79,10 +79,16 @@ In our template we have :code:`{{name}}`, :code:`{{department}}`, etc, t
       "name": "John Doe",
       "department": "IT",
       "email": "j.doe@contoso.com",
-      "items": {
+      "items": [
+        {
           "Product": "Pen",
           "Quantity": 10
           },
+        {
+          "Product": "Pencil",
+          "Quantity": 10
+          }
+      ],
       "instructions": "Delivery before Thursday",
       "phone": "(206)-564-96-97",
       "date": "25/02/2020"
@@ -171,12 +177,6 @@ This object contains information from our form. We selected the dynamic content 
 
 .. image:: ../../../_static/img/flow/how-tos/dynamic-content-xlsx-cognito.png
     :alt: dynamic content of Cognito Form is submitted
-
-We also added the current date using a standard MS Flow expression:
-
-.. code:: json
-
-    formatDateTime(utcNow(),'yyyy-MM-dd')
 
 Use the ready document in Flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -84,9 +84,9 @@ Delivery
 
 The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
-Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
+Just set the folder's name where the ready document will be saved.
 
-.. image:: ../../../_static/img/flow/how-tos/onedrive-process-plumsail-forms.png
+.. image:: ../../../_static/img/flow/how-tos/onedrive-forms.png
     :alt: create pdf from template on form submission
 
 You can configure as many deliveries as you need.
@@ -106,9 +106,11 @@ Below is a screenshot of our form. You may download this form `here <../../../_s
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Form.png
     :alt: Plumsail Form
 
-The important thing is that the templating engine needs to identify what will be pasted into brackets somehow. Please, check that the Internal names of form's fields correspond to tokens in the template. 
+**Understanding Internal Names of Form's fields**
 
-You can do that in the settings of each field.
+The important thing is that the templating engine needs to identify what will be pasted into brackets somehow. Please, check that the Internal Names of form's fields correspond to tokens in the template. 
+
+You can set Internal Names for Form’s fields in its general propeties:
 
 .. image:: ../../../_static/img/flow/how-tos/internal-name-of-field.png
     :alt: setting of the form's fields
