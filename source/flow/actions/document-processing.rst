@@ -77,7 +77,7 @@ We have `an article <../../user-guide/processes/start-process-ms-flow.html>`_ de
 Create DOCX document from template
 ----------------------------------
 
-Created Word DOCX document from template. Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.
+Creates Word DOCX document from template. Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.
 
 We have `an article <../how-tos/documents/create-docx-from-template.html>`_ describing how to work with this action in case of managing documents.
 
@@ -154,10 +154,89 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
 .. image:: ../../_static/img/flow/documents/create-docx-from-template-example.png
    :alt: Create document from DOCX template Example
 
+Create PPTX document from template
+----------------------------------
+
+Creates PPTX presentation from template. Review `PowerPoint PPTX templates <../../document-generation/pptx/index.html>`_ section for more information about template syntax.
+
+We have `an article <../how-tos/documents/create-pptx-from-template.html>`_ describing a case of creating a product sales presentation prom template.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  The content of the result .pptx file.
+       -  It is the content of the result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document content
+       -  The raw content of the source .pptx template file. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+
+       -  Review `PowerPoint DOCX templates <../../document-generation/pptx/index.html>`_ section for more information about template syntax.          
+
+          Example of simple slide template:
+
+          .. image:: ../../_static/img/flow/documents/simple-slide-template.png
+             :alt: Simple slide template         
+
+    *  -  Template data
+       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  .. code-block:: json
+
+            [
+                {        
+                    "CompanyName": "Contoso",
+                    "CompanyEmail": "support@contoso.com",                     
+                    "Products": [
+                        {
+                            "Name": "Documents",
+                            "Price": "starting from $29.99/month"
+                        },
+                        {
+                            "Name": "Actions",
+                            "Price": "starting from $29.99/month"
+                        }
+                    ]
+                }
+            ]
+    *  -  Locale
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don't specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -  
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/create-pptx-from-template-example.png
+   :alt: Create document from PPTX template example
+
 Create XLSX document from template
 ----------------------------------
 
-Created Word XLSX document from template. Review `Excel XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.
+Creates Word XLSX document from template. Review `Excel XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.
 
 Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`_ describing how to work with this action in case of managing documents.
 
@@ -226,7 +305,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
                 }
             ]
     *  -  Locale
-       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don't specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
        -
           
 
@@ -234,6 +313,8 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
 
 .. image:: ../../_static/img/flow/documents/create-xlsx-from-template-example.png
    :alt: Create document from XLSX template Example
+
+
 
 Create HTML from template
 -------------------------
@@ -330,7 +411,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
                 ]
             }  
     *  -  Locale
-       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don`t specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
+       -  An optional parameter that allow to specify the desired regional culture format. You can pick the value from predefined list. If you don't specify value, default value will be "en-US" (english, USA). All allowable regional culture formats you can find `here <../../document-generation/common-docx-xlsx/allowableCultures.html>`_ 
        -
 
 .. rubric:: Example

@@ -42,6 +42,7 @@ Plumsail Documents Documentation
     :titlesonly:
     
     document-generation/docx/index
+    document-generation/pptx/index
     document-generation/xlsx/index
     Fillable PDF <document-generation/fillable-pdf/index>
     document-generation/html/index
