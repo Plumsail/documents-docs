@@ -100,11 +100,11 @@ To understand what JSON to feed, you need to look at tokens in your template. In
         {
           "Product": "Pen",
           "Quantity": 10
-          },
+        },
         {
           "Product": "Pencil",
           "Quantity": 10
-          }
+        }
       ],
       "instructions": "Delivery before Thursday",
       "phone": "(206)-564-96-97",
