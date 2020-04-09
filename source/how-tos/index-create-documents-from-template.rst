@@ -12,3 +12,4 @@ Create documents from a template
       Create text document from template <../../flow/how-tos/documents/create-text-from-template.rst>            
       Create PDF from DOCX template <../../flow/how-tos/documents/create-pdf-from-docx.rst>
       Create PDF from HTML template <../../flow/how-tos/documents/create-pdf-from-html-template.rst>
+      Batch generate event tickets from HTML template based on CSV rows <../../user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.rst>

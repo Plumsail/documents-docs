@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0078)file:///C:/Users/aanji/Desktop/Work/HTML%20to%20API%20-%20event%20tickets.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>HTML event tickets</title>
-  <link href="file:///C:/Users/aanji/Desktop/Work/HTML%20to%20API%20-%20event%20tickets_files/css" rel="stylesheet" type="text/css">
-  <!-- <link rel="stylesheet" href="styles/main.css" media="screen" charset="utf-8"/> -->
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+<title>HTML event tickets</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <style>
   body {
     margin: 0;
     color: #ffffff;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Calibri", sans-serif;
     font-weight: 400;
     font-size: 25px;
   }
@@ -24,8 +20,7 @@
     position: relative;
     height: 280px;
     width: 100%;
-    background-image: url(https://images.template.net/wp-content/uploads/2016/04/25131558/Dark-Background.jpg);
-    background-repeat: repeat;
+    background: #085a53;
     overflow: hidden;
   }
   section .left {
@@ -51,7 +46,7 @@
   section .title {
     margin-bottom: 35px;
     color: #F5A623;
-    font-family: "Audiowide", cursive;
+    font-family: "Calibri", cursive;
     font-size: 1em;
     line-height: 72px;
   }
@@ -75,31 +70,24 @@
     padding: 10px 0;
     color: #333333;
     background: rgba(255, 255, 255, 0.5);
-    font-family: "Kreon", serif;
+    font-family: "Calibri", serif;
     font-size: 1.777em;
     text-align: center;
     vertical-align: middle;
   }
 </style></head>
-
-
-
-<body data-gr-c-s-loaded="true">
-  <div class="container">
-    <section>
-      <div class="left">
-        <div class="event">High tech conference</div>
-        <div class="title">{{name}}</div>
-        <div class="info">a personal invitation</div>
-      </div>
-      <div class="right">
-        <div class="seats">date<span>5.03.2020</span></div>
-        <div class="seats">time<span>6 p.m.</span></div>
-        <div class="seats">place<span>Main Hall</span></div>
-      </div>
-    </section>
-  </div>
-
-
-
+<body>
+<div class="container">
+<section>
+<div class="left">
+<div class="event">{{NameOfEvent}}</div>
+<div class="info">a personal invitation</div>
+</div>
+<div class="right">
+<div class="seats">date<span>{{date}}</span></div>
+<div class="seats">time<span>{{time}}</span></div>
+<div class="seats">place<span>{{place}}</span></div>
+</div>
+</section>
+</div>
 </body></html>
