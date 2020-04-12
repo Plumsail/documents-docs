@@ -6,14 +6,14 @@
 
 .pl-left-column{
     display: inline-block;
-    max-width: 390px;
+    max-width: 344px;
     vertical-align: top;
     margin-right: 70px;
 }
 
 .pl-right-column{
     display: inline-block;
-    max-width: 380px;
+    max-width: 426px;
     vertical-align: top;
 }
 
@@ -178,4 +178,17 @@ code.literal {
     font-weight: normal;
 }
 
+.doc-content2 .pl-left-column ul li:before, .doc-content2 .pl-right-column ul li:before{
+  display: none;
+} 
 
+.pl-left-column .toctree-wrapper > ul, 
+.pl-right-column .toctree-wrapper > ul, 
+.pl-left-column .single-page-nav > ul > li > ul,
+.pl-right-column .single-page-nav > ul > li > ul {
+  padding-left: 0;
+}
+
+.doc-content2 .caption-text, .single-page-nav > ul > li.toctree-l1 > a{
+  color: #636B75;
+}

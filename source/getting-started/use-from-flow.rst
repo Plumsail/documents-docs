@@ -22,5 +22,9 @@ Once you clicked *'Create'* you can use Plumsail Documents in your Microsoft Flo
   :name: toc-microsoft-flow-examples
   :maxdepth: 2 
         
-  ../flow/how-tos/sharepoint/index
-  ../flow/how-tos/documents/index
+  ../flow/how-tos/documents/index-create-documents-from-template
+  ../flow/how-tos/documents/index-form-integrations
+  ../flow/how-tos/documents/index-E-signature
+  ../flow/how-tos/documents/index-convert-documents
+  ../flow/how-tos/documents/index-process-pdf
+  ../flow/how-tos/documents/index-other 

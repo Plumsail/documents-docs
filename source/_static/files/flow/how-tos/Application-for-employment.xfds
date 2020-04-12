@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="" Css="" SubmitToFlow="true" FormId="a6ef5cf7-30ca-414f-9227-4f6eceb63055" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="12" Offset="0">
+            <TextBlock Text="Application for employment" TextType="Header1" InternalName="Text1" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <TextBlock Text="My personal information" TextType="Header3" InternalName="Text2" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="First Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="FirstName" Required="True" PatternType="Custom" />
+          </Cell>
+          <Cell Width="6" Offset="0">
+            <Field Title="Last Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="LastName" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Address" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="Address" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="City" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="City" Required="True" PatternType="Custom" />
+          </Cell>
+          <Cell Width="6" Offset="0">
+            <Field Title="Postal Code" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="PostalCode" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Phone Number" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="PhoneNumber" Required="True" PatternType="Custom" />
+          </Cell>
+          <Cell Width="6" Offset="0">
+            <Field Title="Email" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="Email" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <TextBlock Text="What civil or athletic activities are you involved in?" TextType="Header3" InternalName="Text3" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="MultilineTextBox1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultilineTextBox" InternalName="Activities" Required="True" Mode="Rich" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <TextBlock Text="My employment history" TextType="Header3" InternalName="Text4" />
+          </Cell>
+          <Cell Width="6" Offset="0">
+            <Field Title="Are you currently working?" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="250" Type="Radios" InternalName="CurrentlyWorking" Required="True" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="3" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <TextBlock Text="Where have you worked?" TextType="Header3" InternalName="Text5" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Company" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryCompany" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Address" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryAddress" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Supervisor" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistorySupervisor" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Phone Number" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryPhoneNumber" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Position" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryPosition" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Duties" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryDuties" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Field Title="Reason for Leaving" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="HistoryLeaving" Required="True" PatternType="Custom" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="3" Offset="0">
+            <TextBlock Text="Can we contact them?" TextType="Text" InternalName="Text6" />
+          </Cell>
+          <Cell Width="6" Offset="0">
+            <Field Title="SingleChoice1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Radios" InternalName="HistoryContact" Required="True" Items="[&quot;Yes&quot;,&quot;No&quot;]" ColumnsNumber="3" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Field Title="Date" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Date" InternalName="Date" Required="True" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button1" Type="primary" />
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>

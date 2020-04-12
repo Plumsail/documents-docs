@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Plumsail Invoice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style>
+      /* Base CSS styles DO NOT CHANGE OR REMOVE */
+      body {
+        margin: 0;
+        padding: 0;
+        font:62.5%/1.5 Helvetica, Arial, Verdana, sans-serif;  
+      }
+
+      ul, ul li, p, div, ol {
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+
+      #invoice {
+         margin: 0 12pt;
+         width:660px;
+        padding: 10px 20px;
+         margin: 1em auto;
+        clear:both;
+        position:relative;
+        overflow:hidden;
+         background:#fff 
+      }
+
+
+      #invoice.cancelled {
+        background: #fff url(/images/cancelled.gif) top left
+      }
+
+      /*Invoice Simple TemplateCreated by Ed Molyneux*/
+      /*=========================== TYPOGRAPHY =========================*/
+      #invoice{
+        font-family: Helvetica, Arial, Verdana, sans-serif !important 
+      }
+
+      #invoice h2 {
+        margin: 10px 0;
+        font-size: 14pt;
+      }
+
+      #invoice-amount td, th {
+        font-size: 9pt;
+      }
+
+      #invoice-header #company-address {
+        text-align: right;
+        font-size: 11pt;
+        line-height: 14pt;
+      }
+
+      #invoice #client-details, #invoice-info  p, #invoice #invoice-other, #invoice #payment-details {
+        font-size: 9pt;
+         line-height: 12pt;
+      }
+
+      #invoice-info h2, #invoice-info h3 {
+        margin: 0;
+         font-weight: normal;
+      }
+
+      #invoice-info h2{
+        text-transform:uppercase
+      }
+
+      #invoice-info h3 {
+        font-size:12pt;
+      }
+
+      #comments {
+        font-weight:bold;
+        margin-top:15px;
+        font-size:10pt
+      }
+
+      /*=========================== LAYOUT =========================*/
+      #invoice{
+        padding:0 1cm 1cm 1cm;
+       }
+
+      #invoice-header .logo {
+        float:left;
+      }
+
+      #invoice-header{
+        margin-top:0.3cm;
+        border-bottom:4px solid #000;
+        padding-bottom:10px;
+        overflow:hidden
+      }
+
+      #invoice-info{
+        margin: 0.7cm 0 20px 0;
+        width:250px;
+        float:right;
+        text-align:right
+      }
+
+      #client-details {
+        margin:0.7cm 0 20px 2.5cm;
+        float:left;
+        width:250px
+      }
+
+       /* Positioned to appear in a standard envelope window when printed */
+       #invoice-other {
+        text-align: right;
+         float: right;
+        width:250px;
+       }
+
+      #invoice #payment-details{
+        float:left;
+        width:250px;
+      }
+
+      #invoice-amount {
+        margin: 1em 0;
+        clear: both;
+       }
+
+      #comments{
+        clear:both;
+        padding-top:0.5cm
+      }
+
+      /*=========================== TABLES =========================*/
+      #invoice table#invoice-amount {
+         border-collapse:collapse;
+         width:100%;
+        clear:both;
+      }
+
+      #invoice-amount th {
+        text-align: left;
+        white-space: nowrap;
+        padding: 1px 2px 0 5px;
+         font-weight: bold;
+        background: #FFF;
+        border-bottom: solid 1px #444;
+       }
+
+      #invoice-amount td.item_r{
+        text-align: right;
+      }
+
+      #invoice-amount td.total{
+        text-align: right;
+        font-weight: bold
+      }
+
+      #invoice-amount .index_th{
+        width:5%
+      }
+
+      #invoice-amount .details_th{
+        width:54%
+      }
+
+      #invoice-amount .details_notax_th{
+        width:62%
+      }
+
+      #invoice-amount .quantity_th{
+        width:13%
+      }
+
+      #invoice-amount .subtotal_th{
+        width:15%;
+         text-align:right
+      }
+
+      #invoice-amount .unitprice_th{
+        width:10%;
+         text-align:right
+      }
+    </style>
+  </head>
+  <body>
+    <div id="invoice">
+      
+      <div id="invoice-header">
+        <img src="data:image/png;base64,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" alt="Mainlogo_large" class="logo screen" />
+                
+        <div class="vcard" id="company-address">
+          <div class="fn org"><strong>Sample LLC</strong></div>
+          <div class="adr">
+            <div class="street-address">25-56 Emery str
+            </div>
+            <!-- street-address -->
+            <div class="locality">New York</div>
+            <div id="company-postcode"><span class="region">USA</span> <span class="postal-code">190020</span></div>
+          </div>          
+          <div class="email">sales@sample.com</div>
+        </div>        
+      </div>
+      
+      <!-- #invoice-header -->
+      <div id="invoice-info">
+        <h2>Invoice <strong>INV {{InvoiceNum}}</strong></h2>
+        <h3>{{InvoiceDate}}</h3>
+        <p id="payment-terms">Payment Terms: 30 days</p>        
+      </div>
+     
+      <!-- #invoice-info -->
+      <div class="vcard" id="client-details">
+        <div class="fn">{{ClientName}}</div>
+        <div class="org">{{ClientCompany}}</div>
+        <div class="adr">
+          <div class="street-address">{{ClientAddress}}</div>
+          <!-- street-address -->
+          <div class="locality">{{ClientCity}}</div>
+          <div id="client-postcode"><span class="region">{{ClientRegion}}</span> <span class="postal-code">{{ClientZip}}</span></div>
+        </div>     
+      </div>
+      
+      <!-- #client-details vcard -->
+      <table id="invoice-amount">
+        <thead>
+          <tr id="header_row">
+            <th class="index_th">#</th>
+            <th class="left details_th">Title</th>
+            <th class="quantity_th">Quantity</th>
+            <th class="unitprice_th">Unit Price ($)</th>
+            <th class="subtotal_th">Subtotal ($)</th>
+          </tr>
+        </thead>
+        <tfoot>
+        <tr id="total_tr">
+          <td colspan="2">&nbsp;</td>
+          <td colspan="2" class="total" id="total_currency"><span class="currency">$ </span> Total</td>
+          <td class="total">${{Total}}</td>
+        </tr>
+        </tfoot>
+        <tbody>
+          {{#each Items}}
+          {{#with FieldValues}}
+          <tr class="item">
+            <td class="item_l">{{#index}}</td>
+            <td class="item_l">{{Title}} </td>
+            <td class="item_r">{{Quantity}}</td>
+            <td class="item_r">{{UnitPrice}}</td>
+            <td class="item_r">{{SubTotal}}</td>
+          </tr>
+          {{/with}}
+          {{/each}}
+        </tbody>
+      </table>
+      
+      <!-- invoice-amount -->
+      <div id="invoice-other">
+        <h2>Other Information</h2>
+        <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFAAhwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAQIGB//EADYQAAICAgADBQQIBgMAAAAAAAECAAMEEQUSIRMxQVFhInGBkRQVIzJSobGyBkJTYpLBcoKi/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP3GIiAiIgJxiFGyQB5mdmHfa/FeL1YlevoON9ref6rg6VfcGBPvTXvDciIgIiICIiAiIgIiICIiAiIgJ4uuqoray6xK61GyztoD4ylZm25DtTw5UcqeV7361ofLp94+g+JHdIMnGqxFS60Nm5rty09se9z+EdygAEkgdwPfAizOM15G8fA7ewAbvuprOq09GOhs66EHp3+W7P8AD4qs4euVSAq5HtqoGuRR0VdeGlABHnuVuIBcDhvYuTbZkMWvOutvTbdPXQQDw5gJp8OobGwqabCDYF3YR3Fz1Y/MmBZlLi+enDcCzIdS7DpXWO92Pcol2fKZeU3EeKG6nlcUWnHwlbqr3ge3YR+FOvy+Ya/8P41mNhuMm/tsuyw2ZB5t8rkD2fQAco1NSVeH4tWFQMetuZh7bsx9p2J6sfUnctQEREBERAREQEREBM1mfiblKmKYSkq9i9DcfEKfBfM+Ph5yXiC23tVipzrXbs22L4KNeyD4E717ty3Wi1oqVqFRRpVUaAEDlVaVVrXUqoijSqo0APICV1xnPEHyrmBCoEpQfyjvYn1J18FHmZbkWVcMfGtuYbFaFteeh3QMXOGRlcVS2nHN1dLFF2QF5xo7Y+WyD08axJMO7iOCl6ZWJl5jdq79srV6Kk7AVS2wNa6fr3nTwKTj4ldbkF9bc+bHqx+ZMsQMPi3GN4LDhTG65wu7Kl5+xViBzEDvPXYXx15AzOxeCIBmZgwU+k1VLRQmutegD37HMdEbO+pBG9T6pK0rBFahQTs8o1sz3AweFrj8NqavhvCsyx3622NWK2sbzYuRv4dB4S9z8Vt6LRi44/E9jWEf9QB+6aEQM/6Dl2aN/E7/AFWlEQH5gn84+p8c/fuzn9+baPyDamhEDP8AqbD3tfpK/wDDLtX9Gj6nxh1S7NQ+mbb/ALaaEQM76vyUO6eKZQ8ltWt1/bzfnOizidA+1poyl8TQezb/ABYkf+poRAhxsivJrL1k9DplYEFT5EHunZJqdgIiICUs/wC1uxcX+pZzsP7U6/u5B8ZdlHHPbcTyrf5aQtK+h1zt8+ZP8YF6IiAiIgIiICIiAiIgIiICIiAiIgcJAGz0Ep8HBOBXafvXlrjv+8lgPgCB8JJxGq2/h+TTjsEusqZEY9wYggGT1oERUUaCgACB6iIgIiICIiAiIgIiICIiAiIgf//Z"/>
+      </div>
+      
+      <!-- invoice-other -->
+      <div id="payment-details">
+        <h2>Payment Details</h2>
+        <div id="bank_name">Bank Name</div>
+        <div id="sort-code"><strong>Bank/Sort Code:</strong> 32-75-97</div>
+        <div id="account-number"><strong>Account Number:</strong> 28270761</div>
+        <div id="iban"><strong>IBAN:</strong> 973547</div>
+        <div id="bic"><strong>BIC:</strong> 220197</div>
+        <div id="payment-reference"><strong>Payment Reference:</strong> INV {{InvoiceNum}}</div>
+      </div>
+      
+      <!-- payment-details -->
+      <div id="comments">Payment should be made by bank transfer or cheque made payable to John Smith.</div>
+      <!-- comments -->
+
+    </div>
+  </body>
+</html>

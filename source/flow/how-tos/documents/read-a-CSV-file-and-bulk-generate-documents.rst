@@ -8,7 +8,7 @@ Let's say a company has a CSV file with customers. They want to bulk generate in
 to a conference for all the customers and then print them and send using postal service.
 
 In this example, we will read a CSV file and use the available headers to fill up the invitations.
-The invitation will be a result file of **Create DOC document from template** action. 
+The invitation will be a result file of **Create DOCX document from template** action. 
 To fill up the DOCX template we're going to use Parse CSV output items.
 
 Our source CSV file has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
@@ -25,7 +25,7 @@ Here are just a few of them:
 - File System
 
 You can store your files anywhere. In this example, we will store our source PDF file in OneDrive folder, but you can get data from any other sources. 
-These are links to download the demo files
+These are links to download the demo files:
 
 - `CSV file <https://plumsail.com/docs/documents/v1.x/_static/files/document-generation/demos/example.csv>`_.
 - `DOCX template <https://plumsail.com/docs/documents/v1.x/_static/files/document-generation/demos/invitation-template.docx>`_.
@@ -88,4 +88,4 @@ Conclusion
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-docx-from-template.html.html>`_ explaining how to create docx document from template in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-docx-from-template.html>`_ explaining how to create docx document from template in Microsoft Flow and Azure Logic Apps.

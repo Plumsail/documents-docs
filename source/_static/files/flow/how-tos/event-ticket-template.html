@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HTML event tickets</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<style>
+  body {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Calibri", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  section {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    background: #085a53;
+    overflow: hidden;
+  }
+  section .left {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 635px;
+    padding: 35px 0 0 60px;
+  }
+  section .right {
+    float: right;
+    width: 160px;
+    padding-top: 30px;
+  }
+  section .event {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 33px;
+    text-transform: uppercase;
+  }
+  section .title {
+    margin-bottom: 35px;
+    color: #F5A623;
+    font-family: "Calibri", cursive;
+    font-size: 1em;
+    line-height: 72px;
+  }
+  section .info {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  section .seats {
+    margin-bottom: 35px;
+    font-size: 0.36em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  section .seats:last-child {
+    margin-bottom: 0;
+  }
+  section .seats span {
+    display: inline-block;
+    width: 100px;
+    margin-left: 30px;
+    padding: 10px 0;
+    color: #333333;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: "Calibri", serif;
+    font-size: 1.777em;
+    text-align: center;
+    vertical-align: middle;
+  }
+</style></head>
+<body>
+<div class="container">
+<section>
+<div class="left">
+<div class="event">{{NameOfEvent}}</div>
+<div class="info">a personal invitation</div>
+</div>
+<div class="right">
+<div class="seats">date<span>{{date}}</span></div>
+<div class="seats">time<span>{{time}}</span></div>
+<div class="seats">place<span>{{place}}</span></div>
+</div>
+</section>
+</div>
+</body></html>

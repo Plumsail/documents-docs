@@ -3,30 +3,30 @@ Word DOCX templates
 
 .. container:: pl-left-column
 
-      .. toctree::  
-            :caption: Templating syntax     
-            :name: toc-templating-syntax
-            :maxdepth: 1
-                  
-            How it works <how-it-works>
-            Lists <lists>
-            Tables <tables>
-            Links and endnotes <external-links>
-            Loops and nesting <loops-and-nesting>
-            Charts <charts>
-            Conditionally hide blocks <conditionally-hide-blocks>            
-            Value formatters <../common-docx-xlsx/formatters>
-            Value properties <../common-docx-xlsx/value-properties>
+  .. toctree::  
+        :caption: Templating syntax     
+        :name: toc-templating-syntax
+        :maxdepth: 1
+              
+        How it works <how-it-works>
+        Lists <lists>
+        Tables <tables>
+        Links and endnotes <external-links>
+        Loops and nesting <loops-and-nesting>
+        Charts <charts>
+        Conditionally hide blocks <conditionally-hide-blocks>            
+        Value formatters <../common-docx-xlsx/formatters>
+        Value properties <../common-docx-xlsx/value-properties>
 
 .. container:: pl-right-column
 
-      .. rst-class:: single-page-nav
-      
-        .. toctree::      
-              :caption: Demos        
-              :name: toc-demos
-              :maxdepth: 2            
+  .. rst-class:: single-page-nav
+  
+    .. toctree::      
+          :caption: Demos        
+          :name: toc-demos
+          :maxdepth: 2            
 
-              Demos <demos>
+          Demos <demos>
                   
             
