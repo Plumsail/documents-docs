@@ -36,8 +36,8 @@ Example of POST request that will be sent to your URL:
   user-identifier: 546
 
   {
-    "fileUrl": "https://somedomain.com/some-file-url",
-    "data": "{\n  \"property"}"
+    "fileUrl": "https://actions2.blob.core.windows.net/data-storage/2020-04-vaomosm3.am3?sv=2018-03-28&sr=b&sig=Lu34U6re43Zr2G2TH%2FGTBkYDyaItPKx%2BjDXX18%2FGX9I%3D&se=2020-04-13T15%3A00%3A53Z&sp=r&rscd=inline",
+    "data": "{\n    \"userName\": \"Bob Barley\",\n    \"age\": 42\n}"
   }
 
 That are two custom headers that we added in the delivery settings (:code:`desired-http-header-1` and :code:`user-identifier`).
