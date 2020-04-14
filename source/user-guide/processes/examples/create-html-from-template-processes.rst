@@ -1,7 +1,7 @@
-Create HTML document from template in Power Automate (Microsoft Flow) and Azure Logic Apps
+Create HTML document from template in Microsoft Flow and Azure Logic Apps
 =========================================================================
 
-This article demonstrates how to generate HTML documents from a template with the help of `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature, and `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
+This article demonstrates how to generate HTML documents from a template with the help of `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature, and `Microsoft Flow <https://flow.microsoft.com>`_.
 
 The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
 
@@ -110,7 +110,7 @@ You can configure as many deliveries as you need.
 Start the Process
 ~~~~~~~~~~~~~~~~~
 
-The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
+The last thing to do is to start the Process. We will start it using `Microsoft Flow <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
     :alt: create html from template

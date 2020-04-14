@@ -1,4 +1,4 @@
-How to create Word and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
+How to create Word and PDF documents from Typeform in Microsoft Flow and Azure Logic Apps
 ==========================================================================================================
 
 This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
@@ -7,7 +7,7 @@ This article demonstrates how to create PDF documents from a DOCX template on `T
 
 **Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
+Let’s see how to connect them in Microsoft Flow to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
@@ -175,4 +175,4 @@ Sign up for Plumsail Documents
 
 As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ to get a free 30-day trial.
 
-.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
+.. hint:: You can generate PDFs from Web Forms even without Microsoft Flow. Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.

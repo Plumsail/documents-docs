@@ -1,7 +1,7 @@
-Create PDF from DOCX template in Power Automate (Microsoft Flow) and Azure Logic Apps
+Create PDF from DOCX template in Microsoft Flow and Azure Logic Apps
 ====================================================================
 
-This article demonstrates how to generate PDF document from a DOCX template with the help of `Plumsail Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_ and `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. We will use a DOCX document as a template. And with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ feature - **Processes** - we will receive the result file in PDF format. 
+This article demonstrates how to generate PDF document from a DOCX template with the help of `Plumsail Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_ and `Microsoft Flow <https://flow.microsoft.com>`_. We will use a DOCX document as a template. And with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ feature - **Processes** - we will receive the result file in PDF format. 
 
 The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
 
@@ -152,7 +152,7 @@ You can configure as many deliveries as you need.
 Start the Process
 ~~~~~~~~~~~~~~~~~
 
-The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_ as well.
+The last thing to do is to start the Process. We will start it using `Microsoft Flow <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_ as well.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
     :alt: create pdf from docx template

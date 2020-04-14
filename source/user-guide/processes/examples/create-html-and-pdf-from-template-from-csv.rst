@@ -4,7 +4,7 @@ How to batch generate PDF tickets from an HTML template based on CSV records in 
 
 This article describes how to batch generate tickets from an HTML template for conference visitors or any event attendees based on CSV rows data. Let’s imagine you have a CSV file with conference visitors' information. You need to generate personal invitations to the event for every attendee and send them by email. 
 
-We’ll show you how to automize this case using **Processes** and **Parse CSV** action by `Plumsail Documents <https://plumsail.com/documents/>`_ in Power Automate (Microsoft Flow). 
+We’ll show you how to automize this case using **Processes** and **Parse CSV** action by `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow. 
 
 `Processes <../../../user-guide/processes/index.html>`_ are an intuitive interface for creating documents from templates.
 
@@ -110,7 +110,7 @@ For you to try the same case as in the article, our sample CSV is available for 
 Parse CSV
 ~~~~~~~~~
 
-This is an action from `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_. It parses a CSV file into an array of objects with properties in Power Automate (Microsoft Flow).
+This is an action from `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_. It parses a CSV file into an array of objects with properties in Microsoft Flow.
 
 Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
 

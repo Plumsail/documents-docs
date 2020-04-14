@@ -1,7 +1,7 @@
-Create text document from a template in Power Automate (Microsoft Flow) and Azure Logic Apps
+Create text document from a template in Microsoft Flow and Azure Logic Apps
 =========================================================================
 
-This article demonstrates how to generate text documents from a template with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ feature, which is called `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_,  and `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
+This article demonstrates how to generate text documents from a template with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ feature, which is called `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_,  and `Microsoft Flow <https://flow.microsoft.com>`_.
 
 This approach is suitable for text files generation as well as for plain text generation. In this article, we will generate a simple text file with the list based on some data. This is how our ready file will look:
 
@@ -78,7 +78,7 @@ Select the folder where the ready document will be saved. And fill in its name. 
 
 You can configure as many deliveries as you need.
 
-7. The last thing to do is to start the Process. We will start it using Power Automate (Microsoft Flow). You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
+7. The last thing to do is to start the Process. We will start it using Microsoft Flow. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
 
 Creating the Flow
 -----------------
