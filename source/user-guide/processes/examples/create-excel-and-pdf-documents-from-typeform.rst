@@ -1,4 +1,4 @@
-How to create Excel and PDF documents from Typeform in Microsoft Flow and Azure Logic Apps
+How to create Excel and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
 ===========================================================================================================
 
 
@@ -8,7 +8,7 @@ This article demonstrates how to create PDF documents from an XLSX template on a
 
 **Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-Let’s see how to connect them in Microsoft Flow to automatically collect data from a Typeform, apply the data to our Excel template, and generate a new PDF document.
+Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our Excel template, and generate a new PDF document.
 
 .. contents::
     :local:
@@ -106,7 +106,7 @@ You can configure as many deliveries as you need.
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
-We will start our Process from Microsoft Flow. 
+We will start our Process from Power Automate (Microsoft Flow). 
 
 Create a Flow
 -------------
@@ -183,4 +183,4 @@ Sign up for Plumsail Documents
 
 As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Typeforms. A 30-day trial is free.
 
-.. hint:: You can generate PDFs from Web Forms even without Microsoft Flow. Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
+.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.

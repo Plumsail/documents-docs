@@ -1,7 +1,7 @@
-How to automatically populate fillable PDF based on data from third party system in Microsoft Flow, Azure Logic Apps or Power Apps
+How to automatically populate fillable PDF based on data from third party system in Power Automate (Microsoft Flow), Azure Logic Apps or Power Apps
 ==================================================================================================================================
 
-In this article, you will learn how to automatically populate fillable PDF forms in Microsoft Flow or Azure Logic Apps. We will use `Processes <../../../user-guide/processes/index.html>`_ - a Plumsail Documents feature for creating documents from templates. 
+In this article, you will learn how to automatically populate fillable PDF forms in Power Automate (Microsoft Flow) or Azure Logic Apps. We will use `Processes <../../../user-guide/processes/index.html>`_ - a Plumsail Documents feature for creating documents from templates. 
 
 In our case, we will fill in an Application for Employment form based on the data from a SharePoint list. Actually, you can get data from any other source. We use the SharePoint list here as an example.
 
@@ -103,7 +103,7 @@ You can configure as many deliveries as you need, or even skip the step. Check a
 Start the Process
 -----------------
 
-We will start our Process from Microsoft Flow. 
+We will start our Process from Power Automate (Microsoft Flow). 
 
 Create a Flow
 ~~~~~~~~~~~~~

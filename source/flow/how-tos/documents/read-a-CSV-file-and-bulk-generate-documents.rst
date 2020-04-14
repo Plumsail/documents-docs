@@ -1,7 +1,7 @@
-How to read a CSV file in Microsoft Flow and bulk generate documents
+How to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents
 =============================================================
 
-This article demonstrates how to read CSV files in Microsoft Flow using **Parse CSV** action from Plumsail Documents connector. 
+This article demonstrates how to read CSV files in Power Automate (Microsoft Flow) using **Parse CSV** action from Plumsail Documents connector. 
 We will use results from this action to bulk generate documents.
 
 Let's say a company has a CSV file with customers. They want to bulk generate invitations 
@@ -11,7 +11,7 @@ In this example, we will read a CSV file and use the available headers to fill u
 The invitation will be a result file of **Create DOCX document from template** action. 
 To fill up the DOCX template we're going to use Parse CSV output items.
 
-Our source CSV file has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
+Our source CSV file has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems.
 
 Here are just a few of them:
 
@@ -88,4 +88,4 @@ Conclusion
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-docx-from-template.html>`_ explaining how to create docx document from template in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-docx-from-template.html>`_ explaining how to create docx document from template in Power Automate (Microsoft Flow) and Azure Logic Apps.

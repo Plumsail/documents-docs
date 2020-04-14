@@ -58,7 +58,7 @@ Plumsail Documents Documentation
   .. rst-class:: single-page-nav
   
     .. toctree::
-      :caption: Microsoft Flow actions    
+      :caption: Power Automate (Microsoft Flow) actions    
       :name: toc-microsoft-flow-actions
       :maxdepth: 2      
       

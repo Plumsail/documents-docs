@@ -14,5 +14,5 @@ Once you created an API key, you can see your key right in the "Secret" column. 
 
 Copy your secret key and use it in:
 
-- `Microsoft Flow <use-from-flow.html>`_
+- `Power Automate (Microsoft Flow) <use-from-flow.html>`_
 - `REST API calls <use-as-rest-api.html>`_

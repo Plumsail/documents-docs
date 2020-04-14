@@ -1,14 +1,14 @@
-Create PDF from HTML template in Microsoft Flow and Azure Logic Apps
+Create PDF from HTML template in Power Automate (Microsoft Flow) and Azure Logic Apps
 ====================================================================
 
-This article demonstrates how to generate PDF document from an HTML template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
+This article demonstrates how to generate PDF document from an HTML template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
 We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/html-and-pdf-result.png
    :alt: Result PDF file
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce

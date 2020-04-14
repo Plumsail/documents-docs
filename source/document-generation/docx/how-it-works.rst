@@ -5,7 +5,7 @@ Word DOCX templates in Plumsail Documents use a different approach than most oth
 
 First of all, pick how you will apply templates:
 
-- `Create a process <../../user-guide/processes/index.html>`_ and start it using Microsoft Flow, Web form or REST API
+- `Create a process <../../user-guide/processes/index.html>`_ and start it using Power Automate (Microsoft Flow), Web form or REST API
 - Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
 
 Basic syntax

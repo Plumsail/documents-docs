@@ -1,10 +1,10 @@
 Create custom connector
 =======================
 
-Open Microsoft Flow account then navigate to *'Custom Connectors'*:
+Open Power Automate (Microsoft Flow) account then navigate to *'Custom Connectors'*:
 
 .. image:: ../_static/img/getting-started/1-flow-custom-connectors.png
-   :alt: Microsoft Flow custom connectors menu
+   :alt: Power Automate (Microsoft Flow) custom connectors menu
 
 Click *'Create custom connector → Import an OpenAPI from URL'*:
 
@@ -35,7 +35,7 @@ And this color:
 Then click *'Continue'*. You should see authentication type screen:
 
 .. image:: ../_static/img/getting-started/2-flow-accesskey-label.png
-   :alt: Microsoft Flow access key
+   :alt: Power Automate (Microsoft Flow) access key
 
 Fill in *'Label'* with the value *'Access Key'* and click *'Create connector'*:
 

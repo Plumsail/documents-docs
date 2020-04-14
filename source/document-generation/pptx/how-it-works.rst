@@ -8,7 +8,7 @@ Let us start with basics and move to more advanced scenarios.
 
 First of all, pick how you will apply templates:
 
-- `Create a process <../../user-guide/processes/index.html>`_ and start it using Microsoft Flow, Web form or REST API
+- `Create a process <../../user-guide/processes/index.html>`_ and start it using Power Automate (Microsoft Flow), Web form or REST API
 - Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
 
 Basic syntax

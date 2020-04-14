@@ -1,4 +1,4 @@
-How to create DOCX document from a template in Microsoft Flow, Azure Logic Apps and PowerApps
+How to create DOCX document from a template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ==============================================================================================================
 Let’s suppose you want to automate the process of generating invoices in your company. This article will describe how to create a DOCX document from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature. 
 
@@ -140,7 +140,7 @@ You can configure as many deliveries as you need.
 Start the Process
 ~~~~~~~~~~~~~~~~~
 
-The last thing to do is to start the Process. We will start it using `Microsoft Flow <https://flow.microsoft.com/>`_. You can check out `other options <../../user-guide/processes/start-process.html>`_ as well.
+The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <../../user-guide/processes/start-process.html>`_ as well.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
     :alt: create docx from template

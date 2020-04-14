@@ -1,4 +1,4 @@
-How to collect data from fillable PDF and save it into your system in Microsoft Flow, Azure Logic Apps or Power Apps
+How to collect data from fillable PDF and save it into your system in Power Automate (Microsoft Flow), Azure Logic Apps or Power Apps
 ====================================================================================================================
 
 .. note:: 
@@ -9,7 +9,7 @@ How to collect data from fillable PDF and save it into your system in Microsoft 
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7jTq-kRClhM" frameborder="0" allowfullscreen></iframe>
 
-In this article, you will learn how to collect data from fillable PDF form in Microsoft Flow or Azure Logic Apps. We will use `Get Form from PDF`_ action from `Plumsail Documents connector`_.
+In this article, you will learn how to collect data from fillable PDF form in Power Automate (Microsoft Flow) or Azure Logic Apps. We will use `Get Form from PDF`_ action from `Plumsail Documents connector`_.
 
 In our case, we will collect data from Application for Employment form, we will get this PDF file via email using When a new email arrives trigger from Office 365 Outlook connector. However, you can get the file from any other source.
 
@@ -19,7 +19,7 @@ This is how our PDF file looks like:
 
 |pdf-file|
 
-In this example, we will store the information we get from the PDF file in the SharePoint list. You can save it as a new text document or transfer it to some other system. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+In this example, we will store the information we get from the PDF file in the SharePoint list. You can save it as a new text document or transfer it to some other system. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Box
@@ -29,7 +29,7 @@ In this example, we will store the information we get from the PDF file in the S
 - SFTP
 - File System
 
-Create Microsoft Flow
+Create Power Automate (Microsoft Flow)
 ~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
@@ -115,7 +115,7 @@ You probably noticed all these parameters in the action that we are using, they 
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use `Get Form from PDF`_ action from `Plumsail Documents connector`_ for Microsoft Flow. If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
+Now you should have an idea how to use `Get Form from PDF`_ action from `Plumsail Documents connector`_ for Power Automate (Microsoft Flow). If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 .. hint:: There is also `Fill in PDF Form`_ action available. You can use it to `automatically populate fillable PDF`_.
 

@@ -50,11 +50,11 @@ with some information about this new member.
 .. image:: ../../../_static/img/flow/how-tos/employees-list.png
    :alt: Employees List
 
-I created this Microsoft flow 
+I created this Power Automate (Microsoft Flow) 
 
 
 .. image:: ../../../_static/img/flow/how-tos/picture-test-flow.png
-   :alt: Microsoft Flow
+   :alt: Power Automate (Microsoft Flow)
 
 
 The flow is started automatically when a new item is added to the employees list.

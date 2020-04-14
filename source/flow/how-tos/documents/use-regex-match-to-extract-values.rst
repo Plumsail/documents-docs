@@ -1,6 +1,6 @@
-How to use regular expression match to extract values from text in Microsoft Flow and Azure Logic Apps
+How to use regular expression match to extract values from text in Power Automate (Microsoft Flow) and Azure Logic Apps
 ######################################################################################################
-In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Documents connector <https://plumsail.com/documents/>`_ for `Microsoft Flow`_ and `Azure Logic Apps`_.
+In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Documents connector <https://plumsail.com/documents/>`_ for `Power Automate (Microsoft Flow)`_ and `Azure Logic Apps`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
 
@@ -44,7 +44,7 @@ So your flow might look like this:
 
 |regex-match-flow|
 
-For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
+For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Power Automate (Microsoft Flow).
 
 Receive email
 ~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ You may notice that Regular expression match in this regular expression has a fe
 
 There is "Match0" is a full match for the whole regular expression. There are also separate output values for each named regular expression group: Price, Quantity, Title.
 
-You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Microsoft Flow for each named regular expression group that is used in it. 
+You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Power Automate (Microsoft Flow) for each named regular expression group that is used in it. 
 It dramatically simplifies extraction of values from text strings. You just write a regular expression with named groups and then use them across your flow.
 
 You can easily put match regex into a named group like this:  ``(?<Title>.+|)``. The name of this group will be "Title", everything that matches regular expression ``.+|`` will be returned as a separate output of the action.
@@ -113,16 +113,16 @@ Then we are using these keys values to create an item in our SharePoint 'Orders'
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Documents connector for Microsoft Flow`_. 
+Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Documents connector for Power Automate (Microsoft Flow)`_. 
 If you haven’t used it yet, registering an account would be the first step, you can learn about it `here`_. It is quite easy to get started.
 
 .. _Regular Expression Match: ../../../flow/actions/document-processing.html#regular-expression-match
 .. _Actions: ../../../index.html
-.. _Microsoft Flow: https://flow.microsoft.com
+.. _Power Automate (Microsoft Flow): https://flow.microsoft.com
 .. _Azure Logic Apps: https://azure.microsoft.com/en-us/services/logic-apps/
-.. _Plumsail Documents connector to Microsoft Flow: ../../../flow/create-custom-connector.html
+.. _Plumsail Documents connector to Power Automate (Microsoft Flow): ../../../flow/create-custom-connector.html
 .. _named groups: https://www.regular-expressions.info/named.html
-.. _Plumsail Documents connector for Microsoft Flow: https://plumsail.com/documents/
+.. _Plumsail Documents connector for Power Automate (Microsoft Flow): https://plumsail.com/documents/
 .. _here: ../../../getting-started/sign-up.html
 .. _on this page: https://www.regular-expressions.info/named.html
 

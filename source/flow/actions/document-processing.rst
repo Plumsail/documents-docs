@@ -1,7 +1,7 @@
-Microsoft Flow actions
+Power Automate (Microsoft Flow) actions
 ======================
 
-This connector helps you to automatically generate and convert documents with the help of Microsoft Flow. Before starting, ensure that you `added Plumsail Documents connector to Microsoft Flow <../../getting-started/use-from-flow.html>`_.
+This connector helps you to automatically generate and convert documents with the help of Power Automate (Microsoft Flow). Before starting, ensure that you `added Plumsail Documents connector to Power Automate (Microsoft Flow) <../../getting-started/use-from-flow.html>`_.
 
 .. contents:: List of actions in this connector
    :local:
@@ -42,7 +42,7 @@ We have `an article <../../user-guide/processes/start-process-ms-flow.html>`_ de
        -  Select the name of your process from the list of available processes.
        -  Create invoice
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -
 
         JSON data for generating an invoice:  
@@ -115,7 +115,7 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  Review `Word DOCX templates <../../document-generation/docx/index.html>`_ section for more information about template syntax.          
 
@@ -125,7 +125,7 @@ We have `an article <../how-tos/documents/create-docx-from-template.html>`_ desc
              :alt: Simple table template         
 
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             [
@@ -195,7 +195,7 @@ We have `an article <../how-tos/documents/create-pptx-from-template.html>`_ desc
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  Review `PowerPoint DOCX templates <../../document-generation/pptx/index.html>`_ section for more information about template syntax.          
 
@@ -205,7 +205,7 @@ We have `an article <../how-tos/documents/create-pptx-from-template.html>`_ desc
              :alt: Simple slide template         
 
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             [
@@ -274,7 +274,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  Review `Word XLSX templates <../../document-generation/xlsx/index.html>`_ section for more information about template syntax.          
 
@@ -284,7 +284,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
              :alt: Simple table template         
 
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             [
@@ -319,7 +319,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
 Create HTML from template
 -------------------------
 
-Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/create-html-from-template.html>`_.
+Generates raw HTML from a raw HTML template with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <../how-tos/documents/create-html-from-template.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -370,7 +370,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
           - SFTP
           - File System          
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
        -  You can find description of template syntax in `this article <../../document-generation/html/index.html>`_. 
        
@@ -394,7 +394,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 
 
     *  -  Template data
-       -  Data to bind to the template in JSON format. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data to bind to the template in JSON format. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             {
@@ -423,7 +423,7 @@ Generates raw HTML from a raw HTML template with the help of Microsoft Flow. You
 Fill Merge Fields in DOCX document
 ----------------------------------
 
-Creates .docx document by filling merge fields in a .docx document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/fill-docx-merge-fields.html>`_.
+Creates .docx document by filling merge fields in a .docx document with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <../how-tos/documents/fill-docx-merge-fields.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -459,14 +459,14 @@ Creates .docx document by filling merge fields in a .docx document with the help
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  You can find insturctions about creation of a document with merge fields in `this article <../../document-generation/docx/create-docx-with-merge-fields.html>`_. 
        
           Use `this link <../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download the sample document.
 
     *  -  Template data
-       -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Microsoft Flow connector. For example you can query SharePoint list or some other system.
+       -  Data in JSON format that will be used to fill merge fields in the source document. You can get this data from some other Power Automate (Microsoft Flow) connector. For example you can query SharePoint list or some other system.
        -  .. code-block:: json
 
             {
@@ -490,7 +490,7 @@ Creates .docx document by filling merge fields in a .docx document with the help
 Convert DOCX to PDF
 -------------------
 
-Converts .docx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-word-to-pdf.html>`_.
+Converts .docx document to PDF document with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <../how-tos/documents/convert-word-to-pdf.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -526,7 +526,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.          
 
@@ -538,7 +538,7 @@ Converts .docx document to PDF document with the help of Microsoft Flow. You can
 Convert XLSX to PDF
 -------------------
 
-Converts .xlsx document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
+Converts .xlsx document to PDF document with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <../how-tos/documents/convert-excel-to-pdf.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -574,7 +574,7 @@ Converts .xlsx document to PDF document with the help of Microsoft Flow. You can
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.          
 
@@ -586,7 +586,7 @@ Converts .xlsx document to PDF document with the help of Microsoft Flow. You can
 Convert DOC to DOCX
 -------------------
 
-Converts .doc document to .docx document with the help of Microsoft Flow.
+Converts .doc document to .docx document with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -622,7 +622,7 @@ Converts .doc document to .docx document with the help of Microsoft Flow.
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.          
 
@@ -634,7 +634,7 @@ Converts .doc document to .docx document with the help of Microsoft Flow.
 Convert XLS to XLSX
 -------------------
 
-Converts .xls document to .xlsx document with the help of Microsoft Flow. Find the description of how to bulk convert .xls to .xlsx in `this article <../../../flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.html>`_.
+Converts .xls document to .xlsx document with the help of Power Automate (Microsoft Flow). Find the description of how to bulk convert .xls to .xlsx in `this article <../../../flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -670,7 +670,7 @@ Converts .xls document to .xlsx document with the help of Microsoft Flow. Find t
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.        
 
@@ -682,7 +682,7 @@ Converts .xls document to .xlsx document with the help of Microsoft Flow. Find t
 Convert PPT to PPTX
 -------------------
 
-Converts .ppt document to .pptx document with the help of Microsoft Flow.
+Converts .ppt document to .pptx document with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -718,7 +718,7 @@ Converts .ppt document to .pptx document with the help of Microsoft Flow.
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.          
 
@@ -730,7 +730,7 @@ Converts .ppt document to .pptx document with the help of Microsoft Flow.
 Convert PPTX to PDF
 -------------------
 
-Converts .pptx document to PDF document with the help of Microsoft Flow.
+Converts .pptx document to PDF document with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -766,7 +766,7 @@ Converts .pptx document to PDF document with the help of Microsoft Flow.
           - SFTP
           - File System
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_
 
        -  It is content of the source file.          
 
@@ -778,7 +778,7 @@ Converts .pptx document to PDF document with the help of Microsoft Flow.
 Convert HTML to PDF
 -------------------
 
-Converts HTML document to PDF document with the help of Microsoft Flow. You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
+Converts HTML document to PDF document with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <../how-tos/documents/convert-html-to-pdf.html>`_.
 
 .. note:: There could be an issue converting certain symbols such as £. Add the following line in the HTML head element
 
@@ -818,7 +818,7 @@ Converts HTML document to PDF document with the help of Microsoft Flow. You can 
           - SFTP
           - File System          
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
        -  .. code-block:: html
 
@@ -1230,7 +1230,7 @@ Please, see a detailed example `here <../how-tos/documents/add-a-PDF-watermark-t
 Split PDF
 ---------
 
-Split PDF document with the help of Microsoft Flow. You can find more examples in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/split-pdf-files.html>`_.
+Split PDF document with the help of Power Automate (Microsoft Flow). You can find more examples in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/split-pdf-files.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -1285,7 +1285,7 @@ Split PDF document with the help of Microsoft Flow. You can find more examples i
 Merge PDF
 ---------
 
-Merge PDF document with the help of Microsoft Flow. Please, see a detailed example `here <../how-tos/documents/merge-pdf-files.html>`_.
+Merge PDF document with the help of Power Automate (Microsoft Flow). Please, see a detailed example `here <../how-tos/documents/merge-pdf-files.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -1322,7 +1322,7 @@ Merge PDF document with the help of Microsoft Flow. Please, see a detailed examp
 Merge DOCX
 ----------
 
-Merge DOCX document with the help of Microsoft Flow.
+Merge DOCX document with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -1359,7 +1359,7 @@ Merge DOCX document with the help of Microsoft Flow.
 Extract text from PDF document
 ------------------------------
 
-Extracts text from PDF document to Raw or HTML format with the help of Microsoft Flow.
+Extracts text from PDF document to Raw or HTML format with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -1458,7 +1458,7 @@ Extracts text from PDF document to Raw or HTML format with the help of Microsoft
 Convert PDF to Image
 --------------------
 
-Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft Flow.
+Converts PDF document to image (jpeg, png, gif, bmp) with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -1524,7 +1524,7 @@ Converts PDF document to image (jpeg, png, gif, bmp) with the help of Microsoft 
 Fill in PDF Form
 ----------------
 
-Fills in PDF form by provided data with the help of Microsoft Flow. Review `How to automatically populate fillable PDF based on data from third party system <../how-tos/documents/fill-pdf-form.html>`_ article for more information.
+Fills in PDF form by provided data with the help of Power Automate (Microsoft Flow). Review `How to automatically populate fillable PDF based on data from third party system <../how-tos/documents/fill-pdf-form.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
@@ -1572,7 +1572,7 @@ Fills in PDF form by provided data with the help of Microsoft Flow. Review `How 
 Get Form from PDF
 -----------------
 
-Returns data from fillable PDF as JSON with the help of Microsoft Flow. Review `How to collect data from fillable PDF <../how-tos/documents/collect-data-pdf-form.html>`_ article for more information.
+Returns data from fillable PDF as JSON with the help of Power Automate (Microsoft Flow). Review `How to collect data from fillable PDF <../how-tos/documents/collect-data-pdf-form.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
@@ -1620,7 +1620,7 @@ Returns data from fillable PDF as JSON with the help of Microsoft Flow. Review `
 Protect PDF document
 --------------------
 
-Protects PDF by adding passwords, copy-, printing-, and other protections to PDF file with the help of Microsoft Flow.
+Protects PDF by adding passwords, copy-, printing-, and other protections to PDF file with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
 
@@ -1686,8 +1686,8 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
 Parse CSV
 -------------------
 
-Parses a CSV file into an array of objects with properties in Microsoft Flow.
-Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
+Parses a CSV file into an array of objects with properties in Power Automate (Microsoft Flow).
+Review `How to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
@@ -1738,7 +1738,7 @@ Review `How to read a CSV file in Microsoft Flow and bulk generate documents <ht
           - SFTP
           - File System          
 
-          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+          `List of Power Automate (Microsoft Flow) connectors <https://flow.microsoft.com/en-us/connectors/>`_          
 
        -  It is content of the source file.
 
@@ -1761,7 +1761,7 @@ Review `How to read a CSV file in Microsoft Flow and bulk generate documents <ht
 Regular Expression Match
 ----------------------------
 
-Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
+Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Power Automate (Microsoft Flow). We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
 You can find more examples in `this article <../how-tos/documents/use-regex-match-to-extract-values.html>`_.
 

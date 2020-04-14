@@ -1,7 +1,7 @@
-Convert DOCX to PDF in Microsoft Flow and Azure Logic Apps
+Convert DOCX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
 ==========================================================
 
-This article demonstrates how to convert DOCX Word document to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
+This article demonstrates how to convert DOCX Word document to PDF with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will take a hiring contract as a sample Word document:
 
@@ -10,7 +10,7 @@ We will take a hiring contract as a sample Word document:
 
 Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract.docx>`_ to download it.
 
-Our document has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our document has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce

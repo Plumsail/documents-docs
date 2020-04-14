@@ -1,13 +1,13 @@
-How to convert DOC, XLS, PPT documents to DOCX, XLSX, PPTX respectively using Microsoft Flow
+How to convert DOC, XLS, PPT documents to DOCX, XLSX, PPTX respectively using Power Automate (Microsoft Flow)
 ============================================================================================
 
-In this article, you will find out how you can easily convert older formats of Microsoft Office documents into modern ones in bulk with the help of `Microsoft Flow`_ and `Plumsail Documents`_.  Since Microsoft developed new extensions, sooner or later everyone faces a necessity to convert DOC to DOCX, XLS to XLSX and PPT to PPTX. Benefits of new formats are obvious, useful features were added and files weight less so it’s easier to use them online. 
+In this article, you will find out how you can easily convert older formats of Microsoft Office documents into modern ones in bulk with the help of `Power Automate (Microsoft Flow)`_ and `Plumsail Documents`_.  Since Microsoft developed new extensions, sooner or later everyone faces a necessity to convert DOC to DOCX, XLS to XLSX and PPT to PPTX. Benefits of new formats are obvious, useful features were added and files weight less so it’s easier to use them online. 
 
 Imagine, you have a SharePoint library (or files storage in any other system) full of DOC, XLS, PPT files which you need to convert to modern extensions.
 
 |lib1_lib2|
 
-In this article we’ll show how you can do it massively using actions from `Plumsail Documents connector`_ for Microsoft Flow:
+In this article we’ll show how you can do it massively using actions from `Plumsail Documents connector`_ for Power Automate (Microsoft Flow):
 
 - `Convert DOC to DOCX`_
 - `Convert XLS to XLSX`_
@@ -18,7 +18,7 @@ Convert DOC to DOCX
 -------------------
 
 Let’s begin with the most common case – converting DOC to DOCX.
-First, open `Microsoft Flow`_.  In *'My flows'* create a new one and select *'Manually trigger a flow'* as a trigger.
+First, open `Power Automate (Microsoft Flow)`_.  In *'My flows'* create a new one and select *'Manually trigger a flow'* as a trigger.
 At the end, the flow will look like this. 
 
 |wholeflow|
@@ -86,7 +86,7 @@ Assign  `Convert PPT to PPTX`_ in Plumsail Documents step. Save the result files
 |saving_ppt|
 
 
-Now you know how to use `Plumsail Documents`_ to convert DOC to DOCX, XLS to XLSX, PPT to PPTX. If you haven’t tried it yet, feel free to press `Start trial`_ and see `the documentation`_ for details. You will find a lot of useful `Microsoft Flow examples`_ which will help you to automate your operational processes. It is quite easy to get started. 
+Now you know how to use `Plumsail Documents`_ to convert DOC to DOCX, XLS to XLSX, PPT to PPTX. If you haven’t tried it yet, feel free to press `Start trial`_ and see `the documentation`_ for details. You will find a lot of useful `Power Automate (Microsoft Flow) examples`_ which will help you to automate your operational processes. It is quite easy to get started. 
 
 
 
@@ -106,7 +106,7 @@ Now you know how to use `Plumsail Documents`_ to convert DOC to DOCX, XLS to XLS
 
 
 
-.. _Microsoft Flow: https://flow.microsoft.com/en-us/
+.. _Power Automate (Microsoft Flow): https://flow.microsoft.com/en-us/
 .. _Plumsail Documents: https://plumsail.com/documents/
 .. _Plumsail Documents connector: https://plumsail.com/documents/
 .. _Convert DOC to DOCX: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-doc-to-docx
@@ -119,7 +119,7 @@ Now you know how to use `Plumsail Documents`_ to convert DOC to DOCX, XLS to XLS
 .. _create an API key in your Plumsail Account page: https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html
 .. _Convert XLS to XLSX: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xls-to-xlsx
 .. _Convert PPT to PPTX: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-ppt-to-pptx
-.. _Microsoft Flow examples: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/index.html
+.. _Power Automate (Microsoft Flow) examples: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/index.html
 .. _Start trial: https://plumsail.com/documents/
 .. _the documentation: https://plumsail.com/docs/documents/v1.x/index.html?_ga=2.255047816.1471117182.1560166578-1778584084.1559557652
 

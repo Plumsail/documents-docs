@@ -1,4 +1,4 @@
-How to create a document from a template in Microsoft Flow and sign it using AdobeSign
+How to create a document from a template in Power Automate (Microsoft Flow) and sign it using AdobeSign
 ######################################################################################
 
 This article is a ready-to-use solution on how to create a PDF document from a template and sign it using `AdobeSign <https://acrobat.adobe.com/us/en/sign.html>`_.
@@ -183,7 +183,7 @@ For our purpose, the site content can be shared with anyone.
 
 You may be worried about sensitive information while sharing files, but there is no reason for it; nobody can use the link, but the AdobeSign application for getting content to create an agreement for further usage in AdobeSign. 
 
-Moreover, there is another action in AdobeSign connector for Microsoft Flow to upload documents directly, but unfortunately, it doesn’t work now because of a lack of code integration. We believe that it will be fixed in the future.
+Moreover, there is another action in AdobeSign connector for Power Automate (Microsoft Flow) to upload documents directly, but unfortunately, it doesn’t work now because of a lack of code integration. We believe that it will be fixed in the future.
 
 Create an agreement from a document URL, and send for signature
 ---------------------------------------------------------------
@@ -214,7 +214,7 @@ The Flow is ready. Now you know how to simplify your workflow processes with the
 
 
 
-.. _Microsoft Flow: https://flow.microsoft.com/en-us/
+.. _Power Automate (Microsoft Flow): https://flow.microsoft.com/en-us/
 .. _AdobeSign: https://acrobat.adobe.com/us/en/sign.html
 .. _Plumsail Documents: https://plumsail.com/documents/
 .. _AdobeSign connector: https://docs.microsoft.com/en-us/connectors/adobesign/

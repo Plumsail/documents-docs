@@ -1,7 +1,7 @@
-How to create Word and PDF documents from Cognito Forms in Microsoft Flow and Azure Logic Apps
+How to create Word and PDF documents from Cognito Forms in Power Automate (Microsoft Flow) and Azure Logic Apps
 ===============================================================================================================
 
-In this article, you will learn how to automate the generation of documents in your company. For example, applications, orders, invoices, cards and others. We’ll show you how to create a PDF document from a DOCX template on a `Cognito Form <https://www.cognitoforms.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Microsoft Flow and Azure Logic Apps. 
+In this article, you will learn how to automate the generation of documents in your company. For example, applications, orders, invoices, cards and others. We’ll show you how to create a PDF document from a DOCX template on a `Cognito Form <https://www.cognitoforms.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (Microsoft Flow) and Azure Logic Apps. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates. 
 
@@ -99,7 +99,7 @@ You can configure as many deliveries as you need.
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
-We will start our Process from Microsoft Flow. 
+We will start our Process from Power Automate (Microsoft Flow). 
 
 Create a Flow
 -------------
@@ -176,5 +176,5 @@ Sign up for Plumsail Documents
 
 As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ to get a free 30-day trial.
 
-.. hint:: You can generate PDFs from Web Forms even without Microsoft Flow. Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
+.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
 

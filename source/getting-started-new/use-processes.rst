@@ -11,9 +11,9 @@ Processes are an easy way to automate the creation of documents from templates. 
 - `Create a new process <../user-guide/processes/create-process.html>`_
 - `Test the template with your data <../user-guide/processes/test-template.html>`_
 - `Deliver generated documents (email, OneDrive, etc.) <../user-guide/processes/create-delivery.html>`_
-- `Start proess using web form, Microsoft Flow or REST API <../user-guide/processes/start-process.html>`_
+- `Start proess using web form, Power Automate (Microsoft Flow) or REST API <../user-guide/processes/start-process.html>`_
 - `Review examples of other processes <../user-guide/processes/examples.html>`_
 
 .. note::
 
-  Processes work for most of the scenarios. If you want some advanced operations on documents, take a look at our `Microsoft Flow actions <use-from-flow.html>`_ and `REST API <use-as-rest-api.html>`_.
+  Processes work for most of the scenarios. If you want some advanced operations on documents, take a look at our `Power Automate (Microsoft Flow) actions <use-from-flow.html>`_ and `REST API <use-as-rest-api.html>`_.

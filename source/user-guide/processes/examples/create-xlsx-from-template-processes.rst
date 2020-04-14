@@ -1,4 +1,4 @@
-How to create Excel XLSX document from template in Microsoft Flow, Azure Logic Apps and PowerApps
+How to create Excel XLSX document from template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ==================================================================================================================
 If you want to automate the generation of purchase orders in your company, this article will help you achieve that. 
 After going through it you will know how to create an XLSX file from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
@@ -160,7 +160,7 @@ You can configure as many deliveries as you need.
 Start the Process
 ~~~~~~~~~~~~~~~~~
 
-The last thing to do is to start the Process. We will start it using `Microsoft Flow <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_ as well.
+The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_ as well.
 
 
 |start-process|

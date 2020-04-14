@@ -114,7 +114,7 @@ You can configure as many deliveries as you need.
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
-We will start our Process from Microsoft Flow. 
+We will start our Process from Power Automate (Microsoft Flow). 
 
 Create a Flow
 -------------

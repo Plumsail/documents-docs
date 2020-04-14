@@ -1,16 +1,16 @@
-How to create Excel XLSX document from template in Microsoft Flow, Azure Logic Apps and PowerApps
+How to create Excel XLSX document from template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 =================================================================================================
 If you want to automate the generation of purchase orders in your company, this article will help you achieve that. 
-After going through it you will know how to create an XLSX file from a template using `Create XLSX document from template`_ action from `Plumsail Documents connector`_ in Microsoft Flow and Azure Logic Apps.
+After going through it you will know how to create an XLSX file from a template using `Create XLSX document from template`_ action from `Plumsail Documents connector`_ in Power Automate (Microsoft Flow) and Azure Logic Apps.
 
 Probably you have some third party system, where you create data for purchase orders. 
-Then you get this data in Microsoft Flow, apply it to our purchase order template and generate a new document.
+Then you get this data in Power Automate (Microsoft Flow), apply it to our purchase order template and generate a new document.
 
 This is how the final document will look in our case:
 
 |purchase-order-result|
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Box
@@ -147,7 +147,7 @@ You can use any other connector to store documents into your system.
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use Create XLSX document from template action from `Plumsail Documents connector`_ for Microsoft Flow. 
+Now you should have an idea how to use Create XLSX document from template action from `Plumsail Documents connector`_ for Power Automate (Microsoft Flow). 
 If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 

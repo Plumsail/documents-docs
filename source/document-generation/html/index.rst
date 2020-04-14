@@ -3,7 +3,7 @@ HTML templates
 
 You can create documents from HTML templates using Plumsail Documents. There are at least two ways to apply data to an HTML template:
 
-- `Create a process <../../user-guide/processes/index.html>`_ and start it using Microsoft Flow, Web form or REST API
+- `Create a process <../../user-guide/processes/index.html>`_ and start it using Power Automate (Microsoft Flow), Web form or REST API
 - Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
 
 This article explains HTML templates syntax. It is quite similar to the syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 

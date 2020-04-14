@@ -7,7 +7,7 @@ This article demonstrates how to create PDF documents from a DOCX template on a 
 
 **Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collect other information.
 
-Let’s see how to connect them with the help of Microsoft Flow to automatically collect data from a Microsoft Form, apply the data to our template, and generate a new PDF document.
+Let’s see how to connect them with the help of Power Automate (Microsoft Flow) to automatically collect data from a Microsoft Form, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
@@ -104,7 +104,7 @@ You can configure as many deliveries as you need.
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
-We will start our Process from Microsoft Flow. 
+We will start our Process from Power Automate (Microsoft Flow). 
 
 Create a Flow
 -------------
@@ -189,4 +189,4 @@ Sign up for Plumsail Documents
 
 As you can see, it's simple to automize the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms. A 30-day trial is free.
 
-.. hint:: You can generate PDFs from Web Forms even without Microsoft Flow. Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.
+.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../flow/how-tos/documents/create-word-and-pdf-documents-from-plumsail-forms-processes.html>`_.

@@ -1,14 +1,14 @@
-Convert email message to PDF in Microsoft Flow and Azure Logic Apps
+Convert email message to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
 ===================================================================
 
-This article demonstrates how to convert an email message to PDF with the help of  `Microsoft Flow <https://flow.microsoft.com>`_. 
+This article demonstrates how to convert an email message to PDF with the help of  `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will take a hiring contract text as a body of our message:
 
 .. image:: ../../../_static/img/flow/how-tos/email-to-pdf-example.png
    :alt: Select fields
 
-You can use different Microsoft Flow connectors to receive messages. Some examples:
+You can use different Power Automate (Microsoft Flow) connectors to receive messages. Some examples:
 
 - Office 365 Outlook
 - Outlook.com

@@ -1,14 +1,14 @@
-How to create DOCX document from template in Microsoft Flow, Azure Logic Apps and PowerApps
+How to create DOCX document from template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ===========================================================================================
-Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector <https://plumsail.com/documents/>`_ in  Microsoft Flow and Azure Logic Apps.
+Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector <https://plumsail.com/documents/>`_ in  Power Automate (Microsoft Flow) and Azure Logic Apps.
 
-Probably you have some third party system, where you create data for invoices. Then you get this data in Microsoft Flow, apply it to our invoice template and generate a new document.
+Probably you have some third party system, where you create data for invoices. Then you get this data in Power Automate (Microsoft Flow), apply it to our invoice template and generate a new document.
 
 This is how the final document will look in our case:
 
 |invoice-result-document|
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Box
@@ -138,7 +138,7 @@ You can use any other connector to store documents into your system.
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use Create DOCX Document from Template action from `Plumsail Documents connector`_ for Microsoft Flow. 
+Now you should have an idea how to use Create DOCX Document from Template action from `Plumsail Documents connector`_ for Power Automate (Microsoft Flow). 
 If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 

@@ -42,4 +42,4 @@ Just review the structure of the HTTP request in the *curl* sample above and com
 
   In addition to starting processes, Plumsail Documents API provides many more operations. Review the `API reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>`_ and `documentation <../../getting-started/use-as-rest-api.html>`_.
 
-  Also, you can start your process using `Web form <start-process-web-form.html>`_ or `Microsoft Flow <start-process-ms-flow.html>`_.
+  Also, you can start your process using `Web form <start-process-web-form.html>`_ or `Power Automate (Microsoft Flow) <start-process-ms-flow.html>`_.

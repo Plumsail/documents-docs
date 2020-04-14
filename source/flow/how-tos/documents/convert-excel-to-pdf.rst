@@ -1,7 +1,7 @@
-Convert XLSX to PDF in Microsoft Flow and Azure Logic Apps
+Convert XLSX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
 ==========================================================
 
-This article demonstrates how to convert XLSX Word document to PDF with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
+This article demonstrates how to convert XLSX Word document to PDF with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will take a purchase order as a sample Excel document:
 
@@ -10,7 +10,7 @@ We will take a purchase order as a sample Excel document:
 
 Use `this link <../../../_static/files/flow/how-tos/Purchase%20Order%20Example.xlsx>`_ to download it.
 
-Our document has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our document has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce

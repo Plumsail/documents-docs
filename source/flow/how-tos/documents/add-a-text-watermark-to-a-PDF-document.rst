@@ -1,7 +1,7 @@
-How to add a text watermark to a PDF document using Microsoft Flow, Azure Logic Apps or PowerApps
+How to add a text watermark to a PDF document using Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
 =================================================================================================
 
-This is **the second article** in our "How to use Watermarks" series. We hope these articles will help you to get the best out of watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow.
+This is **the second article** in our "How to use Watermarks" series. We hope these articles will help you to get the best out of watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Power Automate (Microsoft Flow).
  
 Before we dive in, here is where we are in our "How to use Watermarks" series:
 
@@ -113,4 +113,4 @@ Conclusion
 
 We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents. If you haven't used  `Plumsail Documents <https://plumsail.com/documents/>`_ yet, `registering an account <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
 
-.. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Microsoft Flow and Azure Logic Apps.
+.. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Power Automate (Microsoft Flow) and Azure Logic Apps.

@@ -1,13 +1,13 @@
-How to split PDF files in Microsoft Flow and Azure Logic Apps
+How to split PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps
 =============================================================
 
-This article demonstrates how to split a PDF file with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
+This article demonstrates how to split a PDF file with the help of `Power Automate (Microsoft Flow) <https://emea.flow.microsoft.com/>`_.
 
 In this example, we will read a PDF file, split the file to get a specific page and send this page by email. 
 
 This approach can be used to extract a page or a section of a document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.
 
-Our source PDF file has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems.
+Our source PDF file has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems.
 
 Here are just a few of them:
 
@@ -71,4 +71,4 @@ Conclusion
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/merge-pdf-files.html>`_ explaining how to Merge PDF files in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/merge-pdf-files.html>`_ explaining how to Merge PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps.

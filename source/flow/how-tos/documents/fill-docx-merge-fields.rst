@@ -1,9 +1,9 @@
-Fill merge fields in DOCX document in Microsoft Flow and Azure Logic Apps
+Fill merge fields in DOCX document in Power Automate (Microsoft Flow) and Azure Logic Apps
 =========================================================================
 
-This article demonstrates how to fill merge fields in a DOCX Word document with the help of `Microsoft Flow <https://flow.microsoft.com>`_. This approach allows you to create simple DOCX template with merge fields and generate new documents by filling those fields.
+This article demonstrates how to fill merge fields in a DOCX Word document with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. This approach allows you to create simple DOCX template with merge fields and generate new documents by filling those fields.
 
-We will generate a hiring contract. Our source document with merge fields and result document has to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+We will generate a hiring contract. Our source document with merge fields and result document has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce
@@ -18,7 +18,7 @@ You can store your source file anywhere. In this example, we will store our docu
 
 Firstly, we have to prepare the source file with merge fields. Please follow `this instruction to prepare your source document <../../../document-generation/docx/create-docx-with-merge-fields.html>`_.
 
-Now we need to create a Microsoft Flow that will get the source document from the SharePoint document library, fill merge fields in this document and save result document back to the document library. This is how complete flow looks:
+Now we need to create a Power Automate (Microsoft Flow) that will get the source document from the SharePoint document library, fill merge fields in this document and save result document back to the document library. This is how complete flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/fill-merge-fields-in-docx.png
    :alt: Select fields
@@ -46,7 +46,7 @@ There are two parameters:
 
 In the first parameter *'DOCX document content'* we specified file content of the source document from the output of the previous action. Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract%20Template%20(merge%20fields).docx>`_ to download it.
 
-In the second parameter, we specified data in JSON format that will be used to fill merge fields. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
+In the second parameter, we specified data in JSON format that will be used to fill merge fields. This is information about a sample employee. You can actually request this information from an external system with the help of another Power Automate (Microsoft Flow) action.
 
 This is our sample data:
 

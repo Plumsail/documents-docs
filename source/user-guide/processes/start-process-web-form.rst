@@ -48,4 +48,4 @@ You can see the full JSON object submitted by a form in `form submissions <https
 
 Use properties from this JSON object when `creating your template <create-template.html>`_.
 
-.. note:: Also, you can start your process using `Microsoft Flow <start-process-ms-flow.html>`_ or `REST API <start-process-rest-api.html>`_.
+.. note:: Also, you can start your process using `Power Automate (Microsoft Flow) <start-process-ms-flow.html>`_ or `REST API <start-process-rest-api.html>`_.

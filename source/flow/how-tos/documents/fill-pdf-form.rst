@@ -1,4 +1,4 @@
-How to automatically populate fillable PDF based on data from third party system in Microsoft Flow, Azure Logic Apps or Power Apps
+How to automatically populate fillable PDF based on data from third party system in Power Automate (Microsoft Flow), Azure Logic Apps or Power Apps
 ==================================================================================================================================
 
 .. note:: 
@@ -9,7 +9,7 @@ How to automatically populate fillable PDF based on data from third party system
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7jTq-kRClhM" frameborder="0" allowfullscreen></iframe>
 
-In this article, you will learn how to automatically populate fillable PDF forms in Microsoft Flow or Azure Logic Apps. We will use `Fill in PDF Form`_ action from `Plumsail Documents connector`_.
+In this article, you will learn how to automatically populate fillable PDF forms in Power Automate (Microsoft Flow) or Azure Logic Apps. We will use `Fill in PDF Form`_ action from `Plumsail Documents connector`_.
 
 In our case, we will fill in an Application for Employment form based on the data from a SharePoint list. Actually, you can get data from any other source. We use SharePoint list here as an example.
 
@@ -19,7 +19,7 @@ This is how the final PDF document with the form will look in our case:
 
 |fill-in-pdf-form-result|
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Box
@@ -38,7 +38,7 @@ Follow `this instruction <../../../document-generation/fillable-pdf/index.html>`
 
 |fill-in-pdf-form-template|
 
-Create Microsoft Flow
+Create Power Automate (Microsoft Flow)
 ~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
@@ -83,7 +83,7 @@ You can use any other connector to send or store documents in your system.
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use Fill in PDF form action from `Plumsail Documents connector`_ for Microsoft Flow. If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
+Now you should have an idea how to use Fill in PDF form action from `Plumsail Documents connector`_ for Power Automate (Microsoft Flow). If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 .. hint:: There is also `Get Form from PDF`_ action available. You can use it to `collect data from fillable PDF`_.
 

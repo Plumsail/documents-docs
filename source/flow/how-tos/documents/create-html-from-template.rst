@@ -1,14 +1,14 @@
-Create HTML document from template in Microsoft Flow and Azure Logic Apps
+Create HTML document from template in Power Automate (Microsoft Flow) and Azure Logic Apps
 =========================================================================
 
-This article demonstrates how to generate HTML document from a template with the help of `Microsoft Flow <https://flow.microsoft.com>`_.
+This article demonstrates how to generate HTML document from a template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
 In this article, we will generate HTML invoice based on some data. This is how our final HTML file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/html-and-pdf-result.png
    :alt: Result HTML file
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce

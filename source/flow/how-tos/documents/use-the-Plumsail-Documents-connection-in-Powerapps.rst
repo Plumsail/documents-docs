@@ -2,16 +2,16 @@
 How to use Plumsail Documents flow in PowerApps
 ######################################################################################################
 
-When you're working on a solution or an app, `Microsoft Flow`_ can be a powerful tool to automate a chain of actions, transfer data between apps and services. Here’s how to use the Plumsail Microsoft Flow action in an app by the example of Microsoft PowerApps.  
+When you're working on a solution or an app, `Power Automate (Microsoft Flow)`_ can be a powerful tool to automate a chain of actions, transfer data between apps and services. Here’s how to use the Plumsail Power Automate (Microsoft Flow) action in an app by the example of Microsoft PowerApps.  
 
 `PowerApps`_ can help you easily build a user interface for a mobile-friendly business app. PowerApps can be integrated with cloud services such as MS Dynamics 365, OneDrive, SharePoint, SQL, and Oracle databases. Though the process of building an app is fairly simple and intuitive, there are a few features that might be a bit tricky, such as sharing the app’s resources. 
 
 Here's the simplest example. We'll make an app with a button to get data from a SharePoint list, insert it to a `DOCX template`_, then `convert to PDF`_ and save it to a SharePoint document library. The button is used to save the schedule for the booked conference rooms for today. In this example, a SharePoint list stores room title and time.
 
-Set up a Microsoft flow
+Set up a Power Automate (Microsoft Flow)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-First, we’ll set up a Microsoft Flow. It will get triggered on the *PowerApps* call, get the data from the list, filter out rooms booked for today, get the data to a DOCX template and convert it to PDF. We won't go through every step in much detail here. If you wish to get a thorough understanding of how the Plumsail Documents work in a flow, please consider consulting with our `Document generation`_ descriptions and `MS Flow examples`_.
+First, we’ll set up a Power Automate (Microsoft Flow). It will get triggered on the *PowerApps* call, get the data from the list, filter out rooms booked for today, get the data to a DOCX template and convert it to PDF. We won't go through every step in much detail here. If you wish to get a thorough understanding of how the Plumsail Documents work in a flow, please consider consulting with our `Document generation`_ descriptions and `MS Flow examples`_.
 
 |powerapps-flow|
 
@@ -38,7 +38,7 @@ We’re almost there! However, if our end-user tries to use the shared app now, 
 
 The error claims that our Plumsail Connection wasn’t shared with the end-user, so it’s time to change that.
 
-All your connections are listed in the *Connections* tab of the *Microsoft Flow* menu. (*Data* -> *Connections*)
+All your connections are listed in the *Connections* tab of the *Power Automate (Microsoft Flow)* menu. (*Data* -> *Connections*)
 
 |powerapps-flow-connections|
 
@@ -51,11 +51,11 @@ Select *Add everyone in my org* or choose the *users and groups* you need to sha
 
 |powerapps-add-everyone|
 
-Now your connection is available for every user you’ve chosen. They can see the connection on the *Connections* tab in their Microsoft Flow workspace and, more importantly, use your app right away. 
+Now your connection is available for every user you’ve chosen. They can see the connection on the *Connections* tab in their Power Automate (Microsoft Flow) workspace and, more importantly, use your app right away. 
 
 .. _PowerApps: https://powerapps.microsoft.com/
 .. _Actions: ../../../index.html
-.. _Microsoft Flow: https://flow.microsoft.com
+.. _Power Automate (Microsoft Flow): https://flow.microsoft.com
 .. _Document generation: ../../../../ /document-generation/docx/index.html
 .. _MS Flow examples: create-docx-from-template.html
 .. _DOCX template: create-docx-from-template.html

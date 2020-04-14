@@ -1,9 +1,9 @@
-How to add an image watermark to a PDF document using Microsoft Flow, Azure Logic Apps or PowerApps
+How to add an image watermark to a PDF document using Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
 ===================================================================================================
 
 If you find yourself in a need to protect your PDF documents, you may decide to add a watermark to them. It can help you to identify the document owner, to maintain some level of traceability, to classify documents, and to assure confidentiality of the information both inside and outside the organization.
 
-We hope this **first article** from our "How to use Watermarks" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Microsoft Flow.
+We hope this **first article** from our "How to use Watermarks" series will let you get started with watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Power Automate (Microsoft Flow).
 
   **Here is the list of all the articles in the series:**
 
@@ -93,4 +93,4 @@ Conclusion
 
 We hope this `series of articles <../../../flow/how-tos/documents/add-an-image-watermark-to-a-PDF-document.html#how-to-add-an-image-watermark-to-a-pdf-document>`_ on using *Add watermark to PDF* action will help you to ascertain the proper use of your PDF documents.  If you haven't used  `Plumsail Documents <https://plumsail.com/documents/>`_ yet, `registering an account <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_ would be the first step. It is quite easy to get started.
 
-.. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Microsoft Flow and Azure Logic Apps.
+.. Hint:: For more security options please have a look at `Protects PDF action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_. It allows you to add passwords, copy-, printing-, and other protections to PDF files with the help of Power Automate (Microsoft Flow) and Azure Logic Apps.

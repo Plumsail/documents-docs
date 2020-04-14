@@ -1,13 +1,13 @@
-How to merge PDF files in Microsoft Flow, Azure Logic Apps and PowerApps
+How to merge PDF files in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
 ========================================================================
 
-This article demonstrates how to merge PDF files with the help of `Microsoft Flow <https://emea.flow.microsoft.com/>`_.
+This article demonstrates how to merge PDF files with the help of `Power Automate (Microsoft Flow) <https://emea.flow.microsoft.com/>`_.
 
 In this example, we will read three DOCX files from a specific folder, convert these files to PDF, merge them and send the result PDF file by email.
 
 For instance, it may be useful  in a situation when a few employees prepare different sections of a contract at the same time. They load the parts of the contract to a folder, then all files from this folder are merged to form the final document.
 
-So, our source DOCX files have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+So, our source DOCX files have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce
@@ -115,4 +115,4 @@ Conclusion
 That is all, the flow is configured. Hope, these steps will help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <split-pdf-files.html>`_ explaining how to Split PDF files in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <split-pdf-files.html>`_ explaining how to Split PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps.

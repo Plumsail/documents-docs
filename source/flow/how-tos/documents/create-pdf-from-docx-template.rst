@@ -1,14 +1,14 @@
-Create PDF from DOCX template in Microsoft Flow and Azure Logic Apps
+Create PDF from DOCX template in Power Automate (Microsoft Flow) and Azure Logic Apps
 ====================================================================
 
-This article demonstrates how to generate PDF document from a DOCX template with the help of `Microsoft Flow <https://flow.microsoft.com>`_. 
+This article demonstrates how to generate PDF document from a DOCX template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will firstly generate DOCX document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/create-pdf-from-docx-result.png
    :alt: PDF sample document
 
-Our template and result document have to be stored somewhere. Microsoft Flow has a lot of connectors for different systems. Here are just a few of them:
+Our template and result document have to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
 
 - SharePoint
 - Salesforce
@@ -21,7 +21,7 @@ Our template and result document have to be stored somewhere. Microsoft Flow has
 
 You can store your source file anywhere. In this example, we will store our documents in SharePoint. Our Flow will get a template from a SharePoint document library, generate a new document based on this template and on some data. The resulting document will be stored back to SharePoint document library.
 
-Now we need to create a Microsoft Flow that will get the template from the SharePoint document library, apply data to this template, convert a document to PDF and save it back to the document library. This is how complete flow looks:
+Now we need to create a Power Automate (Microsoft Flow) that will get the template from the SharePoint document library, apply data to this template, convert a document to PDF and save it back to the document library. This is how complete flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/create-pdf-from-docx-tempalte-flow.png
    :alt: Flow create PDF from DOCX template
@@ -51,7 +51,7 @@ In the first parameter *'DOCX document content'* we specified file content of a 
 
 Read `Create DOCX from template <create-docx-from-template.html#create-docx-document-from-template>`_ article to understand how the templating engine works.
 
-In the second parameter, we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from an external system with the help of another Microsoft Flow action.
+In the second parameter, we specified data to apply to the template in JSON format. This is information about a sample employee. You can actually request this information from an external system with the help of another Power Automate (Microsoft Flow) action.
 
 This is our sample data:
 
