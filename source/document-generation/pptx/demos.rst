@@ -28,85 +28,85 @@ Scroll down to see source data for the template in JSON format.
 
 .. code:: json
 
-{
-	"title": "Plumsail monthly report",
-	"subtitle": "made by David Navarro",
-	"date": "Today",
-	"state": "On track",
-	"action": [
-		{
-			"description": "Hire more experts"
-		},
-		{
-			"description": "Remove obstacles"
-		},
-		{
-			"description": "Marketing"
-		},
-		{
-			"description": "..."
-		},
-		{
-			"description": "Profit!!!"
-		}
-	],
-	"sales": [
-		{
-			"country": "Romania",
-			"lead": "Count Drakula",
-			"churn": 50,
-			"new": 220
-		},
-		{
-			"country": "USA",
-			"lead": "John Doe",
-			"churn": 450,
-			"new": 1500
-		},
-		{
-			"country": "Australia",
-			"lead": "Jacky Coala",
-			"churn": 0,
-			"new": 3060
-		},
-		{
-			"country": "Japan",
-			"lead": "Naruto",
-			"churn": 260,
-			"new": 820
-		}
-	],
-	"history": [
-		{
-			"period": "2018/Q1",
-			"total": 5030
-		},
-		{
-			"period": "2018/Q2",
-			"total": 5050
-		},
-		{
-			"period": "2018/Q3",
-			"total": 6120
-		},
-		{
-			"period": "2018/Q4",
-			"total": 6650
-		},
-		{
-			"period": "2019/Q1",
-			"total": 7660
-		},
-		{
-			"period": "2019/Q2",
-			"total": 7540
-		},
-		{
-			"period": "2019/Q3",
-			"total": 8220
-		}
-	]
-}
+    {
+	    "title": "Plumsail monthly report",
+	    "subtitle": "made by David Navarro",
+	    "date": "Today",
+	    "state": "On track",
+	    "action": [
+		    {
+			    "description": "Hire more experts"
+		    },
+		    {      
+			    "description": "Remove obstacles"
+		    },
+		    {
+			    "description": "Marketing"
+		    },
+		    {
+			    "description": "..."
+		    },
+		    {
+			    "description": "Profit!!!"
+		    }
+	    ],
+	    "sales": [
+		    {
+			    "country": "Romania",
+			    "lead": "Count Drakula",
+			    "churn": 50,
+		    	"new": 220
+		    },
+		    {
+			    "country": "USA",
+			    "lead": "John Doe",
+			    "churn": 450,
+			    "new": 1500
+		    },
+		    {
+			    "country": "Australia",
+			    "lead": "Jacky Coala",
+			    "churn": 0,
+			    "new": 3060
+		    },
+		    {
+			    "country": "Japan",
+			    "lead": "Naruto",
+			    "churn": 260,
+			    "new": 820
+		    }
+	    ],
+	    "history": [
+		    {
+			    "period": "2018/Q1",
+			    "total": 5030
+		    },
+		    {
+			    "period": "2018/Q2",
+			    "total": 5050
+		    },
+		    {
+			    "period": "2018/Q3",
+			    "total": 6120
+		    },
+		    {
+			    "period": "2018/Q4",
+			    "total": 6650
+		    },
+		    {
+			    "period": "2019/Q1",
+			    "total": 7660
+		    },
+		    {
+			    "period": "2019/Q2",
+			    "total": 7540
+		    },
+		    {
+			    "period": "2019/Q3",
+			    "total": 8220
+		    }
+	    ]
+    }
 
 .. _tables:
 
