@@ -40,7 +40,7 @@ Example of POST request that will be sent to your URL:
     "data": "{\n    \"userName\": \"Bob Barley\",\n    \"age\": 42\n}"
   }
 
-That are two custom headers that we added in the delivery settings (:code:`desired-http-header-1` and :code:`user-identifier`).
+Those are two custom headers that we added in the delivery settings (:code:`desired-http-header-1` and :code:`user-identifier`).
 
 The body of the POST request contains two properties:
 

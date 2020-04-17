@@ -22,7 +22,7 @@ Plumsail Documents Documentation
     Create documents from template <getting-started/use-processes>    
     getting-started/use-from-flow
     getting-started/use-as-rest-api
-    getting-started/license-activation  
+    getting-started/license-activation 
 
   .. toctree::
     :caption: User guide
@@ -42,6 +42,7 @@ Plumsail Documents Documentation
     :titlesonly:
     
     document-generation/docx/index
+    document-generation/pptx/index
     document-generation/xlsx/index
     Fillable PDF <document-generation/fillable-pdf/index>
     document-generation/html/index
