@@ -35,7 +35,7 @@ The step has a few settings:
 Mode
 ~~~~
 
-It is "Testing" by default. It means you won't be charged for executions of this process but result documents will have a Plumsail watermark. Change it to "Active to remove the watermark.
+It is "Testing" by default. It means you won't be charged for executions of this process but result documents will have a Plumsail watermark. Change it to "Active" to remove the watermark.
 
 .. _process-name:
 
