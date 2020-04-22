@@ -16,4 +16,4 @@ Processes are an easy way to automate the creation of documents from templates. 
 
 .. note::
 
-  Processes work for most of the scenarios. If you want some advanced operations on documents, take a look at our `Power Automate (Microsoft Flow) actions <use-from-flow.html>`_ and `REST API <use-as-rest-api.html>`_.
+  Processes work for most of the scenarios. If you want some advanced operations on documents, take a look at our `Power Automate (Microsoft Flow) actions <use-from-flow.html#advanced-document-processing>`_ and `REST API <use-as-rest-api.html>`_.

@@ -18,5 +18,6 @@ Here is an example of a simple flow that starts a process and then uploads it to
   :name: toc-processes-flow-examples
   :maxdepth: 1
   
+  ../../how-tos/index-create-documents-from-template
   ../../how-tos/index-form-integrations
-  ../../how-tos/index-E-signature 
+  ../../how-tos/index-e-signature

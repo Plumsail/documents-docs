@@ -59,7 +59,7 @@ Plumsail Documents Documentation
   .. rst-class:: single-page-nav
   
     .. toctree::
-      :caption: Power Automate (Microsoft Flow) actions    
+      :caption: Power Automate actions    
       :name: toc-microsoft-flow-actions
       :maxdepth: 2      
       
@@ -97,7 +97,7 @@ Plumsail Documents Documentation
 
     how-tos/index-create-documents-from-template
     how-tos/index-form-integrations
-    how-tos/index-E-signature
+    how-tos/index-e-signature
     how-tos/index-convert-documents
     how-tos/index-process-pdf
     how-tos/index-other
