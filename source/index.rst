@@ -19,7 +19,7 @@ Plumsail Documents Documentation
     :maxdepth: 1
     :titlesonly:
     
-    getting-started/sign-up
+    Create documents from template <getting-started/use-processes>    
     getting-started/use-from-flow
     getting-started/use-as-rest-api
     getting-started/license-activation 
@@ -100,4 +100,4 @@ Plumsail Documents Documentation
     how-tos/index-E-signature
     how-tos/index-convert-documents
     how-tos/index-process-pdf
-    how-tos/index-other 
+    how-tos/index-other

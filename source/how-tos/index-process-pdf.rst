@@ -9,7 +9,7 @@ Process PDF
       Convert HTML to PDF <../../../flow/how-tos/documents/convert-html-to-pdf.rst>      
       Convert email message to PDF <../../../flow/how-tos/documents/convert-email-to-pdf.rst>
       Add watermark to PDF <../../../flow/how-tos/documents/add-watermark-to-pdf.rst>
-      Automatically populate fillable PDF <../../../flow/how-tos/documents/fill-pdf-form.rst>
+      Automatically populate fillable PDF <../../user-guide/processes/examples/fill-pdf-form-processes.rst>
       Collect data from fillable PDF <../../../flow/how-tos/documents/collect-data-pdf-form.rst>
       Split PDF files <../../../flow/how-tos/documents/split-pdf-files.rst>
       Merge PDF files <../../../flow/how-tos/documents/merge-pdf-files.rst>
