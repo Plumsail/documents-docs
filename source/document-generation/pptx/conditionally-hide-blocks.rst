@@ -1,4 +1,4 @@
-Conditionally hide blocks in DOCX templates
+Conditionally hide blocks in PPTX templates
 ===========================================
 
 You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks in a presentation. 
