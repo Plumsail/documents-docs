@@ -3,7 +3,7 @@ How to use custom fonts with our Convert HTML to PDF action
 
 
 Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
-supports several commmon fonts out of the box. For example, Times New Roman or Arial:
+supports several common fonts out of the box. For example, Times New Roman or Arial:
 
 .. code-block::
 
@@ -45,7 +45,7 @@ Also It's possible to use CSS inside HTML code to set a default font or apply th
 
 Convert HTML to PDF suppoorts external fonts as well. It's a common case when you need to include external fonts, 
 
-for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML could be following:
+for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML might be following:
 
 .. code-block::
 
@@ -84,6 +84,6 @@ Swedish, Thai, Ukrainian, Upper Sorbian, Turkish, Uyghur, Vietnamese, and Welsh.
 Conclusion
 ##################################################################
 
-Plumsail `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_ is a usefull tool which supports special characters and many languages.
+Plumsail `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_ is a usefull tool and supports special characters and many languages.
 
 .. Hint:: Please have a look at this article `How to convert HTML to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-html-to-pdf.html>`_ .
