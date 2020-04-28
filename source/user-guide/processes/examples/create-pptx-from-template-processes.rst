@@ -1,5 +1,5 @@
-How to create PPTX and PDF documents from a template in Zapier, Power Automate Flow, Azure Logic Apps and PowerApps
-===================================================================================================================
+How to create PowerPoint PPTX presentations from a template in Zapier, Power Automate Flow, Azure Logic Apps and PowerApps
+==========================================================================================================================
 
 Let us say you need to create company report presentations every month. This article shows how to automate this process and generate PowerPoint presentations from PPTX templates automatically with the help of `Plumsail Documents processes <../index.html>`_.
 
