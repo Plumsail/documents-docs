@@ -7,12 +7,16 @@ supports several commmon fonts out of the box. For example, Times New Roman or A
 
 .. code-block::
 
-<html lang="en">
-  <body>
-    <p style="font-family:Times New Roman;">Times New Roman</p>
-    <pstyle="font-family:Arial;">Arial</p>
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <p style="font-family:Times New Roman;">Times New Roman</p>
+      <pstyle="font-family:Arial;">Arial</p>
+    </body>
+  </html>
+
+.. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts1.png
+    :alt: Fonts
 
 Also It's possible to use CSS inside HTML code to set a default font or apply the font to a specific section of the document:
 
@@ -36,6 +40,9 @@ Also It's possible to use CSS inside HTML code to set a default font or apply th
     </html>
 
 
+.. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts2.png
+    :alt: Fonts
+
 Convert HTML to PDF suppoorts external fonts as well. It's a common case when you need to include external fonts, 
 
 for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML could be following:
@@ -50,6 +57,9 @@ for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML could 
     <p style="font-family:Roboto, cursive;">A custom font from fonts.google.com</p>
   </body>
   </html>
+
+.. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts3.png
+    :alt: Fonts
 
 Multi-lingual support in Convert HTML to PDF action
 ##################################################################
