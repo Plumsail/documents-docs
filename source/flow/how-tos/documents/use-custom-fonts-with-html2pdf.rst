@@ -1,4 +1,4 @@
-How to use custom fonts with our Convert HTML to PDF action
+How to use custom fonts with Plumsail Convert HTML to PDF action
 ##################################################################
 
 
