@@ -5,16 +5,24 @@ Let us say you need to create company report presentations every month. This art
 
 **Processes** are a handy interface for creating documents from templates, converting, and delivering them in a few simple steps.
 
-With its help, we’ll create a company report with tables and charts from a PPTX template. Below is the picture of the resulting presentation - the title slide and one of the body ones. You can `download this file <../../../_static/files/document-generation/demos/pptx-report-result.pptx>`_ to see the ready report. 
+With its help, we’ll create a company report with tables and charts from a PPTX template. Below are the pictures of slides from a template and the resulting presentation - the title slide and one of the body ones. You can download complete files from the links above the screenshots to compare them.
 
 .. list-table::
     :header-rows: 1
 
-    *   - Title slide
-        - Slide with a chart
-    *   - .. image:: ../../../_static/img/user-guide/processes/how-tos/title-slide.png 
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/pptx-report-template.pptx>`_           
+            .. image:: ../../../_static/img/user-guide/processes/how-tos/template-title-slide.png 
+                :alt: template title slide
+
+            .. image:: ../../../_static/img/user-guide/processes/how-tos/template-chart-slide.png 
+                :alt: template chart slide
+        - `Download result document <../../_static/files/document-generation/demos/pptx-report-result.pptx>`_
+            .. image:: ../../../_static/img/user-guide/processes/how-tos/title-slide.png 
                 :alt: company report title slide
-        - .. image:: ../../../_static/img/user-guide/processes/how-tos/chart-slide.png
+            
+            .. image:: ../../../_static/img/user-guide/processes/how-tos/chart-slide.png
                 :alt: chart in company report    
 
 .. contents::
@@ -28,8 +36,9 @@ First, register or login to your `Plumsail account <https://account.plumsail.com
 
 Create Process
 --------------
+And before we start, if you haven't downloaded the template file yet, please, `download it <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_, you will need it further.
 
-Click on the **Add Process** button.
+Now, we'are ready. Click on the **Add Process** button.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
@@ -39,9 +48,9 @@ Give a name to the Process to recognize it later.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-pptx-process.png
    :alt: Сreate PPTX from template
 
-Upload the template you want to use. Here is `the link for downloading the template <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_ we use in this example.
+Upload the template you already have. 
 
-When creating your own ones, mind the templating language. Plumsail PowerPoint PPTX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+When you create your own template, mind the templating language. Plumsail PowerPoint PPTX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 To learn more about the templating engine, check out `the documentation article <../../../document-generation/pptx/how-it-works.html>`_.
 
@@ -80,7 +89,9 @@ After you click on the *Test template* button, you will see the dialog where you
 .. image:: ../../../_static/img/user-guide/processes/how-tos/json-pptx-template.png
    :alt: json data PPTX template
 
-To test the template from our example, you can copy and paste this JSON data:
+To test the template from our example, you can copy and paste the JSON data shown below.
+
+.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
 
 .. code:: json
 
@@ -175,8 +186,9 @@ You can start the process :
 - `manually <../start-process-manually.html>`_ with your JSON data;
 - `by Plumsail Web form <../start-process-web-form.html>`_ embedding it to the process;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
+- `using Zapier <../start-process-zapier.html>`_
 - `using REST API <../start-process-rest-api.html>`_;
 
-`Power Automate Flow <https://flow.microsoft.com/>`_ and `Zapier <https://zapier.com/>`_ allow you to connect the process with other apps. It enables you to gather data from one app and pass on to the process to populate a PowerPoint template. Thus, you can populate the PPTX template from various web forms, CRM systems, SharePoint lists, and thousands of other web applications. 
+.. hint:: Use `Power Automate Flow <../../../getting-started/use-from-flow.html>`_ and `Zapier <../../../getting-started/use-from-zapier.html>`_ to connect the process with other apps. It enables you to gather data from one app and pass on to the process to populate a PowerPoint template. Thus, you can populate the PPTX template from various web forms, CRM systems, SharePoint lists, and thousands of other web applications. 
 
-.. note:: There is a separate action in the Plumsail Documents connector for Microsoft Power Automate - `Create PPTX document from template <../../../flow/actions/document-processing.html#create-pptx-document-from-template>`_. 
+.. note:: There is a separate action in the Plumsail Documents connector for Microsoft Power Automate - `Create PPTX document from template <../../../flow/actions/document-processing.html#create-pptx-document-from-template>`_. Use it if you don't need all power of processes and just want to generate a document from a template.
