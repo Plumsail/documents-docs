@@ -19,7 +19,8 @@ Plumsail Documents Documentation
     :maxdepth: 1
     :titlesonly:
     
-    Create documents from template <getting-started/use-processes>    
+    Create documents from template <getting-started/use-processes>
+    getting-started/use-from-zapier    
     getting-started/use-from-flow
     getting-started/use-as-rest-api
     getting-started/license-activation 
