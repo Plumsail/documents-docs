@@ -58,3 +58,4 @@ Now you need to store the HTML file somewhere. In our example, we use "Create fi
 You can use any other connector to store PDF document into your system.
 
 .. hint:: There is also `Create HTML from template <../../actions/document-processing.html#create-html-from-template>`_ action available. You can use it in conjunction with `Convert HTML to PDF <../../actions/document-processing.html#convert-html-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-html-template.html>`_.
+.. hint:: Check out how to use custom fonts and languages with Convert HTML to PDF action `here <use-custom-fonts-with-html2pdf.html>`_.
