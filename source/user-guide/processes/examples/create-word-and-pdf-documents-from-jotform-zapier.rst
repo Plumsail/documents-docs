@@ -118,7 +118,7 @@ Check out the Zap steps described below.
 New submission in JotForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We need to start the Zap everytime somebody submits our JotForm. For that, search for *JotForm* in Zapier and select *New submission in JotFotm* as a trigger.
+We need to start the Zap everytime somebody submits our JotForm. For that, search for *JotForm* in Zapier and select *New submission in JotForm* as a trigger.
 
 If this is your first Zap with JotForm, on this step, sign in to your JotForm Account from Zapier to use your forms inside Zaps.
 
