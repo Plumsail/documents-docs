@@ -5,6 +5,7 @@ First of all, you need to prepare a template for your document. Plumsail Documen
 
 - `DOCX template <../../document-generation/docx/index.html>`_
 - `XLSX template <../../document-generation/xlsx/index.html>`_
+- `PPTX template <../../document-generation/pptx/index.html>`_
 - `Fillable PDF form <../../document-generation/fillable-pdf/index.html>`_
 - `HTML template <../../document-generation/html/index.html>`_
 
