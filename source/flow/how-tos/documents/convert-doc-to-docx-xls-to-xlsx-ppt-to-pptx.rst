@@ -119,7 +119,7 @@ Now you know how to use `Plumsail Documents`_ to convert DOC to DOCX, XLS to XLS
 .. _create an API key in your Plumsail Account page: https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html
 .. _Convert XLS to XLSX: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xls-to-xlsx
 .. _Convert PPT to PPTX: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-ppt-to-pptx
-.. _Power Automate (Microsoft Flow) examples: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/index.html
+.. _Power Automate (Microsoft Flow) examples: https://plumsail.com/docs/documents/v1.x/index.html
 .. _Start trial: https://plumsail.com/documents/
 .. _the documentation: https://plumsail.com/docs/documents/v1.x/index.html?_ga=2.255047816.1471117182.1560166578-1778584084.1559557652
 
