@@ -32,6 +32,7 @@ Use the links below to learn more about each delivery:
   deliveries/dropbox
   deliveries/sharepoint
   deliveries/webhook
+  deliveries/google-drive
 
 .. Note:: 
 
