@@ -1,6 +1,12 @@
-How to use custom fonts with Plumsail Convert HTML to PDF action
+How to use custom fonts and add multi-lingual support to converting HTML to PDF
 ##################################################################
 
+.. contents::
+    :local:
+    :depth: 1
+
+Using custom fonts
+-------------------
 
 Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 supports several common fonts out of the box. For example, Times New Roman or Arial:
@@ -43,6 +49,9 @@ Also It's possible to use CSS inside HTML code to set a default font or apply th
 .. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts2.png
     :alt: Fonts
 
+Using external fonts
+-------------------
+
 Convert HTML to PDF suppoorts external fonts as well. It's a common case when you need to include external fonts, 
 
 for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML might be following:
@@ -61,17 +70,56 @@ for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML might 
 .. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts3.png
     :alt: Fonts
 
-Multi-lingual support in Convert HTML to PDF action
-##################################################################
+
+Support of Unicode characters
+-----------------------------
+Some fonts do not support foreign characters. Thus, to support specific language 
+you may need to add some specific font that supports the language.
+
 it is possible to generate PDFs with foreign languages, or languages that contain special characters such as £.
-Convert HTML to PDF supports most of what is supported by UTF-8. Add the following line in the HTML head element
+Convert HTML to PDF supports most of what is supported by UTF-8. However you need to add the following line in the HTML head element
 
 .. code-block::
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
 
 
+.. image:: ../../../_static/img/flow/how-tos/action-with-charset.png
+    :alt: Convert HTML to PDF
+
+Let's take this HTML:
+
+.. code-block::
+
+    <html>
+      <head>
+      </head>
+        <body>
+          <p>¿Qué es Unicode</p>
+        </body>
+    </html>
+
+Without this code charset=UTF-8, the result will look like this:
+
+.. image:: ../../../_static/img/flow/how-tos/result-without-charset.png
+    :alt: Fonts
+
 After adding this part unicode characters should be converted properly.
+
+.. code-block::
+
+    <html>
+      <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      </head>
+        <body>
+          <p>¿Qué es Unicode</p>
+        </body>
+    </html>
+
+.. image:: ../../../_static/img/flow/how-tos/result-with-charset.png
+    :alt: Fonts
+
 
 These are supported languages: Albanian, Arabic,
 Armenian, Bulgarian, Traditional and Simplified Chinese, Croatian, Czech, Danish, 
