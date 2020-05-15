@@ -1,6 +1,9 @@
 How to use custom fonts and add multi-lingual support to converting HTML to PDF
 ##################################################################
 
+In this article I'll show how Plumsail action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
+works with different fonts and how to convert foreign characters correctly.
+
 .. contents::
     :local:
     :depth: 1
