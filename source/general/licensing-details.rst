@@ -14,12 +14,12 @@ If none of the plans satisfies your requirements, drop us a message to sales@plu
 What are documents?
 -------------------
 
-Each execution of actions from Plumsail Documents is considered a document. Thus, even if you use "Split PDF: action to split a single PDF document into a few separate document, we charge as for a single document only, because it is a single execution.
+Each execution of actions from Plumsail Documents is considered a document. Thus, even if you use "Split PDF" action to split a single PDF document into a few separate document, we charge as for a single document only, because it is a single execution.
 
 What happens when all documents are spent?
 ------------------------------------------
 
-You can see usage stats in your `Plumsail Documents account <https://account.plumsail.com/documents/license>`_. If you see that you most likely reach the limit this month, you can purchase `additional 100 documents <https://secure.avangate.com/order/product.php?PRODS=4724468&QTY=1&ORDERSTYLE=nLWonJWpmHI=&SHOPURL=https%3A%2F%2Fplumsail.com%2Factions%2Fstore%2F>`_ or pay a differential cost to `start using another plan <upgrade-renew.html>`_. 
+You can see usage stats in your `Plumsail Documents account <https://account.plumsail.com/documents/license>`_. If you see that you most likely reach the limit this month, you can purchase `additional 100 documents <https://secure.2checkout.com/order/checkout.php?PRODS=16287655&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWonJWpmHI=&PAY_TYPE=CCVISAMC&SRC=documentation&BACK_REF=https%3A%2F%2Fplumsail.com%2Fstore%2F>`_ or pay a differential cost to `start using another plan <upgrade-renew.html>`_. 
 
 The documents amount will be reset at 1st day in a month according to your current plan. 
 
