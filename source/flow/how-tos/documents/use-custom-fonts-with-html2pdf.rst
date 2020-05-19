@@ -79,8 +79,8 @@ Support of Unicode characters
 Some fonts do not support foreign characters. Thus, to support a specific language 
 you may need to add some specific font that supports the language.
 
-it is possible to generate PDFs with foreign languages, or languages that contain special characters such as £.
-Convert HTML to PDF supports most of what is supported by UTF-8. However, you need to add the following line in the HTML head element
+It is possible to generate PDFs with foreign languages, or languages that contain special characters such as £.
+Convert HTML to PDF supports most of what is supported by UTF-8. However, you need to add the following line in the HTML head element:
 
 .. code-block::
 
