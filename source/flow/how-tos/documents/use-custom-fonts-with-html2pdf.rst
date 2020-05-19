@@ -98,7 +98,7 @@ Let's take this HTML:
       <head>
       </head>
         <body>
-          <p>¿Qué es Unicode</p>
+          <p>Viðskipti verkefni</p>
         </body>
     </html>
 
@@ -122,7 +122,7 @@ After adding this part unicode characters should be converted properly.
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       </head>
         <body>
-          <p>¿Qué es Unicode</p>
+          <p>Viðskipti verkefni</p>
         </body>
     </html>
 
