@@ -1,7 +1,7 @@
 How to use custom fonts and add multi-lingual support to converting HTML to PDF
 ##################################################################
 
-In this article I'll show how Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
+In this article, I'll show how Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 works with different fonts and how to convert foreign characters correctly.
 
 .. contents::
@@ -27,7 +27,7 @@ supports several common fonts out of the box. For example, Times New Roman or Ar
 .. image:: ../../../_static/img/flow/how-tos/convert-html2pdf-fonts1.png
     :alt: Fonts
 
-Also It's possible to use CSS inside HTML code to set a default font or apply the font to a specific section of the document:
+Also, It's possible to use CSS inside HTML code to set a default font or apply the font to a specific section of the document:
 
 .. code-block::
 
@@ -55,9 +55,9 @@ Also It's possible to use CSS inside HTML code to set a default font or apply th
 Using external fonts
 -------------------
 
-Convert HTML to PDF suppoorts external fonts as well. It's a common case when you need to include external fonts, 
+Convert HTML to PDF supports external fonts as well. It's a common case when you need to include external fonts, 
 
-for example, `Google fonts <https://fonts.google.com/>`_. The Source HTML might be following:
+for example, `Google fonts <https://fonts.google.com/>`_. The Source HTML might be the following:
 
 .. code-block::
 
@@ -76,11 +76,11 @@ for example, `Google fonts <https://fonts.google.com/>`_. The Source HTML might 
 
 Support of Unicode characters
 -----------------------------
-Some fonts do not support foreign characters. Thus, to support specific language 
+Some fonts do not support foreign characters. Thus, to support a specific language 
 you may need to add some specific font that supports the language.
 
 it is possible to generate PDFs with foreign languages, or languages that contain special characters such as £.
-Convert HTML to PDF supports most of what is supported by UTF-8. However you need to add the following line in the HTML head element
+Convert HTML to PDF supports most of what is supported by UTF-8. However, you need to add the following line in the HTML head element
 
 .. code-block::
 
