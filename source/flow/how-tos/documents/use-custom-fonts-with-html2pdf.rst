@@ -1,7 +1,7 @@
 How to use custom fonts and add multi-lingual support to converting HTML to PDF
 ##################################################################
 
-In this article I'll show how Plumsail action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
+In this article I'll show how Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 works with different fonts and how to convert foreign characters correctly.
 
 .. contents::
@@ -57,7 +57,7 @@ Using external fonts
 
 Convert HTML to PDF suppoorts external fonts as well. It's a common case when you need to include external fonts, 
 
-for example, `Google fonts <https://fonts.google.com/>`_. ThE Source HTML might be following:
+for example, `Google fonts <https://fonts.google.com/>`_. The Source HTML might be following:
 
 .. code-block::
 
@@ -102,7 +102,13 @@ Let's take this HTML:
         </body>
     </html>
 
-Without this code charset=UTF-8, the result will look like this:
+Without this code 
+
+.. code-block::
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
+
+the result will look like this:
 
 .. image:: ../../../_static/img/flow/how-tos/result-without-charset.png
     :alt: Fonts
@@ -132,9 +138,5 @@ Korean, Lithuanian, Macedonian, Maltese, Mongolian, Occitan, Persian,
 Polish, Portuguese, Romanian, Russian, Serbian, Slovenian, Spanish, 
 Swedish, Thai, Ukrainian, Upper Sorbian, Turkish, Uyghur, Vietnamese, and Welsh.
 
-Conclusion
-##################################################################
-
-Plumsail `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_ is a usefull tool and supports special characters and many languages.
 
 .. Hint:: Please have a look at this article `How to convert HTML to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-html-to-pdf.html>`_ .
