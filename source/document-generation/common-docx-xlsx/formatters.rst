@@ -1,9 +1,9 @@
-Value formatters in DOCX and XLSX templates
+Value formatters in DOCX, XLSX and PPTX templates
 ===========================================
 
 You can use formatters to add complex logic to values rendered in your templates. For example, you can change value format, hide content, join arrays, etc.
 
-This article covers formatters for both DOCX and XLSX templates.
+This article covers formatters for DOCX, XLSX and PPTX templates.
 
 .. contents:: List of formatters
    :local:

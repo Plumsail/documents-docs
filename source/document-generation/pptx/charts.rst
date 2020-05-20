@@ -3,7 +3,8 @@ Charts in DOCX templates
 
 With help of the templating engine, you can create different types of charts based on differently structured data.
 
-Charts in Word are spreadsheet files embedded within the zip. During analysis Templater will drill down into embedded xlsx file for tags. They will be available through low level API as if they were defined in Word.
+Charts in Word are spreadsheet files that are embed within the zip. 
+During analysis our engine will drill down into embedded xlsx file for tags. 
 
 Let us check a few examples.
 
