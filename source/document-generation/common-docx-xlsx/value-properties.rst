@@ -1,9 +1,9 @@
-Value properties in DOCX and XLSX templates
+Value properties in DOCX, XLSX and PPTX templates
 ===========================================
 
 You can access different methods and properties on tag values. For example, you can bring a string to the lowercase, get a day, month or year from a date, get a number of items in an array. 
 
-Value properties work the same in DOCX and XLSX templates.
+Value properties work the same in DOCX, XLSX and PPTX templates.
 
 Just use **dot** after tag value as in the example below:
 
