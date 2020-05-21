@@ -784,7 +784,7 @@ Converts HTML document to PDF document with the help of Power Automate (Microsof
 
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-You can find more information about using custom fornts with Convert HTML to PDf action `here <use-custom-fonts-with-html2pdf.html>`_. 
+You can find more information about using custom fornts with Convert HTML to PDf action `here <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/use-custom-fonts-with-html2pdf.html>`_. 
 
 .. rubric:: Output Parameters
 
