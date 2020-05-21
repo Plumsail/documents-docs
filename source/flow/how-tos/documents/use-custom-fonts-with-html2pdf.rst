@@ -14,7 +14,7 @@ Using custom fonts
 Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 supports several common fonts out of the box. For example, Times New Roman or Arial:
 
-.. code-block::
+.. code::
 
   <!DOCTYPE html>
   <html>
@@ -29,7 +29,7 @@ supports several common fonts out of the box. For example, Times New Roman or Ar
 
 Also, It's possible to use CSS inside HTML code to set a default font or apply the font to a specific section of the document:
 
-.. code-block::
+.. code::
 
   <!DOCTYPE html>
     <html>
@@ -59,7 +59,7 @@ Convert HTML to PDF supports external fonts as well. It's a common case when you
 
 for example, `Google fonts <https://fonts.google.com/>`_. The Source HTML might be the following:
 
-.. code-block::
+.. code::
 
   <html style="color:blue;" lang="en">
   <head>
@@ -82,7 +82,7 @@ you may need to add some specific font that supports the language.
 It is possible to generate PDFs with foreign languages, or languages that contain special characters such as £.
 Convert HTML to PDF supports most of what is supported by UTF-8. However, you need to add the following line in the HTML head element:
 
-.. code-block::
+.. code::
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
 
@@ -92,7 +92,7 @@ Convert HTML to PDF supports most of what is supported by UTF-8. However, you ne
 
 Let's take this HTML:
 
-.. code-block::
+.. code::
 
     <html>
       <head>
@@ -104,7 +104,7 @@ Let's take this HTML:
 
 Without this code 
 
-.. code-block::
+.. code::
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
 
@@ -115,7 +115,7 @@ the result will look like this:
 
 After adding this part unicode characters should be converted properly.
 
-.. code-block::
+.. code::
 
     <html>
       <head>
