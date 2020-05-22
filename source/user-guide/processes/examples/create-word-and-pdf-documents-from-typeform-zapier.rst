@@ -1,13 +1,13 @@
-How to create Word and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================================================================
+How to create Word and PDF documents from Typeform in Zapier
+============================================================
 
-This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
+This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Zapier. It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
 **Typeform** is an online form builder that allows you to create modern responsive forms for your website.
 
-Let’s see how to connect them in Power Automate (Microsoft Flow) to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
+Let’s see how to connect them in `Zapier <https://zapier.com/apps/plumsail-documents/integrations>`_ to automatically collect data from a Typeform, apply the data to our template, and generate a new PDF document.
 
 .. contents::
     :local:
@@ -99,80 +99,67 @@ You can configure as many deliveries as you need.
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
-We will start our Process from Power Automate (Microsoft Flow). 
+We will start our Process from Zapier. 
 
-Create a Flow
+Create a Zap
 -------------
-This is how our Flow looks:
 
-.. image:: ../../../_static/img/flow/how-tos/typeform-processes.png
-    :alt: pdf from Typeform flow
+Zap is an automated connection between web services in Zapier. This is how our Zap looks:
 
+.. image:: ../../../_static/img/flow/how-tos/zap-excel-cognito.png
+    :alt: xlsx to pdf from Cognito Forms Zap
 
-Check out the Flow steps described below.
+Below is a step-by-step description.
 
-Flow trigger
-~~~~~~~~~~~~
+New entry in Typeform
+~~~~~~~~~~~~~~~~~~~~~
 
-We need to start the Flow everytime somebody submits our Typeform. For that, search for *Typeform* in Power Automate and set *Typeform - When a response is submitted* as a trigger.
+We need to start the Zap everytime somebody submits our Typeform. For that, search for  *Typeform* in Zapier and add *New entry* as a trigger.
 
-If this is your first Flow with Typeform, on this step, sign in to your Typeform Account from MS Flow to use your forms inside Flows.
+If this is your first Zap with Typeform, on this step, sign in to your Typeform Account from Zapier to use your forms inside Zaps.
 
 Then, you'll need to pick the form you want to track in the dropdown.
 
-.. image:: ../../../_static/img/flow/how-tos/typeform-trigger.png
-    :alt: typeform trigger
+.. image:: ../../../_static/img/flow/how-tos/customize-test-typeform.png
+    :alt: Typeform trigger
 
-Start document generation process
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the action from `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_. This action is suitable for starting the Process of generating documents from a template. You can find more information about this action by visiting `this page <../../../flow/actions/document-processing.html#start-document-generation-process>`_.
+The last thing to do with the trigger - **Find data**. Press "Test trigger" to find data. It will allow you to use the trigger output on the next step.
 
-Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*. 
+.. image:: ../../../_static/img/flow/how-tos/test-typeform-zap.png
+    :alt: Test Typeform trigger to find data
 
-.. image:: ../../../_static/img/getting-started/create-flow-connection.png
-    :alt: create flow connection
+Start process in Plumsail Documents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can type any name for the connection. For example, *''Plumsail Documents''*. 
+Once the trigger is set, search for Plumsail Documents and add an action *Start process*.
 
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-zapier.png
+    :alt: start process from Zapier action
 
-The action has two parameters:
+Click Continue. If this is your first Zap, at this point, you'll need to Sign in to your Plumsail Account from Zapier to establish a connection between the app and your account. If you already have a Plumsail account tied to the app, you can add another one at this step, and use it instead.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
-    :alt: start generation documents action
+Customize Start Process
+***********************
 
-- *Process name*. Select the process you need from available ones. 
-- *Template data*. Specify source data in JSON format:
+Choose the process you want to start by this Zap from the dropdown. 
+Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
 
-.. image:: ../../../_static/img/flow/how-tos/Typeform-DOCX-PDF-data.png
-    :alt: dynamic content of Typeform is submitted
+.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
 
-This object contains information from our form. We selected the dynamic content from the output of *Typeform - When a response is submitted* action:
+Use the output from the trigger to specify values:
 
-.. image:: ../../../_static/img/flow/how-tos/Typeform-DOCX-PDF-Dynamic-content.png
-    :alt: dynamic content of Typeform is submitted
+.. image:: ../../../_static/img/flow/how-tos/json-docx-zap-typeform.png
+    :alt: JSON data 
 
-Use the ready document in Flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You can stop on the step **Start document generation process**. 
-
-Steps described above are enough for generating PDFs from a DOCX template based on the Typeform submission. Your result file will be saved to OneDrive in this case. See how it will look:
+Our Zap is ready. See how the resulting file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/Plumsail-Forms-DOCX-PDF-Template-PDF.png
     :alt: pdf from Typeform result file
 
-But if you need an advanced logic, it's possible to work with the result file right in the Flow. 
-
-Here is an example of how you can send the ready document for approval. 
-
-Add an action *Create an approval* from the *Approvals* connector. Select an output of the previous step for an attachment.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-an-approval.png
-    :alt: send pdf for approval
 
 Sign up for Plumsail Documents
 ------------------------------
 
 As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ to get a free 30-day trial.
 
-.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>`_.
+.. hint:: See how to `generate PDF documents from an XLSX template on Typeform entries in Zapier <../../../user-guide/processes/examples/create-excel-and-pdf-documents-from-typeform-zapier.html>`_.

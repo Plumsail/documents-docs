@@ -5,14 +5,8 @@ Forms integrations
       :name: howtotoc
       :maxdepth: 1
 
-      Auto-populate fillable PDF from Plumsail Forms <../../../user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.rst>
-      Create Word and PDF documents from Plumsail Forms <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.rst>
-      Create Word and PDF documents from Cognito Forms <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-cognito-forms.rst>
-      Create Word and PDF documents from Typeform <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-typeform.rst>
-      Create Word and PDF documents from JotForm in Power Automate <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-jotform.rst>
-      Create Word and PDF documents from JotForm in Zapier <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-jotform-zapier.rst>
-      Create Word and PDF documents from Microsoft Forms <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-microsoft-forms.rst>
-      Create Excel and PDF documents from Plumsail Forms <../../../user-guide/processes/examples/create-excel-and-pdf-documents-from-plumsail-forms.rst>
-      Create Excel and PDF documents from Cognito Forms <../../../user-guide/processes/examples/create-Excel-and-pdf-documents-from-cognito-forms.rst>
-      Create Excel and PDF documents from Typeform <../../../user-guide/processes/examples/create-excel-and-pdf-documents-from-typeform.rst>
-      Create Excel and PDF documents from Microsoft Forms <../../../user-guide/processes/examples/create-excel-and-pdf-documents-from-microsoft-forms.rst>
+      Plumsail Forms <../../../user-guide/processes/examples/indexes/index-plumsail-forms.rst>
+      Microsoft Forms <../../../user-guide/processes/examples/indexes/index-microsoft-forms.rst>
+      Cognito Forms <../../../user-guide/processes/examples/indexes/index-cognito-forms.rst>
+      Typeform <../../../user-guide/processes/examples/indexes/index-typeform.rst>
+      JotForm <../../../user-guide/processes/examples/indexes/index-jotform.rst>
