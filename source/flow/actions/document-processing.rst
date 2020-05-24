@@ -1751,6 +1751,11 @@ Review `How to read a CSV file in Power Automate (Microsoft Flow) and bulk gener
     *  -  Delimiter
        -  Delimiter of columns. By default it's a comma.
        -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
+    
+    *  -  Skip First Line
+       -  Select 'Yes' if your CSV has headers as a first line
+       -  If your CSV file has headers as a first line the select 'Yes'. In that case the action will start collecting the headers' values from the second line of the CSV file. If you select 'No', or the empty value then the action will start collecting headers' values from the first line of the CSV file.
+
 
 
                   
