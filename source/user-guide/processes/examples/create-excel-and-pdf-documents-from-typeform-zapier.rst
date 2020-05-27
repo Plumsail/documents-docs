@@ -2,7 +2,7 @@ How to create Excel and PDF documents from Typeform in Zapier
 =============================================================
 
 
-This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
+This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Zapier. It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
@@ -39,7 +39,13 @@ Zap is an automated connection between web services in Zapier. This is how our Z
 .. image:: ../../../_static/img/flow/how-tos/zap-excel-cognito.png
     :alt: xlsx to pdf from Cognito Forms Zap
 
-Below is a step-by-step description.
+You can utilize a zap template. All the steps are described below to help you to customize them.
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=133662"></script>
 
 New entry in Typeform
 ~~~~~~~~~~~~~~~~~~~~~
