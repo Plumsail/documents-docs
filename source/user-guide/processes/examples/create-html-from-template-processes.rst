@@ -1,11 +1,11 @@
-Create HTML document from template in Power Automate (Microsoft Flow) and Azure Logic Apps
-=========================================================================
+Create HTML from template in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
+==========================================================================================
 
-This article demonstrates how to generate HTML documents from a template with the help of `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature, and `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
+This article demonstrates how to generate HTML documents from a template with the help of `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
 
-The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
+The Processes are a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
 
-In this article, we will generate HTML invoice based on some data. This is how our final HTML file looks:
+In this article, we will generate an HTML invoice based on some data. This is how our final HTML file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/html-and-pdf-result.png
    :alt: Result PDF file
@@ -16,13 +16,13 @@ Here is a step-by-step description on how to create such a process of generating
     :local:
     :depth: 2
 
-Configuring the Process
------------------------
+Configure Process
+-----------------
 
 First, register or login to your `Plumsail account <https://account.plumsail.com/>`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
 
-Create a new process
-~~~~~~~~~~~~~~~~~~~~
+Create new process
+~~~~~~~~~~~~~~~~~~
 
 Click on the *Add Process* button.
 
@@ -38,29 +38,40 @@ Upload the template you want to use. Here is `the link for downloading the templ
 
 If you open this template you may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}`. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../document-generation/html/index.html>`_ for more information.
 
-Configure a template
-~~~~~~~~~~~~~~~~~~~~
+Configure template
+~~~~~~~~~~~~~~~~~~
 
-Once you've created the Process and submited the template, you'll proceed to the next step - *Configure template*.
+Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
 
-- Fill in the name of the result file;
-
-- Select HTML format for the output file;
-
-- Test the template to see how it will look at the end by clicking the *Test template* button.
-
-Test the template
-~~~~~~~~~~~~~~~~~
+Here you set the following parameters. Descriptions are under the picture.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/configure-template-html.png
-    :alt: create html from a template
+   :alt: configure HTML template
 
-To test a template, you need to insert source data in JSON format into the window like in the picture below. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template.
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{InvoiceNum}}`. As a result, we'll receive an invoice marked with its number - *Invoice 1*.
+
+**Output type**
+
+By default, it is the same as your template's format. In this particular case, it's HTML. And we kept it to create the HTML document from a template.
+
+**Test template**
+
+You can test the template to see how it will look at the end by clicking the *Test template* button.
+
+After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-html.png
     :alt: create html from a template
 
-To test the template from our example, you can copy and paste this JSON data:
+To test the template from our example, you can copy and paste the JSON data shown below.
+
+.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
 
 .. code:: json
 
@@ -98,77 +109,33 @@ To test the template from our example, you can copy and paste this JSON data:
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <https://plumsail.com/docs/documents/v1.x/user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
 
-Select the folder where the ready document will be saved. And fill in its name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
+You need to connect to your OneDrive from the Plumsail account. After that, set the folder's name where to save the ready document. Here you can use tokens as well. 
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/delivery-html-onedrive.png
-    :alt: create html from a template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/store-onedrive.png
+    :alt: create HTML from template
 
 You can configure as many deliveries as you need.
 
-Start the Process
-~~~~~~~~~~~~~~~~~
+Start Process
+-------------
 
-The last thing to do is to start the Process. We will start it using `Power Automate (Microsoft Flow) <https://flow.microsoft.com/>`_. You can check out `other options <https://plumsail.com/docs/documents/v1.x/user-guide/processes/start-process.html>`_.
+Now everything is ready, and you can start generating HTML documents. The step **Start process** will show available options with a description for each.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/microsoft-flow.png
-    :alt: create html from template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-html-process.png
+    :alt: start process to create HTML from template
 
-Creating the Flow
------------------
+You can start the process :
 
-We'll create a Flow that will start the document generation process and will send the ready document for approval. This is how the complete flow looks:
+- `manually <../start-process-manually.html>`_ with your JSON data;
+- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
+- `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
+- `using Zapier <../start-process-zapier.html>`_
+- `using REST API <../start-process-rest-api.html>`_;
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/html-processes-flow.png
-   :alt: Create HTML from templates
+Use `Power Automate Flow <../../../getting-started/use-from-flow.html>`_ and `Zapier <../../../getting-started/use-from-zapier.html>`_ to connect the process with other apps. It enables you to gather data from one app and pass on to the process to populate a DOCX template. Thus, you can populate the DOCX template from various web forms, CRM systems, SharePoint lists, and thousands of other web applications. 
 
-Here is the step-by-step description.
-
-Start the Process from Flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Flow trigger**
-
-You can actually pick any trigger. We use "*Manually trigger a flow*" trigger here to simplify the Flow.
-
-**Start document generation process**
-
-This is the action from `Plumsail Documents connector <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html?%20connector#start-document-generation-process>`_. This action is suitable for starting the Process of generating documents from a template.
-
-Using the action for the first time, you’ll be asked for *''Connection Name''* and *''Access Key''*.
-
-.. image:: ../../../_static/img/getting-started/create-flow-connection.png
-    :alt: create flow connection
-
-You can type any name for the connection. For example, *''Plumsail Documents''*. 
-
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
-
-The action has two parameters:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
-    :alt: start generation documents action
-
-- *Process name*. Select the one process you need among available. 
-- *Template data*. Specify your data in JSON format as we did on `the step of testing the template <../../../user-guide/processes/examples/create-html-from-template-processes.html#test-the-template>`_.
-
-Use the generated document in Flow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-On this step, we’ll see how to use the result file from the *Start document generation process* action right in the Flow. 
-
-Let’s send the ready document for approval with the *Approvals* connector - action *Create an approval*.
-
-Add the output of the previous step as an attachment. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/approval-step-html.png
-    :alt: generate html files from template
-
-This is just one example out of many others. 
-
-Our Flow is ready. Run it any time you need to generate HTML documents from a template.
+.. hint:: This is possible `to generate PDF documents from HTML templates with Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_.
 
 .. note:: There is another - a little bit more complicated - way to create HTML documents from a template. Check `the article <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-html-from-template.html>`_.
-
-.. hint:: This is possible to generate PDF documents from HTML templates with Plumsail Processes. Proceed to `the article <../../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_ to learn how to do that.

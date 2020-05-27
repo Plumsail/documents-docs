@@ -137,5 +137,5 @@ Sign up for Plumsail Documents
 
 To fully automize the generation and flow of your documents, `register a Plumsail account <https://auth.plumsail.com/Account/Register>`_. It's easy to get started and save time with the help of Plumsail Documents.
 
-.. hint:: Check another article on `how to automatically populate fillable PDFs in Power Automate <../../../user-guide/processes/examples/fill-pdf-form-processes.html>`_. 
+.. hint:: Check another article on `how to automatically populate fillable PDFs with SharePoint list data in Power Automate <../../../user-guide/processes/examples/fill-pdf-form-processes.html>`_. 
 

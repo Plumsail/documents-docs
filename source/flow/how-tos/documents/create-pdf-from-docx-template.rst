@@ -1,6 +1,8 @@
 Create PDF from DOCX template in Power Automate (Microsoft Flow) and Azure Logic Apps
 ====================================================================
 
+.. note:: There is a more simple way to create Word and PDF documents from a template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_.
+
 This article demonstrates how to generate PDF document from a DOCX template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will firstly generate DOCX document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:

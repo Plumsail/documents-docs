@@ -98,6 +98,6 @@ Plumsail Documents Documentation
     :titlesonly:
 
     how-tos/index-form-integrations
-    how-tos/index-e-signature
+    how-tos/index-esignature
     how-tos/index-cloud-storage-integrations
     Your custom service <../how-tos/custom-service-rest-api.rst>
