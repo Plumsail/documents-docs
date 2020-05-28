@@ -6,5 +6,5 @@ E-signature integrations
       :maxdepth: 1
 
       SignNow <../../../user-guide/processes/examples/indexes/index-signnow.rst>
-      AdobeSign <../../../user-guide/processes/examples/create-a-document-from-template-and-sign-abobesign.rst>
+      AdobeSign <../../../user-guide/processes/examples/create-document-from-template-and-sign-abobesign.rst>
       
