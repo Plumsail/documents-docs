@@ -1,5 +1,5 @@
 Use Power Automate
-===================================
+==================
 
 You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsail/plumsail-documents/>`_ in Power Automate (formerly Microsoft Flow) for two scenarios:
 

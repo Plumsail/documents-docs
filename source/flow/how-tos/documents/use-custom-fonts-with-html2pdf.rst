@@ -84,7 +84,7 @@ Convert HTML to PDF supports most of what is supported by UTF-8. However, you ne
 
 .. code::
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 
 
 .. image:: ../../../_static/img/flow/how-tos/action-with-charset.png
@@ -106,7 +106,7 @@ Without this code
 
 .. code::
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">. 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 the result will look like this:
 
@@ -139,4 +139,4 @@ Polish, Portuguese, Romanian, Russian, Serbian, Slovenian, Spanish,
 Swedish, Thai, Ukrainian, Upper Sorbian, Turkish, Uyghur, Vietnamese, and Welsh.
 
 
-.. Hint:: Please have a look at this article `How to convert HTML to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-html-to-pdf.html>`_ .
+.. Hint:: Please have a look at this article `How to convert HTML to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps <../../how-tos/documents/convert-html-to-pdf.html>`_ .

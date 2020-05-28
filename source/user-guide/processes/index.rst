@@ -17,7 +17,11 @@ Processes are an easy way to automate the creation of documents from templates. 
   create-delivery
   start-process
   runs-history
-  examples
+
+Processes examples
+------------------
+
+.. include:: /user-guide/processes/examples.rst
 
 .. note::
 

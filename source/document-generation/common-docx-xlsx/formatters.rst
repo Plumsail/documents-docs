@@ -37,7 +37,7 @@ Examples
         - Result
     *   - .. code-block:: json
     
-            Date: {{date}:format(dd.MM.yyyy hh\:mm)}
+            Date: {{date}:format(dd.MM.yyyy)}
             Date: {{date}:format(MM/dd)}
             Date: {{date}:format(U)}
             Number: {{num}:format(C)}
@@ -55,7 +55,7 @@ Examples
     
             Date: 22 Apr 2012
             Date: 04/22
-            Saturday, April 21, 2012 11:25:43 PM
+            Date: Saturday, April 21, 2012 11:25:43 PM
             Number: $8.00
             Number: 800.00%
             Number: 8.00

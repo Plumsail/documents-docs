@@ -14,8 +14,12 @@ Use ready zap templates
 
 There are various ready-to-use zap templates you can go to right from the step *Start process*. Just hit *Use this Zap*. You'll be redirected to your Zapier account to personalize this particular zap. Learn how to `customize Start Process in Plumsail Documents action <#customize-start-process>`_.
 
-.. image:: ../../_static/img/user-guide/processes/start-zapier.png
-    :alt: Start process from Zapier
+
+|Widget|
+
+.. |Widget| raw:: html
+
+   <script src="https://zapier.com/apps/embed/widget.js?services=plumsail-documents&limit=5"></script>
 
 Or you can create your own zap to start the process. 
 

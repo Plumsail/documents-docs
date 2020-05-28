@@ -1,5 +1,7 @@
 Create HTML document from template in Power Automate (Microsoft Flow) and Azure Logic Apps
-=========================================================================
+==========================================================================================
+
+.. note:: There is a more simple way to create HTML documents from a template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-html-from-template-processes.html>`_.
 
 This article demonstrates how to generate HTML document from a template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
@@ -86,6 +88,8 @@ Use `this link <../../../_static/files/flow/how-tos/html-template.txt>`_ to down
     </table>
 
 You may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}` in the template. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../document-generation/html/index.html>`_ for more information.
+
+.. note:: If you need custom fonts or multilingual support, review `the documentation article <use-custom-fonts-with-html2pdf.html>`_ describing how to work with various fonts and how to convert foreign characters correctly.
 
 In the second parameter, we specified data to apply to the template in JSON format. This object contains information for invoice header and for invoice items:
 
