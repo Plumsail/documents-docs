@@ -96,6 +96,6 @@ Our Zap is ready. See how the resulting file looks:
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Typeforms. A 30-day trial is free.
+As you can see, it's simple to automize the generation of documents on Typeforms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Typeforms. A 30-day trial is free.
 
 .. hint:: See how to `create PDF documents from a DOCX template on a Typeform entry in Zapier <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-typeform-zapier.html>`_.

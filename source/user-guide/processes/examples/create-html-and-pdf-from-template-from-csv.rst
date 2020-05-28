@@ -164,4 +164,4 @@ It's one example of many others. You can use the same logic for your own scenari
 Sign up for Plumsail Documents
 -------------------------------
 
-To start optimizing processes, `register a Plumsail account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to batch generate event tickets from HTML templates based on CSV rows data.
+To start optimizing processes, `register a Plumsail account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to batch generate event tickets from HTML templates based on CSV rows data.
