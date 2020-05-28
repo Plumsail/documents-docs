@@ -25,7 +25,7 @@ In this case, use `the rich set of Power Automate actions <../flow/actions/docum
 
 For example, you can:
 
-- `Convert documents to various formats <../flow/how-tos/documents/index-convert-documents.html>`_
+- `Convert documents to various formats <../how-tos/index-convert-to-pdf.html>`_
 - `Extract data from fillable PDF forms <../flow/how-tos/documents/collect-data-pdf-form.html>`_
 - `Protect PDF <https://medium.com/plumsail/how-to-protect-pdf-disable-printing-modification-annotations-set-password-in-microsoft-flow-and-e255100bd04e>`_ files and `add watermarks <https://medium.com/plumsail/how-to-add-a-watermark-to-a-pdf-document-using-microsoft-flow-azure-logic-apps-or-powerapps-48076779df83>`_
 - `Split <../flow/how-tos/documents/split-pdf-files.html>`_ and `Merge PDF documents <../flow/how-tos/documents/merge-pdf-files.html>`_
