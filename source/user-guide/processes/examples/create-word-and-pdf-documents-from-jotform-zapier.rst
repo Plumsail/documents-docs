@@ -164,6 +164,6 @@ Our Zap is ready. See how the resulting file looks:
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on JotForms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from JotForms. A 30-day trial is free.
+As you can see, it's simple to automize the generation of documents on JotForms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from JotForms. A 30-day trial is free.
 
 .. hint:: Use Plumsail Documents zap templates to start documents generation processes. All available zap templates are presented `on this page <https://zapier.com/apps/plumsail-documents/integrations#zap-template-list>`_.

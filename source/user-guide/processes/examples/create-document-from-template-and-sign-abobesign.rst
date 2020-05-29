@@ -199,7 +199,7 @@ Don’t forget to specify a file extension with :code:`.PDF`
 .. image:: ../../../_static/img/flow/how-tos/adobe_sign_action.png
     :alt: adobesign_action
 
-The Flow is ready. Now you know how to simplify your workflow processes with the help of Processes by Plumsail Documents and its connector for Power Automate (Flow). If you haven't a Plumsail account yet, `sign up <https://auth.plumsail.com/Account/Register>`_ to get started.
+The Flow is ready. Now you know how to simplify your workflow processes with the help of Processes by Plumsail Documents and its connector for Power Automate (Flow). If you haven't a Plumsail account yet, `sign up <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to get started.
 
 .. hint:: If you use a SignNow system for e-signs or just want to compare AdobeSign with an alternative, read our article `How to create a document from a template and sign it using SignNow <../../../flow/how-tos/documents/create-document-from-template-and-SignNow-processes.html>`_.
 

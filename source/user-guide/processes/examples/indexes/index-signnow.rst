@@ -6,10 +6,10 @@ You can integrate Plumsail Documents with SignNow in `Power Automate <https://fl
 **Power Automate based integration**
 
 
-- `Create documents from a template and sign using SignNow in Power Automate (Microsoft Flow) <../create-document-from-template-and-signnow.html>`_
+- `Create documents from a template and sign using SignNow in Power Automate (Microsoft Flow) <../create-document-from-template-sign-signnow.html>`_
 
 
 **Zapier based integration**
 
 
-- `Create documents from a template and sign using SignNow in Zapier <../create-document-from-template-and-signnow-zapier.html>`_
+- `Create documents from a template and sign using SignNow in Zapier <../create-document-from-template-sign-signnow-zapier.html>`_

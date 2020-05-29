@@ -159,6 +159,6 @@ Our Zap is ready. See how the resulting file looks:
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ to get a free 30-day trial.
+As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to get a free 30-day trial.
 
 .. hint:: See how to `create PDF documents from an XLSX template from Cognito Forms entries in Zapier <../../../user-guide/processes/examples/create-Excel-and-pdf-documents-from-cognito-forms-zapier.html>`_.
