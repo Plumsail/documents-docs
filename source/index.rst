@@ -68,14 +68,14 @@ Plumsail Documents Documentation
 
     Convert DOCX, XLSX, PPTX, HTML to PDF <../how-tos/index-convert-to-pdf.rst>
     Convert DOC, XLS, PPT to DOCX, XLSX, PPTX <../../../flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.rst>
-    Extract data using regular expressions <../../../flow/how-tos/documents/use-regex-match-to-extract-values.rst>
-    Fill merge fields in DOCX document <../../../flow/how-tos/documents/fill-docx-merge-fields.rst>
     Extract data from fillable PDF forms <../../../flow/how-tos/documents/collect-data-pdf-form.rst>
     Protect PDF files <https://medium.com/plumsail/how-to-protect-pdf-disable-printing-modification-annotations-set-password-in-microsoft-flow-and-e255100bd04e>
     Add watermarks <../how-tos/index-watermarks.rst>
     Split PDF <../../../flow/how-tos/documents/split-pdf-files.rst>
     Merge PDF <../../../flow/how-tos/documents/merge-pdf-files.rst>
     Read CSV files <../how-tos/index-parse-csv.rst>
+    Extract data using regular expressions <../../../flow/how-tos/documents/use-regex-match-to-extract-values.rst>
+    Fill merge fields in DOCX document <../../../flow/how-tos/documents/fill-docx-merge-fields.rst>
 
 .. container:: pl-right-column
 
