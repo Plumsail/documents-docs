@@ -1,5 +1,5 @@
 Power Automate (Microsoft Flow) actions
-======================
+=======================================
 
 This connector helps you to automatically generate and convert documents with the help of Power Automate (Microsoft Flow). Before starting, ensure that you `added Plumsail Documents connector to Power Automate (Microsoft Flow) <../../getting-started/use-from-flow.html>`_.
 
@@ -784,7 +784,7 @@ Converts HTML document to PDF document with the help of Power Automate (Microsof
 
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-You can find more information about using custom fornts with Convert HTML to PDf action `here <use-custom-fonts-with-html2pdf.html>`_. 
+You can find more information about using custom fornts with Convert HTML to PDf action `here <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/use-custom-fonts-with-html2pdf.html>`_. 
 
 .. rubric:: Output Parameters
 
@@ -1751,6 +1751,11 @@ Review `How to read a CSV file in Power Automate (Microsoft Flow) and bulk gener
     *  -  Delimiter
        -  Delimiter of columns. By default it's a comma.
        -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
+    
+    *  -  Skip First Line
+       -  Select 'Yes' if your CSV has headers as a first line
+       -  If your CSV file has headers as a first line the select 'Yes'. In that case the action will start collecting the headers' values from the second line of the CSV file. If you select 'No', or the empty value then the action will start collecting headers' values from the first line of the CSV file.
+
 
 
                   
