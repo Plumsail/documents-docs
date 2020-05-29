@@ -31,3 +31,39 @@ For example, you can:
 - `Split <../flow/how-tos/documents/split-pdf-files.html>`_ and `Merge PDF documents <../flow/how-tos/documents/merge-pdf-files.html>`_
 - `Parse documents using regular expressions <../flow/how-tos/documents/use-regex-match-to-extract-values.html>`_
 - `Read CSV files <../flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_
+
+List of actions
+---------------
+The list of actions in the Plumsail Documents connector for Power Automate (Microsoft Flow):
+
+.. toctree::      
+    :name: toc-flow-actions
+    :maxdepth: 1
+    :titlesonly:
+
+    Start document generation process <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#start-document-generation-process>
+    Create DOCX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>
+    Create PPTX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-pptx-document-from-template>
+    Create XLSX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-xlsx-document-from-template>
+    Create HTML from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-html-from-template>
+    Fill Merge Fields in DOCX document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-merge-fields-in-docx-document>
+    Convert DOCX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-docx-to-pdf>
+    Convert XLSX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xlsx-to-pdf>
+    Convert DOC to DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-doc-to-docx>
+    Convert XLS to XLSX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xls-to-xlsx>
+    Convert PPT to PPTX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-ppt-to-pptx>
+    Convert PPTX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pptx-to-pdf>
+    Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>
+    Add watermark to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#add-watermark-to-pdf>
+    Split PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#split-pdf>
+    Merge PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-pdf>
+    Merge DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-docx>
+    Extract text from PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#extract-text-from-pdf-document>
+    Convert PDF to Image <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pdf-to-image>
+    Fill in PDF Form <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-in-pdf-form>
+    Get Form from PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#get-form-from-pdf>
+    Protect PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>
+    Parse CSV <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>
+    Regular Expression Match <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-match>
+    Regular Expression Replace <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-replace>
+    Regular Expression Test <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-test>

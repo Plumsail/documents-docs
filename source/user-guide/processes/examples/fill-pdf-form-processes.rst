@@ -155,6 +155,6 @@ Please notice how we specified the File name with :code:`.PDF`. It is essential 
 .. image:: ../../../_static/img/flow/how-tos/create-file-fillable-pdf.png
     :alt: create file in SharePoint document library
 
-Our Flow is ready. Now you know how to automatically populate fillable PDFs with the help of Plumsail Documents in Power Automate (Flow). If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article. To get started is easy. 
+Our Flow is ready. Now you know how to automatically populate fillable PDFs with the help of Plumsail Documents in Power Automate (Flow). If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article. To get started is easy. 
 
 .. hint:: Check `another article <../../../flow/how-tos/documents/fill-pdf-form.html>`_ with the video describing an advanced scenario on How to automatically populate fillable PDF.

@@ -107,6 +107,6 @@ Our Zap is ready. See how the resulting file looks:
 Sign up for Plumsail Documents
 -------------------------------
 
-As you can see, it's simple to automize the generation of documents on Plumsail Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Plumsail Forms.
+As you can see, it's simple to automize the generation of documents on Plumsail Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Plumsail Forms.
 
 .. hint:: Check out one more example of automating processing PDF with Plumsail Forms - `Auto-populate a fillable PDF on Plumsail Forms submission <../../../user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>`_. 
