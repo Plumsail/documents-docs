@@ -1,7 +1,7 @@
 Use Processes to create documents from templates
 ================================================
 
-First of all, `sign in <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/documents/intro>`_  to Plumsail Account. If you don't have an account yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro/reg>`_. Then navigate to Processes:
+First of all, `sign in <https://auth.plumsail.com/account/login?ReturnUrl=https://account.plumsail.com/documents/processes>`_  to Plumsail Account. If you don't have an account yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_. Then navigate to Processes:
 
 Processes are an easy way to automate the creation of documents from templates. You can generate and deliver documents in a few simple steps:
 
