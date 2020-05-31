@@ -82,11 +82,7 @@ Select the line with the tags and change it into a numbered list by clicking the
 .. image:: ../../_static/img/document-generation/pptx-numbered-list-button.png
     :alt: Numbering button
 
-The template on the left side will result in the document on the right side:
 
-.. image:: ../../_static/img/document-generation/pptx-simple-numbering-list-template-result.png
-    :alt: Numbered list template
-    :width: 600
 
 Multilevel lists
 ----------------
@@ -98,61 +94,59 @@ Let's take a look at the following object:
 
   [ 
     {
-		"title": "Romeo and Juliet",
-		"characters": [{
-			"name": "Romeo",
-			"actions": [{
-				"description": "Falls in love with Juliet"
-				},
-				{
-				"description": "Kills Tybalt"
-				},
-				{
-				"description": "Kills himself"
-				}
-			]
+	"title": "Romeo and Juliet",
+	"characters": [{
+		"name": "Romeo",
+		"actions": [{
+			"description": "Falls in love with Juliet"
 			},
 			{
-			"name": "Juliet",
-			"actions": [{
-				"description": "Falls in love with Romeo"
-				},
-				{
-				"description": "Kills herself"
-				}
-			]
+			"description": "Kills Tybalt"
 			},
 			{
-			"name": "Tybalt",
-			"actions": [{
-				"description": "Dies"
-				}
-        ]
+			"description": "Kills himself"
 			}
-	  ]},
+		]
+		},
+		{
+		"name": "Juliet",
+		"actions": [{
+			"description": "Falls in love with Romeo"
+			},
+			{
+			"description": "Kills herself"
+			}
+		]
+		},
+		{
+		"name": "Tybalt",
+		"actions": [{
+			"description": "Dies"
+		}]
+	  }
+	]},
 	{
-		"title": "Hamlet",
-		"characters": [{
-			"name": "Hamlet, prince of Danemark",
-			"actions": [{
-				"description": "Gets upset over the death of his father"
-				},
-				{
-				"description": "Kills his fiancee's husband"
-				},
-				{
-				"description": "Kills his fiancee's brother"
-				},
-				{
-				"description": "Kills his uncle"
-				},
-				{
-				"description": "Gets killed himself and dies"
-				}
-			]
-		}
-     ]}
-	]
+	"title": "Hamlet",
+	"characters": [{
+		"name": "Hamlet, prince of Danemark",
+		"actions": [{
+			"description": "Gets upset over the death of his father"
+			},
+			{
+			"description": "Kills his fiancee's husband"
+			},
+			{
+			"description": "Kills his fiancee's brother"
+			},
+			{
+			"description": "Kills his uncle"
+			},
+			{
+			"description": "Gets killed himself and dies"
+			}
+		]}
+    ]}
+  ]
 
 
 This is a collection of books by Shakespear. Each book has a collection of characters.
