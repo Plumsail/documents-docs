@@ -100,4 +100,5 @@ Plumsail Documents Documentation
     how-tos/index-form-integrations
     how-tos/index-esignature
     how-tos/index-cloud-storage-integrations
+    how-tos/index-other-services
     Your custom service <../how-tos/custom-service-rest-api.rst>
