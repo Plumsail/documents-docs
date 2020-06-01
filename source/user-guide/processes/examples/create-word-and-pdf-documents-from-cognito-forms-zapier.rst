@@ -103,7 +103,19 @@ We will start our Process from Zapier.
 
 Create a Zap
 ------------
-Zap is an automated connection between web services in Zapier. This is how our Zap looks:
+Zap is an automated connection between web services in Zapier. 
+You can create it from scratch following the steps explained below.
+
+
+Or you can utilize the zap template. Click **Use this zap**, and then just customize the steps as it's described further in this article.
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=134340"></script>
+
+This is how our Zap looks:
 
 .. image:: ../../../_static/img/flow/how-tos/zap-excel-cognito.png
     :alt: xlsx to pdf from Cognito Forms Zap
