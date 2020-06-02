@@ -22,8 +22,8 @@ Plumsail Documents Documentation
     Create documents from template <getting-started/use-processes>
     getting-started/use-from-zapier    
     getting-started/use-from-flow
+    Use Power Apps <flow/how-tos/documents/use-the-Plumsail-Documents-connection-in-Powerapps>
     getting-started/use-as-rest-api
-    getting-started/license-activation 
 
   .. toctree::
     :caption: User guide
@@ -34,10 +34,13 @@ Plumsail Documents Documentation
     Processes <user-guide/processes/index>
     user-guide/api-keys
     user-guide/reports
-    user-guide/manage-email-notifications  
+    user-guide/manage-email-notifications
+    Power Automate actions reference <../flow/actions/document-processing.rst>
+    Zapier actions reference
+    REST API reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>  
 
   .. toctree::
-    :caption: Document generation
+    :caption: Templates syntax
     :name: toc-document-generation
     :maxdepth: 1
     :titlesonly:
@@ -56,15 +59,23 @@ Plumsail Documents Documentation
                       
     document-generation/common-docx-xlsx/formatters
     document-generation/common-docx-xlsx/value-properties        
-      
-  .. rst-class:: single-page-nav
-  
-    .. toctree::
-      :caption: Power Automate actions    
-      :name: toc-microsoft-flow-actions
-      :maxdepth: 2      
-      
-      flow/actions/document-processing    
+
+  .. toctree::
+    :caption: PDF processing and more 
+    :name: toc-pdf-processing
+    :maxdepth: 1
+    :titlesonly:
+
+    Convert DOCX, XLSX, PPTX, HTML to PDF <../how-tos/index-convert-to-pdf.rst>
+    Convert DOC, XLS, PPT to DOCX, XLSX, PPTX <../../../flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.rst>
+    Extract data from fillable PDF forms <../../../flow/how-tos/documents/collect-data-pdf-form.rst>
+    Protect PDF files <https://medium.com/plumsail/how-to-protect-pdf-disable-printing-modification-annotations-set-password-in-microsoft-flow-and-e255100bd04e>
+    Add watermarks <../how-tos/index-watermarks.rst>
+    Split PDF <../../../flow/how-tos/documents/split-pdf-files.rst>
+    Merge PDF <../../../flow/how-tos/documents/merge-pdf-files.rst>
+    Read CSV files <../how-tos/index-parse-csv.rst>
+    Extract data using regular expressions <../../../flow/how-tos/documents/use-regex-match-to-extract-values.rst>
+    Fill merge fields in DOCX document <../../../flow/how-tos/documents/fill-docx-merge-fields.rst>
 
 .. container:: pl-right-column
 
@@ -74,31 +85,20 @@ Plumsail Documents Documentation
     :maxdepth: 1
     :titlesonly:
     
-    general/version-history
     general/licensing-details
-    general/upgrade-renew
     general/architecture
     general/security-policy
     general/sla
-    general/manage-email-notifications   
-
-  .. toctree::
-    :caption: REST API
-    :name: toc-test-api
-    :maxdepth: 2
-    :titlesonly:
-    
-    REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=Documents>                      
+    general/manage-email-notifications                     
 
   .. toctree::    
-    :caption: How-tos
-    :name: toc-microsoft-flow-examples
+    :caption: Integration examples
+    :name: toc-Integration-examples
     :maxdepth: 2
     :titlesonly:
 
-    how-tos/index-create-documents-from-template
     how-tos/index-form-integrations
-    how-tos/index-e-signature
-    how-tos/index-convert-documents
-    how-tos/index-process-pdf
-    how-tos/index-other
+    how-tos/index-esignature
+    how-tos/index-cloud-storage-integrations
+    how-tos/index-other-services
+    Your custom service <../how-tos/custom-service-rest-api.rst>

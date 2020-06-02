@@ -28,89 +28,7 @@ We used the *Repeating Section* layout to allow users to add more products. You 
 .. image:: ../../../_static/img/flow/how-tos/add-repeating-section-cognito.png
     :alt: Cognito Form repeating section
 
-Configure the Process
----------------------
-
-To create a process, which will generate PDF documents from an XLSX template, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
-
-Create a new process
-~~~~~~~~~~~~~~~~~~~~
-
-Click on the *Add process* button.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
-
-Set the Process name. 
-
-.. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
-    :alt: generate PDF from Cognito Form
-
-Upload the template you're gonna use. In this example, we'll create a request for stationery and office supplies. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/Create-Word-and-XLSX-template.xlsx>`_.
-
-.. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-XLSX-PDF-Template.png
-    :alt: Template
-
-When creating your own templates, mind the templating language. Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
-
-In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
-Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
-
-Configure a template
-~~~~~~~~~~~~~~~~~~~~
-
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
-
-- Fill in the name of the result file
-- Select PDF format for the output file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
-
-.. image:: ../../../_static/img/flow/how-tos/configure-template-cognito.png
-    :alt: Configure template
-
-
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. To understand what JSON to feed, you need to look at tokens in your template. 
-In our template we have :code:`{{name}}`, :code:`{{department}}`, etc, that's how the sample JSON for testing might look in our case:
-
-
-.. code:: json
-
-    {
-      "name": "John Doe",
-      "department": "IT",
-      "email": "j.doe@contoso.com",
-      "items": [
-        {
-          "Product": "Pen",
-          "Quantity": 10
-          },
-        {
-          "Product": "Pencil",
-          "Quantity": 10
-          }
-      ],
-      "instructions": "Delivery before Thursday",
-      "phone": "(206)-564-96-97",
-      "date": "25/02/2020"
-    }
-
-.. image:: ../../../_static/img/flow/how-tos/test-template-cognito-xlsx.png
-    :alt: test template
-
-It’s testing. We’re going to apply the data from the Cognito stationery request form to our template. 
-
-Delivery
-~~~~~~~~
-
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
-
-Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
-
-.. image:: ../../../_static/img/flow/how-tos/onedrive-forms.png
-    :alt: create pdf from template on form submission
-
-You can configure as many deliveries as you need.
-
+.. include:: ../examples/stationary-order-process-part.rst
 
 Start the Process
 ~~~~~~~~~~~~~~~~~
@@ -200,6 +118,6 @@ Add an action *Create an approval* from the *Approvals* connector. Select an out
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Cognito Forms.
+As you can see, it's simple to automize the generation of documents on Cognito Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Cognito Forms.
 
-.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>`_.
+.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>`_.

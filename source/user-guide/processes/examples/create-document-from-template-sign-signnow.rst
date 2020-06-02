@@ -65,10 +65,10 @@ JSON data
 
     {
         "Number": "432",
-        "execution.date":"2020-05-25",
-        "delivery.date":"2020-05-30",
-        "buyer.name":"LUCKY LLC",
-        "buyer.address":"55 Main St.New York NY 97203 USA",
+        "execution.date": "2020-05-25",
+        "delivery.date": "2020-05-30",
+        "buyer.name": "LUCKY LLC",
+        "buyer.address": "55 Main St.New York NY 97203 USA",
         "company": {
            "email": "sales@sample.com",
            "address": "3 Main St.New York NY 97203 USA",

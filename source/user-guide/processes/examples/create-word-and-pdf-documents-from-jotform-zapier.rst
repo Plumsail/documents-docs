@@ -107,6 +107,18 @@ We will start our Process from Zapier.
 
 Create a Zap
 -------------
+Zap is an automated connection between web services in Zapier. 
+You can create it from scratch following the steps explained below.
+
+
+Or you can utilize the zap template. Click **Use this zap**, and then just customize the steps as it's described further in this article.
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=134381"></script>
+
 This is how our Zap looks:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/jotform-zap.png
@@ -164,6 +176,6 @@ Our Zap is ready. See how the resulting file looks:
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on JotForms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from JotForms. A 30-day trial is free.
+As you can see, it's simple to automize the generation of documents on JotForms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from JotForms. A 30-day trial is free.
 
 .. hint:: Use Plumsail Documents zap templates to start documents generation processes. All available zap templates are presented `on this page <https://zapier.com/apps/plumsail-documents/integrations#zap-template-list>`_.

@@ -1,7 +1,7 @@
 Use Processes to create documents from templates
 ================================================
 
-First of all, `sign in <https://auth.plumsail.com/account/login?returnUrl=https://account.plumsail.com/documents/intro>`_  to Plumsail Account. If you don't have an account yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/intro/reg>`_. Then navigate to Processes:
+First of all, `sign in <https://auth.plumsail.com/account/login?ReturnUrl=https://account.plumsail.com/documents/processes>`_  to Plumsail Account. If you don't have an account yet, then  `sign up <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_. Then navigate to Processes:
 
 Processes are an easy way to automate the creation of documents from templates. You can generate and deliver documents in a few simple steps:
 
@@ -11,8 +11,12 @@ Processes are an easy way to automate the creation of documents from templates. 
 - `Create a new process <../user-guide/processes/create-process.html>`_
 - `Test the template with your data <../user-guide/processes/test-template.html>`_
 - `Deliver generated documents (email, OneDrive, etc.) <../user-guide/processes/create-delivery.html>`_
-- `Start process manually or using web form, Power Automate (Microsoft Flow), or REST API <../user-guide/processes/start-process.html>`_
-- `Review examples of other processes <../user-guide/processes/examples.html>`_
+- `Start process manually or using web form, Zapier, Power Automate (Microsoft Flow), or REST API <../user-guide/processes/start-process.html>`_
+
+Processes examples
+------------------
+
+.. include:: /user-guide/processes/examples.rst
 
 .. note::
 

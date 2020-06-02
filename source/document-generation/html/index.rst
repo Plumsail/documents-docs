@@ -3,10 +3,19 @@ HTML templates
 
 You can create documents from HTML templates using Plumsail Documents. There are at least two ways to apply data to an HTML template:
 
-- `Create a process <../../user-guide/processes/index.html>`_ and start it using Power Automate (Microsoft Flow), Web form or REST API
+- `Create a process <../../user-guide/processes/index.html>`_ and start it manually or using Power Automate (Microsoft Flow), Zapier, or Web form.
 - Or `use rich REST API directly <../../getting-started/use-as-rest-api.html>`_
 
-This article explains HTML templates syntax. It is quite similar to the syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tag. It also makes it easy to reference nested values. Example: 
+This article explains HTML templates syntax. 
+
+.. contents::
+    :local:
+    :depth: 1
+
+General overview
+----------------
+
+HTML templates syntax in Plumsail Documents is quite similar to the syntax of popular JavaScript framework `Handlebars <http://handlebarsjs.com/>`_. It supports **if** and **each** tags. It also makes it easy to reference nested values. Example: 
 
 .. code:: 
 
@@ -53,7 +62,7 @@ The engine will automatically detect when an object is a dictionary and search f
 Nested Placeholders
 -------------------
 
-If you want to grab a nested property, you can separate identifiers using **.**:
+If you want to grab a nested property, you can separate identifiers using a dot :code:`.`:
 
 .. code:: html
 
@@ -127,6 +136,52 @@ Within a block of text, you may refer to a same top-level placeholder over and o
     {{/with}}
     
 Here, the :code:`Customer.Address` property will be searched first for the placeholders. If a property cannot be found in the :code:`Address` object, it will be searched for in the :code:`Customer` object and on up.
+
+Date, time, and numeric formats
+----------------------------------
+
+The templating engine uses standard format strings. You can find more information in Microsoft documentation:
+
+- `Numeric format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
+- `Date and time format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings>`_
+
+And review a few examples to understand how it works:
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            Date: {{date:dd/MM/yyyy}}
+            Date: {{date:MM/dd}}
+            Date: {{date:U}}
+            Number: {{num:C}}
+            Number: {{num:P}}
+            Number: {{num:N2}}
+
+        - .. code-block:: json
+
+            {                     
+                "date": "2012-04-21T18:25:43-05:00",
+                "num": 8
+            }        
+
+        - .. code-block:: json
+    
+            Date: 22 Apr 2012
+            Date: 04/22
+            Date: Saturday, April 21, 2012 11:25:43 PM
+            Number: $8.00
+            Number: 800.00%
+            Number: 8.00
+
+.. note:: If you create PDFs from HTML templates, you may need to use custom fonts and to convert some languages characters correctly. Please, check `this article <../../flow/how-tos/documents/use-custom-fonts-with-html2pdf.html>`_ to learn how to achieve that.
 
 .. note::
 

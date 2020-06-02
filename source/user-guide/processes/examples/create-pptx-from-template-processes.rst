@@ -184,7 +184,7 @@ Now everything is ready, and you can start generating PowerPoint presentations. 
 You can start the process :
 
 - `manually <../start-process-manually.html>`_ with your JSON data;
-- `by Plumsail Web form <../start-process-web-form.html>`_ embedding it to the process;
+- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
 - `using Zapier <../start-process-zapier.html>`_
 - `using REST API <../start-process-rest-api.html>`_;

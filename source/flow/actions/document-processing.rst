@@ -1,5 +1,5 @@
 Power Automate (Microsoft Flow) actions
-======================
+=======================================
 
 This connector helps you to automatically generate and convert documents with the help of Power Automate (Microsoft Flow). Before starting, ensure that you `added Plumsail Documents connector to Power Automate (Microsoft Flow) <../../getting-started/use-from-flow.html>`_.
 

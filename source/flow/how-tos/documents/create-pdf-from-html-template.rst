@@ -1,6 +1,8 @@
 Create PDF from HTML template in Power Automate (Microsoft Flow) and Azure Logic Apps
 ====================================================================
 
+.. note:: There is a more simple way to create PDF documents from an HTML template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_.
+
 This article demonstrates how to generate PDF document from an HTML template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
 We will firstly generate HTML document from a template. Then we will convert it to PDF. In this article, we will generate PDF invoice based on some data. This is how our final PDF file looks:
@@ -84,6 +86,8 @@ In the first parameter *'Source HTML'* you can put raw HTML/text of a template o
     </table>
 
 You may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}` in the template. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../document-generation/html/index.html>`_ for more information.
+
+.. note:: If you need custom fonts or multilingual support, review `the documentation article <use-custom-fonts-with-html2pdf.html>`_ describing how to work with various fonts and how to convert foreign characters correctly.
 
 In the second parameter, we specified data to apply to the template in JSON format. This object contains information for invoice header and for invoice items:
 
