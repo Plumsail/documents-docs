@@ -76,7 +76,7 @@ In the template I added the tag:
 
 to the place where I need to insert the logo.
 
-To correctly insert the Logo to the invoice I convert the SharePoint action result in to base 64 code.
+To correctly insert the Logo to the invoice I convert the SharePoint action result into base 64 code.
 To achieve this we can use next expression
 
 .. code::
@@ -157,7 +157,7 @@ Conclusion
 ##################################################################
 
 There are a lot of real situations where it's needed to insert an image into docx file.
-Plumsail `Picture formatter`_ helps to achieve the goal and it's a usefull addition to `Create DOCX from template connector`_.
+Plumsail `Picture formatter`_ helps to achieve the goal and it's a usefull addition to `Create DOCX from template`_.
 
 .. _Create DOCX from template: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template
 .. _Convert DOCX to PDF: https://plumsail.com/docs/documents/v1.x/how-tos/index-convert-to-pdf.html
