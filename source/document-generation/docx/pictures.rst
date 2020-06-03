@@ -32,7 +32,7 @@ For the template from the picture above to work you need to use JSON object like
 
 .. note:: 
 
-  You can use the URL of a picture inside the SharePoint document library. You select the picture and click "Copy link". Configure the link to be available for everyone. Then append :code:`&Download=1` at the end of the link. `External sharing <https://docs.microsoft.com/en-us/sharepoint/external-sharing-overview>`_ has to be enabled on this SharePoint site.
+  You can use the URL of a picture inside the SharePoint document library. You should select the picture and click "Copy link". Configure the link to be available for everyone. Then append :code:`&Download=1` at the end of the link. `External sharing <https://docs.microsoft.com/en-us/sharepoint/external-sharing-overview>`_ has to be enabled on this SharePoint site.
 
 Insert pictures from Base64 string
 ----------------------------------
