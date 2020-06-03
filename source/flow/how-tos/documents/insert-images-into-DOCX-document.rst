@@ -163,4 +163,4 @@ Plumsail `Picture formatter`_ helps to achieve the goal and it's a usefull addit
 .. _Convert DOCX to PDF: https://plumsail.com/docs/documents/v1.x/how-tos/index-convert-to-pdf.html
 
 .. _Picture formatter: https://plumsail.com/docs/documents/v1.x/document-generation/common-docx-xlsx/formatters.html#picture
-.. _here: ./../../_static/files/flow/how-tos/invoice-template-picture-test.docx
+.. _here: https://plumsail.com/docs/documents/v1.x/_static/files/document-generation/demos/invoice-template-picture-test.docx
