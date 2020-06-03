@@ -1,7 +1,7 @@
 Pictures in DOCX templates
 ==========================
 
-DOCX templates have multiple `value formatters <../common-docx-xlsx/formatters.html#picture>`_. One of them is `picture formatter <../common-docx-xlsx/formatters.html#picture>`_. You can use it to dynamically insert pictures into DOCX documents. 
+DOCX templates have multiple `value formatters <../common-docx-xlsx/formatters.html>`_. One of them is `picture formatter <../common-docx-xlsx/formatters.html#picture>`_. You can use it to dynamically insert pictures into DOCX documents. 
 
 Let us review a few cases examples:
 
