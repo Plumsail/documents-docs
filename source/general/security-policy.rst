@@ -46,7 +46,7 @@ Plumsail Documents hosts all data in Microsoft Azure which data centers have bee
 Compliance Certifications
 -------------------------
 
-Azure data center is certified for ISO 27001, SOC I, II AND III, HIPPA and FedRAMP compliance. Visit `Azure trust center`_. 
+Azure data center is certified for ISO 27001, SOC I, II AND III, HIPAA and FedRAMP compliance. Visit `Azure trust center`_. 
 
 Get in touch with us
 ---------------------
