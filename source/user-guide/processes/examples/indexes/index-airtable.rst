@@ -1,9 +1,21 @@
+.. title:: Generate Word, Excel, PowerPoint, and PDFs from Airtable in Zapier
+
+.. meta::
+  :description: Get rid of the repetitive and time-consuming tasks with Airtable integration for document generation. Create Word and Excel documents, PowerPoint presentations, fill-in PDF forms from Airtable with Plumsail Documents.
+
 Airtable integration
 ====================
 
-Create documents from Airtable with the help of `Plumsail Documents processes <../../index.html>`_ in Zapier. Utilize the zap template below. 
+Boost your productivity by connecting `Airtable <https://airtable.com/>`_ with document generation. 
+Try Plumsail Documents integration with Airtable in Zapier. 
+It will help you to auto-generate Word and Excel documents, PowerPoint presentations, PDF files, and to auto-fill PDF forms. 
 
-Just click **Use this zap** and go ahead!
+Review a detailed example of how to generate contracts from Airtable deals to get inspired:
+
+- `Automatically generate contracts from Airtable data in Zapier <../generate-contracts-from-airtable-in-zapier.html>`_
+
+
+Utilize the zap template below anytime you need to connect Airtable to Plumsail Documents. Just click **Use this zap** and go ahead!
 
 |Widget|
 
