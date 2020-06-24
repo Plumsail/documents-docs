@@ -125,7 +125,7 @@ To test the template from our example, you can copy and paste the JSON data show
 Delivery
 --------
 
-The next step is delivery. For demonstration purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstration purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
 
 You need to connect to your OneDrive from the Plumsail account. After that, set the folder's name where to save the completed document.  
 
@@ -141,7 +141,7 @@ We will start our Process from Zapier.
 
 Create Zap
 ~~~~~~~~~~~~
-Zap is an automated connection between web services in Zapier. 
+Zap is a workflow that connects apps together to perform tasks automatically.
 You can create it from scratch following the steps explained below.
 
 
