@@ -17,6 +17,7 @@ Processes are an easy way to automate the creation of documents from templates. 
   create-delivery
   start-process
   runs-history
+  online-editor
 
 Processes examples
 ------------------
