@@ -171,6 +171,7 @@ a:hover, a:focus {
 
 code.literal {
     font-size: 16px;
+    background-color: #f9f2f4;
 }
 
 .contents p.topic-title.first{
