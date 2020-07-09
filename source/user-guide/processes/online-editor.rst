@@ -1,55 +1,72 @@
 Online editor
 =============
 
-The `Configure template step <./create-process.html>`_ includes an online editor for templates. 
-It allows you to change document templates online in your Plumsail account and check how these changes affect the result. 
+The online editor allows you to create document templates and edit them online right in the `Plumsail process <./index.html>`_. Instantly you can check how the resulting document will look. 
 Let’s review how it works.
 
-To enter the Online editor, click on the *Edit online* button from the Editor substep. Once you’ve entered the Online editor, you’re able to change the document template. 
+.. contents::
+    :local:
+    :depth: 2
 
-.. image:: ../../_static/img/user-guide/processes/online-editor-mode.png
-    :alt: Online editor mode on
+Start online editor
+~~~~~~~~~~~~~~~~~~~
 
-Switch to a full-screen mode and back by simply clicking on the button.
+The editor mode in the Configure template step appears with the preview for Office document templates. To start working on the document template online, click on the *Edit online* button:
 
-.. image:: ../../_static/img/user-guide/processes/full-screen-buttons.png
-    :alt: Full screen and Exit full screen buttons
+.. image:: ../../_static/img/user-guide/processes/edit-online-button.png
+    :alt: Edit online button
 
-Test the document template to check how made changes will affect the resulting file. 
+
+If you're working on the HTML template, you're able to make changes right away, because there is no preview mode:
+
+.. image:: ../../_static/img/user-guide/processes/edit-html-template.png
+    :alt: Edit HTML html template
+
+.. note:: No online editor is available for fillable PDF form templates. You'll have only its preview on this step. You can consult our detailed description of `how to create fillable PDFs <../../document-generation/fillable-pdf/index.html>`_. 
+
+Complex Office document templates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Online editor for Word, Excel, and PowerPoint templates is supported by Google Docs. 
+That's why you may encounter incompatibilities for certain Microsoft Office features. 
+For example, it will likely break watermarks, inserted pictures' rotation or opacity.
+
+We recommend you to work on complex document templates outside the process online editor. Use Upload/Download buttons for it:
+
+.. image:: ../../_static/img/user-guide/processes/upload-download-button.png
+    :alt: Edit HTML html template                
+
+Full-screen mode
+~~~~~~~~~~~~~~~~
+
+The online editor provides a full-screen mode for more convenience in working with the template.  
+Switch to a fullscreen and back by simply clicking on the button.
+
+**Go to fullscreen**
+
+.. image:: ../../_static/img/user-guide/processes/full-screen-button.png
+    :alt:  Full screen button
+
+**Exit fullscreen**
+
+.. image:: ../../_static/img/user-guide/processes/exit-full-screen.png
+    :alt:  Exit full screen button
+
+Test the document template
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can instantly check how all your modifications to the template will affect the resulting file. It's possible to test the template right from the online editor:
 
 .. image:: ../../_static/img/user-guide/processes/test-button-template.png
     :alt: Test template button in Online editor
 
 Proceed to the instruction on `how to test templates with your data <./test-template.html>`_.
 
-Editing of Office document templates
-------------------------------------
 
-Online editor for Word, Excel, and PowerPoint templates is supported by Google Docs. 
+Save the template
+~~~~~~~~~~~~~~~~~
 
-Edit Word DOCX templates:
+You can switch between preview and edit modes by clicking *Edit online* and *Exit editor*. But none of the changes will pass to the process until you press *Save&Next*. To confirm you're satisfied with the template result and ready to go to the next step, click on this button:
 
-.. image:: ../../_static/img/user-guide/processes/edit-word-template.png
-    :alt: Edit Word DOCX template
-
-Edit Excel XLSX templates:
-
-.. image:: ../../_static/img/user-guide/processes/edit-excel-template.png
-    :alt: Edit Excel XLSX template  
-
-Edit PowerPoint PPTX templates:
-
-.. image:: ../../_static/img/user-guide/processes/edit-powerpoint-template.png
-    :alt: Edit PowerPoint PPTX template  
-
-.. important:: Exit the online editor means you confirm the changes. After exiting you won’t be able to undo changes, just make new ones.
-
-Editing of HTML templates
--------------------------
-
-Online editor for HTML templates uses CodeMirror with HTML Mixed mode. You can make changes to your HTML template right in the working area. 
-
-.. image:: ../../_static/img/user-guide/processes/edit-html-template.png
-    :alt: Edit HTML html template
-
-.. hint:: Plumsail Documents processes support fillable PDF forms as templates as well. You can't edit the PDF form template inside the process, but you can create it the way you need beforehand. Check out our instruction on `how to create fillable PDFs <../../document-generation/fillable-pdf/index.html>`_.
+.. image:: ../../_static/img/user-guide/processes/save-button.png
+    :alt: Save template button in Online editor

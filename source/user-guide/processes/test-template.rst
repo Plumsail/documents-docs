@@ -1,12 +1,16 @@
 Test template with your data
 =============================
 
-You can test the document template to see an example of the resulting file from the Editor and the Settings steps. 
+You can test the document template to see an example of the resulting file from Editor and Settings substeps of the Configure template step. 
 
-The first option – testing from the Editor step – will help to see how your changes affect the result.
+**Testing from the editor**
+
+The first option – testing from the Editor step – will help to see how your modifications to the template affect the result.
 
 .. image:: ../../_static/img/user-guide/processes/test-template-from-editor.png
     :alt: Test template from editor step
+
+**Testing from the settings**
 
 The second option – testing from the Settings step – will show you how the finalized document will look after you’ve customized all the settings. 
 
