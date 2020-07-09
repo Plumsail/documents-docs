@@ -76,12 +76,18 @@ Switch to a fullscreen and back by simply clicking on the button.
 Test the document template
 --------------------------
 
-You can instantly check how all your modifications to the template will affect the resulting file. It's possible to test the template right from the online editor:
+You can instantly check how all your modifications to the template will affect the resulting file.
+You can do it from the preview:
+
+.. image:: ../../_static/img/user-guide/processes/test-from-preview.png
+    :alt: Test template from preview
+
+Or right from the online editor:
 
 .. image:: ../../_static/img/user-guide/processes/test-button-template.png
     :alt: Test template button in Online editor
 
-After you've clicked on *Test template*, the dialog appears. You need to insert your data in JSON and click on *Create document*. 
+After you've clicked on *Test template*, the dialog appears. You need to insert your source data in JSON and click on *Create document*. 
 
 You'll be able to test the template after you `confugured output file settings <./configure-settings.html>`_ as well.
 
