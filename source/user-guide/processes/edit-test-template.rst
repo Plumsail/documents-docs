@@ -49,7 +49,7 @@ Complex Office document templates
 ---------------------------------
 
 Online editor for Word, Excel, and PowerPoint templates is based on Google Docs. 
-That's why you may encounter incompatibilities for certain Microsoft Office features. For example, Google Docs don't support watermarks.
+That's why you may encounter incompatibilities for certain Microsoft Office features. For example, Google Docs doesn't support watermarks.
 
 We recommend you to work on complex document templates outside the process online editor. Use Upload/Download buttons for it:
 
@@ -87,9 +87,9 @@ Or right from the online editor:
 .. image:: ../../_static/img/user-guide/processes/test-button-template.png
     :alt: Test template button in Online editor
 
-After you've clicked on *Test template*, the dialog appears. You need to insert your source data in JSON and click on *Create document*. 
+After you've clicked on the *Test template*, the dialog appears. You need to insert your source data in JSON and click on *Create document*. 
 
-You'll be able to test the template after you `confugured output file settings <./configure-settings.html>`_ as well.
+You'll be able to test the template after you `configured output file settings <./configure-settings.html>`_ as well.
 
 Save the template
 -----------------
