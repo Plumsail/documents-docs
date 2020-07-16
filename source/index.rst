@@ -101,5 +101,4 @@ Plumsail Documents Documentation
     how-tos/index-esignature
     how-tos/index-cloud-storage-integrations
     how-tos/index-other-services
-    how-tos/index-dynamics-365
     Your custom service <../how-tos/custom-service-rest-api.rst>
