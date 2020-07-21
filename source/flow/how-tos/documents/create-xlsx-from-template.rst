@@ -1,5 +1,5 @@
 How to create Excel XLSX document from template in Power Automate (Microsoft Flow), Azure Logic Apps and PowerApps
-=================================================================================================
+==================================================================================================================
 
 .. note:: There is a more simple way to create Excel and PDF documents from a template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_.
 

@@ -1,12 +1,12 @@
 Convert XLSX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================
+===========================================================================
 
-This article demonstrates how to convert XLSX Word document to PDF with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
+This article describes how to achieve a pixel-perfect XLSX Excel document to PDF conversion in `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will take a purchase order as a sample Excel document:
 
 .. image:: ../../../_static/img/flow/how-tos/xlsx-sample.png
-   :alt: Select fields
+   :alt: Excel sample to convert to PDF
 
 Use `this link <../../../_static/files/flow/how-tos/Purchase%20Order%20Example.xlsx>`_ to download it.
 
@@ -26,7 +26,7 @@ You can store your source file anywhere. In this example, we will store our docu
 This is how complete flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/convert-xlsx-to-pdf-flow.png
-   :alt: Select fields
+   :alt: pixel perfect Excel to PDF conversion flow
 
 Here is step by step description for the flow.
 
@@ -36,13 +36,13 @@ You can actually pick any trigger. For example, you can start Flow on file creat
 
 **Get file content**
 
-This action gets file content of the specified file from a SharePoint document library. You just specify SharePoint site URL and path to your file.
+This action gets the file content of the specified file from the OneDrive folder.
 
 You can use any other connector to get files from your system.
 
 **Convert XLSX to PDF**
 
-This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_. It will convert our Excel document, and we'll receive the pixel-perfect PDF output. 
 
 Just put XLSX file content from the output of the previous action and receive PDF file content as an output of this action.
 
@@ -50,10 +50,10 @@ You can find more information about this action `here <../../actions/document-pr
 
 **Create file**
 
-Now you need to store PDF file somewhere. In our example, we use "Create file" action OneDrive connector to store the PDF document.
+Now you need to store PDF file somewhere. In our example, we use "Create file" action OneDrive connector to store the PDF document. 
 
 .. image:: ../../../_static/img/flow/how-tos/excel-generated-pdf-onedrive.png
-   :alt: Select fields
+   :alt: the ready pixel perfect pdf in OneDrive
 
 You can use any other connector to store PDF document into your system.
 
