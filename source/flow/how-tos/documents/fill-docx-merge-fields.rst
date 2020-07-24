@@ -1,5 +1,10 @@
+.. title:: Fill merge fields in DOCX documents using Power Automate (Microsoft Flow)
+
+.. meta::
+   :description: Populate Microsoft Word templates with mergefields automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+
 Fill merge fields in DOCX document in Power Automate (Microsoft Flow) and Azure Logic Apps
-=========================================================================
+==========================================================================================
 
 This article demonstrates how to fill merge fields in a DOCX Word document with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. This approach allows you to create simple DOCX template with merge fields and generate new documents by filling those fields.
 

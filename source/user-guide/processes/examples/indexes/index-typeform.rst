@@ -1,3 +1,9 @@
+.. title:: Typeform integrations to populate Office document and PDF templates 
+
+.. meta::
+   :description: Review examples of Typeform and Documents integration to automate document creation and PDF processing.
+
+
 Typeform integration
 ====================
 

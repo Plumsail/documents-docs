@@ -1,3 +1,9 @@
+.. title:: Use Google Sheets data to populate your custom document templates 
+
+.. meta::
+   :description: When a new row is added to Google Sheets, generate customized documents from its data.
+
+
 Google sheets integration
 =========================
 

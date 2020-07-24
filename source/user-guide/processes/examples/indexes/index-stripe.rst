@@ -1,3 +1,9 @@
+.. title:: Generate customized documents from Stripe with Plumsail Documents integration for Zapier
+
+.. meta::
+   :description: Create personalized receipts, invoices and other documents from Stripe with Plumsail Documents	integration for Zapier
+
+
 Stripe integration
 ==================
 

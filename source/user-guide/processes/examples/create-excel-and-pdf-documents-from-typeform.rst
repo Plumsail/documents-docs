@@ -1,5 +1,10 @@
+.. title::  How to create customized Excel and PDF documents from Typeform in Power Automate Flow
+
+.. meta::
+   :description: A ready-to-use example of Typeform populating Excel and PDF documents in Power Automate Flow and Azure Logic Apps.
+
 How to create Excel and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
-===========================================================================================================
+============================================================================================================
 
 
 This article demonstrates how to create PDF documents from an XLSX template on a `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
@@ -45,7 +50,7 @@ Set the Process name.
 .. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
     :alt: generate PDF from Typeform
 
-Upload the template you're gonna use. In this example, we'll create a short employee information sheet. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/Create-Excel-and-PDF-EmployeesData-template.xlsx>`_.
+Upload the template you're gonna use. In this example, we'll create a short employee information sheet. And below is our template for it. You can `download it <../../../_static/files/flow/how-tos/Create-Excel-and-PDF-EmployeesData-template.xlsx>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/MS-Forms-XLSX-PDF-template.png
     :alt: Excel template

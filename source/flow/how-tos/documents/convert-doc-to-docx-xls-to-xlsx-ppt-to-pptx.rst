@@ -1,5 +1,10 @@
+.. title:: Batch convert DOC to DOCX, XLS to XLSX, PPT to PPTX in Power Automate Flow
+
+.. meta::
+   :description: Bulk convert DOC to DOCX, XLS to XLSX, PPT to PPTX in SharePoint library or other storage using Microsoft Power Automate
+
 How to convert DOC, XLS, PPT documents to DOCX, XLSX, PPTX respectively using Power Automate (Microsoft Flow)
-============================================================================================
+=============================================================================================================
 
 In this article, you will find out how you can easily convert older formats of Microsoft Office documents into modern ones in bulk with the help of `Power Automate (Microsoft Flow)`_ and `Plumsail Documents`_.  Since Microsoft developed new extensions, sooner or later everyone faces a necessity to convert DOC to DOCX, XLS to XLSX and PPT to PPTX. Benefits of new formats are obvious, useful features were added and files weight less so it’s easier to use them online. 
 

@@ -1,5 +1,10 @@
+.. title:: Add text watermarks to PDF documents without Acrobat using Power Automate Flow
+
+.. meta::
+   :description: Add text watermarks to PDF documents automatically without Acrobat in Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
+
 How to add a text watermark to a PDF document using Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
-=================================================================================================
+==================================================================================================================
 
 This is **the second article** in our "How to use Watermarks" series. We hope these articles will help you to get the best out of watermarking PDFs using `Plumsail Documents <https://plumsail.com/documents/>`_ in Power Automate (Microsoft Flow).
  
@@ -19,7 +24,7 @@ Before we dive in, here is where we are in our "How to use Watermarks" series:
 So, let us have a look at how to add a text watermark to a document.
 
 Use custom text watermark
-------------------------------
+-------------------------
 
 Classify your documents 
 ~~~~~~~~~~~~~~~~~~~~~~~

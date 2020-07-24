@@ -1,3 +1,9 @@
+.. title::  Create HTML documents from a template using Power Automate or Zapier
+
+.. meta::
+   :description: Check out how to automatically generate HTML from templates with the help of Plumsail Documents in Power Automate and Zapier.
+
+
 Create HTML from template in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
 ==========================================================================================
 

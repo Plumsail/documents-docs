@@ -1,5 +1,7 @@
+.. title::  Create Word and PDF documents from Microsoft Forms in Power Automate and Azure Logic Apps
+
 .. meta::
-   :description: The reStructuredText plaintext markup language   
+   :description: Check out a ready-to-use example of Microsoft Forms populating Word DOCX templates and convert to PDF in Power Automate Flow.
 
 How to create Word and PDF documents from Microsoft Forms in Power Automate (MS Flow) and Azure Logic Apps
 ==========================================================================================================
@@ -19,9 +21,9 @@ Let’s see how to connect them with the help of Power Automate (Microsoft Flow)
 Create a Form
 -------------
 
-We наve already created a Microsoft Form with a guest's request. We will use data from its submission. If you haven't created MS Forms before, follow `this link <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_ to learn how to do it.
+We наve already created a Microsoft Form with a guest's request. We will use data from its submission. If you haven't created MS Forms before, follow `the link to learn how to do it <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_.
 
-It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `this link <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRURUxUSDJTMjhVR1lWQjFDVkFOVDhLSkRDNC4u&sharetoken=Fp7WzOz6WSxbJFcBy8Qq>`_ to duplicate the form. After duplicating you'll be able to use the form as your own. 
+It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `the link to duplicate the form <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRURUxUSDJTMjhVR1lWQjFDVkFOVDhLSkRDNC4u&sharetoken=Fp7WzOz6WSxbJFcBy8Qq>`_. After duplicating you'll be able to use the form as your own. 
 
 Below is a screenshot of the form:
 

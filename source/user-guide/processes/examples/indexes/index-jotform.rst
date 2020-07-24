@@ -1,3 +1,9 @@
+.. title:: JotForm integrations to populate Office document and PDF templates 
+
+.. meta::
+   :description: Review examples of Google Forms and Plumsail Documents integration to automate document creation and PDF processing.
+
+
 JotForm integration
 ===================
 

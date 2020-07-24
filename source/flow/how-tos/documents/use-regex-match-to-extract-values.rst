@@ -1,5 +1,11 @@
-How to use regular expression match to extract values from text in Power Automate (Microsoft Flow) and Azure Logic Apps
-######################################################################################################
+.. title:: Regular expression match in Power Automate (Microsoft Flow), and Azure Logic Apps
+
+.. meta::
+   :description: Use regular expression match to extract values from text in Power Automate (Microsoft Flow), and Azure Logic Apps
+
+How to use regular expression match to extract values from text in Power Automate (Microsoft Flow), and Azure Logic Apps
+========================================================================================================================
+
 In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Documents connector <https://plumsail.com/documents/>`_ for `Power Automate (Microsoft Flow)`_ and `Azure Logic Apps`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.
