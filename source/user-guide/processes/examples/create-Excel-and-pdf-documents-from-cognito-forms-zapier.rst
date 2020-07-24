@@ -1,3 +1,9 @@
+.. title:: Use Cognito Forms to populate Excel document templates and then convert to PDF using Zapier integration
+
+.. meta::
+   :description: An example of how to auto create Excel order requests from Cognito Forms entries and convert to PDF using Zapier integration
+
+
 How to create Excel and PDF documents from Cognito Forms in Zapier
 ==================================================================
 
@@ -16,7 +22,7 @@ In this example, we will collect data from a Cognito Form, apply the data to our
 Create a Form
 -------------
 
-We have already prepared a Cognito form for ordering stationery and office supplies. We will use data from its submission to apply to our template. If you haven't created any Cognito Forms before, you can learn how to do it `here <https://www.cognitoforms.com/support/15/building-forms/creating-forms>`_.
+We have already prepared a Cognito form for ordering stationery and office supplies. We will use data from its submission to apply to our template. If you haven't created any Cognito Forms before, you can `learn how to do it <https://www.cognitoforms.com/support/15/building-forms/creating-forms>`_.
 
 Below is a screenshot of our form:
 

@@ -1,5 +1,11 @@
+.. title::  Create Excel and PDF documents from Microsoft Forms in Power Automate and Azure Logic Apps
+
+.. meta::
+   :description: Check out a ready-to-use example of Microsoft Forms populating Excel templates and then convert to PDF in Power Automate Flow.
+
+
 How to create Excel and PDF documents from Microsoft Forms in Power Automate and Azure Logic Apps
-=================================================================================================
+==================================================================================================
 
 This article shows how to create PDF documents from an XLSX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 
@@ -18,7 +24,7 @@ Create a Form
 
 We have already created a Microsoft Form for a short employee information sheet. We will use data from its submission. If you haven't created MS Forms before, follow `this link <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_ to learn how to do it.
 
-It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `this link <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRUREdDS0RUQ0pWNVZTSFJOWEJZN1c0UTJZRy4u&sharetoken=myrEdz9F27iuAWGKqSd6>`_ to duplicate the form. After duplicating you'll be able to use the form as your own. 
+It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `the link to duplicate the form <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRUREdDS0RUQ0pWNVZTSFJOWEJZN1c0UTJZRy4u&sharetoken=myrEdz9F27iuAWGKqSd6>`_. After duplicating you'll be able to use the form as your own. 
 
 Below is a screenshot of our form:
 

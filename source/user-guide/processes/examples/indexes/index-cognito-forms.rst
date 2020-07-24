@@ -1,3 +1,9 @@
+.. title:: Congito Forms integrations to populate Office document and PDF templates 
+
+.. meta::
+   :description: Review examples of Cognito Forms and Plumsail Documents integration to automate document generation and PDF processing.
+
+
 Cognito Forms integration
 =========================
 

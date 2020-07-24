@@ -1,3 +1,8 @@
+.. title:: Auto populate fillable PDF form fields on web form submission
+
+.. meta::
+   :description: Automatically apply form submission data to fillable PDFs using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+
 How to auto-populate fillable PDF on Plumsail Forms submission
 ==============================================================
 
@@ -103,7 +108,7 @@ The next step is delivery. For demonstrating purposes, let us set an email deliv
 
 Fill-in a recipient email. Add recipients for a copy or blind copy if you need. Define the subject of the letter. And write an email body. 
 
-You can use tokens from your template to specify details in the email subject as we did, or in the body. The submitted data will be applied to them as well. Learn more by following `this link <../../../user-guide/processes/tokens-in-process-fields.html>`_.
+You can use tokens from your template to specify details in the email subject as we did, or in the body. The submitted data will be applied to them as well. Find out more about `using tokens <../../../user-guide/processes/tokens-in-process-fields.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/send-email-populate-pdf.png
     :alt: send email delivery

@@ -1,5 +1,10 @@
-How to add an image watermark to a PDF document using Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
-===================================================================================================
+.. title:: Add image watermarks to PDF documents without Acrobat using Power Automate Flow
+
+.. meta::
+   :description: Add image watermarks to PDF documents automatically without Acrobat in Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
+
+How to add an image watermark to a PDF document using Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
+=====================================================================================================================
 
 If you find yourself in a need to protect your PDF documents, you may decide to add a watermark to them. It can help you to identify the document owner, to maintain some level of traceability, to classify documents, and to assure confidentiality of the information both inside and outside the organization.
 

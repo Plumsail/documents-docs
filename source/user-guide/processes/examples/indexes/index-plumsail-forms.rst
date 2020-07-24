@@ -1,3 +1,9 @@
+.. title:: Plumsail Forms integrations to populate Office document and PDF templates 
+
+.. meta::
+   :description: Review examples of Plumsail Forms and Documents integration to automate document generation, PDF processing, and filling PDF forms.
+
+
 Plumsail Forms integration
 ==========================
 

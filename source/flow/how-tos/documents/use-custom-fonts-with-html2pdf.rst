@@ -1,5 +1,11 @@
+.. title:: HTML to PDF conversion with custom fonts and multi-lingual support in Plumsail Documents connectos for Power Automate
+
+.. meta::
+   :description: Plumsail Documents HTML2PDF ensures the result PDF has the same fonts as in the initial file. It converts foreign characters correctly as it has multi-lingual support.
+
+
 How to use custom fonts and add multi-lingual support to converting HTML to PDF
-##################################################################
+===============================================================================
 
 In this article, I'll show how Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 works with different fonts and how to convert foreign characters correctly.

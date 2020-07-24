@@ -1,3 +1,8 @@
+.. title:: Use Cognito Forms to populate Word DOCX templates and then convert to PDF in Power Automate Flow
+
+.. meta::
+   :description: An example of how to auto create Word and PDF documents from Cognito Forms entries in Power Automate (Microsoft Flow) and Azure Logic Apps
+
 How to create Word and PDF documents from Cognito Forms in Power Automate (Microsoft Flow) and Azure Logic Apps
 ===============================================================================================================
 

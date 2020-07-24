@@ -1,3 +1,9 @@
+.. title:: Power Automate Flows with Microsoft Forms to generate Office and PDF documents
+
+.. meta::
+   :description: Review examples of Microsoft Forms and Plumsail Documents Flows to automate document creation and PDF processing.
+
+
 Microsoft Forms integration
 ===========================
 

@@ -1,6 +1,11 @@
+.. title:: How to pass data to Plumsail Documents from Power Apps in Microsoft Flow
+
+.. meta::
+   :description: Connect Power Apps and Plumsail Documents in your Flows to automate document generation and processing.
+
 
 How to pass data to Plumsail Documents from Power Apps in Power Automate Flow
-############################################################################
+=============================================================================
 
 In this article, we'll describe how to connect Plumsail Documents and Microsoft Power Apps in `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_ to start the process of generating documents from templates by the PowerApps application.
 

@@ -1,7 +1,13 @@
+.. title:: Generate personalized Teachable certificates with Plumsail Documents integration for Zapier
+
+.. meta::
+   :description: Once the course is completed, create a personalized certificate and e-mail to the student automatically with Plumsail Documents integration for Zapier.
+
+
 Teachable integration
 =====================
 
-Create personal ceartificates for new completed Teachable courses with the help of `Plumsail Documents processes <../../index.html>`_ in Zapier. Utilize the zap template below. 
+Create personal certificates for new completed Teachable courses with the help of `Plumsail Documents processes <../../index.html>`_ in Zapier. Utilize the zap template below. 
 
 Just click **Use this zap** and go ahead!
 

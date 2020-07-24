@@ -1,5 +1,11 @@
-How to collect data from fillable PDF and save it into your system in Power Automate (Microsoft Flow), Azure Logic Apps or Power Apps
-====================================================================================================================
+.. title:: Create SharePoint list items from PDF form data in Power Automate Flow
+
+.. meta::
+   :description: Extract PDF form data and automatically save it to your favorite systems using Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
+
+How to collect data from fillable PDF and save it into your system in Power Automate (Microsoft Flow), Azure Logic Apps, or Power Apps
+======================================================================================================================================
+
 
 .. note:: 
 
@@ -30,7 +36,7 @@ In this example, we will store the information we get from the PDF file in the S
 - File System
 
 Create Power Automate (Microsoft Flow)
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
 |collect-data-flow|
