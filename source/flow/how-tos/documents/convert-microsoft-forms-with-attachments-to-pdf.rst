@@ -73,13 +73,13 @@ We'll use actions both from the `Plumsail Documents connector <https://emea.flow
 
 The first is **Create HTML from template**. In our case, it's simple.
 
-In Source HTML, we just added text HTML template for our two fields - Customer company name and Products of interest, separated by a new line:
+In Source HTML, we just added text HTML template for our order request - Customer company name and Products of interest. You may see :code:`{{curly}}` braces - they represent tokens that will be replaced by the response data:
 
 .. code:: text
 
-    {{company}}
-    {{#newline}}
-    {{products}}
+    <h1>Order Request</h1>
+    Customer company name: {{company}}<br>
+    Products of interest: {{products}}<br>
 
 .. note:: Please, get acquainted with `how Plumsail Documents HTML templates work <../../../document-generation/html/index.html>`_ to compose your customized templates.
 
@@ -173,6 +173,8 @@ You should receive the schema like this one:
         }
     }
 
+.. image:: ../../../_static/img/flow/how-tos/parse-json-ms-forms.png
+    :alt: Parse JSON step
 
 Get file content
 ----------------

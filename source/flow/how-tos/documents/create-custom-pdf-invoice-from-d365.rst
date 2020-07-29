@@ -11,6 +11,9 @@ Sometimes Dynamics 365 functionality for creating invoices is not enough if you 
 
 In this example, we will use the `Plumsail Documents <https://plumsail.com/documents/>`_ connector for Power Automate to create customized documents populated with Dynamics 365 CRM data. 
 
+.. image:: ../../../_static/img/flow/how-tos/launch-dynamics-flow.png
+    :alt: Start document generation process action
+
 Our Flow to do the job is simple:
 
 .. image:: ../../../_static/img/flow/how-tos/create-invoice-from-d365-flow.png
@@ -38,7 +41,8 @@ Click on the *Add Process* button.
     :alt: add process button
 
 Give a name to the process and upload the invoice template you'd like to use. 
-In this example, it is an ordinary service invoice template. To test the scenario, feel free to `download it <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_.
+
+Feel free to `download an ordinary service invoice template <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_ used in this example.
 
 .. image:: ../../../_static/img/flow/how-tos/create-dynamics-process.png
     :alt: Name process and upload template
@@ -104,7 +108,9 @@ When everything is done here, click on Save & Next to set up deliveries.
 Delivery
 --------
 
-It's possible to add as many deliveries as you need. We'll add an email delivery for demonstrating purpose. It will deliver the invoice completed with Dynamics 365 data to the customer.
+It's possible to add as many deliveries as you need. For instance, you could save the resulting invoice to your SharePoint library or OneDrive folder, then send as an e-mail attachment to the customer. Check out the `full list of available deliveries <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+
+We'll add an email delivery for demonstrating purpose. It will deliver the invoice completed with Dynamics 365 data to the customer.
 
 We put token :code:`{{email}}` as a recipient's email address. So, it will adjust dynamically every time according to the specified data. We'll pull it from Dynamics 365 CRM. 
 
@@ -151,8 +157,6 @@ You can type any name for the connection. For example, *Plumsail Documents*.
 
 Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to *Access Key* field.
 
-
-
 The *Start Document generation process* has two parameters:
 
 - Process name - just select from the dropdown.
@@ -172,6 +176,15 @@ Once the Flow ran successfully, the customer receives a personalized email with 
 
 .. image:: ../../../_static/img/flow/how-tos/ready-dynamics-invoice.png
     :alt: invoice created from dynamics 365 CRM
+
+Use ready invoices in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It's possible to continue working with the generated invoices from Dynamics 365 further in Flow. For example, you can send them for approval. Just add the result file returned by *Start document generation process* action as an attachment:
+
+.. image:: ../../../_static/img/flow/how-tos/create-approval-d365.png
+    :alt: Send Dynamics 365 invoice for approval
+
 
 Conclusion
 ~~~~~~~~~~
