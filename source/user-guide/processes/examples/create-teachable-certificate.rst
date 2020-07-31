@@ -35,12 +35,12 @@ We’ve created a simple course to perform the scenario for generating documents
 Configure document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now, let’s proceed to create and configure the process which will populate Teachable data into certificate templates and email the resulting diploma to the student. 
+Now, let’s proceed to create and configure the process, which will populate Teachable data into certificate templates and email the resulting diploma to the student. 
 
 Make certificate template 
 -------------------------
 
-We’ll create certificates from a DOCX template, them convert to PDF and send as an email attachment to the personalized letter. 
+We’ll create certificates from a DOCX template, then convert to PDF and send them as an email attachment to the personalized letter. 
 
 This is our Word template for the certificate of completion:
 
@@ -68,7 +68,7 @@ Name the process and upload the certificate template you've prepared, or a blank
 .. image:: ../../../_static/img/user-guide/processes/how-tos/teachable-create-process.png
     :alt: Create process to generate certificate of completion
 
-Click the *Create* button to proceed to the nex step.
+Click the *Create* button to proceed to the next step.
 
 Configure template
 ------------------
@@ -80,7 +80,7 @@ The *Configure template* step includes two substeps:
 
 In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template, make necessary modifications, and instantly check how they would affect the result. 
 
-To see how the resulting certificate will look, click on *Test template*. 
+To see how the resulting certificate will look, click on the *Test template*. 
 
 Insert source data in JSON into the appeared dialog. This JSON data tells the templating engine what it should place into :code:`{{braces}}` instead of object names. Make sure this data correspond to tokens from the template.
 
@@ -104,7 +104,7 @@ Click Save & Next to go to the **Settings**. Here you'll see the following param
 
 **Mode**. It's *Testing* by default, which means runs of this process are free of charge for you, but the resulting documents will have a Plumsail watermark. To remove it, switch mode to *Active*.
 
-**Output filename**. To personalize it, use tokens from the template. They will work the same way as for the template. For example, we have :code:`{{name}}` token. The real student name will replace this token, and we'll get the file "Joe Doe certificate". It will change dynamically according to specified data.
+**Output filename**. To personalize it, use tokens from the template. They will work the same way as for the template. For example, we have :code:`{{name}}` token. The real student name will replace this token, and we'll get the file "Joe Doe certificate". It will change dynamically according to the data from Teachable.
 
 **Output type**. The default is the same as the template's format. It's possible to select PDF.
 
@@ -122,7 +122,7 @@ We decided to send the ready certificates and diplomas to our students by email.
 
 So, we add an email delivery, put token :code:`{{email}}` as a recipient's email address. It will adjust dynamically every time according to the specified data. We'll pull it from Teachable. 
 
-We filled in the subject and email body. Aditionally, you can expand Advanced settings to customize *Display name* and *Reply-to*. The default display name is 
+We filled in the subject and email body. Additionally, you can expand Advanced settings to customize *Display name* and *Reply-to*. The default display name is *Plumsail Documents Delivery*. The default reply-to is the currently logged-in user's email.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/teachable-email-delivery.png
     :alt: Email delivery step
@@ -161,7 +161,7 @@ Once a student has completed a course, our Zap starts. For that, we have set a t
 .. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-zapier.png
     :alt: start process from Zapier action
 
-If you use this integration for the first time, you'll need to create a connection between your Zapier and Teachable accounts. You'll be invite to sign into your Teachable account from Zapier.
+If you use this integration for the first time, you'll need to create a connection between your Zapier and Teachable accounts. You'll be invited to sign in to your Teachable account from Zapier.
 
 After it's done, you need to test the trigger to find sample data that will be used in the next step. 
 
@@ -181,7 +181,7 @@ Customize Start Process
 Choose the process you want to start by this Zap from the dropdown. 
 Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
+.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../create-template.html>`_.
 
 Use the output from the trigger to specify values:
 
