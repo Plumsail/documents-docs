@@ -161,7 +161,7 @@ Customize Start Process
 Choose the process you want to start by this Zap from the dropdown. 
 Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
+.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../create-template.html>`_.
 
 Use the output from the trigger to specify values:
 
