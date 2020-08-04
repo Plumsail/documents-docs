@@ -1,5 +1,10 @@
+.. title:: Convert HTML to PDF using Power Automate (Microsoft Flow)
+
+.. meta::
+   :description: Automatically convert HTML to PDF using Power Automate and Azure Logic Apps
+
 Convert HTML to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================
+===========================================================================
 
 This article demonstrates how to convert an HTML document or an HTML string to PDF with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 

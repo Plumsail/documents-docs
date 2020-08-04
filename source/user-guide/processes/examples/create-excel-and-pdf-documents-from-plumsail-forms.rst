@@ -1,5 +1,10 @@
+.. title::  Create Excel and PDF documents from Plumsail Web Forms in Power Automate and Azure Logic Apps
+
+.. meta::
+   :description: Try this ready-to-use example of Plumsail Web Forms populating Excel and PDF documents in Power Automate Flow.
+
 How to create Excel and PDF documents from Plumsail Forms in Power Automate (Microsoft Flow) and Azure Logic Apps
-=================================================================================================================
+==================================================================================================================
 
 This article describes how to create PDF documents from an XLSX template on `Plumsail Forms <https://plumsail.com/forms/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of documents like applications, requests, orders, etc., in your company.
 

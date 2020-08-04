@@ -1,3 +1,9 @@
+.. title:: Generate documents from a template and sign using SignNow in Power Automate and Zapier
+
+.. meta::
+   :description: Review examples of SignNow and Plumsail Documents integration to automate document creation and e-signing process.
+
+
 SignNow integration
 ===================
 

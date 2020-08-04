@@ -1,5 +1,10 @@
+.. title:: Create PDF documents from a template and send them for e-signature with AdobeSign in Flows
+
+.. meta::
+   :description: Automate your document generation and signing with AbobeSign in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+
 How to create a document from a template in Power Automate (Microsoft Flow) and sign it using AdobeSign
-######################################################################################
+=======================================================================================================
 
 This article is a ready-to-use solution on how to create a PDF document from a template and sign it using `AdobeSign <https://acrobat.adobe.com/us/en/sign.html>`_.
 

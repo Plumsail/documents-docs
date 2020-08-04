@@ -1,5 +1,10 @@
+.. title::  Parse CSV files in Power Automate Flow and bulk generate HTML and PDF documents 
+
+.. meta::
+   :description: A ready-to-use example of how to extract data from CSV rows and populate HTML templates, then convert to PDF using Power Automate.
+
 How to batch generate PDF tickets from an HTML template based on CSV records in Power Automate 
-======================================================================================================================
+================================================================================================
 
 
 This article describes how to batch generate tickets from an HTML template for conference visitors or any event attendees based on CSV rows data. Let’s imagine you have a CSV file with conference visitors' information. You need to generate personal invitations to the event for every attendee and send them by email. 

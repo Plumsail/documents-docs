@@ -1,12 +1,18 @@
-Convert DOCX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================
+.. title:: Convert DOCX to PDF using Power Automate (Microsoft Flow)
 
-This article demonstrates how to convert DOCX Word document to PDF with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
+.. meta::
+   :description: Automatically convert Word Office documents to PDF using Power Automate and Azure Logic Apps
+
+
+Convert DOCX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
+===========================================================================
+
+This article demonstrates how to convert DOCX Word document to PDF and receive a pixel-perfect output as a result of this conversion in `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
 We will take a hiring contract as a sample Word document:
 
 .. image:: ../../../_static/img/flow/how-tos/docx-sample-doc.png
-   :alt: Select fields
+   :alt: Word sample for pixel perfect conversion
 
 Use `this link <../../../_static/files/flow/how-tos/Hiring%20Contract.docx>`_ to download it.
 
@@ -26,7 +32,7 @@ You can store your source file anywhere. In this example, we will store our docu
 This is how complete flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/convert-docx-to-pdf-flow.png
-   :alt: Select fields
+   :alt: pixel perfect MS Word to PDF conversion Flow
 
 Here is step by step description for the flow.
 
@@ -42,7 +48,7 @@ You can use any other connector to get files from your system.
 
 **Convert DOCX to PDF**
 
-This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
+This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_. It enables you to execute pixel perfect MS Word to PDF conversions. 
 
 Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
 
@@ -53,7 +59,7 @@ You can find more information about this action `here <../../actions/document-pr
 Now you need to store PDF file somewhere. In our example, we use "Create file" action from SharePoint connector to store the PDF document into SharePoint document library.
 
 .. image:: ../../../_static/img/flow/how-tos/generated-pdf-sp-library.png
-   :alt: Select fields
+   :alt: pixel perfect PDF result in OneDrive
 
 You can use any other connector to store PDF document into your system.
 

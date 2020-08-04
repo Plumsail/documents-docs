@@ -1,3 +1,9 @@
+.. title:: Create customized documents from Google Calendar with Zapier integration for Plumsail Documents 
+
+.. meta::
+   :description: You can automatically generate documents as invitations and notifications with Zapier integration for Plumsail Documents.
+
+
 Google Calendar integration
 ===========================
 

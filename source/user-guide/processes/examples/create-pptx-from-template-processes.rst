@@ -1,3 +1,8 @@
+.. title::  Automatically populate PowerPoint PPTX presentations in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
+
+.. meta::
+   :description: Streamline generation of presentation repots and create PPTX automatically from your web services and CRM systems using Plumsail Documents in Power Automate and Zapier.
+
 How to create PowerPoint PPTX presentations from a template in Zapier, Power Automate Flow, Azure Logic Apps and PowerApps
 ==========================================================================================================================
 

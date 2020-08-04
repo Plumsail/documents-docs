@@ -5,6 +5,7 @@ Other web services integrations
       :name: howtotoc
       :maxdepth: 2
 
+      Dynamics CRM <./index-dynamics-365.rst>
       Google Calendar <../../../user-guide/processes/examples/indexes/index-google-calendar.rst>
       Google sheets <../../../user-guide/processes/examples/indexes/index-google-sheets.rst>
       Airtable <../../../user-guide/processes/examples/indexes/index-airtable.rst>

@@ -1,5 +1,11 @@
+.. title:: Create text documents from a template using Power Automate (Microsoft Flow) and Zapier integration.
+
+.. meta::
+   :description: Generate text files from a template automatically using Automate (Microsoft Flow), Azure Logic Apps, PowerApps, and Zapier integration.
+
+
 Create text document from a template in Power Automate (Microsoft Flow) and Azure Logic Apps
-=========================================================================
+=============================================================================================
 
 This article demonstrates how to generate text documents from a template with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ feature, which is called `Processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_,  and `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
