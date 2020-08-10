@@ -63,4 +63,4 @@ Now you need to store PDF file somewhere. In our example, we use "Create file" a
 
 You can use any other connector to store PDF document into your system.
 
-.. hint:: There is also `Create document from DOCX template <../../actions/document-processing.html#create-document-from-docx-template>`_ action available. You can use it in conjunction with `Convert DOCX to PDF <../../actions/document-processing.html#convert-docx-document-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-docx-template.html>`_.
+.. hint:: There is also `Create document from DOCX template <../../actions/document-processing.html#create-document-from-docx-template>`_ action available. You can use it in conjunction with `Convert DOCX to PDF <../../actions/document-processing.html#convert-docx-document-to-pdf>`_ action to `create PDF documents from a template <create-pdf-from-docx-template.html>`_. You may find the article intersting  `How to batch convert DOCX to PDF <batch-convert-docx-to-pdf.html>`_.

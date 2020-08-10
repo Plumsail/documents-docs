@@ -1,13 +1,13 @@
-License and notifications
+Subscription and notifications
 =========================
 
-License page provides information about you current license and available documents.
-Also you can manage email notifications about reaching limit of documents for Plumsail Documents in the `personal account <https://account.plumsail.com/documents/license>`_.
+Subscription page provides information about you current subscription and available documents.
+Also you can manage email notifications about reaching limit of documents for Plumsail Documents in the `personal account <https://account.plumsail.com/documents/subscription>`_.
 
 There are 3 notifications options:
 
-- Less than 70% of documents are left 
-- Less than 90% of documents are left
+- Less than 30% of documents are left  
+- Less than 10% of documents are left
 - All documents were exhausted 
 
 .. image:: ../_static/img/general/documents-email-notifications.png
