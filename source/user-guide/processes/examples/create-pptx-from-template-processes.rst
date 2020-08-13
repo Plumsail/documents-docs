@@ -17,13 +17,13 @@ With its help, we’ll create a company report with tables and charts from a PPT
 
     *   - Template
         - Result
-    *   - `Download template document <../../_static/files/document-generation/demos/pptx-report-template.pptx>`_           
+    *   - `Download template document <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_           
             .. image:: ../../../_static/img/user-guide/processes/how-tos/template-title-slide.png 
                 :alt: template title slide
 
             .. image:: ../../../_static/img/user-guide/processes/how-tos/template-chart-slide.png 
                 :alt: template chart slide
-        - `Download result document <../../_static/files/document-generation/demos/pptx-report-result.pptx>`_
+        - `Download result document <../../../_static/files/document-generation/demos/pptx-report-result.pptx>`_
             .. image:: ../../../_static/img/user-guide/processes/how-tos/title-slide.png 
                 :alt: company report title slide
             

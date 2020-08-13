@@ -46,23 +46,29 @@ Upload the template you're gonna use. In this example, we'll create a PDF purcha
 
 When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
-In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
+In short, the templating engine thinks that everything between :code:`{{curly brackets}}` is variables where it will apply your specified data. 
 Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
 Configure a template
 ~~~~~~~~~~~~~~~~~~~~
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*. 
 
-- Fill in the name of the result file
-- Select PDF format for the output file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
+There you'll find two substeps:
 
+- Editor;
+- and Settings.
 
-.. image:: ../../../_static/img/flow/how-tos/configure-template-signNow.png
-    :alt: Configure template
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work out the template online, or modify the uploaded template. Then instantly check how made changes appear in the result. 
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be the following
+Click the *Test template* button. You will see the dialog where you can insert your data in JSON format to test the template. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+
+.. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
+    :alt: test template
+
+To test the contract template from our example, copy and paste the JSON data presented below.
+
+.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
 
 JSON data
 *********
@@ -81,20 +87,16 @@ JSON data
            "phone": "202-555-0131",
            "name": "Plumsail LLC"
         },
-        "items": [
-            {
-                "product": {
-                   "name": "Monitor",
-                   "price": 99
-                 },
+        "product": [
+              {
+                "name": "Monitor",
+                "price": 99,
                 "quantity": 10,
                 "cost": 990
-                },
-                {
-                "product": {
-                    "name": "Fridge",
-                    "price": 4219.99
-                },
+              },
+              {
+                "name": "Fridge",
+                "price": 4219.99,
                 "quantity": 1,
                 "cost": 4219.99
               }
@@ -103,15 +105,21 @@ JSON data
     }
 
 
-.. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
-    :alt: test template
+Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
+
+- Fill in the name of the result file.
+- Select PDF format for the output file
+- `Protect the result PDF <../configure-settings.html#add-watermark>`_ if you wish
+
+.. image:: ../../../_static/img/flow/how-tos/configure-template-signNow.png
+    :alt: Configure template
 
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
 
-Select the folder where the ready document will be saved. Fill in the file's name. You don't need to put :code:`.extension`, it'll be done automatically based on the output file type you set on the *Configure template* step.
+Select the folder where the ready document will be saved. 
 
 .. image:: ../../../_static/img/flow/how-tos/onedrive-signnow.png
     :alt: onedrive-delivery
@@ -142,7 +150,7 @@ This is the action from `Plumsail Documents connector <../../../getting-started/
 
 Mind, If you use the Plumsail documents action for the first time, you’ll be asked for *'Connection Name'* and *'Access Key'*. You can type any name for the connection. For example, *'Plumsail Documents'*.
 
-Then `create an API key in your Plumsail Account page <../../../getting-started/sign-up.html>`_, copy and paste it to the *'Access Key'* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to the *'Access Key'* field.
 
 The **Start document generation process** action has two parameters:
 
@@ -177,4 +185,4 @@ Once the agreement has been signed, you will receive a notification e-mail with 
     :alt: email notification cotract was signed
 
 
-.. hint:: If you use an AdobeSign system for e-signs or just want to compare SignNow with an alternative variant, read our article `How to create a document from a template and sign it using AdobeSign <../../../flow/how-tos/documents/create-a-document-from-template-and-sign-Abobesign-processes.html>`_.
+.. hint:: If you use an AdobeSign system for e-signs or just want to compare SignNow with an alternative variant, read our article `How to create a document from a template and sign it using AdobeSign <./create-document-from-template-and-sign-abobesign.html>`_.

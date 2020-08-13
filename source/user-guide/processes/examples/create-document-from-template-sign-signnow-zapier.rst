@@ -38,7 +38,7 @@ Set the Process name.
 .. image:: ../../../_static/img/flow/how-tos/purchase-agreements-process.png
     :alt: create a new process
 
-Upload the template you're gonna use. In this example, we'll create a PDF purchase agreement from a DOCX template. And below is our template's screenshot. You can download it by `this link <../../../_static/files/flow/how-tos/CONTRACT_TEMPLATE.docx>`_.
+Upload the template you're gonna use. In this example, we'll create a PDF purchase agreement from a DOCX template. And below is our template's screenshot. You can `download it by the link <../../../_static/files/flow/how-tos/CONTRACT_TEMPLATE.docx>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/agreement-template.png
     :alt: Agreement DOCX template
@@ -51,17 +51,23 @@ Read `this article <../../../document-generation/docx/how-it-works.html>`_ to ge
 Configure a template
 ~~~~~~~~~~~~~~~~~~~~
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+Once you're done with the first step *Create Process*, press the *Create* button, and you’ll proceed to the next – *Configure Template*. 
 
-- Fill in the name of the result file
-- Select PDF format for the output file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
+There you'll find two substeps:
 
+- Editor;
+- and Settings.
 
-.. image:: ../../../_static/img/flow/how-tos/configure-template-signNow.png
-    :alt: Configure template
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work out the template online, or modify the uploaded template. Then instantly check how made changes appear in the result. 
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be the following:
+Click the *Test template* button. You will see the dialog where you can insert your data in JSON format to test the template. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+
+.. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
+    :alt: test template
+
+To test the contract template from our example, copy and paste the JSON data presented below.
+
+.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-the-process>`_. 
 
 JSON data
 *********
@@ -80,20 +86,16 @@ JSON data
            "phone": "202-555-0131",
            "name": "Plumsail LLC"
         },
-        "items": [
-            {
-                "product": {
-                   "name": "Monitor",
-                   "price": 99
-                 },
+        "product": [
+              {
+                "name": "Monitor",
+                "price": 99,
                 "quantity": 10,
                 "cost": 990
-                },
-                {
-                "product": {
-                    "name": "Fridge",
-                    "price": 4219.99
-                },
+              },
+              {
+                "name": "Fridge",
+                "price": 4219.99,
                 "quantity": 1,
                 "cost": 4219.99
               }
@@ -102,13 +104,19 @@ JSON data
     }
 
 
-.. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
-    :alt: test template
+Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
+
+- Fill in the name of the result file.
+- Select PDF format for the output file
+- `Protect the result PDF <../configure-settings.html#add-watermark>`_ if you wish
+
+.. image:: ../../../_static/img/flow/how-tos/configure-template-signNow.png
+    :alt: Configure template
 
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
 
 After you've connected to OneDrive from the Plumsail account, select the folder where to store the ready document. 
 

@@ -7,9 +7,9 @@
 How to create Excel XLSX document from template in Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 =============================================================================================================================
 If you want to automate the generation of purchase orders in your company, this article will help you achieve that. 
-After going through it you will know how to create an XLSX file from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
+After going through it, you will know how to create an XLSX file from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
 
-The Processes are a user-friendly intuitive interface for creating documents from templates, converting them and delivering to different systems for further management. 
+The Processes are a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
 
 With its help, we'll create a purchase order from a template. This is how the result document will look at the end:
 
@@ -53,12 +53,12 @@ Read `this article`_ to get familiar with the templating engine.
 In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables to which it will apply your specified data. 
 In our case, the example would be :code:`{{Order.Date}}` and :code:`{{Order.Number}}` object, it lets the engine know that we want to render the purchase order’s number and date.
 
-But of course, we can implement a more complex scenario. In our template we are referring to properties inside simple objects and collections, as well as properties in nested constructions. 
+But of course, we can implement a more complex scenario. In our template, we are referring to properties inside simple objects and collections, as well as properties in nested constructions. 
 To select properties of our objects inside of the array (in JSON data) we are using a dot operator:
 
 - The :code:`{{Vendor.CompanyName}}`, :code:`{{Vendor.Address}}`, :code:`{{Vendor.Email}}`, :code:`{{Vendor.Phone}}` tags let the engine know that we want to render properties of the Vendor object.
 - The :code:`{{ShipTo.CompanyName}}`, :code:`{{ShipTo.Address}}`, :code:`{{ShipTo.Email}}`, :code:`{{ShipTo.Phone}}` tags let the engine know that we want to render properties of the ShipTo object.
-- The :code:`{{items.product.name}}`, :code:`{{items.quantity}}`, :code:`{{items.product.price}}`, :code:`{{items.cost}}` tags get the name, quantity, price and total cost properties in each item's product object.
+- The :code:`{{product.name}}`, :code:`{{product.quantity}}`, :code:`{{product.price}}`, :code:`{{product.cost}}` tags get the name, quantity, price, and total cost properties in each product object.
 
 The templating engine is smart enough to understand that we refer to properties inside a collection. 
 That is how it knows what content to duplicate. It will iterate through all objects in the array to render them and add the rows automatically.
@@ -76,28 +76,14 @@ Configure template
 
 Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
 
-Here you set the following parameters. Descriptions are under the picture.
+It consists of two substeps:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/configure-template-xlsx.png
-   :alt: configure XLSX template
+- Editor;
+- Settings.
 
-**Template mode**
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on and modify the template, and instantly check how the made changes will affect the result. 
 
-It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
-
-**Output filename**
-
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{Number}}`. As a result, we'll receive a purchase order marked with its number - *Purchase order 432*.
-
-**Output type**
-
-By default, it is the same as your template's format. In this particular case, it's XLSX. And we kept it to create the Excel XLSX document from a template.
-
-**Test template**
-
-You can test the template to see how it will look at the end by clicking the *Test template* button.
-
-After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template. 
+Just click on the *Test template* button. You will see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 |test-template-xlsx|
 
@@ -124,49 +110,61 @@ To test the template from our example, you can copy and paste the JSON data show
         "Email": "sample@contoso.com",
         "Phone": "111-222-8900"
       },
-      "items": [
+      "product": [
         {
-          "product": {
-            "name": "Monitor",
-            "price": 99
-          },
+          "name": "Monitor",
+          "price": 9,
           "quantity": 10
         },
         {
-          "product": {
-            "name": "Stepler",
-            "price": 12.44
-          },
+          "name": "Stepler",
+          "price": 12.44,
           "quantity": 1000
         },
         {
-          "product": {
-            "name": "Fridge",
-            "price": 4219.99
-          },
+          "name": "Fridge",
+          "price": 4219.99,
           "quantity": 1
         },
         {
-          "product": {
-            "name": "Microwave",
-            "price": 99.99
-          },
+          "name": "Microwave",
+          "price": 99.99,
           "quantity": 5
         },
         {
-          "product": {
-            "name": "Pen",
-            "price": 7.23
-          },
+          "name": "Pen",
+          "price": 7.23,
           "quantity": 100
         }
       ]
     }
 
+To proceed to the **Settings** substep, press *Save&Next*.
+
+There you'll set the following parameters. Descriptions are under the picture.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/configure-template-xlsx.png
+   :alt: configure XLSX template
+
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{Order.Number}}`. As a result, we'll receive a purchase order marked with its number - *Purchase order 432*.
+
+**Output type**
+
+By default, it is the same as your template's format. In this particular case, it's XLSX. And we kept it to create the Excel XLSX document from a template.
+
+**Test template**
+
+You can test the template from here as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've already described above.
 
 Delivery
 ~~~~~~~~
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
 
 You need to connect to your OneDrive from the Plumsail account. After that, set the folder's name where to save the ready document. Here you can use tokens as well. 
 
@@ -196,8 +194,7 @@ You can start the process :
 .. note:: There is another - a little bit more complicated - way to create XLSX documents from a template. Check `the article <../../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
 
 .. _Plumsail account: https://account.plumsail.com/
-.. _Create XLSX document from template: ../../actions/document-processing.html#create-xlsx-document-from-template
-.. _the link for downloading the template: ../../../_static/files/flow/how-tos/create-xlsx-from-template.xlsx
+.. _the link for downloading the template: ../../../_static/files/user-guide/processes/create-xlsx-from-template.xlsx
 .. _this article: ../../../document-generation/xlsx/how-it-works.html
 
 

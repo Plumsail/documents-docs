@@ -6,7 +6,7 @@
 Create PDF documents from DOCX template in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
 ========================================================================================================
 
-This article demonstrates how to generate PDF documents from a DOCX template with the help of `Plumsail Documents processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_. We will use a DOCX document as a template. And with the help of **Processes** we will receive the result file in PDF format. 
+This article demonstrates how to generate PDF documents from a DOCX template with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ processes. We will use a DOCX document as a template. And with the help of `Processes <../index.html>`_, we will receive the result file in PDF format. 
 
 The Processes are a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
 
@@ -39,7 +39,7 @@ Give a name to the Process to recognize it later.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-new-process.png
     :alt: create PDF from DOCX template
 
-Upload the template you want to use. Here is `the link for downloading the template <https://plumsail.com/docs/documents/v1.x/_static/files/document-generation/demos/invoice-template.docx>`_ we use in this example.
+Upload the template you want to use. Here is `the link for downloading the template <../../../_static/files/user-guide/processes/template-invoice.docx>`_ we use in this example.
 
 When creating your own ones, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
@@ -49,8 +49,9 @@ In short, the templating engine thinks that everything between such curly :code:
 
 But, of course, we can implement a more complex scenario. In our template, we refer to properties inside simple objects and collections, as well as properties in nested constructions. To select properties of our objects inside of the array (in JSON data), we use a dot operator:
 
-The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
-The :code:`{{items.product.name}}`, :code:`{{items.product.price}}` tags get the name, description and price properties in each item's product object.
+- The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
+- The :code:`{{product.name}}`, :code:`{{product.quantity}}`, :code:`{{product.price}}`, and :code:`{{product.cost}}` tags get the name, description, and price properties in each product object.
+
 The templating engine is smart enough to identify what content to duplicate. It will iterate through all objects in the array to render them and add the rows automatically.
 
 You can learn more about table rendering in `the tables section <../../../document-generation/docx/tables.html>`_ of the documentation.
@@ -58,9 +59,70 @@ You can learn more about table rendering in `the tables section <../../../docume
 Configure template
 ~~~~~~~~~~~~~~~~~~
 
-Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
+Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**, which has two substeps:
 
-Here you set the following parameters. Descriptions are under the picture.
+- Editor;
+- Settings.
+
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template, make necessary modifications, and instantly check how they affect the result. 
+
+For that, click on the *Test template* button, you will see the dialog where you can insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, this data need to correspond to tokens from the template.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
+    :alt: create docx from template
+
+To test the invoice template from this example, copy and paste the JSON data presented below.
+
+.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
+
+.. code:: json
+
+    {
+      "invoiceNumber": "432",
+      "company": {
+        "email": "sales@sample.com",
+        "address": "3 Main St.New York NY 97203 USA",
+        "phone": "202-555-0131"
+      },
+      "date": "2018-05-21",
+      "product": [
+        {
+          "name": "Monitor",
+          "price": 99,
+          "quantity": 10,
+          "cost": 990
+        },
+        {
+          "name": "Stepler",
+          "price": 12.44,
+          "quantity": 1000,
+          "cost": 12440
+        },
+        {
+          "name": "Fridge",
+          "price": 4219.99,
+          "quantity": 1,
+          "cost": 4219.99
+        },
+        {
+          "name": "Microwave",
+          "price": 99.99,
+          "quantity": 5,
+          "cost": 499.95
+        },
+        {
+          "name": "Pen",
+          "price": 7.23,
+          "quantity": 100,
+          "cost": 723
+        }
+      ],
+      "total": 18872.94
+    }
+
+Once the template is ready, and you're satisfied with the result, press *Save&Next* to proceed further - to the **Settings** substep.
+
+There you can set the parameters as described below the picture.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/configure-template-pdf.png
    :alt: configure DOCX2PDF template
@@ -77,77 +139,16 @@ Use tokens to make it personalized. They work the same way as in the template. F
 
 By default, it is the same as your template's format. In this particular case, it's DOCX. We're changing it to PDF to create PDF documents from a DOCX template.
 
-.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../create-process.html#add-watermark>`_. 
+.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../configure-settings.html#add-watermark>`_. 
 
 **Test template**
 
-You can test the template to see how it will look at the end by clicking the *Test template* button.
-
-After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template. 
-To test the template from our example, you can copy and paste the JSON data shown below.
-
-.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-        "invoiceNumber": "432",
-        "company": {
-            "email": "sales@sample.com",
-            "address": "3 Main St.New York NY 97203 USA",
-            "phone": "202-555-0131"
-        },
-        "date": "2018-05-21",
-        "items": [
-            {
-                "product": {
-                    "name": "Monitor",
-                    "price": 99
-                },
-                "quantity": 10,
-                "cost": 990
-            },
-            {
-                "product": {
-                    "name": "Stepler",
-                    "price": 12.44
-                },
-                "quantity": 1000,
-                "cost": 12440
-            },
-            {
-                "product": {
-                    "name": "Fridge",
-                    "price": 4219.99
-                },
-                "quantity": 1,
-                "cost": 4219.99
-            },
-            {
-                "product": {
-                    "name": "Microwave",
-                    "price": 99.99
-                },
-                "quantity": 5,
-                "cost": 499.95
-            },
-            {
-                "product": {
-                    "name": "Pen",
-                    "price": 7.23
-                },
-                "quantity": 100,
-                "cost": 723
-            }
-        ],
-        "total": 18872.94
-    }
-
+You can test the template from the Settings as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've already described above.
 
 Delivery
 ~~~~~~~~
 
-The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+The next step is delivery. For demonstrating purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
 
 You need to connect to your OneDrive from the Plumsail account. After that, set the folder's name where to save the ready document. Here you can use tokens as well. 
 
