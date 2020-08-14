@@ -11,6 +11,7 @@ Word DOCX templates
         How it works <how-it-works>
         Lists <lists>
         Tables <tables>
+        Table of contents <table-of-contents>
         Links and endnotes <external-links>
         Loops and nesting <loops-and-nesting>
         Charts <charts>
