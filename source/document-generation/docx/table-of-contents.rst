@@ -1,13 +1,13 @@
 Table of contents
 =================
 
-.. contents:: 
-    :local:
-    :depth: 1
-
 `Plumsail Documents <https://plumsail.com/documents/>`_ DOCX templates support table of contents. It's possible to tag template tokens as headings to dynamically generate new sections of a document, or hide some of them conditionally. A table of contents will be updated accordingly. 
 
 To better understand how it works, let's take a look at a couple of examples. 
+
+.. contents:: 
+    :local:
+    :depth: 1
 
 How it works
 ------------
