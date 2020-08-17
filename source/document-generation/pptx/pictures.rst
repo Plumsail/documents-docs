@@ -73,7 +73,7 @@ I use this code in the JSON  to convert the uploaded image into base64 format:
 
 .. code::
 
-    base64(body('GetLogo'))
+    base64(body('GetImage'))
 
 
 
