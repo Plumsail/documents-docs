@@ -38,7 +38,7 @@ On the first step I get all items from the folder with docx documents using the 
 Then I need to check all the items received on the first step. For this, I use **Apply to each** cycle.
 I use **Get File Content** action from the standard SharePoint connector to get the file content and pass it to Plumsail action **Convert DOCX to PDF**.
 
-After converting I save the new PDF to PDFs folder in my SharePoint tenant and I use the available dynamic values from **Get Items** action to name each file. Check it out
+After converting, I save the new PDF to PDFs folder in my SharePoint tenant and I use the available dynamic values from **Get Items** action to name each file. Check it out
 
 .. image:: ../../../_static/img/flow/how-tos/batch-convert-docx-to-pdf-apply-to-each.png
    :alt: Microsoft Flow
@@ -55,7 +55,8 @@ You can find more detailed information about **Convert DOCX to PDF** action `her
 Protecting the resulting PDF files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Additionally, you can protect the resulting PDF files using another Plumsail action `Protect PDF Document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_
+Additionally, you can protect the resulting PDF files using another Plumsail action `Protect PDF Document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_ .
+
 It has several options that allow you to protect the PDF  flexibly. Check it out
 
 .. image:: ../../../_static/img/flow/how-tos/batch-convert-docx-to-pdf-protect-pdf.png
