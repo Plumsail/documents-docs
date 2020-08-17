@@ -6,28 +6,27 @@
 How to batch convert Word documents to PDF using Power Automate
 ================================================================
 
-This article demonstrates how to batch convert many DOCX files to PDF in Power Automate (Microsoft Flow).
+This article demonstrates how to batch convert many DOCX files to PDF with the help of the Plumsail Documents connector for Power Automate (Microsoft Flow).
+Let us say you have a SharePoint library containing Word documents. You need to pick all of them up and bulk convert to pixel-perfect PDFs.
+
 
 .. contents::
     :local:
     :depth: 1
 
-Documents library
+Microsoft Flow details
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Let's say you have a folder with DOCX files and you need to batch convert them to PDF.
+This is the library with DOCX documents on my SharePoint tenant
 
 .. image:: ../../../_static/img/flow/how-tos/documents-library.png
    :alt: Documents
 
-To reach the goal I constructed this Microsoft Flow
+
+To reach the mentioned goal I constructed this Microsoft Flow
 
 .. image:: ../../../_static/img/flow/how-tos/batch-convert-docx-to-pdf-flow.png
    :alt: Microsoft Flow
-
-
-Microsoft Flow details
-~~~~~~~~~~~~~~~~~~~~~~
 
 On the first step I get all items from the folder with docx documents using the standart SharePoint action **Get Items**
 
@@ -56,7 +55,7 @@ You can find more detailed information about **Convert DOCX to PDF** action `her
 Protecting the resulting PDF files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Additionally you can protect the resulting PDF files using another Plumsail action `Protect PDF Document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_
+Additionally, you can protect the resulting PDF files using another Plumsail action `Protect PDF Document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_
 It has several options that allow you to protect the PDF  flexibly. Check it out
 
 .. image:: ../../../_static/img/flow/how-tos/batch-convert-docx-to-pdf-protect-pdf.png
