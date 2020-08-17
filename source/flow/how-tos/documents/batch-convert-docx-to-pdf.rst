@@ -52,7 +52,7 @@ All the PDF results reside in a folder in my SharePoint tenant.
 
 You can find more detailed information about **Convert DOCX to PDF** action `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-docx-to-pdf>`_.
 
-Protecting the resulting PDF files
+Protect the resulting PDF files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Additionally, you can protect the resulting PDF files using another Plumsail action `Protect PDF Document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_ .
