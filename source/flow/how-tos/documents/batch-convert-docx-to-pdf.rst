@@ -17,7 +17,7 @@ Let us say you have a SharePoint library containing Word documents. You need to 
 Microsoft Flow details
 ~~~~~~~~~~~~~~~~~~~~~~
 
-This is the library with DOCX documents on my SharePoint tenant
+This is the library with DOCX documents in my SharePoint tenant
 
 .. image:: ../../../_static/img/flow/how-tos/documents-library.png
    :alt: Documents
