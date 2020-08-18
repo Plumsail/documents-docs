@@ -93,9 +93,9 @@ This is the action from `Plumsail Documents connector <https://plumsail.com/acti
 
 There are two parameters:
 
-**1. Document content**
+**1. Template file**
 
-In the first parameter **Document content**, we specified the output of the previous action as a template.
+In the first parameter **Template file**, we specified the output of the previous action as a template.
 
 **2. Template data**
 
