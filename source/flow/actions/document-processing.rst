@@ -183,7 +183,7 @@ We have `an article <../how-tos/documents/create-pptx-from-template.html>`_ desc
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Document content
+    *  -  Template file
        -  The raw content of the source .pptx template file. You can extract file content from other connectors like:
 
           - SharePoint
