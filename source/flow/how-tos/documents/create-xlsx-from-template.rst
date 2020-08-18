@@ -53,10 +53,10 @@ Create XLSX  Document from Template
 
 There are two parameters:
 
-1. Document content
+1. Template file
 2. Template data
 
-In the first parameter 'Document content' you can put template’s content from some other action. In our case, we specified the output of the previous action as a template.
+In the first parameter 'Template file' you can put template’s content from some other action. In our case, we specified the output of the previous action as a template.
 
 `Download the template file`_ that we will use in this article.
 
