@@ -52,10 +52,10 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docum
 
 There are two parameters:
 
-1. DOCX document content
+1. DOCX template file
 2. Template data
 
-In the first parameter *'DOCX document content'* we specified file content of a template from the output of the previous action. Use `this link <../../../_static/files/document-generation/demos/invoice-template.docx>`_ to download it.
+In the first parameter *'DOCX template file'* we specified file content of a template from the output of the previous action. Use `this link <../../../_static/files/document-generation/demos/invoice-template.docx>`_ to download it.
 
 Read `Create DOCX from template <create-docx-from-template.html#create-docx-document-from-template>`_ article to understand how the templating engine works.
 
