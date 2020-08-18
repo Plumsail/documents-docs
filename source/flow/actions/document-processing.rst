@@ -262,7 +262,7 @@ Also there is `an article <../how-tos/documents/create-xlsx-from-template.html>`
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Document content
+    *  -  Template file
        -  The raw content of the source .xlsx template file. You can extract file content from other connectors like:
 
           - SharePoint
