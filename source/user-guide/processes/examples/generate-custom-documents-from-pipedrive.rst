@@ -214,7 +214,10 @@ Note, that for the invoice number we inserted the date. It will transform to the
 
 Our zap is done. In case you need some advanced logic, you can continue building the zap and use the generated invoice in the next actions. 
 
-For our scenario, that's it. Once the Pipedrive deal is won, the customer will receive the personalized email with the invoice attached. 
+For our scenario, that's it. Once the Pipedrive deal is won, the customer will receive the personalized email with the invoice attached:
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/result-pipedrive-invoice.png
+   :alt: resulting Pipedrive invoice
 
 Try the described approach to generate other documents based on data from Pipedrive. 
 
