@@ -18,7 +18,7 @@ C# - Rest RestSharp
     var client = new RestClient("https://api.plumsail.com/api/v2/generate/from-docx");    
     var request = new RestRequest(Method.POST);
     request.AddHeader("Authorization", "YOUR_API_KEY");
-    request.AddFile("File", "/D:/Temp/template-file.docx");
+    request.AddFile("File", "D:/Temp/template-file.docx");
     request.AddParameter("Data", "{ \"firstName\": \"Derek\", \"lastName\": \"Clark\"}");
     request.AddParameter("Locale", "en-US");
     IRestResponse response = client.Execute(request);
