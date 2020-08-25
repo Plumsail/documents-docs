@@ -15,7 +15,8 @@ PowerPoint PPTX templates
         Notes <notes>
         Loops and nesting <loops-and-nesting>
         Charts <charts>
-        Conditionally hide blocks <conditionally-hide-blocks>            
+        Conditionally hide blocks <conditionally-hide-blocks>
+        Pictures <pictures>            
         Value formatters <../common-docx-xlsx/formatters>
         Value properties <../common-docx-xlsx/value-properties>
 

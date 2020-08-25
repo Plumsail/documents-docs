@@ -1,7 +1,7 @@
 Pictures in PPTX templates
 ==========================
 
-You can use `Plumsail picture formatter <../common-docx-xlsx/formatters.html#picture>`_ to dynamically insert pictures into PPTX documents. 
+You can use `picture formatter <../common-docx-xlsx/formatters.html#picture>`_ to dynamically insert pictures into PPTX documents. 
 
 You need to prepare the PPTX template: Place the picture tag into AltText section of an image.
 
@@ -31,9 +31,6 @@ For the template from the picture above to work you need to use JSON object like
       "publicUrl": "https://plumsail.com/docs/documents/v1.x/_images/plumsail-logo.png"
   }
 
-.. note:: 
-
-  You can use the URL of a picture inside the SharePoint document library. You should select the picture and click "Copy link". Configure the link to be available for everyone. Then append :code:`&Download=1` at the end of the link. `External sharing <https://docs.microsoft.com/en-us/sharepoint/external-sharing-overview>`_ has to be enabled on this SharePoint site.
 
 Insert pictures from Base64 string
 ----------------------------------
@@ -67,7 +64,7 @@ Let's check out the next example.
 
 I download the PPTX template and the Image from OneDrive folder.
 
-Then I add Plumsail action `Create PPTX document from template <../../flow/actions/document-processing.html#create-pptx-document-from-template>`_ to my flow.
+Then I add the action `Create PPTX document from template <../../flow/actions/document-processing.html#create-pptx-document-from-template>`_ to my flow.
 
 I use this code in the JSON  to convert the uploaded image into base64 format:
 
