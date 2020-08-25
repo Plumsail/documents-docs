@@ -3,16 +3,39 @@ Pictures in PPTX templates
 
 You can use `picture formatter <../common-docx-xlsx/formatters.html#picture>`_ to dynamically insert pictures into PPTX documents. 
 
-You need to prepare the PPTX template: Place the picture tag into AltText section of an image.
+.. contents::
+    :local:
+    :depth: 1
+
+Prepare PPTX template
+-------------------------------
+
+There are some steps you need to do to use the piсture tag. Let's take a look.
+
+Firstly I insert a dummy picture to the template.
+
+
+.. image:: ../../_static/img/document-generation/insert-picture-pptx-template.png
+   :alt: Picture
+
+
+
+Then I place the picture tag into AltText section of an image.
+
+
+.. code::
+
+    {{image}:picture}
+
 
 .. image:: ../../_static/img/document-generation/picture-pptx-alt-text.png
    :alt: Picture
 
-Let us review a few cases examples:
 
-.. contents::
-    :local:
-    :depth: 1
+.. note:: Resizing of the image is not supported yet for PPTX templates.
+
+
+After I run the Microsoft flow the dummy picture will be replaced with a real picture.
 
 
 Insert pictures from public URL
@@ -50,12 +73,6 @@ Insert picture from Base64 string in Power Automate
 ---------------------------------------------------
 
 You can insert any image if you can get its Base64 code in Power Automate flow or even using some third-party services.
-
-I prepare the PPTX template as was mentioned at the beginning of the article. I insert an image and enter the picture formater into AltText area.
-
-.. image:: ../../_static/img/document-generation/picture-pptx-alt-text.png
-   :alt: Picture
-
 
 Let's check out the next example.
 
