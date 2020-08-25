@@ -12,7 +12,7 @@ Prepare PPTX template
 
 There are some steps you need to do to use the piсture tag. Let's take a look.
 
-Firstly I insert a dummy picture to the template.
+Firstly, I insert a dummy picture to the template.
 
 
 .. image:: ../../_static/img/document-generation/insert-picture-pptx-template.png
@@ -20,7 +20,7 @@ Firstly I insert a dummy picture to the template.
 
 
 
-Then I place the picture tag into AltText section of an image.
+Then I place the picture tag into AltText section of the dummy image.
 
 
 .. code::
@@ -35,7 +35,7 @@ Then I place the picture tag into AltText section of an image.
 .. note:: Resizing of the image is not supported yet for PPTX templates.
 
 
-After I run the Microsoft flow the dummy picture will be replaced with a real picture.
+After I run the Microsoft flow, the dummy picture will be replaced with a real one.
 
 
 Insert pictures from public URL
@@ -79,7 +79,7 @@ Let's check out the next example.
 .. image:: ../../_static/img/document-generation/picture-pptx-flow.png
    :alt: Microsoft
 
-I download the PPTX template and the Image from OneDrive folder.
+I download the PPTX template and the Image from OneDrive folder. The PPTX template was prepared as described in the previous part of the article.
 
 Then I add the action `Create PPTX document from template <../../flow/actions/document-processing.html#create-pptx-document-from-template>`_ to my flow.
 
