@@ -50,12 +50,15 @@ This is how it looks:
 You may see :code:`{{tokens tags}}` in the template. They let the templating engine know where to apply your specified data. 
 In our case, the most basic is :code:`invoiceNumber` and :code:`date` tags. They show to the engine that we want to render the invoice number and its date.
 
-For sure, it's possible to implement more complex scenarios. In our template, we refer to properties inside simple objects and collections, as well as properties in nested constructions. To select properties of our objects inside of the array (in JSON data), we use a dot operator:
+Sometimes you need to display a collection of items. 
+Like in this example, we displayed products from the Pipedrive deal in a Word table. 
+In such cases, consider nested tags using a dot operator - :code:`{{products.name}}`, :code:`{{products.cost}}`, etc. 
+This will let your process know that you want to display properties from some object. In our case, it will be a collection of products. 
+By Zapier, we will send the collection of products from the Pipedrive deal to the process. 
+The templating engine will automatically understand that there are multiple products and create table rows for each of them. 
 
-- The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
-- The :code:`{{product.name}}`, :code:`{{product.quantity}}`, :code:`{{product.price}}`, and :code:`{{product.cost}}` tags get the name, description, and price properties in each product object.
-
-The templating engine is smart enough to identify what content to duplicate. It will iterate through all objects in the array to render them and add the rows automatically.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/template-table-result.png
+    :alt: Template table result
 
 You can learn more about table rendering in `the tables section <../../../document-generation/docx/tables.html>`_ of the documentation.
 
@@ -84,13 +87,11 @@ To test the invoice template from this example, copy and paste the JSON data pre
 
     {
       "invoiceNumber": "432",
-      "company": {
-        "email": "sales@sample.com",
-        "address": "3 Main St.New York NY 97203 USA",
-        "phone": "202-555-0131"
-      },
+      "companyEmail": "sales@sample.com",
+      "companyAddress": "3 Main St.New York NY 97203 USA",
+      "companyPhone": "202-555-0131",
       "date": "2018-05-21",
-      "product": [
+      "products": [
         {
           "name": "Fridge",
           "price": 4219.99,
@@ -144,7 +145,7 @@ Delivery
 
 The next step is delivery. In this example, we'll set an email delivery to send the invoice to the customer. You can add as many deliveries as you need - please, check out the `full list of available deliveries <../../../user-guide/processes/create-delivery.html>`_.
 
-To adjust the email delivery to our needs, we put token :code:`{{email}}` as a recipient's email address. It will adjust dynamically every time according to the data pulled from Pipedrive.
+To adjust the email delivery to our needs, we put token :code:`{{customerEmail}}` as a recipient's email address. It will adjust dynamically every time according to the data pulled from Pipedrive.
 
 We filled in the subject and email body. Additionally, it's possible to expand Advanced settings to customize *Display name* and *Reply-to*. The default display name is *Plumsail Documents Delivery*. The default reply-to is the currently logged-in user's email.
 

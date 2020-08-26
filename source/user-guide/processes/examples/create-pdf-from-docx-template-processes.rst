@@ -47,11 +47,9 @@ To learn more about the templating engine, check out `the documentation article 
 
 In short, the templating engine thinks that everything between such curly :code:`{{ }}` brackets is variables where it will apply your specified data. In our case the most basic example would be :code:`{{invoiceNumber}}` and :code:`{{date}}` tags. They let the engine know that we want to render the invoice number and its date.
 
-But, of course, we can implement a more complex scenario. In our template, we refer to properties inside simple objects and collections, as well as properties in nested constructions. To select properties of our objects inside of the array (in JSON data), we use a dot operator:
+But, of course, we can implement a more complex scenario. In our template, we refer to properties inside a collection of products. For that, we use nested tags with a dot operator.
 
-- The :code:`{{company.address}}`, :code:`{{company.email}}`, :code:`{{company.phone}}` tags let the engine know that we want to render properties of the company object.
-- The :code:`{{product.name}}`, :code:`{{product.quantity}}`, :code:`{{product.price}}`, and :code:`{{product.cost}}` tags get the name, description, and price properties in each product object.
-
+The :code:`{{product.name}}`, :code:`{{product.price}}` tags get the name, description, and price properties in the product's object.
 The templating engine is smart enough to identify what content to duplicate. It will iterate through all objects in the array to render them and add the rows automatically.
 
 You can learn more about table rendering in `the tables section <../../../document-generation/docx/tables.html>`_ of the documentation.
@@ -79,13 +77,11 @@ To test the invoice template from this example, copy and paste the JSON data pre
 
     {
       "invoiceNumber": "432",
-      "company": {
-        "email": "sales@sample.com",
-        "address": "3 Main St.New York NY 97203 USA",
-        "phone": "202-555-0131"
-      },
+      "companyEmail": "sales@sample.com",
+      "companyAddress": "3 Main St.New York NY 97203 USA",
+      "companyPhone": "202-555-0131",
       "date": "2018-05-21",
-      "product": [
+      "products": [
         {
           "name": "Monitor",
           "price": 99,
