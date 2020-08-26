@@ -31,8 +31,8 @@ The documents amount will be reset at 1st day in a month according to your curre
 
 .. include:: ../general/upgrade-renew.rst
 
-Trial license
--------------
+Trial subscription
+------------------
 
 Likely you start using Plumsail Documents with a trial. The trial version enables you to try our product on "Drawer" plan. The trial period lasts for 30 days. If you choose not to purchase the license, the product will stop working.
 

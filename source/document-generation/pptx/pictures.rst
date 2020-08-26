@@ -1,18 +1,41 @@
 Pictures in PPTX templates
 ==========================
 
-You can use `Plumsail picture formatter <../common-docx-xlsx/formatters.html#picture>`_ to dynamically insert pictures into PPTX documents. 
-
-You need to prepare the PPTX template: Place the picture tag into AltText section of an image.
-
-.. image:: ../../_static/img/document-generation/picture-pptx-alt-text.png
-   :alt: Picture
-
-Let us review a few cases examples:
+You can use `picture formatter <../common-docx-xlsx/formatters.html#picture>`_ to dynamically insert pictures into PPTX documents. 
 
 .. contents::
     :local:
     :depth: 1
+
+Prepare PPTX template
+-------------------------------
+
+There are some steps you need to do to use the piсture tag. Let's take a look.
+
+Firstly, I insert a dummy picture to the template.
+
+
+.. image:: ../../_static/img/document-generation/insert-picture-pptx-template.png
+   :alt: Picture
+
+
+
+Then I place the picture tag into AltText section of the dummy image.
+
+
+.. code::
+
+    {{image}:picture}
+
+
+.. image:: ../../_static/img/document-generation/picture-pptx-alt-text.png
+   :alt: Picture
+
+
+.. note:: Resizing of the image is not supported yet for PPTX templates.
+
+
+After I run the Microsoft flow, the dummy picture will be replaced with a real one.
 
 
 Insert pictures from public URL
@@ -31,9 +54,6 @@ For the template from the picture above to work you need to use JSON object like
       "publicUrl": "https://plumsail.com/docs/documents/v1.x/_images/plumsail-logo.png"
   }
 
-.. note:: 
-
-  You can use the URL of a picture inside the SharePoint document library. You should select the picture and click "Copy link". Configure the link to be available for everyone. Then append :code:`&Download=1` at the end of the link. `External sharing <https://docs.microsoft.com/en-us/sharepoint/external-sharing-overview>`_ has to be enabled on this SharePoint site.
 
 Insert pictures from Base64 string
 ----------------------------------
@@ -54,20 +74,14 @@ Insert picture from Base64 string in Power Automate
 
 You can insert any image if you can get its Base64 code in Power Automate flow or even using some third-party services.
 
-I prepare the PPTX template as was mentioned at the beginning of the article. I insert an image and enter the picture formater into AltText area.
-
-.. image:: ../../_static/img/document-generation/picture-pptx-alt-text.png
-   :alt: Picture
-
-
 Let's check out the next example.
 
 .. image:: ../../_static/img/document-generation/picture-pptx-flow.png
    :alt: Microsoft
 
-I download the PPTX template and the Image from OneDrive folder.
+I download the PPTX template and the Image from OneDrive folder. The PPTX template was prepared as described in the previous part of the article.
 
-Then I add Plumsail action `Create PPTX document from template <../../flow/actions/document-processing.html#create-pptx-document-from-template>`_ to my flow.
+Then I add the action `Create PPTX document from template <../../flow/actions/document-processing.html#create-pptx-document-from-template>`_ to my flow.
 
 I use this code in the JSON  to convert the uploaded image into base64 format:
 

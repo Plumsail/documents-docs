@@ -695,6 +695,8 @@ The formatter can be used in both DOCX and PPTX templates. Read the articles bel
 - `Pictures in DOCX templates <../docx/pictures.html>`_
 - `Pictures in PPTX templates <../pptx/pictures.html>`_
 
+.. note:: Resizing of an image is not supported for PPTX templates yet
+
 Examples
 ~~~~~~~~
 
