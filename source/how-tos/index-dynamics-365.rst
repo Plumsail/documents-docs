@@ -7,7 +7,7 @@
 Dynamics CRM integrations
 =========================
 
-Automizing sales and customer relationship processes may have a  positive impact on your business. `Microsoft Dynamics CRM <https://dynamics.microsoft.com/en-us/>`_ can help you with that. Mixing it with `Plumsail Documents <https://plumsail.com/documents/>`_ will make you to boost productivity much more. 
+Automizing sales and customer relationship processes may have a  positive impact on your business. `Microsoft Dynamics CRM <https://dynamics.microsoft.com/en-us/>`_ can help you with that. Mixing it with `Plumsail Documents <https://plumsail.com/documents/>`_ will make you boost productivity much more. 
 
 Review use cases with instructions to get inspired: 
 
