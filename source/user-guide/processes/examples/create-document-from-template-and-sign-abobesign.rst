@@ -78,17 +78,15 @@ JSON data
 
     {
         "Number": "432",
-        "execution.date": "2020-05-25",
-        "delivery.date": "2020-05-30",
-        "buyer.name": "LUCKY LLC",
-        "buyer.address": "55 Main St.New York NY 97203 USA",
-        "company": {
-           "email": "sales@sample.com",
-           "address": "3 Main St.New York NY 97203 USA",
-           "phone": "202-555-0131",
-           "name": "Plumsail LLC"
-        },
-        "product": [
+        "executionDate": "2020-05-25",
+        "deliveryDate": "2020-05-30",
+        "buyerName": "LUCKY LLC",
+        "buyerAddress": "55 Main St.New York NY 97203 USA",
+        "companyEmail": "sales@sample.com",
+        "companyAddress": "3 Main St.New York NY 97203 USA",
+        "companyPhone": "202-555-0131",
+        "companyName": "Plumsail LLC",
+        "products": [
               {
                 "name": "Monitor",
                 "price": 99,

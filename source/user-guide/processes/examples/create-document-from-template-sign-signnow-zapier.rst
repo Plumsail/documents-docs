@@ -76,17 +76,15 @@ JSON data
 
     {
         "Number": "432",
-        "execution.date": "2020-05-25",
-        "delivery.date": "2020-05-30",
-        "buyer.name": "LUCKY LLC",
-        "buyer.address": "55 Main St.New York NY 97203 USA",
-        "company": {
-           "email": "sales@sample.com",
-           "address": "3 Main St.New York NY 97203 USA",
-           "phone": "202-555-0131",
-           "name": "Plumsail LLC"
-        },
-        "product": [
+        "executionDate": "2020-05-25",
+        "deliveryDate": "2020-05-30",
+        "buyerName": "LUCKY LLC",
+        "buyerAddress": "55 Main St.New York NY 97203 USA",
+        "companyEmail": "sales@sample.com",
+        "companyAddress": "3 Main St.New York NY 97203 USA",
+        "companyPhone": "202-555-0131",
+        "companyName": "Plumsail LLC",
+        "products": [
               {
                 "name": "Monitor",
                 "price": 99,
@@ -157,14 +155,13 @@ Customize Start Process
 ***********************
 
 Choose the process you want to start by this Zap from the dropdown. 
-Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
+You may see fields to complete - they have the same names as tokens from the template. Actually, these fields are created based on the tokens. 
+You need to fill in them to populate the template. 
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
-
-You can use the JSON object `which we applied to the template for testing <../../../user-guide/processes/examples/create-document-from-template-and-SignNow-zapier.html#json-data>`_.
+We used the same values as in testing the template. 
 
 .. image:: ../../../_static/img/flow/how-tos/json-data-signnow.png
-    :alt: json in zap to create document and sign with SignNow
+    :alt: specify data to populate template
 
 .. note:: Don't skip testing the Start process action. It's necessary to do to be able to use the output further in the Zap.
 

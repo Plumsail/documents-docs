@@ -42,7 +42,7 @@ Click on the *Add Process* button.
 
 Give a name to the process and upload the invoice template you'd like to use. 
 
-Feel free to `download an ordinary service invoice template <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_ used in this example.
+Feel free to `download an invoice template <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_ used in this example.
 
 .. image:: ../../../_static/img/flow/how-tos/create-dynamics-process.png
     :alt: Name process and upload template
@@ -85,10 +85,19 @@ If you're using the invoice template from this example, you can copy and paste s
       "company": "Sample LLC",
       "address": "5820 Eastman Ave, Midland, MI, 48640",
       "phone": "(781) 749-8798",
-      "description": "Website development and design",
-      "amount": "5300",
+      "order_details": [
+        {
+          "productname": "Website development",
+          "extendedamount": 3740
+        },
+        {
+          "productname": "Website audit",
+          "extendedamount": 1790
+        }
+      ],
+      "amount": "5530",
       "tax": "0",
-      "total": "5300"
+      "total": "5530"
     }
 
 Click Save & Next to proceed to **Settings**. Here you'll see the following parameters:
@@ -102,6 +111,9 @@ Click Save & Next to proceed to **Settings**. Here you'll see the following para
 .. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../../../user-guide/processes/configure-settings.html#add-watermark>`_. 
 
 **Test template**. Once you've customized all the settings, you can test the template to see the result as we did it previously. 
+
+.. image:: ../../../_static/img/flow/how-tos/configure-template-d365.png
+    :alt: Configure template for Dynamics CRM step
 
 When everything is done here, click on Save & Next to set up deliveries.
 
@@ -141,7 +153,39 @@ The environment parameter is Default, the entity name is Orders:
 
 Besides, we added an input *date* to be able to use the trigger date in the template.
 
-The trigger is done, the next and last step - **Start document generation process**.
+The trigger is done, the next step is - **Get a record**.
+
+Get a record
+------------
+
+This action is from Common data service too. We need to assign it to pull the details on the order products and their properties as the trigger alone won't provide us with this data.
+
+.. image:: ../../../_static/img/flow/how-tos/get-dynamics-record.png
+    :alt: Get a record step
+
+- **Entity name** - Orders;
+- **Item ID** - Select :code:`Order` from the dynamic content of the trigger output.
+- It's important to expand advanced settings and customize **Odata query**. Insert :code:`order_details` into the Expand Query field. Otherwise, the Get a record action will return the same data as the trigger - without information about products related to the order.
+
+Now save the Flow and launch a test run. After it ran successfully, copy JSON data from outputs of Get a record.
+
+.. image:: ../../../_static/img/flow/how-tos/get-record-output.png
+    :alt: Get a record outputs
+
+You'll need it in the next action - **Parse JSON**.
+
+Parse JSON
+----------
+
+We assign this action to pull out data on products separately from other data we don't need.
+
+.. image:: ../../../_static/img/flow/how-tos/parse-json-dynamics.png
+    :alt: Parse JSON action
+
+- **Content** - Select :code:`Body` from the dynamic content of Get a record outputs.
+- **Schema** - Click on *Generate from sample* and paste JSON you've copied earlier into the dialog. 
+
+We're moving to the last step - **Start document generation process**.
 
 Start document generation process
 ---------------------------------
@@ -159,13 +203,13 @@ Then `create an API key in your Plumsail Account page <https://account.plumsail.
 
 The *Start Document generation process* has two parameters:
 
-- Process name - just select from the dropdown.
-- Template data - specify it with dynamic content from the trigger, which pulls data from Dynamics 365 orders.
+- **Process name** - Just select from the dropdown.
+- **Template data** - specify it with dynamic content from the trigger, which pulls data from Dynamics CRM. To specify products array, insert :code:`order_details` - you can find it in dynamic content of the Parse JSON output. No need to wrap it with quotation marks.
 
 .. image:: ../../../_static/img/flow/how-tos/dynamics-start-process.png
     :alt: Start document generation process action
 
-To launch the Flow, select an order you need to generate an invoice for -> in the top navigation menu go to Flows -> and choose the Flow:
+That's it. To launch the Flow, select an order you need to generate an invoice for -> in the top navigation menu go to Flows -> and choose the Flow:
 
 .. image:: ../../../_static/img/flow/how-tos/launch-dynamics-flow.png
     :alt: Start document generation process action

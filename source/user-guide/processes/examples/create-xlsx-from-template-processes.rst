@@ -51,13 +51,10 @@ Plumsail Excel XLSX templates use a different approach than most other templatin
 Read `this article`_ to get familiar with the templating engine.
 
 In short, the templating engine thinks that everything between these :code:`{{ }}` brackets is variables to which it will apply your specified data. 
-In our case, the example would be :code:`{{Order.Date}}` and :code:`{{Order.Number}}` object, it lets the engine know that we want to render the purchase order’s number and date.
+In our case the most basic example would be :code:`{{orderDate}}` and :code:`{{orderNumber}}` tags. They let the engine know that we want to render the purchase order’s number and date.
 
-But of course, we can implement a more complex scenario. In our template, we are referring to properties inside simple objects and collections, as well as properties in nested constructions. 
-To select properties of our objects inside of the array (in JSON data) we are using a dot operator:
+But of course, we can implement a more complex scenario. In our template, we refer to properties inside a collection of products. For that, we use nested tags with a dot operator:
 
-- The :code:`{{Vendor.CompanyName}}`, :code:`{{Vendor.Address}}`, :code:`{{Vendor.Email}}`, :code:`{{Vendor.Phone}}` tags let the engine know that we want to render properties of the Vendor object.
-- The :code:`{{ShipTo.CompanyName}}`, :code:`{{ShipTo.Address}}`, :code:`{{ShipTo.Email}}`, :code:`{{ShipTo.Phone}}` tags let the engine know that we want to render properties of the ShipTo object.
 - The :code:`{{product.name}}`, :code:`{{product.quantity}}`, :code:`{{product.price}}`, :code:`{{product.cost}}` tags get the name, quantity, price, and total cost properties in each product object.
 
 The templating engine is smart enough to understand that we refer to properties inside a collection. 
@@ -94,22 +91,16 @@ To test the template from our example, you can copy and paste the JSON data show
 .. code:: json
 
     {
-      "Order": {
-        "Date": "2018-05-21",
-        "Number": "432"
-      },
-      "Vendor": {
-        "CompanyName": "Acme Corp",
-        "Address": "123 James Street, Miami, USA",
-        "Email": "sample@acme.com",
-        "Phone": "555-777-9999"
-      },
-      "ShipTo": {
-        "CompanyName": "Contoso Inc.",
-        "Address": "1234 North Expressway, Arizona, USA",
-        "Email": "sample@contoso.com",
-        "Phone": "111-222-8900"
-      },
+      "orderDate": "2018-05-21",
+      "orderNumber": "432",
+      "vendorName": "Acme Corp",
+      "vendorAddress": "123 James Street, Miami, USA",
+      "vendorEmail": "sample@acme.com",
+      "vendorPhone": "555-777-9999",
+      "customerName": "Contoso Inc.",
+      "customerAddress": "1234 North Expressway, Arizona, USA",
+      "customerEmail": "sample@contoso.com",
+      "customerPhone": "111-222-8900",
       "product": [
         {
           "name": "Monitor",
@@ -152,7 +143,7 @@ It is *Testing* by default. It means you won't be charged for this process runs,
 
 **Output filename**
 
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{Order.Number}}`. As a result, we'll receive a purchase order marked with its number - *Purchase order 432*.
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{orderNumber}}`. As a result, we'll receive a purchase order marked with its number - *Purchase order 432*.
 
 **Output type**
 
