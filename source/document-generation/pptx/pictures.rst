@@ -32,7 +32,7 @@ Then I place the picture tag into AltText section of the dummy image.
    :alt: Picture
 
 
-.. note:: Resizing of the image is not supported yet for PPTX templates.
+.. note:: Resizing of the image is not supported for PPTX templates yet.
 
 
 After I run the Microsoft flow, the dummy picture will be replaced with a real one.
