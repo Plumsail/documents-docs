@@ -5,7 +5,7 @@
 
 
 How to create Excel and PDF documents from Cognito Forms in Power Automate (Microsoft Flow) and Azure Logic Apps
-================================================================================================================
+=================================================================================================================
 
 This article shows how to create PDF documents from an XLSX template on a `Cognito Form <https://www.cognitoforms.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 

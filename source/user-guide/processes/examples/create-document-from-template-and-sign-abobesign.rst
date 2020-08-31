@@ -35,34 +35,42 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name. 
+Set the Process name. As we're going to create a PDF purchase agreement from a DOCX template, select DOCX for the template type.
 
 .. image:: ../../../_static/img/flow/how-tos/purchase-agreements-process.png
     :alt: create a new process
 
-Upload the template you're gonna use. In this example, we'll create a PDF purchase agreement from a DOCX template. And below is our template's screenshot. You can `download it by this link <../../../_static/files/flow/how-tos/CONTRACT_TEMPLATE.docx>`_.
-
-.. image:: ../../../_static/img/flow/how-tos/agreement-template.png
-    :alt: Agreement DOCX template
-
-When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
-
-In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
-Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
-
 Configure a template
 --------------------
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*. 
+Once you're done with the first step *Create Process*, press the *Next* button, and you’ll jump to the next step – *Configure Template*. 
 
 There you'll find two substeps:
 
 - Editor;
 - and Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work out the template online, or modify the uploaded template. Then instantly check how made changes appear in the result. 
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work out the template online, or upload the pre-made template and modify it in case of need. 
 
-Click the *Test template* button. You will see the dialog where you can insert your data in JSON format to test the template. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+You can `download a DOCX template for a purchase agreement <../../../_static/files/flow/how-tos/CONTRACT_TEMPLATE.docx>`_ that we have already prepared. 
+
+.. image:: ../../../_static/img/flow/how-tos/agreement-template.png
+    :alt: Agreement DOCX template
+
+And then upload it to the process. 
+
+Templating syntax
+*****************
+
+When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+
+In short, the templating engine thinks that everything between :code:`{{curly}}` brackets is variables where it will apply your specified data. 
+Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
+
+Test template
+*************
+
+After you've uploaded the template to the process, you will see the template preview. To get a sight of the resulting document, click the *Test template* button. You will see the dialog where you can insert your data in JSON format to test the template. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
     :alt: test template

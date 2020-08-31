@@ -33,32 +33,53 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name. 
+Set the Process name. Then select HTML for a template type.
 
 .. image:: ../../../_static/img/flow/how-tos/create-invitation-process.png
     :alt: generate PDF from HTML on CSV rows
 
-Upload the template you will use. In this example, we are generating event tickets for conference visitors. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/event-ticket-template.html>`_.
-
-.. image:: ../../../_static/img/flow/how-tos/invitation_template.png
-    :alt: Event invitation html template
-
-Our HTML template is very simple. We have a few tokens: :code:`{{NameOfEvent}}`, :code:`{{date}}`, :code:`{{time}}`, and :code:`{{place}}`. They will be replaced by information about the conference. To get familiar with the template syntax, read `this description <../../../document-generation/html/index.html>`_. 
+Click on the *Next* to continue.
 
 Configure a template
 ~~~~~~~~~~~~~~~~~~~~
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+Once you've created the process, you’ll jump to its first step – *Configure Template*.
 
-- Fill in the name of the result file
-- Select PDF format for the output file
+It includes two substeps:
 
-.. image:: ../../../_static/img/flow/how-tos/configure-template-invitations.png
-    :alt: Configure template
+- Editor;
+- Settings.
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. Set value for each token from the template. See the picture below. 
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+Feel free to `download an HTML template of event tickets for conference visitors <../../../_static/files/flow/how-tos/event-ticket-template.html>`_. We have prepared it beforehand. 
+
+.. image:: ../../../_static/img/flow/how-tos/invitation_template.png
+    :alt: Event invitation html template
+
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-html-template.png
+    :alt: upload HTML file
+
+Templating syntax
+*****************
+
+Our HTML template is very simple. We have a few tokens: :code:`{{NameOfEvent}}`, :code:`{{date}}`, :code:`{{time}}`, and :code:`{{place}}`. They will be replaced by information about the conference. 
+
+To get familiar with the template syntax, read `this description <../../../document-generation/html/index.html>`_. 
+
+
+Test template
+*************
+
+To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. 
+So, it must correspond to tokens from the template. 
+
+To test the template from this example, copy and paste this JSON:
 
 .. code:: json
+
     {
       "NameOfEvent": "High Tech Conference",
       "date": "2020-03-19",
@@ -68,6 +89,23 @@ You can test a template as well, to see how it will look at the end. After click
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-invitations.png
     :alt: test template
+
+.. note:: It's testing. We'll pass data from the parsed CSV file to the process. 
+
+Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
+
+Here, please:
+
+- Switch to an active mode to remove Plumsail watermarks from resulting documents
+- Fill in the name of the result file
+- Select PDF format for the output file
+
+.. image:: ../../../_static/img/flow/how-tos/configure-template-invitations.png
+    :alt: Configure template
+
+Once you've customized all the settings, you can test the template to see the result as we did it before. 
+
+When everything is done here, click on Save & Next to set up deliveries.
 
 Delivery
 ~~~~~~~~

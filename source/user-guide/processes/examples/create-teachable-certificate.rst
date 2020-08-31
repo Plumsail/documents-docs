@@ -61,14 +61,14 @@ Click on the *Add Process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Name the process and upload the certificate template you've prepared, or a blank Word or PowerPoint file. You'll be able to work out the template inside the process. 
+Name the process and select **DOCX** for the template type. 
 
 .. note:: Plumsail Documents supports `PowerPoint PPTX templates <../../../document-generation/pptx/index.html>`_ as well. If it's preferable for you to work out certificates in Microsoft PowerPoint, you're welcome.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/teachable-create-process.png
     :alt: Create process to generate certificate of completion
 
-Click the *Create* button to proceed to the next step.
+Click the *Next* button to proceed to the next step.
 
 Configure template
 ------------------
@@ -78,7 +78,12 @@ The *Configure template* step includes two substeps:
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template, make necessary modifications, and instantly check how they would affect the result. 
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+As we have already prepared the template, upload it to the process:
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
 
 To see how the resulting certificate will look, click on the *Test template*. 
 

@@ -36,15 +36,35 @@ Click on the *Add Process* button.
     :alt: add process button
 
 
-Give a name to the Process to recognize it later.
-
-
-Upload the template you want to use. Here is `the link for downloading the template`_ we use in this example.
+Give a name to the Process to recognize it later. As we're going to create documents from an Excel template, select **XLSX** for the template type.
 
 |create-xlsx-process|
 
+Configure template
+~~~~~~~~~~~~~~~~~~
 
-When creating your own ones, mind the templating language. 
+Once you're done with the first step *Create Process*, press the *Next* button, and you’ll proceed to the next step – *Configure Template*.
+
+It includes two substeps:
+
+- Editor;
+- Settings.
+
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+Feel free to `download an XLSX purchase order template <../../../_static/files/user-guide/processes/create-xlsx-from-template.xlsx>`_ that we have already prepared.
+
+|purchase-order-template|
+
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+*****************
+
+When creating your own templates, mind the templating language. 
 
 Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
@@ -67,20 +87,10 @@ Please also note that we are using these formulas to calculate the total cost fo
 - :code:`=[Quantity]*[Unit Price]` - for each item
 - :code:`=SUM(D14)` - for all of the items
 
+Test template
+*************
 
-Configure template
-~~~~~~~~~~~~~~~~~~
-
-Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
-
-It consists of two substeps:
-
-- Editor;
-- Settings.
-
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on and modify the template, and instantly check how the made changes will affect the result. 
-
-Just click on the *Test template* button. You will see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+Click on the *Test template* button to see how the resulting document will look. You will see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 |test-template-xlsx|
 
@@ -185,10 +195,7 @@ You can start the process :
 .. note:: There is another - a little bit more complicated - way to create XLSX documents from a template. Check `the article <../../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
 
 .. _Plumsail account: https://account.plumsail.com/
-.. _the link for downloading the template: ../../../_static/files/user-guide/processes/create-xlsx-from-template.xlsx
 .. _this article: ../../../document-generation/xlsx/how-it-works.html
-
-
 
 .. |purchase-order-template| image:: ../../../_static/img/flow/how-tos/create-xlsx-from-template.png
 .. |purchase-order-create-file| image:: ../../../_static/img/flow/how-tos/create-xlsx-from-template-flow-create-file.png

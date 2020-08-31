@@ -35,41 +35,37 @@ Click on the *Add Process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Give a name to the Process to recognize it later.
+Give a name to the Process to recognize it later. As we're going to generate PDF invoices from an HTML template, select **HTML** for the template type.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-new-process.png
-    :alt: create PDF from HTML template
-
-Upload the template you want to use. Here is `the link for downloading the template <../../../_static/files/flow/how-tos/html-template.html>`_ we are using in our case.
-
-If you open this template you may see that there are placeholders like :code:`{{Total}}` and :code:`{{Quantity}}`. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../document-generation/html/index.html>`_ for more information.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-html-process.png
+    :alt: create html from a template
 
 Configure template
 ~~~~~~~~~~~~~~~~~~
 
-Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
+Once you've created the process, you’ll jump to its first step – *Configure Template*.
 
-Here you set the following parameters. Descriptions are under the picture.
+It includes two substeps:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/configure-pdf-from-html-template.png
-   :alt: configure HTML2PDF template
+- Editor;
+- Settings.
 
-**Template mode**
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
 
-It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+Feel free to `download an HTML template for invoices <../../../_static/files/flow/how-tos/html-template.html>`_. We have prepared it beforehand. 
 
-**Output filename**
+Then upload it to the process.
 
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{InvoiceNum}}`. As a result, we'll receive an invoice marked with its number - *Invoice 1*.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-html-template.png
+    :alt: upload HTML file
 
-**Output type**
+Templating syntax
+*****************
 
-By default, it is the same as your template's format. In this particular case, it's HTML. We're changing it to PDF to create PDF documents from an HTML template.
+You may see that the template has placeholders like :code:`{{Total}}` and :code:`{{Quantity}}`. There is also :code:`#{{each}}` iterator for rendering invoice items. Please read `template syntax description <../../../document-generation/html/index.html>`_ for more information.
 
-.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../create-process.html#add-watermark>`_. 
-
-**Test template**
-
+Test template
+*************
 You can test the template to see how it will look at the end by clicking the *Test template* button.
 
 After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template. 

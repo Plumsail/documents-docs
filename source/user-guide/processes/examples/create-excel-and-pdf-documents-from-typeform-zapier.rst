@@ -89,12 +89,9 @@ Click Continue. If this is your first Zap, at this point, you'll need to Sign in
 Customize Start Process
 ***********************
 
-Choose the process you want to start by this Zap from the dropdown. 
-Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
+Choose the process you want to start by this Zap from the dropdown. You will see fields to complete - they have the same names as tokens from the template. 
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
-
-Use the output from the trigger to specify values:
+To complete them, use the output from the Typeform trigger.
 
 .. image:: ../../../_static/img/flow/how-tos/xlsx-json-zap-typeform.png
     :alt: JSON data 
@@ -103,7 +100,6 @@ Our Zap is ready. See how the resulting file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/resultfile-employee-info.png
     :alt: Final document
-
 
 Sign up for Plumsail Documents
 ------------------------------

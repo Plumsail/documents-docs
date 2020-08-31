@@ -68,42 +68,35 @@ We've prepared our template and proceeding to create a document generation proce
 
 Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
-Click on the *Add process* button.
+Click on the *Add process* button. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the recognizable process name.
+Set the recognizable process name. Select **DOCX** for the template type.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-airtable.png
     :alt: create process to generate contracts from Airtable
 
-Upload the DOCX contract template we've prepared on the previous step. Press *Create*, and you'll proceed to the *Configure template* step. 
-
 Configure template
 ------------------
 
-On this step we set the following parameters. 
+Once you've created the process, you’ll jump to its first step – *Configure Template*.
 
-**Template mode**
+It includes two substeps:
 
-It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+- Editor;
+- Settings.
 
-**Output filename**
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
 
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{customer}}`. As a result, we'll receive an agreement with the name - *Service Agreement/Bear Paw Solutions*.
+As we have `already prepared the template <#prepare-word-contract-template>`_, upload it to the process:
 
-**Output type**
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
 
-By default, it is the same as your template's format. In this particular case, it's DOCX. We're changing it to PDF to generate PDF contracts from the Word template.
-
-.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../create-process.html#add-watermark>`_. 
-
-**Test template**
-
-You can test the template to see how it will look at the end by clicking the *Test template* button.
-
-After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names. So, it must correspond to tokens from the template. 
+To see how the resulting service agreement will look, click on the *Test template*
+You will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names. So, it must correspond to tokens from the template. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-airtable.png
     :alt: test template dialog
@@ -121,6 +114,27 @@ To test the template from our example, you can copy and paste the JSON data show
       "description": "Service 1, Service 2, Service 3",
       "cost": "10 000"
     }
+
+Click Save & Next to go to the **Settings**. Here you'll see the following parameters:
+
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{customer}}`. As a result, we'll receive an agreement with the name - *Service Agreement/Bear Paw Solutions*.
+
+**Output type**
+
+By default, it is the same as your template's format. In this particular case, it's DOCX. We're changing it to PDF to generate PDF contracts from the Word template.
+
+.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../create-process.html#add-watermark>`_. 
+
+**Test template**
+Once you've customized all the settings, you can test the template to see the result as we did it before. 
+
+When everything is done here, click on Save & Next to set up deliveries.
 
 Delivery
 --------
@@ -191,14 +205,14 @@ Customize Start Process
 ***********************
 
 Choose the process you want to start by this Zap from the dropdown. 
-Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
+You will see fields to complete - they have the same names as tokens from the template. 
 
-Don't forget that object names must correspond to tokens from the template. Use the output from the trigger to specify values:
+To complete them, use the output from the Airtable trigger.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/customize-plumsail-zap-airtable.png
     :alt: JSON data with Airtable trigger output
 
-That's it! Our Zap is ready. See how the resulting file looks:
+That's it! Our Zap is ready🎉 See how the resulting file looks:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/airtable-completed-contract.png
     :alt: Final service agreement populated with Airtable data

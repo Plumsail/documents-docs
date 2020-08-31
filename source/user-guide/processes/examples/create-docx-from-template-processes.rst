@@ -35,39 +35,52 @@ Click on the *Add Process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Give a name to the Process to recognize it later.
+Give a name to the Process to recognize it later. Select DOCX for a template type. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-new-process.png
     :alt: create docx from template
 
-Upload the template you want to use. Here is the `link for downloading the template`_ we use in this example. 
-
-When creating your own ones, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
-
-To learn more about the templating engine, check out `the documentation article`_.
-
-In short, the templating engine thinks that everything between such curly :code:`{{ }}` brackets is variables where it will apply your specified data. In our case the most basic example would be :code:`{{invoiceNumber}}` and :code:`{{date}}` tags. They let the engine know that we want to render the invoice number and its date.
-
-But, of course, we can implement a more complex scenario. In our template, we refer to properties inside a collection of products. For that, we use nested tags with a dot operator.
-
-The :code:`{{product.name}}`, :code:`{{product.price}}` tags get the name, description, and price properties in the product's object.
-The templating engine is smart enough to identify what content to duplicate. It will iterate through all objects in the array to render them and add the rows automatically.
-
-You can learn more about table rendering in `the tables section`_ of the documentation.
-
 Configure template
 --------------------
 
-Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
+Once you've created the Process, you'll proceed to its first step - **Configure template**.
 
 It includes two substeps:
 
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template, make necessary modifications, and instantly check how they affect the result. 
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
 
-For that, click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+Feel free to `download an invoice DOCX template <../../../_static/files/user-guide/processes/template-invoice.docx>`_ we have already prepared. Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+*****************
+
+When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimum of syntax to make your work done.
+
+To learn more about the templating engine, check out `the documentation article`_.
+
+In short, the templating engine thinks that everything between such curly :code:`{{ }}` brackets is variables where it will apply your specified data. In our case the most basic example would be :code:`{{invoiceNumber}}` and :code:`{{date}}` tags. They let the engine know that we want to render the invoice number and its date.
+
+But, of course, we can implement a more complex scenario. In our template, we refer to properties inside a collection of products. For that, we use nested tags with a dot operator:
+
+- The :code:`{{product.name}}`, :code:`{{product.price}}` tags get the name, description, and price properties in the product's object.
+
+The templating engine is smart enough to identify what content to duplicate. It will iterate through all objects in the array to render them and add rows automatically.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/table-render.png
+    :alt: tables in DOCX templates
+
+You can learn more about table rendering in `the tables section`_ of the documentation.
+
+Test template
+*************
+
+To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
     :alt: create docx from template
@@ -179,6 +192,5 @@ You can start the process :
 
 
 .. _Plumsail account: https://account.plumsail.com/
-.. _link for downloading the template: ../../../_static/files/user-guide/processes/template-invoice.docx
 .. _the documentation article: ../../../document-generation/docx/how-it-works.html
 .. _the tables section: ../../../document-generation/docx/tables.html
