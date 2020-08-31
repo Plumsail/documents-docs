@@ -695,7 +695,7 @@ The formatter can be used in both DOCX and PPTX templates. Read the articles bel
 - `Pictures in DOCX templates <../docx/pictures.html>`_
 - `Pictures in PPTX templates <../pptx/pictures.html>`_
 
-.. note:: Resizing of an image is not supported for PPTX templates yet
+.. note:: Resizing of an image is not supported for PPTX templates yet.
 
 Examples
 ~~~~~~~~
@@ -724,9 +724,6 @@ Examples
         - .. code-block:: json
     
            the image
-
-.. note:: Plumsail Documents support anonymous authentication only. To use a link to a picture stored in SharePoint, please, create a guest link and replace **guestacces.aspx** string with **download.aspx** one. Your link should look something like this: https://yourDomain.sharepoint.com/_layouts/15/download.aspx?docid=DocID&authkey=AuthKey
-
 
 url
 ----
