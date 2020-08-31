@@ -16,6 +16,20 @@ Expand **Advanced** to set:
 .. image:: ../../../_static/img/user-guide/processes/advanced-email-settings.png
     :alt: Advanced email delivery settings
 
+You can either manually specify the email address
+
+.. image:: ../../../_static/img/user-guide/processes/process-email-manually.png
+    :alt: Email
+
+or enter the email as a token, if the token exists in the source template. 
+
+The token may contain several comma separated adresses: *john.smith@contoso.com, adam.allman@contoso.com*
+
+
+.. image:: ../../../_static/img/user-guide/processes/process-email-token.png
+    :alt: Email token
+
+
 Use tokens inside email
 -----------------------
 
