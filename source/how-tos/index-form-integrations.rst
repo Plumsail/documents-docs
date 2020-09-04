@@ -11,3 +11,4 @@ Forms integrations
       Google Forms <../../../user-guide/processes/examples/indexes/index-google-forms.rst>
       Typeform <../../../user-guide/processes/examples/indexes/index-typeform.rst>
       JotForm <../../../user-guide/processes/examples/indexes/index-jotform.rst>
+      Wufoo <../user-guide/processes/examples/create-sales-proposals-from-wufoo.rst>
