@@ -7,7 +7,7 @@
 Automatically create sales proposals from Wufoo forms and send by email using Zapier
 ====================================================================================
 
-In this article, we’ll review how to create personalized sales proposals from online web forms to capture and handle leads right away before they go cold. 
+In this article, we’ll review how to create personalized sales proposals from online web forms. It's a useful approach to capture and handle leads right away before they go cold. 
 We’ll use the mix of `Wufoo forms <https://www.wufoo.com/>`_ and `Plumsail Documents <https://plumsail.com/documents/>`_ in `Zapier <https://zapier.com/>`_.
 
 **Brief description of use case**: There is a lead capture Wufoo form on your site. 

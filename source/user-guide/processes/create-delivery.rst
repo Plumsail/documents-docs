@@ -28,6 +28,8 @@ Use the links below to learn more about each delivery:
   :maxdepth: 1
     
   deliveries/send-email
+  deliveries/eversign
+  deliveries/docusign
   deliveries/one-drive
   deliveries/dropbox
   deliveries/sharepoint
