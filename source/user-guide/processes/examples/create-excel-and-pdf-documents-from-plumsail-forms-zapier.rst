@@ -57,10 +57,23 @@ We will start our Process from Zapier.
 Create a Zap
 -------------
 
-Zap is an automated connection between web services in Zapier. This is how our Zap looks:
+Zap is an automated connection between web services in Zapier. You can create it from scratch following the steps explained below.
+
+
+Or you can utilize the zap template. Click **Use this zap**, and then just customize the steps as it's described further in this article.
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=133665"></script>
+
+
+This is how our Zap looks:
 
 .. image:: ../../../_static/img/flow/how-tos/plumsail-form-zap.png
     :alt: xlsx to pdf from Plumsail Forms Zap
+
 
 Below is a step-by-step description.
 
@@ -94,18 +107,16 @@ Click Continue. If this is your first Zap, at this point, you'll need to Sign in
 Customize Start Process
 ***********************
 
-Choose the process you want to start by this Zap from the dropdown. 
-Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents.
+Choose the process you want to start by this Zap from the dropdown.
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
+You will see fields to complete - they have the same names as tokens from the template.
 
-Use the output from the trigger to specify values:
+To complete them, use the output from the Plumsail Forms trigger. Zapier outlines nested objects and arrays. In our case, it's a collection of items.
 
 .. image:: ../../../_static/img/flow/how-tos/json-zap-plumsail.png
     :alt: JSON data 
 
-
-Our Zap is ready. See how the resulting file looks:
+Our Zap is ready! 🎉 See how the resulting file looks:
 
 .. image:: ../../../_static/img/flow/how-tos/result-file-cognito-xlsx.png
     :alt: Final document

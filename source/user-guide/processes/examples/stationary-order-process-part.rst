@@ -1,7 +1,7 @@
 Configure the Process
 ---------------------
 
-Now we need to create and configure the Process which will generate stationary requests in PDF format based on data from our Plumsail Form submission. 
+Now we need to create and configure the Process which will generate stationery requests in PDF format based on data from our Plumsail Form submission. 
 
 Create a new Process
 ~~~~~~~~~~~~~~~~~~~~
@@ -13,34 +13,44 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name. 
+Set the Process name. As we're going to generate PDF stationery orders from an Excel template, select XLSX for the template type.
 
-.. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
-    :alt: generate PDF from Plumsail Form
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-excel-process.png
+    :alt: create excel process
 
-Upload the template you will use. In this example, we are going to generate requests for stationery and office supplies. And below is our template for it. You can download it by `this link <../../../_static/files/flow/how-tos/Create-Word-and-XLSX-template.xlsx>`_.
+Configure a template
+~~~~~~~~~~~~~~~~~~~~
+
+Once you're done with the first step *Create Process*, press the *Next* button, and you’ll proceed to the next step – *Configure Template*.
+
+It includes two substeps:
+
+- Editor;
+- Settings.
+
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+Feel free to `download an XLSX stationery order template <../../../_static/files/flow/how-tos/Create-Word-and-XLSX-template.xlsx>`_ that we have already prepared:
 
 .. image:: ../../../_static/img/flow/how-tos/Cognito-Forms-XLSX-PDF-Template.png
     :alt: Template
 
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+*****************
 When creating your own templates, mind the templating language. Plumsail Excel XLSX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
 Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
 
-Configure a template
-~~~~~~~~~~~~~~~~~~~~
+Test template
+*************
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
-
-- Fill in the name of the result file
-- Select PDF format for the output file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
-
-.. image:: ../../../_static/img/flow/how-tos/configure-template-stationery-order.png
-    :alt: Configure template
-
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. 
+To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
 
 To understand what JSON to feed, you need to look at tokens in your template. In our template we have :code:`{{name}}`, :code:`{{department}}`, etc, that's how the sample JSON for testing might look in our case:
 
@@ -69,7 +79,23 @@ To understand what JSON to feed, you need to look at tokens in your template. In
 .. image:: ../../../_static/img/flow/how-tos/test-template-cognito-xlsx.png
     :alt: test template
 
-It’s testing. We’re going to apply the data from the Plumsail stationery request form to our template.
+It’s testing. We’re going to apply the data from the web form to our template.
+
+Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
+
+Here, please:
+
+- Switch to an active mode to remove Plumsail watermarks from resulting documents
+- Fill in the name of the result file
+- Select PDF format for the output file
+- `Protect the result PDF <../configure-settings.html#add-watermark>`_ if you wish
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/configure-stationery-order.png
+    :alt: configure excel template 
+
+Once you've customized all the settings, you can test the template to see the result as we did it before. 
+
+When everything is done here, click on Save & Next to set up deliveries.
 
 Delivery
 ~~~~~~~~

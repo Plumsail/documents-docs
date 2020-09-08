@@ -40,28 +40,38 @@ Click on the *Add Process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Give a name to the process and upload the invoice template you'd like to use. 
-
-Feel free to `download an invoice template <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_ used in this example.
+Give a name to the process and select **DOCX** for a template type.
 
 .. image:: ../../../_static/img/flow/how-tos/create-dynamics-process.png
-    :alt: Name process and upload template
-
-To compose a template satisfying your demands and your circumstances, please, get acquainted with `how Plumsail Documents Word DOCX templates work <../../../document-generation/docx/index.html>`_. 
-There's nothing complex here - everything between such curly :code:`{{ }}` brackets is variables where the templating engine will apply your specified data. 
-The syntax is easy yet powerful - it supports lists, tables, charts, and many more.
+    :alt: Name process and select template type
 
 Configure template
 ------------------
 
-You clicked the *Create* button, and found yourself in the first step of the process - *Configure template*.
+You clicked the *Next* button, and found yourself in the first step of the process - *Configure template*.
 
 It includes two substeps:
 
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template online, make necessary modifications, and instantly check how they would affect the result. 
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+Feel free to `download an invoice template <../../../_static/files/flow/how-tos/invoice-template-d365.docx>`_ used in this example.
+
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+*****************
+To compose a template satisfying your demands and your circumstances, please, get acquainted with `how Plumsail Documents Word DOCX templates work <../../../document-generation/docx/index.html>`_. 
+There's nothing complex here - everything between such curly :code:`{{ }}` brackets is variables where the templating engine will apply your specified data. 
+The syntax is easy yet powerful - it supports lists, tables, charts, and many more.
+
+Test template
+*************
 
 To see how the resulting file will look, click on *Test template*. 
 

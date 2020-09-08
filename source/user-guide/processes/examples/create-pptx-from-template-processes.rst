@@ -41,21 +41,40 @@ First, register or login to your `Plumsail account <https://account.plumsail.com
 
 Create Process
 --------------
-And before we start, if you haven't downloaded the template file yet, please, `download it <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_, you will need it further.
 
-Now, we'are ready. Click on the **Add Process** button.
+Click on the **Add Process** button.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Give a name to the Process to recognize it later.
+Give a name to the Process to recognize it later. Select **PPTX** for a template type.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-pptx-process.png
    :alt: Сreate PPTX from template
 
-Upload the template you already have. 
 
-When you create your own template, mind the templating language. Plumsail PowerPoint PPTX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+Configure template
+------------------
+
+Once you've created the process, you’ll jump to its first step – *Configure Template*.
+
+It includes two substeps:
+
+- Editor;
+- Settings.
+
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+
+Feel free `to download the company report template <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_ if you haven't downloaded it yet as we gave the link above in the table showing the template and the result.
+
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+*****************
+When you create your own templates, mind the templating language. Plumsail PowerPoint PPTX templates use a different approach than most other templating solutions. It uses a minimum of syntax to make your work done.
 
 To learn more about the templating engine, check out `the documentation article <../../../document-generation/pptx/how-it-works.html>`_.
 
@@ -63,31 +82,10 @@ In short, the templating engine thinks that everything between such curly :code:
 
 We also included more complex visual content like tables and charts into our template. But there is nothing too difficult here as well. Please, see how to handle `tables <../../../document-generation/pptx/tables.html>`_ and `charts <../../../document-generation/pptx/charts.html>`_ in PPTX templates.
 
-Configure template
-------------------
-
-Once you've created the Process and submitted the template, you'll proceed to the next step - **Configure template**.
-
-Here you set the following parameters. 
-
-**Template mode**
-
-It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
-
-**Output filename**
-
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{title}}` and :code:`{{@date}}:format(MM.yyyy)}`. As a result, we'll receive a report with the name - *Plumsail Monthly Report 04.2020*.
-
-**Output type**
-
-By default, it is the same as your template's format. In this particular case, it's PPTX. And we kept it to create the PPTX PowerPoint presentation from a template.
-
-**Test template**
+Test template
+*************
 
 You can test the template to see how it will look at the end by clicking the *Test template* button.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-pptx-template.png
-   :alt: test PPTX template
 
 After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template.
 
@@ -163,8 +161,30 @@ To test the template from our example, you can copy and paste the JSON data show
 	    ]
     }
 
+Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
 
-Once you've tested the template, press *Save&Next* to proceed further.
+Here you set the following parameters. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-pptx-template.png
+   :alt: test PPTX template
+
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{title}}` and :code:`{{@date}}:format(MM.yyyy)}`. As a result, we'll receive a report with the name - *Plumsail Monthly Report 04.2020*.
+
+**Output type**
+
+By default, it is the same as your template's format. In this particular case, it's PPTX. And we kept it to create the PPTX PowerPoint presentation from a template.
+
+**Test template**
+
+Once you've customized all the settings, you can test the template to see the result as we did it before. 
+
+When everything is done here, click on Save & Next to set up deliveries.
 
 Delivery
 --------

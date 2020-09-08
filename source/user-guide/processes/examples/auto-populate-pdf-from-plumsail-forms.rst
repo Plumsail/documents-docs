@@ -81,25 +81,79 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name. 
+Set the Process name. Select a Fillable PDF for a template type. 
 
 .. image:: ../../../_static/img/flow/how-tos/create-new-process-plumsail-forms.png
     :alt: generate PDF from Plumsail Forms 
 
-Upload the prepared fillable PDF as a template. 
+Click the *Next* button. You'll be offered to upload a fillable PDF template. 
+
+.. image:: ../../../_static/img/user-guide/processes/upload-fillable-pdf-template.png
+    :alt: upload PDF form template
 
 Configure a template
 ~~~~~~~~~~~~~~~~~~~~~
+After you've provided the template file, you'll jump to the next step - **Configure template**.
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+It includes two substeps:
 
-- Fill in the name of the result file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
+- Editor;
+- Settings.
+
+In `Editor <../online-editor.html>`_, it's possible to upload a new fillable PDF template. And download it to your PC.
+
+Another feature here is testing the template. It helps you to get a sight of the resulting document and decide if you're satisfied with it.
+
+Just click the *Test template*. You'll see the dialog where to put the source data in JSON format. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-fillable-pdf-template.png
+    :alt: Test fillable PDF template
+
+To test the PDF form template from this example, copy and paste this JSON data:
+
+.. code:: json
+
+    { 
+    "FirstName": "David",
+    "LastName": "Navarro",
+    "Address": "3 Main St.",
+    "City": "New York",
+    "PostalCode": "972013",
+    "PhoneNumber": "202-555-0131",
+    "Email": "david@sample.com",
+    "Activities": "Sports: football, basketball, volleyball",
+    "CurrentlyWorking": true,
+    "HistoryCompany": "Acme Corp",
+    "HistoryAddress": "123 James St. Miami, USA",
+    "HistorySupervisor": "Derek Clark",
+    "HistoryPhoneNumber": "555-777-9999",
+    "HistoryPosition": "Marketing director",
+    "HistoryDuties": "Developing marketing strategy",
+    "HistoryLeaving": "Moving to another city",
+    "HistoryContact": true,
+    "Date": "06/30/2020"
+    }
+
+.. note:: It's testing, we'll pass data from Plumsail web forms to the process. See the `Start process section <#start-the-process-on-plumsail-forms-submission>`_. 
+
+In the **Settings** substep, you customize the following settings:
+
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. 
+
+.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../configure-settings.html#add-watermark>`_. 
+
+**Test template**
+
+You can test the template from the Settings as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've already described above.
 
 .. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf.png
     :alt: Configure template
-
-You can test a template as well, to see how it will look at the end. Find out how to do it in `the description <../../../user-guide/processes/test-template.html>`_.
 
 Delivery
 ~~~~~~~~
@@ -143,4 +197,3 @@ Sign up for Plumsail Documents
 To fully automize the generation and flow of your documents, `register a Plumsail account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_. It's easy to get started and save time with the help of Plumsail Documents.
 
 .. hint:: Check another article on `how to automatically populate fillable PDFs with SharePoint list data in Power Automate <../../../user-guide/processes/examples/fill-pdf-form-processes.html>`_. 
-

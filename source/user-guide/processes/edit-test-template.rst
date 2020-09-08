@@ -1,12 +1,15 @@
 Prepare and test a template
 ===========================
 
-After you `created the process <./create-process.html>`_, its first step *Configure template* will appear showing the substep *Editor*. 
+After you `created the process <./create-process.html>`_, its first step **Configure template** will appear showing the substep **Editor**. Here you can start composing the template online or upload a pre-made one. 
 
 .. image:: ../../_static/img/user-guide/processes/configure-template.png
     :alt: configure step
 
-It's time to work on preparing the template. 
+The only exception is fillable PDF templates. You'll be offered to upload a pre-made template right away after the process creation. And after that, you'll proceed to the Configure template step.
+
+.. image:: ../../_static/img/user-guide/processes/upload-fillable-pdf-template.png
+    :alt: Upload fillable PDF template
 
 .. contents::
     :local:
@@ -14,9 +17,10 @@ It's time to work on preparing the template.
 
 Templating syntax
 ~~~~~~~~~~~~~~~~~
-Learn the templating syntax for your template format. 
 
-Plumsail Documents has the templating engine that uses a minimum of syntax to make your work done. Please, consult the documentation when working out your template:
+To make your own templates easily, get acquainted with how the templating syntax works for supported formats. 
+
+Plumsail Documents templating engine uses a minimum of syntax to make your work done. Please, consult the documentation for details:
 
 - `DOCX template <../../document-generation/docx/index.html>`_
 - `XLSX template <../../document-generation/xlsx/index.html>`_
@@ -32,7 +36,7 @@ The online editor allows you to create document templates and modify them online
 Get started
 -----------
 
-For Office document templates, the editor mode in the Configure template step starts with the template preview. To start working on the document template online, click on the *Edit online* button:
+For Office document templates, the editor mode in the Configure template step starts with the template preview. To start working on the document template online, click on the **Edit online** button:
 
 .. image:: ../../_static/img/user-guide/processes/edit-online-button.png
     :alt: Edit online button
@@ -51,7 +55,7 @@ Complex Office document templates
 Online editor for Word, Excel, and PowerPoint templates is based on Google Docs. 
 That's why you may encounter incompatibilities for certain Microsoft Office features. For example, Google Docs doesn't support watermarks.
 
-We recommend you to work on complex document templates outside the process online editor. Use Upload/Download buttons for it:
+We recommend you to work on complex document templates outside the process. Use Upload/Download buttons for it:
 
 .. image:: ../../_static/img/user-guide/processes/upload-download-button.png
     :alt: Edit HTML html template                
@@ -87,14 +91,14 @@ Or right from the online editor:
 .. image:: ../../_static/img/user-guide/processes/test-button-template.png
     :alt: Test template button in Online editor
 
-After you've clicked on the *Test template*, the dialog appears. You need to insert your source data in JSON and click on *Create document*. 
+After you've clicked on the **Test template**, the dialog appears. You need to insert your source data in JSON and click on **Create document**. 
 
 You'll be able to test the template after you `configured output file settings <./configure-settings.html>`_ as well.
 
 Save the template
 -----------------
 
-You can switch between preview and edit modes by clicking *Edit online* and *Exit editor*. But none of the changes will pass to the process until you press *Save&Next*. To confirm you're satisfied with the template result and ready to go to the next step, click on this button:
+You can switch between preview and edit modes by clicking **Edit online** and **Exit editor**. But none of the changes will pass to the process until you press **Save&Next**. To confirm you're satisfied with the template result and ready to go to the next step, click on this button:
 
 .. image:: ../../_static/img/user-guide/processes/save-button.png
     :alt: Save template button in Online editor

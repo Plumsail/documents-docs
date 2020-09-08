@@ -32,13 +32,22 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Give a name to the process. Upload a blank DOCX file or a prepared-beforehand template. 
+Give a name to the process. Select **DOCX** for a template type.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/pipedrive-process.png
     :alt: Pipedrive invoices process
 
-DOCX invoice template
-*********************
+Configure template
+------------------
+
+After you've created the process, you find yourself on its first step - **Configure template**.
+
+The step includes two substeps:
+
+- Editor;
+- Settings.
+
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
 
 Feel free to `download an invoice template <../../../_static/files/user-guide/processes/pipedrive-invoice.docx>`_ which we're going to use. 
 
@@ -46,6 +55,14 @@ This is how it looks:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/pipedrive-invoice-template.png
     :alt: Word invoice template
+
+Then upload it to the process.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
+    :alt: upload template file
+
+Templating syntax
+******************
 
 You may see :code:`{{tokens tags}}` in the template. They let the templating engine know where to apply your specified data. 
 In our case, the most basic is :code:`invoiceNumber` and :code:`date` tags. They show to the engine that we want to render the invoice number and its date.
@@ -62,17 +79,10 @@ The templating engine will automatically understand that there are multiple prod
 
 You can learn more about table rendering in `the tables section <../../../document-generation/docx/tables.html>`_ of the documentation.
 
-Configure template
-------------------
+Test template
+**************
 
-After you've created the process, you find yourself on its first step - **Configure template**.
-
-The step includes two substeps:
-
-- Editor;
-- Settings.
-
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can work on the template - modify it and instantly check how the changes affect the result. 
+You can instantly check how the resulting file will look.
 
 For that, click on the *Test template*. You'll see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, this data needs to correspond to tokens from the template.
 

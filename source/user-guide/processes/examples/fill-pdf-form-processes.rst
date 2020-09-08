@@ -44,24 +44,35 @@ Click on the *Add process* button.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button
 
-Set the Process name and upload the template you've prepared. We will use the template from the step `Create a fillable PDF <../../../flow/how-tos/documents/fill-pdf-form-processes.html#create-fillable-pdf>`_.
+Set the Process name and Select a Fillable PDF for a template type. 
 
-.. image:: ../../../_static/img/flow/how-tos/create-process-fillin-pdf.png
-    :alt: Create a new process to populate PDF form
+.. image:: ../../../_static/img/user-guide/processes/how-tos/populate-pdf-process.png
+    :alt: Create process to auto populate PDF forms
+
+Click the *Next* button. You'll be offered to upload a fillable PDF template. 
+
+.. image:: ../../../_static/img/user-guide/processes/upload-fillable-pdf-template.png
+    :alt: upload PDF form template
 
 Configure a template
 --------------------
+After you've provided the template file, you'll jump to the next step - **Configure template**.
 
-Once you're done with the first step *Create Process*, press the *Submit* button, and you’ll proceed to the next – *Configure Template*:
+It includes two substeps:
 
-- Fill in the name of the result file
-- `Protect the result PDF <../../../user-guide/processes/create-process.html#add-watermark>`_ if you wish
+- Editor;
+- Settings.
 
-.. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf.png
-    :alt: Configure template
+In `Editor <../online-editor.html>`_, it's possible to upload a new fillable PDF template. And download it to your PC.
 
+Another feature here is testing the template. It helps you to get a sight of the resulting document and decide if you're satisfied with it.
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be:
+Just click the *Test template*. You'll see the dialog where to put the source data in JSON format. 
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-fillable-pdf-template.png
+    :alt: Test fillable PDF template
+
+To test the PDF form template from this example, copy and paste this JSON data:
 
 .. code:: json
 
@@ -85,12 +96,27 @@ You can test a template as well, to see how it will look at the end. After click
     "HistoryContact": true,
     "Date": "06/30/2020"
     }
-        
 
-.. image:: ../../../_static/img/flow/how-tos/test-fillable-pdf.png
-    :alt: test fillable PDF template
+.. note:: It's testing, we'll pass data from the SharePoint list to the process to populate the template. See the `Start process section <#start-the-process-on-plumsail-forms-submission>`_. 
 
-It’s testing. We’re going to apply the data from the SharePoint list. 
+In the **Settings** substep, you customize the following settings:
+
+**Template mode**
+
+It is *Testing* by default. It means you won't be charged for this process runs, but result documents will have a Plumsail watermark. Change it to *Active* to remove the watermark.
+
+**Output filename**
+
+Use tokens to make it personalized. They work the same way as in the template. 
+
+.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../configure-settings.html#add-watermark>`_. 
+
+**Test template**
+
+You can test the template from the Settings as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've already described above.
+
+.. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf.png
+    :alt: Configure template
 
 Delivery
 --------
