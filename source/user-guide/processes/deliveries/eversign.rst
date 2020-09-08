@@ -35,10 +35,22 @@ Clicking on the lock, you can **set a signer PIN**. Signer PINs provide you with
 .. image:: ../../../_static/img/user-guide/processes/signer-pin.png
     :alt: apply signer PINs
 
+Advanced settings
+-----------------
+
 Expand **Advanced** to customize more settings.
 
 .. image:: ../../../_static/img/user-guide/processes/advanced-eversign-settings.png
     :alt: advanced eversign settings
+
+- Here you can switch on **Sequential signing**, then just drag and drop recipients to define an order in which they should sign the document:
+
+.. image:: ../../../_static/img/user-guide/processes/drag-drop-recipients.gif
+    :alt: drag and drop recipients to change the sequence of signing
+
+- Enable **Require all signers to sign** to complete the document. If this option is on, all signers must sign the document in order to complete it. If at least one of them declines to sign, this document will be canceled.
+
+- One more significant option here is to enable **Sandbox eversign mode**. With Sandbox on, you won't be charged, and signed documents won't be valid. They will have a tag :code:`[test-only-not-binding]`. Use this mode for testing purposes.
 
 Use tokens inside email subject and body
 ----------------------------------------
