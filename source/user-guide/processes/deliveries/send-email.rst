@@ -16,6 +16,9 @@ Expand **Advanced** to set:
 .. image:: ../../../_static/img/user-guide/processes/advanced-email-settings.png
     :alt: Advanced email delivery settings
 
+Use tokens to specify recipients
+--------------------------------
+
 You can either manually specify the email address
 
 .. image:: ../../../_static/img/user-guide/processes/process-email-manually.png
@@ -30,8 +33,8 @@ The token may contain several comma separated adresses: *john.smith@contoso.com,
     :alt: Email token
 
 
-Use tokens inside email
------------------------
+Use tokens in email subject and body
+------------------------------------
 
 .. include:: ../tokens-description-part.rst
 
