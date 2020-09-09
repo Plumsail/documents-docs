@@ -32,7 +32,7 @@ Expand **Advanced** to customize more settings:
 
 Here you can switch on **Sequential signing**, then just drag and drop recipients to define an order in which they should sign the document.
 
-.. image:: ../../../_static/img/user-guide/processes/drag-drop-recipients.gif
+.. image:: ../../../_static/img/user-guide/processes/docusign-sequental.gif
     :alt: drag and drop recipients to change the sequence of signing
 
 And you can set the expiration period and sending reminders. 
