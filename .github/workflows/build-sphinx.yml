@@ -1,6 +1,8 @@
 name: Sphinx Build
 
 on:
+  push:
+    branches: [ master ]
   workflow_dispatch:
     inputs:
       newVersion:
