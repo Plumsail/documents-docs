@@ -1,0 +1,23 @@
+name: Jekyll site CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      newVersion:
+        description: 'The new version number'
+        required: false 
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: ""
+    - uses: actions/upload-artifact@v1
+      with:
+        name: DocumentationHTML
+        path: build/html/
