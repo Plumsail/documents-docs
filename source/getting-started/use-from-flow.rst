@@ -8,7 +8,7 @@ You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us
 .. _start-process-from-flow: 
 
 Start a process and generate documents from a template
------------------------------------------------------
+------------------------------------------------------
 
 `Processes <use-processes.html>`_ are an easy way to automate the creation of documents from templates. You just configure template, test it and specify how to deliver results (email, OneDrive, etc.). 
 

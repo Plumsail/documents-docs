@@ -15,7 +15,7 @@ works with different fonts and how to convert foreign characters correctly.
     :depth: 1
 
 Using custom fonts
--------------------
+------------------
 
 Plumsail Documents action `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
 supports several common fonts out of the box. For example, Times New Roman or Arial:
@@ -59,7 +59,7 @@ Also, It's possible to use CSS inside HTML code to set a default font or apply t
     :alt: Fonts
 
 Using external fonts
--------------------
+--------------------
 
 Convert HTML to PDF supports external fonts as well. It's a common case when you need to include external fonts, 
 

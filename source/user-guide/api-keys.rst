@@ -1,5 +1,5 @@
 API Keys
-=========================
+========
 
 API keys page contains all created API keys. API key is needed to authenticate your  `Power Automate (Microsoft Flow) calls <../getting-started/use-from-flow.html>`_ or `REST <../getting-started/use-as-rest-api.html>`_.
 

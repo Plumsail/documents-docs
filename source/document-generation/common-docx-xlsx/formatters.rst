@@ -18,6 +18,7 @@ It formats a tag value. You can use it with or without parameters:
 - :code:`format(val)` - formats current value using specified format string. For example, you can use :code:`N2` for a numbers with two decimals.
 
 .. note:: If you want to use colon character :code:`:` with the formatter then it must be escaped with a backslash \
+
 - :code:`{{date}:format(hh\:mm)}`
 
 
@@ -760,4 +761,4 @@ url
 
            http://ya.ru
 
-           
+

@@ -1,5 +1,5 @@
 External links
-==================
+==============
 
 .. contents:: Content
     :local:
