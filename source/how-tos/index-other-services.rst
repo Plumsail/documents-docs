@@ -10,3 +10,4 @@ Other web services integrations
       Google sheets <../../../user-guide/processes/examples/indexes/index-google-sheets.rst>
       Stripe <../../../user-guide/processes/examples/indexes/index-stripe.rst>
       Teachable <../user-guide/processes/examples/create-teachable-certificate.rst>
+      Trello <../user-guide/processes/examples/create-reports-from-trello.rst>
