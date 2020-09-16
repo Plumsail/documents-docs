@@ -1,3 +1,8 @@
+.. title:: Zapier automation to create weekly reports from Trello and send them by e-mail
+
+.. meta::
+   :description: Automatically create reports from Trello and send them by e-mail.
+
 Zapier automation to create weekly reports from Trello and send them by e-mail 
 ==============================================================================
 
