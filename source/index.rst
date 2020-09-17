@@ -92,14 +92,22 @@ Plumsail Documents Documentation
     general/manage-email-notifications                     
 
   .. toctree::    
-    :caption: Integration examples
+    :caption: 2000+ integrations
     :name: toc-Integration-examples
     :maxdepth: 2
     :titlesonly:
 
-    how-tos/index-form-integrations
-    how-tos/index-esignature
-    how-tos/index-sales-crm
-    how-tos/index-cloud-storage-integrations
-    how-tos/index-other-services
+    All <https://plumsail.com//documents/integrations/>
+    eSignature <https://plumsail.com//documents/integrations/category/esignature/>
+    Forms & Surveys <https://plumsail.com//documents/integrations/category/forms-and-surveys/>
+    Sales & CRM <https://plumsail.com//documents/integrations/category/sales-and-crm/>
+    Commerce <https://plumsail.com//documents/integrations/category/commerce/>
+    Communication <https://plumsail.com//documents/integrations/category/communication/>
+    Content & Files <https://plumsail.com//documents/integrations/category/content-and-files/>
+    Human Resources <https://plumsail.com//documents/integrations/category/human-resources/>
+    Marketing automation <https://plumsail.com//documents/integrations/category/marketing-automation/>
+    Analytics & Reporting <https://plumsail.com//documents/integrations/category/analytics-and-reporting/>
+    IT & Engineering <https://plumsail.com//documents/integrations/category/it-and-engineering/>
+    Productivity <https://plumsail.com//documents/integrations/category/productivity/>
+    Customer support <https://plumsail.com//documents/integrations/category/customer-support/>    
     Your custom service <../how-tos/custom-service-rest-api.rst>
