@@ -110,14 +110,19 @@ Here you customize the following parameters:
 Save contracts to Google Drive
 ------------------------------
 
-The next step of the process is delivery. For demonstration purposes, we selected saving ready contracts to Google Drive.
+The next step of the process is delivery - a way where to send or store generated documents. You can add as many deliveries as you need. 
+ 
+.. image:: ../../../_static/img/user-guide/processes/how-tos/add-delivery.png
+    :alt: add delivery
+
+For demonstration purposes, we selected `saving ready contracts to Google Drive <../deliveries/google-drive.html>`_.
 
 First, connect to your Google Drive from the Plumsail account. Then, make up the folder name where to store completed contracts.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/save-google-drive.png
     :alt: save contract to Google Drive
 
-You can add as many deliveries as you need. For example, you can assign such e-signing deliveries as eversign or DocuSign, and send contracts for e-signature. Please, check out the `full list of available deliveries <../../../user-guide/processes/create-delivery.html>`_.
+As we've already mentioned, you can add more than one delivery. For example, additionally, to Google Drive, you can assign such e-signing deliveries as eversign or DocuSign, and send contracts for e-signature. Please, check out the `full list of available deliveries <../../../user-guide/processes/create-delivery.html>`_.
 
 
 Start contract creation process
