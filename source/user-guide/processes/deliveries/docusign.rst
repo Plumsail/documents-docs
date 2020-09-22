@@ -99,7 +99,7 @@ Supported tags:
         - \\d4\\ 
         - \\d5\\ 
 
-See how the tags will appear in the document for signers. The date signed is auto-filled.
+See how the tags will appear in the document for signers. The name and date signed are auto-filled.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/docusign-anchor-text.png
     :alt: DocuSign anchor text
