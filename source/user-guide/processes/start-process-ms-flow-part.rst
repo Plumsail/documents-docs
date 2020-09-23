@@ -21,5 +21,3 @@ The above example of Flow has a manual trigger for simplicity. But you can trigg
   :maxdepth: 1
   
   ../../how-tos/index-create-documents-from-template
-  ../../how-tos/index-form-integrations
-  ../../how-tos/index-esignature

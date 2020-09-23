@@ -40,7 +40,16 @@ Advanced
 Processes examples
 ~~~~~~~~~~~~~~~~~~
 
-.. include:: /user-guide/processes/examples.rst
+Review examples of processes to get started:
+
+- `Create DOCX document from template <./examples/create-docx-from-template-processes.html>`_
+- `Create XLSX document from template <./examples/create-xlsx-from-template-processes.html>`_
+- `Create PPTX document from template <./examples/create-pptx-from-template-processes.html>`_
+- `Create HTML from template <./examples/create-html-from-template-processes.html>`_
+- `Create PDF from DOCX template <./examples/create-pdf-from-docx-template-processes.html>`_
+- `Create PDF from HTML template <./examples/create-pdf-from-html-template-processes.html>`_
+- `Batch generate event tickets from HTML template based on CSV rows <./examples/create-html-and-pdf-from-template-from-csv.html>`_
+- `Auto populate fillable PDF template <./examples/fill-pdf-form-processes.html>`_
 
 Find more examples in the integrations:
 

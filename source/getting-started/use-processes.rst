@@ -16,7 +16,16 @@ Processes are an easy way to automate the creation of documents from templates. 
 Processes examples
 ------------------
 
-.. include:: /user-guide/processes/examples.rst
+Review examples of processes to get started:
+
+- `Create DOCX document from template <../user-guide/processes/examples/create-docx-from-template-processes.html>`_
+- `Create XLSX document from template <../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_
+- `Create PPTX document from template <../user-guide/processes/examples/create-pptx-from-template-processes.html>`_
+- `Create HTML from template <../user-guide/processes/examples/create-html-from-template-processes.html>`_
+- `Create PDF from DOCX template <../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_
+- `Create PDF from HTML template <../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_
+- `Batch generate event tickets from HTML template based on CSV rows <../user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>`_
+- `Auto populate fillable PDF template <../user-guide/processes/examples/fill-pdf-form-processes.html>`_
 
 Find more examples in the integrations:
 
