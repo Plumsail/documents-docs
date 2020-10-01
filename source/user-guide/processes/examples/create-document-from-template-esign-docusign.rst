@@ -3,8 +3,8 @@
 .. meta::
    :description: Generate sales contracts from a template and sign using DocuSign and Plumsail Documents
 
-How to create a document from a template and electronically sign it using DocuSign
-==================================================================================
+How to automatically create a document from a template and electronically sign it using DocuSign
+================================================================================================
 
 From this article, you will learn how to create a PDF document from a template and electronically sign it using `DocuSign <https://www.docusign.com/>`_. 
 
@@ -225,7 +225,7 @@ We won't go into much detail here on how to create Plumsail web forms. You can `
 Bind web form to process
 ------------------------
 
-Now you need to associate this web form with the process. On the step **Start process**, switch to a tab Web Form. Click on *Bind form*.
+Now you need to associate this web form with the process. On the step **Start process**, switch to a tab *Web Form*. Click on *Bind form*.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/bind-form-docusign.png
     :alt: bind form to process
@@ -237,16 +237,16 @@ You'll see the dialog with the dropdown showing all your Plumsail forms. Select 
 
 From now submissions of the bound form will trigger the process. Submission data will populate the DOCX template, the process will convert it to PDF and will send it to DocuSign for signing.
 
-Conclusion
-~~~~~~~~~~
+Integrate with your services
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the above example of Plumsail Documents and DocuSign integration, we used only Plumsail capacities - without using any integrating platforms like Zapier or Power Automate (formerly Microsoft Flow). We did everything in the Plumsail account. 
-No doubt, it's convenient to do everything in one place, but you may consider other scenarios using not only pure Plumsail integrations. 
+It's possible to trigger the process from your favorite services and pass their data to populate the template and send the result to DocuSign. 
+For that, you can use such integration platforms as `Zapier <../../../getting-started/use-from-zapier.html>`_ and `Power Automate <../../../getting-started/use-from-flow.html>`_. 
 
 For instance, you can start the process of creating and sending contracts for eSignatures in DocuSign:
 
-- `from such web forms as Microsoft Forms, Cognito Forms, Typeform, and others <https://plumsail.com/documents/integrations/category/forms-and-surveys>`_;
-- `from Dynamics CRM entities or Pipedrive deals <https://plumsail.com/documents/integrations/category/sales-and-crm>`_.
+- `from various web forms like Microsoft Forms, Cognito Forms, Typeform, and others <https://plumsail.com/documents/integrations/category/forms-and-surveys>`_;
+- `from CRM's - Dynamics, Pipedrive, and others <https://plumsail.com/documents/integrations/category/sales-and-crm>`_.
 
 It's just a couple of ideas out of many for you to get inspired. Find more `in the integrations section <https://plumsail.com/documents/integrations/>`_. 
 
