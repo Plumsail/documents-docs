@@ -51,23 +51,23 @@ In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose
 
 `Download the contract template <../../../_static/files/user-guide/processes/contract-template-docusign.docx>`_ we've prepared for this case and upload it to the process.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template-docusign.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template-esignature.png
     :alt: upload template file
 
 Once you did it, you'll see the template preview:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/docusign-contract-preview.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/esignature-contract-preview.png
     :alt: preview of document template
 
 You may notice :code:`{{tokens}}` in the document template. We highlighted a couple of them purple to attract your attention and describe how the templating syntax works. 
 
-**Word DOCX templating syntax.** Everything in :code:`{{curly braces}}` is variable that the templating engine will replace with specified data. 
+**Word DOCX templating syntax.** Everything in :code:`{{curly braces}}` is variables that the templating engine will replace with specified data. 
 Also, in our template there are nested tags referring to products - :code:`{{products.name}}`, :code:`{{products.quantity}}`, :code:`{{products.price}}`, and :code:`{{products.cost}}`. 
  
 They let the process know that we want to display properties from some object. In our example, it's a collection of products.   
 The templating engine will automatically understand that there are multiple products and create table rows for each of them. 
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/nested-tags-docusign.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/nested-tags-esignature.png
     :alt: nested tags in template
 
 Find out `more information on Plumsail Documents Word templates <../../../document-generation/docx/index.html>`_ in the documentation.
@@ -210,7 +210,7 @@ Thus, every time somebody submits the form, the process will start and create pu
 
 Here is how our pre-made Plumsail form looks:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/contract-form-docusign.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/contract-form-esignature.png
     :alt: web form for sales contracts
 
 `Feel free to download the web form for creating sales contracts <../../../_static/files/user-guide/processes/purchase-agreement-form.json>`_ we have prepared. Then `go to the Forms <https://account.plumsail.com/forms/forms>`_ in your Plumsail account. Click on *Create form*, and you'll jump into the web designer of Plumsail Forms. There you can import the JSON file you've recently downloaded:
