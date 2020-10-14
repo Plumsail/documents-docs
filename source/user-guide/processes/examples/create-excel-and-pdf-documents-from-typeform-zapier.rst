@@ -57,8 +57,6 @@ This is how our Zap looks:
 .. image:: ../../../_static/img/flow/how-tos/zap-excel-cognito.png
     :alt: xlsx to pdf from Cognito Forms Zap
 
-
-
 New entry in Typeform
 ~~~~~~~~~~~~~~~~~~~~~
 

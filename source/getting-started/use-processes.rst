@@ -16,7 +16,32 @@ Processes are an easy way to automate the creation of documents from templates. 
 Processes examples
 ------------------
 
-.. include:: /user-guide/processes/examples.rst
+Review examples of processes to get started:
+
+- `Create DOCX document from template <../user-guide/processes/examples/create-docx-from-template-processes.html>`_
+- `Create XLSX document from template <../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_
+- `Create PPTX document from template <../user-guide/processes/examples/create-pptx-from-template-processes.html>`_
+- `Create HTML from template <../user-guide/processes/examples/create-html-from-template-processes.html>`_
+- `Create PDF from DOCX template <../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_
+- `Create PDF from HTML template <../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_
+- `Batch generate event tickets from HTML template based on CSV rows <../user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>`_
+- `Auto populate fillable PDF template <../user-guide/processes/examples/fill-pdf-form-processes.html>`_
+
+Find more examples in the integrations:
+
+- `All <https://plumsail.com//documents/integrations/>`_
+- `eSignature <https://plumsail.com//documents/integrations/category/esignature/>`_
+- `Forms & Surveys <https://plumsail.com//documents/integrations/category/forms-and-surveys/>`_
+- `Sales & CRM <https://plumsail.com//documents/integrations/category/sales-and-crm/>`_
+- `Commerce <https://plumsail.com//documents/integrations/category/commerce/>`_
+- `Communication <https://plumsail.com//documents/integrations/category/communication/>`_
+- `Content & Files <https://plumsail.com//documents/integrations/category/content-and-files/>`_
+- `Human Resources <https://plumsail.com//documents/integrations/category/human-resources/>`_
+- `Marketing automation <https://plumsail.com//documents/integrations/category/marketing-automation/>`_
+- `Analytics & Reporting <https://plumsail.com//documents/integrations/category/analytics-and-reporting/>`_
+- `IT & Engineering <https://plumsail.com//documents/integrations/category/it-and-engineering/>`_
+- `Productivity <https://plumsail.com//documents/integrations/category/productivity/>`_
+- `Customer support <https://plumsail.com//documents/integrations/category/customer-support/>`_   
 
 .. note::
 

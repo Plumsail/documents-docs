@@ -1,4 +1,4 @@
-You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsail/plumsail-documents/>`_ for Power Automate (Microsoft Flow) to start a process. Start by `creating an API key <../user-guide/api-keys.html>`_. You will need it in your Flow.
+You can use `Plumsail Documents connector <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsail/plumsail-documents/>`_ for Power Automate (Microsoft Flow) to start a process. Start by `creating an API key <https://plumsail.com/docs/documents/v1.x/user-guide/api-keys.html>`_. You will need it in your Flow.
 
 Then add the `Start process <../flow/actions/document-processing.html#start-process>`_ action to your Flow. You will be asked for *'Connection Name'* and for *'Access Key'*. You can type any name for the connection. For example, *'Plumsail Documents'*. Then paste API key that you created earlier to *'Access Key'*.
 
@@ -19,7 +19,16 @@ The above example of Flow has a manual trigger for simplicity. But you can trigg
 .. toctree::      
   :name: toc-processes-flow-examples
   :maxdepth: 1
-  
-  ../../how-tos/index-create-documents-from-template
-  ../../how-tos/index-form-integrations
-  ../../how-tos/index-esignature
+
+  Create documents from a template and electronically sign using AdobeSign <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-and-sign-abobesign.html>
+  Create documents from a template and electronically sign using SignNow <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-sign-signnow.html>
+  Create custom documents from Dynamics 365 CRM <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-custom-pdf-invoice-from-d365.html>
+  Create Word and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-microsoft-forms.html>
+  Create Word and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-cognito-forms.html>
+  Create Word and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-typeform.html>
+  Create Word and PDF documents from Jotform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-jotform.html>
+  Create Excel and PDF documents from Plumsail Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-plumsail-forms.html>
+  Create Excel and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-microsoft-forms.html>
+  Create Excel and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-Excel-and-pdf-documents-from-cognito-forms.html>
+  Create Excel and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-typeform.html>
+  Read CSV and batch generate PDF documents <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>
