@@ -208,6 +208,20 @@ Save the Flow, and you'll never need to handle NDAs manually. This is an example
 .. image:: /_static/img/user-guide/processes/how-tos/signed-nda-docusign.png
    :alt: resulting document signed
 
+Use result document in Flow
+---------------------------
+
+You can continue working with generated agreements further in the Flow. For demonstration purposes, we'll save our NDA's to the SharePoint library.
+
+For that, add an action from the SharePoint connector - *Create file*. Select the SharePoint site and library folder where you'd like to save agreements. 
+
+Do not forget to specify the :code:`.pdf` extension for the file name.
+
+For the file content, select :code:`Result file` - output from *Start document generation process*.
+
+.. image:: /_static/img/user-guide/processes/how-tos/sharepoint-save-in-flow.png
+   :alt: save resulting document to sharepoint library
+
 Conclusion
 ~~~~~~~~~~
 
