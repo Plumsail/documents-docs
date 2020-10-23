@@ -32,6 +32,7 @@ Advanced
   :titlesonly:
   :maxdepth: 1
 
+  customize-forms
   runs-history
   online-editor
 
