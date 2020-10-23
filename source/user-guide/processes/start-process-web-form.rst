@@ -23,8 +23,8 @@ You can share the form's link or use the widget to publish it on the public webs
 
 Another option is to customize the auto-generated form or create a new web form using `Plumsail Forms <https://plumsail.com/forms/>`_. 
 
-Create new form
-~~~~~~~~~~~~~~~~
+Create custom form using Plumsail Forms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With `Plumsail Forms`_, you can create public web forms with complex controls and conditional logic. It has a handy designer with a drag-and-drop approach.
 

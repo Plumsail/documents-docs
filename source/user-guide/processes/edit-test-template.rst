@@ -8,9 +8,6 @@ After you `created the process <./create-process.html>`_, its first step **Confi
 
 The only exception is fillable PDF templates. You'll be offered to upload a pre-made template right away after the process creation. And after that, you'll proceed to the Configure template step.
 
-.. image:: ../../_static/img/user-guide/processes/upload-fillable-pdf-template.png
-    :alt: Upload fillable PDF template
-
 .. contents::
     :local:
     :depth: 2

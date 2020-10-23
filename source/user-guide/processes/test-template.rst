@@ -38,7 +38,7 @@ You just complete it and press 'Create document'. The resulting document will ap
 
 It's possible to `adjust the testing form by changing token types <./customize-forms.html>`_.
 
-.. important:: Nesting tokens referring to the single object, not the collection of items, won't work in the testing form. Thus, if you have some nesting tokens like :code:`{{company.name}}`, :code:`{{company.address}}`, get rid of a dot operator and change them to simple tokens like :code:`{{companyName}}` and :code:`{{companyAddress}}`. You can **keep them** and `submit JSON`_ for testing the template instead.
+.. important:: Nesting tokens referring to the single object, not the collection of items, won't work in the testing form. Thus, if you have some nesting tokens like :code:`{{company.name}}`, :code:`{{company.address}}`, get rid of a dot operator and change them to simple tokens like :code:`{{companyName}}` and :code:`{{companyAddress}}`. Alternatively, you can **keep them** and `submit JSON`_ for testing the template.
 
 Submit JSON
 -----------

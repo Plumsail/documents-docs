@@ -32,7 +32,8 @@ Advanced
   :titlesonly:
   :maxdepth: 1
 
-  customize-forms
+  custom-testing-form
+  custom-plumsail-form
   runs-history
   online-editor
 

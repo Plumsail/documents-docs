@@ -1,11 +1,7 @@
-Manually
-========
+Submit JSON
+===========
 
-You can start the Process manually right from the step "Start process". 
-
-For that, you need to insert the JSON object representing data for the template like in the picture below.
-
-If you have tested the template on `the step "Configure template" <test-template.html>`_, that data is saved here. Make changes if you need them. 
+You can start the Process manually by submitting the JSON object representing data for the template.
 
 .. image:: ../../_static/img/user-guide/processes/start-process-manually.png
     :alt: Start process manually
