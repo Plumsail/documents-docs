@@ -87,23 +87,11 @@ As we have already prepared the template, upload it to the process:
 
 To see how the resulting certificate will look, click on the *Test template*. 
 
-Insert source data in JSON into the appeared dialog. This JSON data tells the templating engine what it should place into :code:`{{braces}}` instead of object names. Make sure this data correspond to tokens from the template.
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-certificate-template.png
     :alt: Test template to see the resulting certificate
-
-To test the certificate template from this example, copy and paste sample JSON shown below.
-
-.. note:: This is JSON for testing. We will pass data from Teachable to the process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "name": "Joe Doe",
-      "course": "3D design",
-      "date": "2020-07-15T20:01:33Z"
-    }
-
 
 Click Save & Next to go to the **Settings**. Here you'll see the following parameters:
 

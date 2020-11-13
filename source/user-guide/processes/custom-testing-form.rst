@@ -1,11 +1,18 @@
 Adjust auto-generated form
 ==========================
 
-For your convenience Plumsail Documents processes create default web forms based on tokens from the document template.
+.. contents::
+    :local:
+    :depth: 1
 
-You can use these forms `to test the template <./test-template.html>`_ or `to start the process <./start-process-web-form.html>`_. Relevant information on both cases can be found in the corresponding section of the documentation.
+For your convenience, Plumsail Documents processes create default web forms based on tokens from the document template.
+
+You can use these auto-generated forms `to test the template <./test-template.html>`_ or `to start the process <./start-process-web-form.html>`_. Relevant information on both cases can be found in the corresponding section of the documentation.
 
 Here we'll show you how to adjust the auto-generated form by changing types of template tokens.
+
+Types of tokens and form fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please, get acquainted with all token types and corresponding fields in the auto-generated form:
 
@@ -27,6 +34,9 @@ Please, get acquainted with all token types and corresponding fields in the auto
         - data table
     *   - object
         - not supported 
+
+Change token types to adjust form's look
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's learn how changing token types affect the look of the default form by an example of an invoice template with the list of products and their properties:
 
@@ -63,4 +73,28 @@ For quantity and prices, we have numeric fields supporting numbers only.
 .. image:: /_static/img/user-guide/processes/adjusted-default-form.png
    :alt: change token types
 
-.. important:: Nesting tokens referring to the single object, not the collection of items, won't work in the form. Thus, if you have some nesting tokens like :code:`{{company.name}}`, :code:`{{company.address}}`, it's better to get rid of a dot operator and change them to simple tokens like :code:`{{companyName}}` and :code:`{{companyAddress}}`. 
+.. _nesting:
+
+Nesting tokens
+~~~~~~~~~~~~~~
+
+You can use nesting tokens (with a dot operator) to refer to:
+
+- a collection of items and their properties; 
+- or to the single object and its properties. 
+
+As it was already mentioned, all nesting tokens are set to be a collection by default. 
+
+If you have a collection of items, the collection token type suits. You'll get a data table in the testing form for that.
+
+But in case you want to render properties of the single object, for example, the company - :code:`{{company.name}}`, :code:`{{company.address}}`, you don't need a data table with a list of items. 
+You change the token type to 'object', but in the testing form, you'll get just one text field - 'company'. 
+
+That's why we recommend **getting rid of a dot operator in tokens referring to single objects and changing them to simple ones** - :code:`{{companyName}}`, :code:`{{companyAddress}}`.
+
+.. image:: /_static/img/user-guide/processes/nesting-tokens.png
+   :alt: nesting tokens
+
+Thus, you will get separate fields for each token. 
+
+If you don't want to change nesting tokens referring to single objects, please, consider `testing the document template by submitting JSON <./test-template.html#submit-json>`_.
