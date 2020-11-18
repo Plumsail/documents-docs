@@ -96,24 +96,11 @@ As we have `already prepared the template <#prepare-word-contract-template>`_, u
     :alt: upload template file
 
 To see how the resulting service agreement will look, click on the *Test template*
-You will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names. So, it must correspond to tokens from the template. 
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-airtable.png
     :alt: test template dialog
-
-To test the template from our example, you can copy and paste the JSON data shown below.
-
-.. note:: This is JSON for testing. We'll pass data from an external system - Airtable. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "date": "2020-06-19",
-      "customer": "Bear Paw Solutions",
-      "provider": "Contoso LLC ",
-      "description": "Service 1, Service 2, Service 3",
-      "cost": "10 000"
-    }
 
 Click Save & Next to go to the **Settings**. Here you'll see the following parameters:
 

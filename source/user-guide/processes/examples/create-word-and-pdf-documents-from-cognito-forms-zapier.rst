@@ -82,17 +82,8 @@ Read `this article <../../../document-generation/docx/how-it-works.html>`_ to ge
 Test template
 *************
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. In our case, it might be:
-
-.. code:: json
-
-    {
-      "FieldName1": "Value1",
-      "FieldName2": "Value2",
-      "FieldName3": "Value3",
-      "FieldName4": "Value4"
-    }
-
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to fill in the auto-generated testing form. 
+Fields of this form are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-forms-processes.png
     :alt: test template

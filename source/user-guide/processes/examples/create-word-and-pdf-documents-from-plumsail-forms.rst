@@ -69,25 +69,8 @@ Read `the article to get familiar with the templating engine <../../../document-
 Test template
 *************
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. 
-
-To understand what JSON to feed, you need to look at tokens in your template. In our template we have :code:`{{name}}`, :code:`{{title}}`, etc, that's how the sample JSON for testing might look in our case:
-
-
-.. code:: json
-
-    {
-      "name": "John Smith",
-      "title": "Designer",
-      "department": "Marketing",
-      "manager": "Amanda Peterson",
-      "dateOfHire": "19/02/2020",
-      "address": "5th Avenue 5 apt 5",
-      "cell": "+789123456",
-      "dateOfBirth": "01/08/1980",
-      "SIN": "011-022-033-099"
-    }
-
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to fill in the auto-generated testing form. 
+Fields of this form are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-plumsail-forms-processes.png
     :alt: test template

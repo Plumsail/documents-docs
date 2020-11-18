@@ -84,45 +84,11 @@ Test template
 
 You can instantly check how the resulting file will look.
 
-For that, click on the *Test template*. You'll see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, this data needs to correspond to tokens from the template.
+For that, click on the *Test template*. You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-pipedrive.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
     :alt: test template
-
-To test the invoice template from this example, copy and paste the JSON data presented below.
-
-.. note:: This is JSON for testing. We will pass data from Pipedrive to our process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "invoiceNumber": "432",
-      "companyEmail": "sales@sample.com",
-      "companyAddress": "3 Main St.New York NY 97203 USA",
-      "companyPhone": "202-555-0131",
-      "date": "2018-05-21",
-      "products": [
-        {
-          "name": "Fridge",
-          "price": 4219.99,
-          "quantity": 1,
-          "cost": 4219.99
-        },
-        {
-          "name": "Microwave",
-          "price": 99.99,
-          "quantity": 5,
-          "cost": 499.95
-        },
-        {
-          "name": "Monitor",
-          "price": 99,
-          "quantity": 10,
-          "cost": 990
-        }
-      ],
-      "total": 18872.94
-    }
 
 Once you're satisfied with the result, press *Save&Next* to proceed further - to the **Settings** substep.
 
@@ -238,11 +204,3 @@ Sign up for Plumsail Documents
 Document automation could save tons of time, human resources, ok, and even preserve your nerves 🙂
 
 `Sign-up for Plumsail Documents <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ - it provides a 1-month free trial subscription. 
-
-
-
-
-
-
-
-

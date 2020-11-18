@@ -70,25 +70,11 @@ Check out the detailed information on `how Word DOCX templates work <../../../do
 
 **Test template**. After uploading or modifying the template, you can test it to get an idea of how the resulting document will look. 
 
-Click on the *Test template*. You'll see the dialog where you need to insert some data in JSON format. 
-This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names. 
-So, this data must correspond to tokens from the template.
+Click on the *Test template*. You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-contract-template.png
     :alt: test template to see the result
-
-To test the contract template from this example, you can copy and paste the JSON data presented below.
-
-.. note:: This is JSON for testing. We will pass data from Google Sheets to our process. See the `Start process section <#start-contract-creation-process>`_. 
-
-.. code:: json
-
-    {
-      "date": "2020-09-11T08:42:18.911Z",
-      "customer": "Derek Clark",
-      "description": "Service 1, Service 2, Service 3",
-      "cost": "6 000"
-    }
 
 The resulting document will appear in a new tab. Once you're satisfied with it, proceed to the **Settings** substep.
 

@@ -70,47 +70,12 @@ Read `this article <../../../document-generation/docx/how-it-works.html>`_ to ge
 Test template
 *************
 
-After you've uploaded the template to the process, you will see the template preview. To get a sight of the resulting document, click the *Test template* button. You will see the dialog where you can insert your data in JSON format to test the template. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+After you've uploaded the template to the process, you will see the template preview. To get a sight of the resulting document, click the *Test template* button. 
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-sign-now.png
     :alt: test template
-
-To test the contract template from our example, copy and paste the JSON data presented below.
-
-.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
-
-JSON data
-*********
-
-.. code:: json
-
-    {
-        "Number": "432",
-        "executionDate": "2020-05-25",
-        "deliveryDate": "2020-05-30",
-        "buyerName": "LUCKY LLC",
-        "buyerAddress": "55 Main St.New York NY 97203 USA",
-        "companyEmail": "sales@sample.com",
-        "companyAddress": "3 Main St.New York NY 97203 USA",
-        "companyPhone": "202-555-0131",
-        "companyName": "Plumsail LLC",
-        "products": [
-              {
-                "name": "Monitor",
-                "price": 99,
-                "quantity": 10,
-                "cost": 990
-              },
-              {
-                "name": "Fridge",
-                "price": 4219.99,
-                "quantity": 1,
-                "cost": 4219.99
-              }
-        ],
-        "total": 5209.99
-    }
-
 
 Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
 

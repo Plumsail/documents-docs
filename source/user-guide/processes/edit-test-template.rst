@@ -8,9 +8,6 @@ After you `created the process <./create-process.html>`_, its first step **Confi
 
 The only exception is fillable PDF templates. You'll be offered to upload a pre-made template right away after the process creation. And after that, you'll proceed to the Configure template step.
 
-.. image:: ../../_static/img/user-guide/processes/upload-fillable-pdf-template.png
-    :alt: Upload fillable PDF template
-
 .. contents::
     :local:
     :depth: 2
@@ -91,7 +88,11 @@ Or right from the online editor:
 .. image:: ../../_static/img/user-guide/processes/test-button-template.png
     :alt: Test template button in Online editor
 
-After you've clicked on the **Test template**, the dialog appears. You need to insert your source data in JSON and click on **Create document**. 
+After you've clicked on the **Test template**, the dialog appears and you will see two options for testing the template. 
+
+You can fill the testing form or submit JSON representing data for the document template. 
+
+Read more about `testing templates <./test-template.html>`_. 
 
 You'll be able to test the template after you `configured output file settings <./configure-settings.html>`_ as well.
 

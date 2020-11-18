@@ -83,19 +83,8 @@ Read `this article <../../../document-generation/docx/how-it-works.html>`_ to ge
 Test template
 *************
 
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to ‘feed’ a template with your data in JSON format. To understand what JSON to feed, you need to look at tokens in your template. 
-In our template we have :code:`{{Fullname}}`, :code:`{{PhoneNumber}}`, etc, that's how the sample JSON for testing might look in our case:
-
-
-.. code:: json
-
-    {
-      "FullName": "Nikola Vlasic",
-      "PhoneNumber": "+8987654321",
-      "ApartmentNumber": "124",
-      "Request": "The tap in the kitchen is dripping. Could you send a plumber, please?"
-    }
-
+You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to fill in the auto-generated testing form. 
+Fields of this form are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-jotform-processes.png
     :alt: test template

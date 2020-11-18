@@ -89,25 +89,11 @@ Test template
 You can instantly check how the resulting file will look.
 
 For that, click on the *Test template*. 
-You'll see the dialog where you need to insert some data in JSON format. 
-This data represents what the templating engine should paste instead of :code:`{{tokens}}`. 
-So, this data must correspond to tokens from the template.
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-wufoo.png
     :alt: test template 
-
-To test the sales proposal template from this example, copy and paste the JSON data presented below.
-
-.. note:: This is JSON for testing. We will pass data from Wufoo forms to our process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "customerName": "Jessica Adams",
-      "customerCompany": "Coffee shop",
-      "customerEmail": "j.adams@coffeeshop.com",
-      "date": "2020-09-03T18:25:43-05:00"
-    }
 
 After you clicked on the Generate document button, you'll be redirected to the new tab showing the document preview. 
 
