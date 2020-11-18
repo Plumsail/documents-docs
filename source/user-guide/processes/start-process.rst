@@ -6,15 +6,12 @@ Now, when you configured `document template <create-template.html>`_ and `delive
 .. image:: ../../_static/img/user-guide/processes/start-process-button.png
     :alt: Start process button
 
-.. toctree::   
-  :caption: Learn how to use each of them:
-  :name: toc-start-process  
-  :maxdepth: 1
+.. rubric:: Learn how to use each of them:
 
-  start-process-manually  
-  start-process-web-form
-  start-process-ms-flow
-  start-process-zapier
-  start-process-rest-api
+- `Web form <start-process-web-form.html>`_
+- `Submit JSON <start-process-manually.html>`_
+- `Power Automate (Microsoft Flow) <start-process-ms-flow.html>`_
+- `Zapier <start-process-zapier.html>`_
+- `REST API <start-process-rest-api.html>`_
 
 .. note:: After you have started the process, you can check its `runs history <runs-history.html>`_.

@@ -127,13 +127,13 @@ Start the Process
 
 Now everything is ready, and you can start generating PDF documents from an HTML template. The step **Start process** will show available options with a description for each.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-html-process.png
-    :alt: start process to create HTML from template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-docx-process.png
+    :alt: start process to create PDF from Word template
 
 You can start the process :
 
-- `manually <../start-process-manually.html>`_ with your JSON data;
-- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
+- `from web form <../start-process-web-form.html>`_;
+- `submitting JSON <../start-process-manually.html>`_ corresponding to template tokens;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
 - `using Zapier <../start-process-zapier.html>`_
 - `using REST API <../start-process-rest-api.html>`_;

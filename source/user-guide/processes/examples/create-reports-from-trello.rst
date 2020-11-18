@@ -94,38 +94,11 @@ Test template
 *************
 
 Once we have the template in our process, we can test it to see how the resulting file will look. 
-For that, click on the *Test template*. You'll see the dialog where you need to insert some data in JSON format. 
-This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. 
-So, this data must correspond to tokens from the template.
+For that, click on the *Test template*. You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-trello-template.png
     :alt: test template to see the resulting report
-
-To test the report template from this example, you can copy and paste the JSON data presented below.
-
-.. note:: This is JSON for testing. We will pass data from Trello to our process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "projectName": "Website development",
-      "date": "2020-09-11T08:42:18.911Z",
-      "status": "green",
-      "completedTasks": [
-        {
-          "name": "Post the vacancy",
-          "description": "Make up the vacancy text and post it on the site."
-        },
-        {
-          "name": "Interview candidates",
-          "description": "Interview at least 10 candidates before making an offer."
-        },
-        {
-          "name": "Pick up the developer",
-          "description": "Make an offer to one of the candidates."
-        }
-      ]
-    }
 
 The resulting document will appear in a new tab. If you're satisfied with its look, then press *Save&Next*. 
 
