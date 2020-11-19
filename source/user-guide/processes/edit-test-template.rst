@@ -94,8 +94,6 @@ You can fill the testing form or submit JSON representing data for the document 
 
 Read more about `testing templates <./test-template.html>`_. 
 
-You'll be able to test the template after you `configured output file settings <./configure-settings.html>`_ as well.
-
 Save the template
 -----------------
 

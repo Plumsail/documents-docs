@@ -62,4 +62,4 @@ It allows you to protect your PDF by setting a password, disabling printing, etc
     :alt: Protect PDF dialog
 
 
-.. Note:: Once you finished configuration you can `test the template <test-template.html>`_.
+.. Note:: Once you finished configuration of the template you can `proceed to add deliveries <create-delivery.html>`_ (email, OneDrive, eSignatures, etc). Just click the *Save & Next* button in the *Configure template* step.
