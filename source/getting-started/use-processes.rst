@@ -10,8 +10,8 @@ Processes are an easy way to automate the creation of documents from templates. 
 - `Create a new process <../user-guide/processes/create-process.html>`_
 - `Prepare and test a template <../user-guide/processes/edit-test-template.html>`_
 - `Configure output file format and other settings <../user-guide/processes/configure-settings.html>`_
-- `Deliver generated documents (email, OneDrive, etc.) <../user-guide/processes/create-delivery.html>`_
-- `Start process manually or using web form, Zapier, Power Automate (Microsoft Flow), or REST API <../user-guide/processes/start-process.html>`_
+- `Deliver generated documents (email, OneDrive, eSignature, etc.) <../user-guide/processes/create-delivery.html>`_
+- `Start process (Web form, Zapier, Power Automate (Microsoft Flow), or REST API) <../user-guide/processes/start-process.html>`_
 
 Processes examples
 ------------------
