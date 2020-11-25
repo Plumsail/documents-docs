@@ -9,7 +9,7 @@ Purchase Order
 --------------
 This demo demonstrates how to create a template for a Purchase Order document.
 
-You can find description of this case in `Create XLSX from template </flow/how-tos/documents/create-xlsx-from-template.html>`_  article.
+You can find description of this case in `Create XLSX from template <../../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_  article.
 
 Scroll down to see source data for the template in JSON format.
 
