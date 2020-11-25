@@ -47,7 +47,14 @@ Each control and field that you added to your form has an internal name. This in
 .. image:: ../../_static/img/user-guide/processes/change-internal-name-forms.png
     :alt: Change internal name
 
-You can see the full JSON object submitted by a form in `form submissions <https://account.plumsail.com/forms/forms>`_. Just click on your form and expand any of the items:
+To see the full JSON object submitted by a form, `go to the list of your forms <https://account.plumsail.com/forms/forms>`_. 
+Click on the form and then pick the desired submission of it. 
+Click on the dots and select </> View source:
 
 .. image:: ../../_static/img/user-guide/processes/form-submissions.png
     :alt: Form submissions
+
+It will open a dialog with JSON submission source:
+
+.. image:: ../../_static/img/user-guide/processes/submission_source.png
+    :alt: Form submissions source
