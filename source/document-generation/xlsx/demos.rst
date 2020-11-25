@@ -9,7 +9,7 @@ Purchase Order
 --------------
 This demo demonstrates how to create a template for a Purchase Order document.
 
-You can find description of this case in `Create XLSX from template </flow/how-tos/documents/create-xlsx-from-template.html>`_  article.
+You can find description of this case in `Create XLSX from template <../../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_  article.
 
 Scroll down to see source data for the template in JSON format.
 
@@ -18,11 +18,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/purchase-order-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/purchase-order-template.xlsx>`_
          
           .. image:: /_static/img/document-generation/purchase-order-template.png
                 :alt: purchase order template
-        - `Download result document </_static/files/document-generation/demos/purchase-order-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/purchase-order-result.xlsx>`_
          
           .. image:: /_static/img/document-generation/purchase-order-result.png
                 :alt: purchase order result
@@ -101,11 +101,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/table-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/table-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/table-template-xlsx.png
                 :alt: Table template
-        - `Download result document </_static/files/document-generation/demos/table-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/table-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/table-result-xlsx.png
                 :alt: Table template result
@@ -168,11 +168,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/table-from-array-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/table-from-array-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/table-from-array-template-xlsx.png
                 :alt: Table from array template
-        - `Download result document </_static/files/document-generation/demos/table-from-array-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/table-from-array-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/table-from-array-result-xlsx.png
                 :alt: Table from array result
@@ -220,11 +220,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/dynamic-table-columns-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/dynamic-table-columns-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/dynamic-table-from-a-number-of-arrays-template-full.png
                 :alt: Dynamic table from a number of arrays template
-        - `Download result document </_static/files/document-generation/demos/dynamic-table-columns-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/dynamic-table-columns-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/dynamic-table-from-a-number-of-arrays-result.png
                 :alt: Dynamic table from a number of arrays result
@@ -298,11 +298,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/repeat-multiple-table-rows-result.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/repeat-multiple-table-rows-template-xlsx.png
                 :alt: Repeat multiple table rows template
-        - `Download result document </_static/files/document-generation/demos/repeat-multiple-table-rows-template.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/repeat-multiple-table-rows-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/repeat-multiple-table-rows-result-xlsx.png
                 :alt: Repeat multiple table rows result
@@ -343,11 +343,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/loops-and-nesting-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/loops-and-nesting-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/xlsx-loops-and-nesting-template.png
                 :alt: Loops and nesting template
-        - `Download result document </_static/files/document-generation/demos/loops-and-nesting-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/loops-and-nesting-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/xlsx-loops-and-nesting-result.png
                 :alt: Loops and nesting result
@@ -489,11 +489,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/formulas-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/formulas-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/formulas-template.png
                 :alt: Formulas template
-        - `Download result document </_static/files/document-generation/demos/formulas-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/formulas-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/formulas-result.png
                 :alt: Formulas result
@@ -582,11 +582,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/charts-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/charts-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/charts-template.png
                 :alt: Table template
-        - `Download result document </_static/files/document-generation/demos/charts-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/charts-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/charts-result.png
                 :alt: Table template result
@@ -655,11 +655,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/charts-multiple-sheets-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/charts-multiple-sheets-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/chart-worksheets-template-small.png
                 :alt: Charts on multiple worksheets template
-        - `Download result document </_static/files/document-generation/demos/charts-multiple-sheets-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/charts-multiple-sheets-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/chart-worksheets-result-small.png
                 :alt: Charts on multiple worksheets result
@@ -800,11 +800,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/multiple-worksheets-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/multiple-worksheets-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/multiple-worksheets-template.png
                 :alt: Multiple worksheets template
-        - `Download result document </_static/files/document-generation/demos/multiple-worksheets-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/multiple-worksheets-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/multiple-worksheets-result.png
                 :alt: Multiple worksheets result
@@ -896,11 +896,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/external-links-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/external-links-template.xlsx>`_
 
           .. image:: /_static/img/document-generation/external-links-template-xlsx.png
                 :alt: Links template
-        - `Download result document </_static/files/document-generation/demos/external-links-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/external-links-result.xlsx>`_
 
           .. image:: /_static/img/document-generation/external-links-result-xlsx.png
                 :alt: Links result
@@ -947,11 +947,11 @@ Scroll down to see source data for the template in JSON format.
 
     * - Template
       - Result
-    * - `Download template document </_static/files/document-generation/demos/conditionally-clear-cells-template.xlsx>`_
+    * - `Download template document <../../_static/files/document-generation/demos/conditionally-clear-cells-template.xlsx>`_
 
         .. image:: /_static/img/document-generation/conditionally-clear-cells-template.png
             :alt: Clear cells template
-      - `Download result document </_static/files/document-generation/demos/conditionally-clear-cells-result.xlsx>`_
+      - `Download result document <../../_static/files/document-generation/demos/conditionally-clear-cells-result.xlsx>`_
 
         .. image:: /_static/img/document-generation/conditionally-clear-cells-result.png
             :alt: Clear cells result
