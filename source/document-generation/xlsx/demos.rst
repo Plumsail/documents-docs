@@ -18,11 +18,11 @@ Scroll down to see source data for the template in JSON format.
 
     *   - Template
         - Result
-    *   - `Download template document </_static/files/document-generation/demos/purchase-order-template.xlsx>`_
+    *   - `Download template document <../../_static/files/document-generation/demos/purchase-order-template.xlsx>`_
          
           .. image:: /_static/img/document-generation/purchase-order-template.png
                 :alt: purchase order template
-        - `Download result document </_static/files/document-generation/demos/purchase-order-result.xlsx>`_
+        - `Download result document <../../_static/files/document-generation/demos/purchase-order-result.xlsx>`_
          
           .. image:: /_static/img/document-generation/purchase-order-result.png
                 :alt: purchase order result
