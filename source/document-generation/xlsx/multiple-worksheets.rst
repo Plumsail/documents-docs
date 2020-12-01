@@ -101,7 +101,7 @@ Now, let us take a look at the source template for this structure:
 
 Just type the :code:`{{sheetName}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each employee.
 
-.. note:: Multiple worksheets template work if the Sheet name tag is used only for the Sheet name and not used anywhere else in the sheet. In the example below we use a tag "sheetName" to name the sheets.
+.. note:: Multiple worksheets template work if the Sheet name tag is used only for the Sheet name and not used anywhere else in the sheet. In the example below, we use a tag "sheetName" to name the sheets.
 
 To display employees information we refer objects properties using the dot operator:
 
