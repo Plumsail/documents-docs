@@ -18,7 +18,7 @@ Some apps integrated with Zapier have both triggers and actions. Some have eithe
 
 Plumsail Documents includes an action **Start Process**.
 
-.. image:: ../../_static/img/user-guide/processes/start-process-zapier.png
+.. image:: /_static/img/user-guide/processes/start-process-zapier.png
     :alt: Start process in Zapier
 
 Create zaps with Plumsail Documents
@@ -32,7 +32,7 @@ Let us say you have a Google Calendar for conferences. You need to generate pers
 
 This is how our Zap looks:
 
-.. image:: ../../_static/img/user-guide/processes/sample-zap.png
+.. image:: /_static/img/user-guide/processes/sample-zap.png
     :alt: sample zap
 
 Set trigger
@@ -47,14 +47,14 @@ Start Process in Plumsail Documents
 
 After setting a trigger, add an action Start process. For that, search for Plumsail Documents, choose an action Start Process.
 
-.. image:: ../../_static/img/user-guide/processes/zapier-start-process-action.png
+.. image:: /_static/img/user-guide/processes/zapier-start-process-action.png
     :alt: sample zap
 
 Click Continue. If this is your first Zap, at this point, you'll need to Sign in to your `Plumsail Account <https://auth.plumsail.com/account/login>`_ from Zapier to establish a connection between the app and your account. If you already have a Plumsail account tied to the app, you can add another one at this step, and use it instead.
 
 Choose the process you want to start by this Zap from the dropdown. 
 
-.. image:: ../../_static/img/user-guide/processes/select-process-zapier.png
+.. image:: /_static/img/user-guide/processes/select-process-zapier.png
     :alt: select process
 
 The next step is to customize Start Process.
@@ -65,7 +65,7 @@ Customize Start Process
 Zapier pulls data on tokens from a document template when you create a new process and save the template. All you need to do is to fill the fields to populate the template. 
 Use the output from the trigger to specify values for populating the template:
 
-.. image:: ../../_static/img/user-guide/processes/JSON-data-Zapier.png
+.. image:: /_static/img/user-guide/processes/JSON-data-Zapier.png
     :alt: JSON data in Zapier
 
 Multiple line items
@@ -75,7 +75,7 @@ Sometimes you need to display a collection of items. For example, a collection o
 
 In Zapier, the object will be outlined. As the Plumsail Documents integration supports `line items <https://zapier.com/help/create/basics/use-line-items-in-zaps>`_, it's possible to use the output arrays from the trigger to specify values:
 
-.. image:: ../../_static/img/user-guide/processes/line-items-zap.png
+.. image:: /_static/img/user-guide/processes/line-items-zap.png
     :alt: line items example
 
 The templating engine will automatically add information for each item. 
@@ -111,7 +111,7 @@ It's possible to use the output of the Start process action further in the zap.
 
 You'll be able to add the result file as an attachment:
 
-.. image:: ../../_static/img/user-guide/processes/result-file-zapier.png
+.. image:: /_static/img/user-guide/processes/result-file-zapier.png
     :alt: use result file in Zapier
 
 

@@ -6,7 +6,7 @@ Demos for PPTX templates
    :depth: 1
 
 Company Report
--------------
+--------------
 This demo demonstrates how to create a presentation for an simple report.
 Scroll down to see source data for the template in JSON format.
 
@@ -278,7 +278,7 @@ Scroll down to see source data for the template in JSON format.
 .. _links-and-endnotes:
 
 Links
-------
+-----
 
 This demo shows how to add external links to your presentation. You can find the description of this 
 case in the `links <external-links.html>`_ section of the documentation.

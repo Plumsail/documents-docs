@@ -1,5 +1,5 @@
 Value formatters in DOCX, XLSX and PPTX templates
-===========================================
+=================================================
 
 You can use formatters to add complex logic to values rendered in your templates. For example, you can change value format, hide content, join arrays, etc.
 
@@ -18,6 +18,7 @@ It formats a tag value. You can use it with or without parameters:
 - :code:`format(val)` - formats current value using specified format string. For example, you can use :code:`N2` for a numbers with two decimals.
 
 .. note:: If you want to use colon character :code:`:` with the formatter then it must be escaped with a backslash \
+
 - :code:`{{date}:format(hh\:mm)}`
 
 
@@ -221,7 +222,7 @@ Examples
 
 
 hide-block-if
-----
+-------------
 
 :code:`hide-block-if(val)` - it can be used to conditionally hide blocks of a document. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works in repeatable sections such as list items or table rows.
 
@@ -267,7 +268,7 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
             }  
 
 hide-block-if-not
-----
+-----------------
 
 :code:`hide-block-if-not(val)` -  it can be used to conditionally hide all block of list or table except specified. If a value in the tag is equal to a value of the parameter, it will be applied. This formatter works in repeatable sections such as list items or table rows.
 
@@ -313,7 +314,7 @@ The formatter can be used in both DOCX and XLSX templates. However, it behaves d
             }
 
 hide-block-if-empty
-----
+-------------------
 
 :code:`hide-block-if-empty` - it can be used to conditionally hide blocks of a document. If a value in the tag is null, empty or empty array, it will be applied. This formatter works in repeatable sections such as list items or table rows.
 
@@ -482,13 +483,13 @@ Examples
             .. image:: ../../_static/img/document-generation/merge-nulls-result.png
                 :alt: merge nulls fortammer result
 
-            XLSX result (`download <../../_static/files/document-generation/demos/merge-nulls-result.xlsx>`_):
+            XLSX result (`download result <../../_static/files/document-generation/demos/merge-nulls-result.xlsx>`_):
         
             .. image:: ../../_static/img/document-generation/xlsx-merge-nulls-result.png
                 :alt: merge nulls fortammer result
 
 span-nulls
------------
+----------
 
 :code:`span-nulls` - use this formatter to merge table cells vertically if there is null value.
 
@@ -685,7 +686,7 @@ Examples
                 
                 
 picture
-----
+-------
 
 :code:`picture` - it resolves URL or base64 string and converts it to an image. 
 :code:`picture` formatter can be used with resizing options, for example,  {{value}:picture(100,100)}.
@@ -760,4 +761,4 @@ url
 
            http://ya.ru
 
-           
+

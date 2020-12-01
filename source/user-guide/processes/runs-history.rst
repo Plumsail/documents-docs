@@ -19,4 +19,4 @@ You can check a particular run by clicking on it. On this page, you'll see all t
 
 It's especially helpful in case the process has failed. You will see the step where and why it happened. That's why you should have no difficulty in resolving the issue.
 
-.. hint:: Check out `ready-to-use Processes examples <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples.html>`_ for a variety of scenarios.
+.. hint:: Check out `ready-to-use Processes examples <./index.html#processes-examples>`_ for a variety of scenarios.

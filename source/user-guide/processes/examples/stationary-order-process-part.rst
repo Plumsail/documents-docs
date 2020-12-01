@@ -50,31 +50,10 @@ Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to ge
 Test template
 *************
 
-To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+To check how the document will look at the end, click on the *Test template* button. 
 
-To understand what JSON to feed, you need to look at tokens in your template. In our template we have :code:`{{name}}`, :code:`{{department}}`, etc, that's how the sample JSON for testing might look in our case:
-
-
-.. code:: json
-
-    {
-      "name": "John Doe",
-      "department": "IT",
-      "email": "j.doe@contoso.com",
-      "items": [
-        {
-          "Product": "Pen",
-          "Quantity": 10
-        },
-        {
-          "Product": "Pencil",
-          "Quantity": 10
-        }
-      ],
-      "instructions": "Delivery before Thursday",
-      "phone": "(206)-564-96-97",
-      "date": "25/02/2020"
-    }
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/test-template-cognito-xlsx.png
     :alt: test template

@@ -87,80 +87,12 @@ Test template
 
 You can test the template to see how it will look at the end by clicking the *Test template* button.
 
-After you click on the *Test template* button, you will see the dialog where you can insert your data in JSON format. This JSON data represents what will be pasted into :code:`{{ }}` brackets instead of object names and their properties. So, it must correspond to tokens from the template.
+After you click on the *Test template* button, you will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/json-pptx-template.png
    :alt: json data PPTX template
-
-To test the template from our example, you can copy and paste the JSON data shown below.
-
-.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-	    "title": "Plumsail monthly report",
-	    "subtitle": "made by David Navarro",
-	    "date": "30/04/2020",
-	    "state": "On track",
-	    "action": [
-		    {
-			    "description": "Hire more experts"
-		    },
-		    {      
-			    "description": "Remove obstacles"
-		    },
-		    {
-			    "description": "Marketing"
-		    },
-		    {
-			    "description": "Profit!!!"
-		    }
-	    ],
-	    "sales": [
-		    {
-			    "country": "USA",
-			    "lead": "John Doe",
-			    "churn": 450,
-			    "new": 1500
-		    },
-		    {
-			    "country": "Australia",
-			    "lead": "Jacky Coala",
-			    "churn": 0,
-			    "new": 3060
-		    },
-		    {
-			    "country": "Japan",
-			    "lead": "Naruto",
-			    "churn": 260,
-			    "new": 820
-		    }
-	    ],
-	    "history": [
-		    {
-			    "period": "2018/Q1",
-			    "total": 5030
-		    },
-		    {
-			    "period": "2018/Q2",
-			    "total": 5050
-		    },
-		    {
-			    "period": "2018/Q3",
-			    "total": 6120
-		    },
-		    {
-			    "period": "2018/Q4",
-			    "total": 6650
-		    },
-		    {
-			    "period": "2019/Q1",
-			    "total": 7660
-		    }
-	    ]
-    }
-
+		
 Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
 
 Here you set the following parameters. 
@@ -203,15 +135,15 @@ Start Process
 
 Now everything is ready, and you can start generating PowerPoint presentations. The step **Start process** will show available options with a description for each.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-pptx-process.png
-    :alt: start process to create PowerPoint from template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-docx-process.png
+    :alt: start process to create Word from template
 
 You can start the process :
 
-- `manually <../start-process-manually.html>`_ with your JSON data;
-- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
+- `from web form <../start-process-web-form.html>`_;
+- `submitting JSON <../start-process-manually.html>`_ corresponding to template tokens;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
-- `using Zapier <../start-process-zapier.html>`_
+- `using Zapier <../start-process-zapier.html>`_;
 - `using REST API <../start-process-rest-api.html>`_;
 
 .. hint:: Use `Power Automate Flow <../../../getting-started/use-from-flow.html>`_ and `Zapier <../../../getting-started/use-from-zapier.html>`_ to connect the process with other apps. It enables you to gather data from one app and pass on to the process to populate a PowerPoint template. Thus, you can populate the PPTX template from various web forms, CRM systems, SharePoint lists, and thousands of other web applications. 

@@ -1,5 +1,5 @@
 Slides in PPTX templates
-=======================
+========================
 
 .. contents:: Content
     :local:
@@ -9,7 +9,7 @@ Slides in PPTX templates
 .. _organize-slides:
 
 Automatically add slides
------------
+------------------------
 
 To automatically create slides slides, you just need to pass a collection of objects. There's no need to declare any loops. 
 The templating engine is smart enough to understand the structure of source object applied to your document.

@@ -80,59 +80,14 @@ You can learn more about table rendering in `the tables section`_ of the documen
 Test template
 *************
 
-To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can insert your data in JSON format. This JSON data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+To check how the document will look at the end, click on the *Test template* button. You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created from tokens of your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/test-template.png
     :alt: create docx from template
 
-To test the template from our example, you can copy and paste the JSON data shown below.
-
-.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "invoiceNumber": "432",
-      "companyEmail": "sales@sample.com",
-      "companyAddress": "3 Main St.New York NY 97203 USA",
-      "companyPhone": "202-555-0131",
-      "date": "2018-05-21",
-      "products": [
-        {
-          "name": "Monitor",
-          "price": 99,
-          "quantity": 10,
-          "cost": 990
-        },
-        {
-          "name": "Stepler",
-          "price": 12.44,
-          "quantity": 1000,
-          "cost": 12440
-        },
-        {
-          "name": "Fridge",
-          "price": 4219.99,
-          "quantity": 1,
-          "cost": 4219.99
-        },
-        {
-          "name": "Microwave",
-          "price": 99.99,
-          "quantity": 5,
-          "cost": 499.95
-        },
-        {
-          "name": "Pen",
-          "price": 7.23,
-          "quantity": 100,
-          "cost": 723
-        }
-      ],
-      "total": 18872.94
-    }
-
-Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep.
+Click on the 'Create document', and the resulting invoice will appeat in a new tab.
+Once you're satisfied with it, press *Save&Next* to proceed further - to the **Settings** substep.
 
 Here you set the following parameters. Descriptions are under the picture.
 
@@ -179,8 +134,8 @@ Now everything is ready, and you can start generating Word DOCX documents. The s
 
 You can start the process :
 
-- `manually <../start-process-manually.html>`_ with your JSON data;
-- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
+- `from web form <../start-process-web-form.html>`_;
+- `submitting JSON <../start-process-manually.html>`_ corresponding to template tokens;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
 - `using Zapier <../start-process-zapier.html>`_
 - `using REST API <../start-process-rest-api.html>`_;

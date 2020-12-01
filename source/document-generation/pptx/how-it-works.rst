@@ -1,5 +1,5 @@
 How PowerPoint PPTX templates work
-============================
+==================================
 
 PowerPoint PPTX templates in Plumsail Documents uses a minimal amount of syntax to make your work done. 
 Plumsail Documents analyses your presentation templates and locates the tags within the document. 
@@ -75,7 +75,7 @@ If the tags are placed inside of a list or a table, a list item or a table row w
 Please review `Slides <./slides.html>`_ for a more detailed explanation.
 
 Simple lists and tables
-------------------------
+-----------------------
 
 Just place a tag inside a list item to 
 As with slides, you don't need to declare any loops.  

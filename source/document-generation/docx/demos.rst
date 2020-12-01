@@ -9,7 +9,7 @@ Sales invoice
 -------------
 This demo demonstrates how to create a template for an invoice document.
 
-You can find the description  of this case in the `create DOCX document from template in Power Automate (Microsoft Flow) <../../flow/how-tos/documents/create-docx-from-template.html>`_ article.
+You can find the description  of this case in the `create DOCX document from template <../../user-guide/processes/examples/create-docx-from-template-processes.html>`_ article.
 
 Scroll down to see source data for the template in JSON format.
 

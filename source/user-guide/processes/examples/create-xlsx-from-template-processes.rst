@@ -90,55 +90,11 @@ Please also note that we are using these formulas to calculate the total cost fo
 Test template
 *************
 
-Click on the *Test template* button to see how the resulting document will look. You will see the dialog where you need to insert some data in JSON format. This data represents what the templating engine should paste into :code:`{{brackets}}` instead of object names and their properties. So, it must correspond to tokens from the template. 
+Click on the *Test template* button to see how the resulting document will look. 
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
 
 |test-template-xlsx|
-
-To test the template from our example, you can copy and paste the JSON data shown below.
-
-.. note:: This is JSON for testing. You can pass data from an external system or web form to the process. See the `Start process section <#start-process>`_. 
-
-.. code:: json
-
-    {
-      "orderDate": "2018-05-21",
-      "orderNumber": "432",
-      "vendorName": "Acme Corp",
-      "vendorAddress": "123 James Street, Miami, USA",
-      "vendorEmail": "sample@acme.com",
-      "vendorPhone": "555-777-9999",
-      "customerName": "Contoso Inc.",
-      "customerAddress": "1234 North Expressway, Arizona, USA",
-      "customerEmail": "sample@contoso.com",
-      "customerPhone": "111-222-8900",
-      "product": [
-        {
-          "name": "Monitor",
-          "price": 9,
-          "quantity": 10
-        },
-        {
-          "name": "Stepler",
-          "price": 12.44,
-          "quantity": 1000
-        },
-        {
-          "name": "Fridge",
-          "price": 4219.99,
-          "quantity": 1
-        },
-        {
-          "name": "Microwave",
-          "price": 99.99,
-          "quantity": 5
-        },
-        {
-          "name": "Pen",
-          "price": 7.23,
-          "quantity": 100
-        }
-      ]
-    }
 
 To proceed to the **Settings** substep, press *Save&Next*.
 
@@ -179,15 +135,15 @@ Start Process
 
 Now everything is ready, and you can start generating Excel XLSX documents. The step **Start process** will show available options with a description for each.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-xlsx-process.png
-    :alt: start process to create Excel from template
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-docx-process.png
+    :alt: start process to create Word from template
 
 You can start the process :
 
-- `manually <../start-process-manually.html>`_ with your JSON data;
-- `by Plumsail Web form <../start-process-web-form.html>`_ bound to the process;
+- `from web form <../start-process-web-form.html>`_;
+- `submitting JSON <../start-process-manually.html>`_ corresponding to template tokens;
 - `using Power Automate (former Microsoft Flow) <../start-process-ms-flow.html>`_;
-- `using Zapier <../start-process-zapier.html>`_
+- `using Zapier <../start-process-zapier.html>`_;
 - `using REST API <../start-process-rest-api.html>`_;
 
 .. hint:: Use `Power Automate Flow <../../../getting-started/use-from-flow.html>`_ and `Zapier <../../../getting-started/use-from-zapier.html>`_ to connect the process with other apps. It enables you to gather data from one app and pass on to the process to populate an XLSX template. Thus, you can populate the XLSX template from various web forms, CRM systems, SharePoint lists, and thousands of other web applications. 

@@ -45,7 +45,7 @@ This is how our flow looks:
 Below is a step by step description of the flow.
 
 Parsing a CSV file
---------------------
+------------------
 
 Flow trigger
 ~~~~~~~~~~~~
@@ -61,7 +61,7 @@ Just specify the  **path** to your file. We use this action to read our sample C
 You can use any other connector to get files from your system.
 
 Parsing CSV
-~~~~~~~~~
+~~~~~~~~~~~
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/documents/>`_.
 

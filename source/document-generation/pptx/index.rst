@@ -1,5 +1,5 @@
 PowerPoint PPTX templates
-===================
+=========================
 
 .. container:: pl-left-column
 

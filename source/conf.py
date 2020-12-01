@@ -52,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Plumsail Documents'
-copyright = '2019, Plumsail'
+copyright = '2020, Plumsail'
 author = 'Plumsail'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -149,6 +149,8 @@ html_theme_options = {
     "google_analytics_account": "UA-36215023-2",
     "base_url": "https://plumsail.com/docs/documents/v1.x/" #for sitemap
 }
+
+html_sidebars = {'**': ['searchbox.html','globaltoc.html']}
 #-----
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
