@@ -24,6 +24,7 @@ JSON representation of the object:
 
     [
         {
+            "sheetName": "Jessica Adams",
             "name": "Jessica Adams",
             "jobInfo": {
                 "title": "Marketing manager",
@@ -46,6 +47,7 @@ JSON representation of the object:
             }
         },
         {
+            "sheetName": "Katsuko Kawakami",
             "name": "Katsuko Kawakami",
             "jobInfo": {
                 "title": "Analyst",
@@ -68,6 +70,7 @@ JSON representation of the object:
             }
         },
         {
+            "sheetName": "Brenda Coel",
             "name": "Brenda Coel",
             "jobInfo": {
                 "title": "Marketing director",
@@ -96,10 +99,13 @@ Now, let us take a look at the source template for this structure:
 .. image:: ../../_static/img/document-generation/multiple-worksheets-template.png
     :alt: Multiple worksheets template
 
-Just type the :code:`{{name}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each employee. The same tag is also used at the top of the sheet. There it just displays regular bold Excel cell with larger font size.
+Just type the :code:`{{sheetName}}` tag into the tab name field. The templating engine is smart enough to understand that it needs to render a separate sheet for each employee.
+
+.. note:: Multiple worksheets template work if the Sheet name tag is used only for the Sheet name and not used anywhere else in the sheet. In the example below we use a tag "sheetName" to name the sheets.
 
 To display employees information we refer objects properties using the dot operator:
 
+- The :code:`{{name}}` tag shows the employees' names.
 - The :code:`{{jobInfo.title}}` tag lets the engine know that we want to render the  title property of the *jobInfo* object.
 - The :code:`{{jobInfo.dateOfHire}:format(d MMMM yyyy)}` tag lets the engine know that we want to render the Date of Hire property and change its format. For more information about value formatting please have a look at the `value formatters  <../common-docx-xlsx/formatters.html>`_ section of the documentation.
 - The :code:`{{personalInfo.address}}`, :code:`{{inCaseOfEmergency.name}}` tags let the engine know that we want to render the employee address and the emergency contact name properties of the *personalInfo* and *inCaseOfEmergency* objects.

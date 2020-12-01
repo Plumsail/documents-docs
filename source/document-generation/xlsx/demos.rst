@@ -795,6 +795,8 @@ This demo shows how to create multiple worksheets in one file. You can find the 
 
 Scroll down to see source data for the template in JSON format.
 
+.. note:: Multiple worksheets template work if the Sheet name tag is used only for the Sheet name and not used anywhere else in the sheet. In the example below we use a tag "sheetName" to name the sheets.
+
 .. list-table::
     :header-rows: 1
 
@@ -815,6 +817,7 @@ Scroll down to see source data for the template in JSON format.
 
     [
         {
+            "sheetName": "Jessica Adams",
             "name": "Jessica Adams",
             "jobInfo": {
                 "title": "Marketing manager",
@@ -837,6 +840,7 @@ Scroll down to see source data for the template in JSON format.
             }
         },
         {
+            "sheetName": "Katsuko Kawakami",
             "name": "Katsuko Kawakami",
             "jobInfo": {
                 "title": "Analyst",
@@ -859,6 +863,7 @@ Scroll down to see source data for the template in JSON format.
             }
         },
         {
+            "sheetName": "Brenda Coel",
             "name": "Brenda Coel",
             "jobInfo": {
                 "title": "Marketing director",
