@@ -689,7 +689,8 @@ picture
 -------
 
 :code:`picture` - it resolves URL or base64 string and converts it to an image. 
-:code:`picture` formatter can be used with resizing options, for example,  {{value}:picture(100,100)}.
+:code:`picture` formatter can be used with resizing options, for example,  :code:`{{value}:picture(100,100)}` .
+Also you can specify only the width parameter and height will be calculated automatically to keep the image proportions. For example, :code:`{{value}:picture(50)}` .
 
 The formatter can be used in both DOCX and PPTX templates. Read the articles below for more information:
 
@@ -709,7 +710,7 @@ Examples
         - Result
     *   - .. code-block:: json
     
-            {{value}:picture}, {{value}:picture(100,100)}
+            {{value}:picture}, {{value}:picture(100,100)}, {{value}:picture(50)}
 
         - .. code-block:: json
 
