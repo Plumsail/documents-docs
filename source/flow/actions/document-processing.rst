@@ -1829,7 +1829,7 @@ In a specified input string, replaces all strings that match a regular expressio
        -  Example
     *  -  Result
        -  Result string with replaced substrings that match a regular expression pattern.
-       -  ``sd-df-f-ddd-dff-fff``
+       -  ``John Smith``
 
 .. rubric:: Input Parameters
 
@@ -1843,15 +1843,15 @@ In a specified input string, replaces all strings that match a regular expressio
     *  -  Pattern
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
           You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.     
-       -  ``\s+``
+       -  ``Name: (?<Name>.+)``
 
     *  -  Text
        -  String to search for matches.
-       -  ``sd    df f     ddd    dff   fff``   
+       -  ``Name: John Smith``   
 
     *  -  Replacement
-       -  Replacement string.
-       -  ``-`` 
+       -  Replacement string or `backreference <https://docs.microsoft.com/en-us/dotnet/standard/base-types/backreference-constructs-in-regular-expressions>`_. The name or number of a captured group should be put between braces in ``${}``.
+       -  ``${Name}`` 
 
 .. rubric:: Example
 
