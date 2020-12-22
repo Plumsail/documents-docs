@@ -1,8 +1,5 @@
 DocuSign delivery
 =================
-.. contents::
-    :local:
-    :depth: 1
 
 The `DocuSign <https://www.docusign.com/>`_ delivery sends the resulting document to DocuSign for signing. 
 
@@ -15,18 +12,54 @@ At this step, you can select an environment - either **Sandbox** or **Production
 
 After you connected, you can customize the DocuSign delivery settings. 
 
+.. contents::
+    :local:
+    :depth: 1
+
+
+Main settings
+--------------
+
 **Fill in email subject and body**:
 
 .. image:: ../../../_static/img/user-guide/processes/docusign-email.png
     :alt: fill in email subject and body
+
 
 **Add recipients** - as many as you need. Assign roles to them:
 
 .. image:: ../../../_static/img/user-guide/processes/docusign-recipients.png
     :alt: roles of recipients in DocuSign delivery
 
-Advanced settings
------------------
+Use tokens to specify recipients
+--------------------------------
+
+You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
+
+.. image:: ../../../_static/img/user-guide/processes/email-token-docusign.png
+    :alt: tokens inside DocuSign recipients
+
+The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
+
+.. code:: json
+    
+    {
+        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
+    }
+
+Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
+
+You can specify recipient names in the list by placing names before the email address. 
+
+.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
+    :alt: name before email
+
+Or you can omit that, and the email address will be displayed as a recipient name.
+
+In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
+
+Sequential signing and other advanced settings
+----------------------------------------------
 
 Expand **Advanced** to customize more settings:
 

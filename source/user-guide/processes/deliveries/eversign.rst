@@ -1,8 +1,5 @@
 eversign delivery
 =================
-.. contents::
-    :local:
-    :depth: 1
 
 The `eversign <https://eversign.com/>`_ delivery sends the resulting document to eversign for signing.
 
@@ -12,6 +9,14 @@ To start with, you need to log in to your eversign account from the Plumsail acc
     :alt: connect to eversign
 
 After that, you'll be able to customize the eversign delivery.
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Main settings
+--------------
 
 **Select the business** from the dropdown:
 
@@ -38,8 +43,36 @@ Clicking on the lock, you can **set a signer PIN**. Signer PINs provide you with
 .. image:: ../../../_static/img/user-guide/processes/signer-pin.png
     :alt: apply signer PINs
 
-Advanced settings
------------------
+
+Use tokens to specify recipients
+--------------------------------
+
+You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
+
+.. image:: ../../../_static/img/user-guide/processes/email-token-eversign.png
+    :alt: tokens inside eversign recipients
+
+The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
+
+.. code:: json
+    
+    {
+        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
+    }
+
+Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
+
+You can specify recipient names in the list by placing names before the email address. 
+
+.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
+    :alt: name before email
+
+Or you can omit that, and the email address will be displayed as a recipient name.
+
+In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
+
+Sequential signing and other advanced settings
+----------------------------------------------
 
 Expand **Advanced** to customize more settings.
 

@@ -22,8 +22,8 @@ After that, you can start specifying the delivery settings.
     :local:
     :depth: 1
 
-Title and message
------------------
+Main settings
+--------------
 
 **Define the title** of the document. This title will be used inside the HelloSign account. So, it's a good idea to add something recognizable to it. 
 For example, the company name you're signing a contract.
@@ -36,16 +36,40 @@ For example, the company name you're signing a contract.
 .. image:: ../../../_static/img/user-guide/processes/hellosign-message.png
     :alt: HelloSign message for signers
 
-Recipients
-----------
-
 **Add recipients** - as many as you need. They could have :code:`Needs to sign` and :code:`Receives a copy` roles:
 
 .. image:: ../../../_static/img/user-guide/processes/hellosign-recipients.png
     :alt: HelloSign recipients
 
-Advanced settings
------------------
+Use tokens to specify recipients
+--------------------------------
+
+You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
+
+.. image:: ../../../_static/img/user-guide/processes/email-token-hellosign.png
+    :alt: tokens inside Hellosign recipients
+
+The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
+
+.. code:: json
+    
+    {
+        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
+    }
+
+Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
+
+You can specify recipient names in the list by placing names before the email address. 
+
+.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
+    :alt: name before email
+
+Or you can omit that, and the email address will be displayed as a recipient name.
+
+In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
+
+Sequential signing and other advanced settings
+----------------------------------------------
 
 Expand **Advanced** to customize additional settings.
 
