@@ -3,16 +3,14 @@ Pictures in DOCX templates
 
 DOCX templates have multiple `value formatters <../common-docx-xlsx/formatters.html>`_. One of them is `picture formatter <../common-docx-xlsx/formatters.html#picture>`_. You can use it to dynamically insert pictures into DOCX documents. 
 
+.. note:: :code:`picture` formatter can be used with resizing options, for example,  :code:`{{value}:picture(100,100)}` . Also you can specify only the width parameter and height will be calculated automatically to keep the image proportions. For example, :code:`{{value}:picture(50)}` .
+
 Let us review a few cases examples:
 
 .. contents::
     :local:
     :depth: 1
 
-
-.. code-block:: json
-
-  {{value}:picture(100,100)}
 
 Insert pictures from public URL
 -------------------------------
