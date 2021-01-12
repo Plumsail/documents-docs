@@ -41,33 +41,6 @@ For example, the company name you're signing a contract.
 .. image:: ../../../_static/img/user-guide/processes/hellosign-recipients.png
     :alt: HelloSign recipients
 
-Use tokens to specify recipients
---------------------------------
-
-You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
-
-.. image:: ../../../_static/img/user-guide/processes/email-token-hellosign.png
-    :alt: tokens inside Hellosign recipients
-
-The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
-
-.. code:: json
-    
-    {
-        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
-    }
-
-Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
-
-You can specify recipient names in the list by placing names before the email address. 
-
-.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
-    :alt: name before email
-
-Or you can omit that, and the email address will be displayed as a recipient name.
-
-In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
-
 Sequential signing and other advanced settings
 ----------------------------------------------
 
@@ -123,6 +96,33 @@ Following this logic, you can add other types of fields:
         - Signer's signature field
 
 Find more information on HelloSign text tags in `the HelloSign documentation <https://faq.hellosign.com/hc/en-us/articles/360021976991-How-to-use-Hellosign-Text-Tags-in-Salesforce>`_.
+
+Specify recipients dynamically based on your data
+-------------------------------------------------
+
+You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
+
+.. image:: ../../../_static/img/user-guide/processes/email-token-hellosign.png
+    :alt: tokens inside Hellosign recipients
+
+The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
+
+.. code:: json
+    
+    {
+        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
+    }
+
+Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
+
+You can specify recipient names in the list by placing names before the email address. 
+
+.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
+    :alt: name before email
+
+Or you can omit that, and the email address will be displayed as a recipient name.
+
+In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
 
 Use template tokens inside delivery
 -----------------------------------
