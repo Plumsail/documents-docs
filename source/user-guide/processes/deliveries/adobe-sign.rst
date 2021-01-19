@@ -61,7 +61,8 @@ It works like this:
 - you insert signature text tags into a document template;
 - each signer, when receiving the document, will see fields requiring to sign and complete.
 
-Here are the most popular text tags:
+As the Adobe Sign text tags have the same format as the Plumsail Documents template tokens, you need to add a suffix to the Adobe Sign text tags to keep them work - :code:`keep-token`.
+We have prepared the most popular text tags already with this suffix. But do not forget to add it when using other Adobe Sign text tags.
 
 .. list-table::
     :widths: 20 80
@@ -69,18 +70,25 @@ Here are the most popular text tags:
 
     *   - Text tag
         - Description
-    *   - :code:`{{Sig_es_:signer1:signature}}`
+    *   - :code:`{{Sig_es_:signer1:signature}:keep-token}`
         - A signature field assigned to the first signer.
-    *   - :code:`{{Int_es_:signer1:initials}}`
+    *   - :code:`{{Int_es_:signer1:initials}:keep-token}`
         - An initials field assigned to the first signer.
-    *   - :code:`{{N_es_:signer1:fullname}}`
+    *   - :code:`{{N_es_:signer1:fullname}:keep-token}`
         - A read-only field for the recipient identified as signer1 to enter his or her full name.
-    *   - :code:`{{Cmpy_es_:signer1:company}}`
+    *   - :code:`{{Cmpy_es_:signer1:company}:keep-token}`
         - A field for the company name of the first signer.
-    *   - :code:`{{Dte_es_:signer1:date}}`
+    *   - :code:`{{Dte_es_:signer1:date}:keep-token}`
         - A read-only field containing the date of signature.
 
+This is how they will appear for the signer:
+
+.. image:: ../../../_static/img/user-guide/processes/adobe-sign-tags-result.png
+    :alt: Adobe Sign text tags results
+
 You can find `more examples of Adobe Sign text tags in their documentation <https://helpx.adobe.com/sign/using/text-tag.html>`_.
+
+.. important:: When adding Adobe Sign text tags to your document template, don't forget to add a suffix :code:`keep-token`. See `the description above <./adobe-sign.html#use-signature-and-other-related-tags>`_.
 
 Specify recipients dynamically based on your data
 -------------------------------------------------
