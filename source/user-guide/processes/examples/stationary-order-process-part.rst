@@ -1,7 +1,7 @@
 Configure the Process
 ---------------------
 
-Now we need to create and configure the Process which will generate stationery requests in PDF format based on data from our Plumsail Form submission. 
+Now we need to create and configure the Process which will generate stationery requests in PDF format based on data from our web form submission. 
 
 Create a new Process
 ~~~~~~~~~~~~~~~~~~~~
