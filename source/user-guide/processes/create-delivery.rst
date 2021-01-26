@@ -29,6 +29,7 @@ Use the links below to learn more about each delivery:
     
   deliveries/send-email
   deliveries/docusign
+  deliveries/signnow
   deliveries/hellosign
   deliveries/eversign
   deliveries/sharepoint
