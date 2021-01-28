@@ -1,14 +1,9 @@
 {%- extends "basic/layout.html" %}
 
 {%- block htmltitle %}
-  <!-- Licensed under the Apache 2.0 License -->
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/fonts/open-sans/stylesheet.css', 1) }}" />
-  <!-- Licensed under the SIL Open Font License -->
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/fonts/source-serif-pro/source-serif-pro.css', 1) }}" />
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" />
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/bootstrap-theme.min.css', 1) }}" />
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/header.min.css', 1) }}" />
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/doc-content.min.css', 1) }}" />
+  <link rel="stylesheet" type="text/css" href="https://new.plumsail.com/assets/docs/main.css" />  
+  <link rel="stylesheet" type="text/css" href="https://new.plumsail.com/assets/themes/documents.css" />  
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/style.css', 1) }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/wp-content/themes/plumsail/assets/images/favicon.ico"
   type="image/x-icon">
@@ -60,17 +55,18 @@
 {%- endmacro %}
 
 {%- macro guzzle_sidebar() %}
-  <div id="left-column" class="doc-content-sidebar2">
-    <div class="sphinxsidebar">
+  <div class="col-lg fix-col-width-md bg-light d-none d-lg-block">
+    <div class="min-vh-100" id="sidebar-wrapper">
+      <div class="list-group list-group-flush overflow-auto h-100">
       {%- if sidebars != None %}
         {#- new style sidebar: explicitly include/exclude templates #}
         {%- for sidebartemplate in sidebars %}
         {%- include sidebartemplate %}
         {%- endfor %}
       {% else %}
-        {% include "searchbox.html" %}
-        {% include "globaltoc.html" %}
+
       {%- endif %}
+      </div>  
     </div>
   </div>
 {%- endmacro %}
@@ -80,328 +76,55 @@
   {%- if pagename == 'index' and theme_index_template %}
     {% include theme_index_template %}
   {%- else %}
-    <div class="container-wrapper">
+    <div id="main-menu"></div>
+    {% block breadcrumbs %}
+        <section class="breadcrumb">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 small">
+                    <a href="/documents/">Documents</a>
+                    <span class="breadcrumb-delimiter">›</span>
+                    <a href="{{ pathto(master_doc) }}">Documentation</a>
+                    
+                    {%- if parents != None %}
+                      {% for doc in parents %}
+                      <span class="breadcrumb-delimiter">›</span>
+                      <a href="{{ doc.link|e }}">{{ doc.title }}</a>
+                      {% endfor %}
+                    {%- endif %}
+
+                    {%- if title != None %}
+                      <span class="breadcrumb-delimiter">›</span>  
+                      {{ title }}
+                    {%- endif %}
+                </div>
+            </div>
+          </div>
+        </section>
+    {% endblock %}
+    <div class="container-fluid">
+      <div class="row">
         {%- block sidebar1 %}
             {{ guzzle_sidebar() }}
         {% endblock %}
 
         {%- block document_wrapper %}
             {%- block document %}
-                <div id="right-column">
-                    <header class="header">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="header__logo">
-                                            <a href="/"><img src="/wp-content/themes/plumsail/assets/images/logo.svg" alt=""></a>
-                                    </div>
-                                    <nav class="header__menu">
-                                        <ul class="main-menu">
-                                            <li class="main-menu__drop"><a href="#products"><span></span>Products</a></li>
-                                            <ul id="menu-main-menu" class="menu"><li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a target="_blank" href="https://community.plumsail.com">Community</a></li>
-                                                <li id="menu-item-20706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20706"><a href="/store/">Store</a></li>
-                                                <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
-                                                <li id="menu-item-20708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20708"><a href="/partners-and-resellers/">Partners</a></li>
-                                                <li id="menu-item-20707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20707"><a href="/company/">Company</a></li>
-                                                <li id="menu-item-24694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24694"><a target="_blank" href="https://account.plumsail.com/">Account</a></li>
-                                            </ul>                    
-                                        </ul>
-                                    </nav>
-                                    <div class="burger">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>                            
-                                    <!-- mobile menu -->
-                                    <div class="mobile-menu-bg"></div>
-                                    <div class="mobile-menu">
-                                        <div class="mobile-menu__body">
-                                            <div class="mobile-menu__inner">
-                                                <ul class="mobile-menu-list">
-                                                    <li class="mobile-menu-list__sub">
-                                                        <a href="#">Products</a>
-                                                        <ul class="mobile-menu-list-sub">
-                                                            <li>
-                                                                <a href="/sharepoint-helpdesk/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/help_desk.svg">HelpDesk</a>
-                                                            </li>
-                                                            <li>
-                                                              <a href="/documents/"><img
-                                                                          src="/wp-content/themes/plumsail/assets/images/documents.svg">Documents</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/actions/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/actions.svg">Actions</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/workflow-actions-pack/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/workflow_action_pack.svg">Workflow
-                                                                    Actions Pack</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/forms/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/forms.svg">Forms</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/sharepoint-forms-designer/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/forms_designer.svg">Forms
-                                                                    Designer</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/sharepoint-dashboard-designer/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/dashboard_designer.svg">Dashboard
-                                                                    Designer</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/sharepoint-workflow-scheduler/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/workflow_scheduler.svg">Workflow
-                                                                    Scheduler</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/cross-site-lookup/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/crosssite_lookup.svg">Cross-site
-                                                                    lookup</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/sharepoint-orgchart/"><img
-                                                                            src="/wp-content/themes/plumsail/assets/images/org_chat.svg">Org
-                                                                    Chart</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <ul id="menu-main-menu-1" class="menu">
-                                                        <li class=''><a target="_blank" href="https://community.plumsail.com">Community</a></li>
-                                                        <li class=''><a href="/store/">Store</a></li>
-                                                        <li class=''><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
-                                                        <li class=''><a href="/partners-and-resellers/">Partners</a></li>
-                                                        <li class=''><a href="/company/">Company</a></li>
-                                                        <li class=''><a href="https://account.plumsail.com/">Account</a></li>
-                                                    </ul>
-                                                </ul>
-                                                <ul class="follow-us follow-us--mobile-menu">
-                                                    <li class="follow-us__item follow-us--google">
-                                                        <a href="https://plus.google.com/b/112093525198664117371/+PlumsailSharePointTeam?hl=ru" target="_blank">
-                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li class="follow-us__item follow-us--twitter">
-                                                        <a href="https://twitter.com/plumsail_sp" target="_blank">
-                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                                <path fill="#000000"
-                                                                      d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li class="follow-us__item follow-us--facebook">
-                                                        <a href="https://www.facebook.com/Plumsail/?notif_t=page_admin&amp;notif_id=1482313956804883" target="_blank">
-                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                                <path fill="#000000"
-                                                                      d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li class="follow-us__item follow-us--linkedin">
-                                                        <a href="https://www.linkedin.com/company/plumsail?trk=top_nav_home" target="_blank">
-                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                                <path fill="#000000"
-                                                                      d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /mobile menu -->
-                                </div>
-                            </div>
-                        </div>
-                        </header>
-                        <section class="mega-menu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="mega-menu__cat">
-                                            <div class="mega-menu__cat-cont">
-                                                <div class="mega-subcat mega-subcat--helpdesk">
-                                                    <a href="/sharepoint-helpdesk/" class="mega-subcat__title">HelpDesk</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/docs/help-desk-o365/v1.x/">Documentation</a>
-                                                        <a href="/sharepoint-helpdesk/store/">Pricing</a>
-                                                        <a href="/sharepoint-helpdesk/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mega-menu__cat-title">
-                                                Support service
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="mega-menu__cat">
-                                            <div class="mega-menu__cat-cont">
-                                                <div class="mega-subcat mega-subcat--documents">
-                                                    <a href="/documents/" class="mega-subcat__title">Documents</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/docs/documents/v1.x/">Documentation</a>
-                                                        <a href="/documents/store/">Pricing</a>
-                                                        <a href="/documents/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--actions">
-                                                    <a href="/actions/" class="mega-subcat__title">Actions</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/docs/actions/v1.x/">Documentation</a>
-                                                        <a href="/actions/store/">Pricing</a>
-                                                        <a href="/actions/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--actionspack">
-                                                    <a href="/workflow-actions-pack/" class="mega-subcat__title">Workflow Actions
-                                                        Pack</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/docs/workflow-actions-pack/">Documentation</a>
-                                                        <a href="/workflow-actions-pack/store/">Pricing</a>
-                                                        <a href="/workflow-actions-pack/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--scheduler">
-                                                    <a href="/sharepoint-workflow-scheduler/" class="mega-subcat__title">Workflow
-                                                        Scheduler</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/sharepoint-workflow-scheduler/docs/">Documentation</a>
-                                                        <a href="/workflow-actions-pack/store/">Pricing</a>
-                                                        <a href="/sharepoint-workflow-scheduler/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mega-menu__cat-title">
-                                                Workflows
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="mega-menu__cat">
-                                            <div class="mega-menu__cat-cont">
-                                                <div class="mega-subcat mega-subcat--forms">
-                                                    <a href="/forms/" class="mega-subcat__title">Forms</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/docs/forms/">Documentation</a>
-                                                        <a href="/forms/store/">Pricing</a>
-                                                        <a href="/forms/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--formsdesigner">
-                                                    <a href="/sharepoint-forms-designer/" class="mega-subcat__title">Forms Designer</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="https://spform.com/documentation" target="_blank">Documentation</a>
-                                                        <a href="https://spform.com/buy" target="_blank">Pricing</a>
-                                                        <a href="/sharepoint-forms-designer/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--crosssite">
-                                                    <a href="/cross-site-lookup/" class="mega-subcat__title">Cross-site lookup</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="https://spform.com/documentation" target="_blank">Documentation</a>
-                                                        <a href="https://spform.com/buy" target="_blank">Pricing</a>
-                                                        <a href="/cross-site-lookup/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mega-menu__cat-title">
-                                                Forms
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="mega-menu__cat">
-                                            <div class="mega-menu__cat-cont">
-                                                <div class="mega-subcat mega-subcat--dashboard">
-                                                    <a href="/sharepoint-dashboard-designer/" class="mega-subcat__title">Dashboard
-                                                        Designer</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/sharepoint-dashboard-designer/documentation/">Documentation</a>
-                                                        <a href="/sharepoint-dashboard-designer/store/">Pricing</a>
-                                                        <a href="/sharepoint-dashboard-designer/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-subcat mega-subcat--org">
-                                                    <a href="/sharepoint-orgchart/" class="mega-subcat__title">Org Chart</a>
-                                                    <div class="mega-subcat__links">
-                                                        <a href="/sharepoint-orgchart/docs/">Documentation</a>
-                                                        <a href="/sharepoint-orgchart/store/">Pricing</a>
-                                                        <a href="/sharepoint-orgchart/support/">Support</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mega-menu__cat-title">
-                                                Visualization
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>                        
-                    {% block breadcrumbs %}
-                        <section class="breadcrumb">
-                            <div class="row">
-                                <div class="col-12"  style="padding-left:10px;">
-                                    <a href="/documents/">Documents</a>
-                                    <span>›</span>
-                                    <a href="{{ pathto(master_doc) }}">Documentation</a>
-                                    <span>›</span>
-                                    {% for doc in parents %}
-                                    <a href="{{ doc.link|e }}">{{ doc.title }}</a>
-                                    {% endfor %}
-                                    {{ title }}
-                                </div>
-                            </div>
-                        </section>
-                    {% endblock %}
-                    <div class="document clearer container doc-content2">
-                        {% block body %} {% endblock %}
+                <div class="col-12 col-lg">
+                    <div>
+                      {% block body %} {% endblock %}
                     </div>
-                    <div class="clearfix" style="padding-bottom: 50px;"></div>
                 </div>
             {%- endblock %}
         {%- endblock %}
+      </div>
     </div>
   {%- endif %}
 {%- endblock %}
 
 {%- block footer %}
-    <script type="text/javascript">
-      $("#mobile-toggle a").click(function () {
-        $("#left-column").toggle();
-      });
-    </script>
-    <script type="text/javascript" src="{{ pathto('_static/js/bootstrap.js', 1)}}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/js/main.min.js', 1)}}"></script>
     {%- block footer_wrapper %}
-        <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="footer__menu">
-          <ul id="menu-footer-menu" class="menu"><li class=""><a href="#products">Products</a></li>
-            <li class=""><a target="_blank" href="https://community.plumsail.com">Community</a></li>
-            <li class=""><a href="/store/">Store</a></li>
-            <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
-            <li class=""><a href="/partners-and-resellers/">Partners</a></li>
-            <li class=""><a href="/company/">Company</a></li>
-            <li class=""><a href="/company/">Company</a></li>
-            <li class=""><a target="_blank" href="https://account.plumsail.com/">Account</a></li>
-          </ul>
-        </nav>
-        <div class="footer__copyright">
-          © 2011 - <script>document.write(new Date().getFullYear())</script> Plumsail. All rights reserved | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/refund-policy/">Refund policy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+        <footer id="footer"></footer>
     {%- endblock %}
     {%- block ga %}
         {%- if theme_google_analytics_account %}
@@ -417,4 +140,5 @@
     </script>
         {%- endif %}
     {%- endblock %}
+    <script type="text/javascript" src="https://new.plumsail.com/assets/docs/main.js"></script>
 {%- endblock %}
