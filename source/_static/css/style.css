@@ -1,18 +1,20 @@
 /* В этом файле переопределяются стандартные стили basic-темы Sphinx. В этих стилях есть сомнительные ходы, тк писать поверх темы вообще не очень правильно, а внешний вид изменить нужно */
 
 .container-fluid {
-  max-width: 1461px;
+  max-width: 1601px;
+  padding: 0 70px;
 }
 
 /* container-fluid чтобы стили применились только к документации, но не к футеру */
 .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6 {
+  font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #3e3e3e;
+  color: #636363;
 }
 
 .container-fluid h1 a, .container-fluid h2 a, .container-fluid h3 a, .container-fluid h4 a, .container-fluid h5 a, .container-fluid h6 a {
-  color: #3e3e3e;
+  color: #636363;
 }
 
 .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6 {
@@ -28,7 +30,9 @@ li {
 
 }
 
-.fix-col-width-md {
+.col-sidebar {
+  overflow: hidden;
+  width: 300px;
   flex: 0 0 300px;
   margin-right: 30px;
   padding-top: 10px;
@@ -36,10 +40,9 @@ li {
 
 #sidebar-wrapper ul li.current > a, #sidebar-wrapper ul li.current > a:hover {
   font-weight: bold !important;
-}
-
-#sidebar-wrapper ul li.current > a, #sidebar-wrapper ul li.current > a:hover {
-  font-weight: bold !important;
+  background-color: #e6e6e6 !important;
+  margin: -3px -50px;
+  padding: 3px 50px;
 }
 
 #sidebar-wrapper ul {
@@ -65,22 +68,42 @@ li {
 
 #sidebar-wrapper ul li a {
   display: block;
-  color: #3e3e3e;
+  color: #636363;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section, body {
   display: block;
 }
 
+.section img {
+  margin: 0 0 1rem 0;
+}
+
+.highlight {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: none !important;
+}
+
+.code.highlight-default {
+  border-left: 2px solid #dee2e6;
+}
+
 p {
   margin-top: 0;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
 }
 
 p.caption {
   margin-bottom: 0.3rem;
   font-weight: bold;
-  color: #3e3e3e;
+  color: #636363;
+}
+
+p.topic-title {
+  margin-bottom: 0.3rem;
+  font-size: 1rem !important;
+  color: #636363;
 }
 
 .breadcrumb {
@@ -88,7 +111,6 @@ p.caption {
   background-color: #fff;
   margin-bottom: 0;
   padding: 0.6rem 0rem;
-  max-width: 1461px;
   margin: 0 auto;
 }
 
@@ -117,11 +139,6 @@ div.related {
 p.admonition-title {
   margin: 0px 10px 5px 0px;
   font-weight: bold;
-}
-
-p.topic-title {
-  font-size: 1rem !important;
-  color: #3e3e3e;
 }
 
 /*** notes*/
@@ -161,10 +178,6 @@ code {
 
 #footer {
   padding: 0;
-}
-
-.highlight {
-  background: none !important;
 }
 
 code, pre, tt {

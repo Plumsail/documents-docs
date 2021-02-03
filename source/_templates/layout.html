@@ -55,9 +55,9 @@
 {%- endmacro %}
 
 {%- macro guzzle_sidebar() %}
-  <div class="col-lg fix-col-width-md bg-light d-none d-lg-block">
+  <div class="col col-sidebar bg-light d-none d-lg-flex">
     <div class="min-vh-100" id="sidebar-wrapper">
-      <div class="list-group list-group-flush overflow-auto h-100">
+      <div class="list-group list-group-flush h-100">
       {%- if sidebars != None %}
         {#- new style sidebar: explicitly include/exclude templates #}
         {%- for sidebartemplate in sidebars %}
@@ -103,14 +103,14 @@
         </section>
     {% endblock %}
     <div class="container-fluid">
-      <div class="row">
+      <div class="row flex-nowrap">
         {%- block sidebar1 %}
             {{ guzzle_sidebar() }}
         {% endblock %}
 
         {%- block document_wrapper %}
             {%- block document %}
-                <div class="col-12 col-lg">
+                <div class="col">
                     <div>
                       {% block body %} {% endblock %}
                     </div>
