@@ -14,8 +14,8 @@ Just fill the **To**, **Subject**, and **Body** fields of delivery as you do in 
 
 Expand **Advanced** to set:
 
-- **Display name**. The name which recipients see when receiving emails. Default is Plumsail Documents Delivery. You can define your custom Display name.
-- **Reply-to**. The default is the currently logged-in user's email. It's possible to change it. 
+- **Display name**. The name which recipients see when receiving emails. Default is your username from the connected Gmail account. If needed, you can change it.
+- **Reply-to**. The default is the currently connected Gmail address. You also can replace it with another email address. 
 
 .. image:: ../../../_static/img/user-guide/processes/advanced-email-settings.png
     :alt: Advanced email delivery settings
