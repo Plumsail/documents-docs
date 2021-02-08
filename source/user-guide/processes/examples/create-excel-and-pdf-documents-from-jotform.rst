@@ -1,247 +1,224 @@
-How to create Excel and PDF documents from JotForm using Zapier
-================================================================
-
-.. title:: Generate sales quotes from JotForm
+.. title:: Use JotForm to populate Excel and PDF document templates in Power Automate Flow
 
 .. meta::
-   :description: Automatically apply JotForm submission data to fill in sales quotes and other sales documents
+   :description: An example of how to auto create Excel order requests from JotForm entries and convert to PDF in Power Automate and Azure Logic Apps
 
-From this article, you will learn how to generate PDF documents from an Excel template on `Jotform <https://www.jotform.com/>`_ submission using the `Zapier integration platform <https://zapier.com/apps/plumsail-documents/integrations>`_. 
-With the help of `Plumsail Documents <https://plumsail.com/documents/>`_, we'll create a sales quote from a template, which will be populated with JotForm submission data. 
 
-This is how the resulting document will look:
+How to create Excel and PDF documents from JotForm in Power Automate (Microsoft Flow) and Azure Logic Apps
+==========================================================================================================
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/completed-sales-quote-jotform.png
-    :alt: result sales quote
+This article shows how to create PDF documents from an XLSX template on a `JotForm <https://www.jotform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow).
+It may help you to automate the generation of different documents like applications, requests, orders, etc. in your company. 
 
-We'll go through each step in detail so you can easily follow them and receive the same result. 
+**Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
+
+**JotForm** is an online form builder that allows you to create powerful forms for your website.
+
+In this example, we will collect data from JotForm, apply the data to our Excel template, and generate a new PDF document with the help of Processes in Power Automate (Microsoft Flow).
 
 .. contents::
     :local:
     :depth: 2
 
-Prepare sales quote form in JotForm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a Form
+-------------
 
-Let's start with the overview of the web form that will populate an Excel sales quote template. We have already prepared such a form in Jotform. Here it is:
+We have already prepared a form for generating a loan calculation.
+We will use data from its submission to apply to our template.
+If you haven’t before created any forms on JotForm, you can learn how to do it `here <https://www.jotform.com/help/>`_.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/jotform-sales-quote.png
-    :alt: jotform sales quote
+Below is a screenshot of our form:
 
-We logically divided the form into two pages - the first contains vendor and customer information, the second - product details.
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-form.png
+    :alt: JotForm image
 
-You can use the exact same form - in your JotForm account, click on the *Create Form* button, select *Import Form* -> *From a web page* -> insert this URL :code:`https://form.jotform.com/202735593745362`. 
-Or `learn how to create JotForms <https://www.jotform.com/help/2-how-to-create-your-first-web-form>`_ and create your web form from scratch.
-
-Create a new process in Plumsail Documents
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now let's move to create the document generation process in Plumsail Documents. You can create a new process from `the Processes section <https://account.plumsail.com/documents/processes>`_ of your Plumsail account.
-
-Click on the *Add process* button, and you'll see the creation starting page. In this step, you need to make up the process name and select the template type.
-In our case, it'll be XLSX:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-jotform-xlsx.png
-    :alt: result sales quote
-
-Prepare the sales quote XLSX template
--------------------------------------
-
-Once you've created the process, you'll see its first step - **Configure template** - consisting of two substeps:
-
-- Editor;
-- Settings.
-
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose document templates online, or upload pre-made ones and modify them in case of need. 
-
-`Download the sales quote template <../../../_static/files/user-guide/processes/sales-quote-template.xlsx>`_ we've prepared for this case and upload it to the process.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-excel-template.png
-    :alt: upload template file
-
-Once you did it, you'll see the template preview:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/sales-quote-preview.png
-    :alt: preview of Ecxel template
-
-Excel XLSX templating syntax
-****************************
-You may notice :code:`{{tokens}}` in the document template. 
-
-They are variables that the templating engine will replace with data from JotForm in our case.
-Also, in our template there are nested tags referring to products - :code:`{{products.name}}`, :code:`{{products.quantity}}`, and :code:`{{products.price}}`.
- 
-They let the process know that we want to display properties from some object. In our example, it's a collection of products.   
-The templating engine will automatically understand that there are multiple products and create table rows for each of them. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/table-in-excel-template.png
-    :alt: nested tags in excel template result
-
-Please also note that we are using these formulas to calculate the total cost for each item individually and for all of the items:
-
-- :code:`=[Quantity]*[Unit Price]` - for each item
-- :code:`=SUM(ItemsTable[Total Cost])` - for all of the items
-
-Find out `more information on Plumsail Documents Excel templates <../../../document-generation/xlsx/index.html>`_ in the documentation.
-
-Customize output file
+Configure the Process
 ---------------------
 
-On the **Settings** substep, you can customize the settings of the output file such as: 
+Now we need to create and configure the Process which will generate a loan calculation in PDF format based on data from the form’s submission. 
 
-- **Mode**. It affects whether the resulting file will have a Plumsail watermark or not. In Testing mode, it will, but you won’t pay for executions. In Active, it won’t have the Plumsail watermark; each process run will spend one credit.
+Create a new Process
+~~~~~~~~~~~~~~~~~~~~
 
-- **Output filename**. Use tokens from the document template to personalize the document name. They will work exactly the same way as in the template.
+Go to the `Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
-- **Output type**. By default, the format of the output file is the same as the template's format. We switched it to PDF.
+Click on the *Add process* button.
 
-- Additionally, it’s possible to `protect the resulting PDF file with a watermark or other security settings <https://plumsail.com/docs/documents/v1.x/user-guide/processes/configure-settings.html#add-watermark>`_.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-context.png
+    :alt: Add process button
 
-.. hint:: `Check out how to test the template to see the resulting document appearance <https://plumsail.com/docs/documents/v1.x/user-guide/processes/test-template.html>`_.
+Set the Process name.
+As we’re going to generate the PDF calculation from an Excel template, select XLSX for the template type.
 
-Send the sales quote for signing
---------------------------------
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-process-create.png
+    :alt: Create Excel-based process
 
-Save the template configurations and go next to the deliveries step. Delivery is a way where to send or save the resulting document.
-As the customer's signature means acceptance of the quote in our case, we'll add a `DocuSign delivery <../deliveries/docusign.html>`_ to our process.
+Configure a template
+~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/docusign-delivery-icon.png
-    :alt: Add DocuSign delivery
+Once you’re done with the first step *Create Process*, press the *Next* button, and you’ll proceed to the next step – *Configure Template*.
 
-It will send the completed sales quote to customers requiring them to electronically sign it to accept. 
+It includes two substeps:
 
-To customize the DocuSign delivery settings, first, connect to your DocuSign account from the Plumsail account. On this step, you can select either Production or Sandbox environment. 
-Sandbox suits if you need to test and evaluate the system. Please, mind that Sandbox and Production environments mean separate accounts in DocuSign.
+- Editor,
+- Settings.
 
-When the connection to DocuSign is established, you can fill in the email subject and body, add recipients, and enable some advanced options. Here is how we configured the DocuSign delivery:
+In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one.
+It’s also possible to modify the uploaded template online.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/docusign-delivery-jotform.png
-    :alt: DocuSign delivery 
+Feel free to `download the loan calculation template <../../../_static/files/flow/how-tos/jotform-loan-template.xlsx>`_ that we have already prepared:
 
-We used tokens from the template not only in the email message, but also to specify the recipient's name and email. Thus, we won't have to change settings each time manually. They will transform dynamically based on the JotForm data.
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-template.png
+    :alt: Template
 
-.. hint:: Learn `how to use signature and other related tags in the DocuSign delivery <../deliveries/docusign.html#use-signature-and-other-related-tags>`_.
+Then upload it to the process.
 
-You can add as many deliveries as you need. Please, check out `the full list of available deliveries <../../../user-guide/processes/create-delivery.html>`_.
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-process-upload.png
+    :alt: Upload template file
 
-Start the process of generating sales quotes
---------------------------------------------
+Templating syntax
+*****************
+When creating your own templates, mind the templating language.
+Plumsail Excel XLSX templates use a different approach than most other templating solutions.
+It uses a minimal amount of syntax to make your work done.
 
-The final step of the process is **Start process**. We'll start our process on the JotForm submission. For that, we'll use Zapier to create a connection between Plumsail Documents and JotForm. 
-You can go right to the pre-made Zap template right from the Plumsail account:
+In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
+Read `this article <../../../document-generation/xlsx/how-it-works.html>`_ to get familiar with the templating engine.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-from-jotform-zapier.png
-    :alt: Start document generation process from Zapier
+Test template
+*************
 
-Learn how to configure the automated connection - Zap - from the next paragraph of this how-to guide.
+To check how the document will look at the end, click on the *Test template* button. 
 
-Configure the Zap
+You will see the dialog where you can fill in the auto-generated testing form. 
+Form fields are created based on tokens from your document template.
+You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
+
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-process-test.png
+    :alt: Test template
+
+It’s testing.
+We’re going to apply the data from the webform to our template.
+
+Once you’ve tested the template, press *Save & Next* to proceed further—to the **Settings** substep.
+
+Here, please:
+
+- switch to an active mode to remove Plumsail watermarks from resulting documents,
+- fill in the name of the result file,
+- select PDF format for the output file,
+- `protect the result PDF <../configure-settings.html#add-watermark>`_ if you wish.
+
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-process-output.png
+    :alt: Configure process output 
+
+Once you’ve customized all the settings, you can test the template to see the result as we did it before. 
+
+When everything is done here, click on *Save & Next* to set up deliveries.
+
+Delivery
+~~~~~~~~
+
+The next step is delivery.
+For demonstrating purposes, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_.
+But there are `other options <../../../user-guide/processes/create-delivery.html#list-of-available-deliveries>`_.
+
+Just set the folder’s name where the ready document will be saved.
+
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-process-delivery.png
+    :alt: Configure process delivery
+
+You can configure as many deliveries as you need.
+
+Start the Process
 ~~~~~~~~~~~~~~~~~
 
-As we have already mentioned, we'll create a connection between Plumsail Documents and JotForm using Zapier.
-It's possible to create the zap from scratch. Or you can click on the **Use this zap** below to use the zap template:
+We will start our Process from Power Automate (Microsoft Flow). 
 
-|Widget|
+Create a Flow
+-------------
 
-.. |Widget| raw:: html
+This is how our Flow looks:
 
-    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=134381"></script>
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-flow-overview.png
+    :alt: Flow configuration
 
+Check out the Flow steps described below.
 
-If you're going to start from the template, mind that you'll need to add a few actions to it. This is how the completed zap will look:
+Form is submitted
+~~~~~~~~~~~~~~~~~
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/jotform-excel-zap.png
-    :alt: Zap JotForm and Plumsail Documents
+We need to start the Flow every time somebody submits a request for the loan calculation.
+For that, search for  *JotForm* in Power Automate and add *When a response is submitted* as a trigger.
 
-Follow the instruction below to configure its steps.
+If this is your first Flow with JotForm, on this step, sign in to your JotForm Account from MS Flow to use your forms inside Flows.
 
-New Submission in JotForm
--------------------------
+Then, you’ll need to pick the form you want to track in the dropdown.
 
-We want to generate a new sales quote every time the JotForm is submitted. 
-That's why our Zap has the trigger - New Submission in JotForm. 
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-flow-trigger.png
+    :alt: JotForm trigger
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/new-submission-jotform1.png
-    :alt: Zap trigger - New submission in JotForm
+Start document generation process
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If this is your first zap with JotForm, you'll be asked to sign into the JotForm account from Zapier. 
-After you authorized, you'll be able to pick up the form you'd like to monitor for new submissions:
+This is the action from the `Plumsail Documents connector <../../../getting-started/use-from-flow.html>`_.
+This action is suitable for starting the Process of generating documents from a template.
+You can find more information about this action by visiting `this page <../../../flow/actions/document-processing.html#start-document-generation-process>`_.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/select-jotform.png
-    :alt: Select web jot form to monitor
+Using the action for the first time, you’ll be asked for a *Connection Name* and *API Key*. 
 
-To use submission data, we need to test the trigger to find some sample data. To test the trigger successfully, make sure, you have at least one submission of the form.
+.. image:: ../../../_static/img/getting-started/create-flow-connection.png
+    :alt: Create Documents connection
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-jotform-trigger.png
-    :alt: test trigger to find data
+You can type any name for the connection.
+For example, *Plumsail Documents*. 
 
-The trigger is set. We're moving on.
+Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to the *API Key* field.
 
-Convert text type data to line items
-------------------------------------
+The action has two parameters:
 
-The next three actions are from the Formatter by Zapier. We'll use them to transform product details from text type to line items. 
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-generation-docs-action.png
+    :alt: Action fields
 
-Select Utilities for the Action Event:
+Select the process you need from available ones and specify source data in JSON format:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/utilities-zapier-formatter.png
-    :alt: select utilities for action event
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-flow-data.png
+    :alt: Action data
 
-Then select to transform Text to Line-item. 
-First, we'll handle product names. 
-Fill in the input field with data from the trigger - put product names separated by a comma.
+This object contains information from our form.
+We selected the dynamic content from the output of the *When a new response is submitted* trigger:
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/transform-text-to-line-item.png
-    :alt: transform text to line item
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-flow-dynamic.png
+    :alt: Dynamic content
 
-Do the same for other product details. 
+Use the ready document in Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For Quantity:
+You can stop on the step **Start document generation process**. 
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/quantity-to-line-item.png
-    :alt: convert quantity data to line item
+The steps described above are enough for generating PDFs from an XSLX template based on the JotForm submission.
+Your result file will be saved to OneDrive in this case.
+See how it will look:
 
-For Unit Price:
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-result.png
+    :alt: Final document
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/unit-price-to-line-item.png
-    :alt: convert item price data to line item
+But if you need advanced logic, it’s possible to work with the result file right in the Flow. 
 
-Now we have everything to start the sales quotes generation process.
+Here is an example of how you can send the ready document for approval. 
 
-Start Process in Plumsail Documents
------------------------------------
+Add an action *Create an approval* from the *Approvals* connector.
+Select the output of the previous step for an attachment.
 
-Add an action and search for Plumsail Documents. Select Start process action inside it:
+.. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-flow-approval.png
+    :alt: Send PDF for approval
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-zapier.png
-    :alt: start process action in Zapier
+Sign up for Plumsail Documents
+------------------------------
 
-Click Continue. If this is your first Zap, at this point, you’ll need to Sign in to your Plumsail Account from Zapier to establish a connection between the app and your account. If you already have a Plumsail account tied to the app, you can add another one at this step, and use it instead.
+As you can see, it’s simple to automize the generation of documents on JotForm submission.
+If you’re new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for the automatic creation of PDFs from JotForm.
 
-Once the connection is set, you need to choose the process you'd like to start from this Zap:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/select-process-to-start-jotform.png
-    :alt: select process to start
-
-
-Then, you need to specify data by completing the fields. They have the same names as tokens in the template. 
-This data will be applied to the template to personalize documents every time a JotForm is submitted.
-
-To specify values, use the output from the trigger and the previous actions:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-zapier-jotform.png
-    :alt: specify values using submission data
-
-Our Zap is ready! 🎉 See how the resulting file looks:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/completed-sales-quote-jotform.png
-    :alt: ready document
-
-.. hint:: Create your own workflows using Plumsail Documents in Zapier - `check out the integration section to get inspired <https://plumsail.com/documents/integrations/>`_.
-
-
-
-
-
-
-
+.. hint::
+  You can generate PDFs from webforms even without Power Automate (Microsoft Flow).
+  Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>`_.
