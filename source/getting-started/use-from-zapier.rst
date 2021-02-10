@@ -69,8 +69,7 @@ Use the output from the trigger to specify values for populating the template:
     :alt: JSON data in Zapier
 
 Multiple line items
-*******************
-
+--------------------
 Sometimes you need to display a collection of items. For example, a collection of products in the invoice. You used nested tags with a dot operator (like :code:`{{products.name}}`, :code:`{{products.cost}}`, etc.) to let the process know that you want to display properties from some object. 
 
 In Zapier, the object will be outlined. As the Plumsail Documents integration supports `line items <https://zapier.com/help/create/basics/use-line-items-in-zaps>`_, it's possible to use the output arrays from the trigger to specify values:
@@ -82,27 +81,6 @@ The templating engine will automatically add information for each item.
 
 .. image:: ../_static/img/user-guide/processes/how-tos/template-table-result.png
     :alt: Template table result
-
-Fillable PDF and HTML templates
-*******************************
-
-If your process has a PDF form as a template or an HTML file as a template, the "Customize Start Process" step will differ a bit. You'll need to specify data for populating the template in JSON format.
-Nothing fancy here, use the following format:
-
-.. code:: json
-
-    {
-        "FieldName1": "Value1",
-        "FieldName2": "Value2",
-        "FieldName3": "Value3",
-        "FieldName4": "Value4"
-    }
-
-To specify values, you can use the trigger output as well:
-
-.. image:: ../_static/img/user-guide/processes/customize-pdf-zap.png
-    :alt: Customize start process for pdf template
-
 
 Use the result file in Zapier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
