@@ -19,7 +19,7 @@ There are various ready-to-use zap templates you can go to right from the step *
 
 .. |Widget| raw:: html
 
-   <script src="https://zapier.com/apps/embed/widget.js?services=plumsail-documents&limit=5"></script>
+   <script src="https://zapier.com/apps/embed/widget.js?services=plumsail-documents&limit=6"></script>
 
 Or you can create your own zap to start the process. 
 
@@ -60,9 +60,9 @@ Choose the process you want to start by this Zap from the dropdown.
 .. image:: ../../_static/img/user-guide/processes/select-process-zapier.png
     :alt: select process
 
-Then, you need to specify the data in JSON. This data will be applied to the template to personalize documents. 
+Once you did it, you'll see fields to complete. They will have the same name as tokens from the template. Actually, they're created based on them. 
 
-.. important:: Properties from the JSON object should correspond to tokens used in your template. Learn more about templates `here <../user-guide/processes/create-template.html>`_.
+.. note:: If the fields to complete didn't appear after selecting the process to monitor, go to this process in the Plumsail account and re-save the document template on the Configure template step.
 
 Use the output from the trigger to specify values:
 
