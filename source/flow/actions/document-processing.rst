@@ -1685,6 +1685,9 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
    :alt: Protect PDF Example
 
 
+Get PDF protection information
+-------------------------------
+
 Parse CSV
 -------------------
 
