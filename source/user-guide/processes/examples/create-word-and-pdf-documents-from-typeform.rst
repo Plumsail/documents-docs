@@ -37,7 +37,7 @@ Then, let's configure the Process, which will generate PDF documents from a DOCX
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 
@@ -148,7 +148,7 @@ Using the action for the first time, you’ll be asked for *''Connection Name''*
 
 You can type any name for the connection. For example, *''Plumsail Documents''*. 
 
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to *''Access Key''* field.
 
 The action has two parameters:
 

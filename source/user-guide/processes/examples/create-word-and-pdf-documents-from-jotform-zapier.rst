@@ -38,7 +38,7 @@ Before creating the Zap (an automated workflow in Zapier), we also need to set a
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 

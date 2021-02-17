@@ -25,7 +25,7 @@ Let’s go through each step from the very beginning.
 
 Configure Process
 -----------------
-First, register or login to your `Plumsail account`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
+First, register or login to your `Plumsail account`_.
 
 Create new process
 ~~~~~~~~~~~~~~~~~~
@@ -150,7 +150,7 @@ You can start the process :
 
 .. note:: There is another - a little bit more complicated - way to create XLSX documents from a template. Check `the article <../../../flow/how-tos/documents/create-xlsx-from-template.html>`_.
 
-.. _Plumsail account: https://account.plumsail.com/
+.. _Plumsail account: https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg
 .. _this article: ../../../document-generation/xlsx/how-it-works.html
 
 .. |purchase-order-template| image:: ../../../_static/img/flow/how-tos/create-xlsx-from-template.png

@@ -1,14 +1,14 @@
-.. title:: Create PDF documents from a template and send them for e-signature with AdobeSign in Flows
+.. title:: Create PDF documents from a template and send them for e-signature with Adobe Sign in Flows
 
 .. meta::
    :description: Automate your document generation and signing with AbobeSign in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
-How to create a document from a template in Power Automate (Microsoft Flow) and sign it using AdobeSign
-=======================================================================================================
+How to create a document from a template in Power Automate (Microsoft Flow) and sign it using Adobe Sign
+========================================================================================================
 
-This article is a ready-to-use solution on how to create a PDF document from a template and sign it using `AdobeSign <https://acrobat.adobe.com/us/en/sign.html>`_.
+This article is a ready-to-use solution on how to create a PDF document from a template and sign it using `Adobe Sign <https://acrobat.adobe.com/us/en/sign.html>`_.
 
-With the help of `Processes <../../../user-guide/processes/index.html>`_, we will create a purchase agreement from a DOCX template, save in SharePoint document library and send for signing using the **AdobeSign** connector for Power Automate (Flow). 
+With the help of `Processes <../../../user-guide/processes/index.html>`_, we will create a purchase agreement from a DOCX template, save in SharePoint document library and send for signing using the **Adobe Sign** connector for Power Automate (Flow). 
 
 This is how the result document will look after signing:
 
@@ -28,7 +28,7 @@ Before creating the Flow, we need to set a Process, which will create our purcha
 Create a new process
 --------------------
 
-First, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+First, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 
@@ -109,7 +109,7 @@ Create a Flow
 This is how our Flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/Adobe-sign-flow.png
-    :alt: Create an agreement and sign with AdobeSign flow
+    :alt: Create an agreement and sign with Adobe Sign flow
 
 Check out the Flow steps described below.
 
@@ -125,7 +125,7 @@ This is the action from `Plumsail Documents connector <../../../getting-started/
 
 Mind, If you use the Plumsail documents action for the first time, you’ll be asked for *'Connection Name'* and *'Access Key'*. You can type any name for the connection. For example, *'Plumsail Documents'*.
 
-Then `create an API key in your Plumsail Account page <../../../getting-started/sign-up.html>`_, copy and paste it to the *'Access Key'* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to the *'Access Key'* field.
 
 The **Start document generation process** action has two parameters:
 
@@ -147,7 +147,7 @@ Use this action to store the completed agreement in SharePoint document library.
 Create sharing link for a file or folder
 ----------------------------------------
 
-We will need to share our contract with AdobeSign, that’s why a sharing link is needed. Pay attention to choose the right link type and scope – they should be *'View and edit'* and *'Anyone with the link, including anonymous'* respectively. 
+We will need to share our contract with Adobe Sign, that’s why a sharing link is needed. Pay attention to choose the right link type and scope – they should be *'View and edit'* and *'Anyone with the link, including anonymous'* respectively. 
 
 
 .. image:: ../../../_static/img/flow/how-tos/create_share_link.png
@@ -165,9 +165,9 @@ For our purpose, the site content can be shared with anyone.
 .. image:: ../../../_static/img/flow/how-tos/anyone_can_edit.png
     :alt: Site content can be shared with anyone
 
-You may be worried about sensitive information while sharing files, but there is no reason for it; nobody can use the link, but the AdobeSign application for getting content to create an agreement for further usage in AdobeSign. 
+You may be worried about sensitive information while sharing files, but there is no reason for it; nobody can use the link, but the Adobe Sign application for getting content to create an agreement for further usage in Adobe Sign. 
 
-Moreover, there is another action in AdobeSign connector for Power Automate (Microsoft Flow) to upload documents directly, but unfortunately, it doesn’t work now because of a lack of code integration. We believe that it will be fixed in the future.
+Moreover, there is another action in Adobe Sign connector for Power Automate (Microsoft Flow) to upload documents directly, but unfortunately, it doesn’t work now because of a lack of code integration. We believe that it will be fixed in the future.
 
 Create an agreement from a document URL, and send for signature
 ---------------------------------------------------------------
@@ -185,36 +185,4 @@ Don’t forget to specify a file extension with :code:`.PDF`
 
 The Flow is ready. Now you know how to simplify your workflow processes with the help of Processes by Plumsail Documents and its connector for Power Automate (Flow). If you haven't a Plumsail account yet, `sign up <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to get started.
 
-.. hint:: If you use a SignNow system for e-signs or just want to compare AdobeSign with an alternative, read our article `How to create a document from a template and sign it using SignNow <./create-document-from-template-sign-signnow.html>`_.
-
-
-.. |adobe_sign_flow| image:: /_static/img/flow/how-tos/adobe_sign_flow.png
-.. |get_content| image:: /_static/img/flow/how-tos/get_content_as.png
-.. |create_docx| image:: /_static/img/flow/how-tos/docx_from_template_as.png
-.. |convert_to_pdf| image:: /_static/img/flow/how-tos/convert_to_pdf_as.png
-.. |adobesign_action| image:: /_static/img/flow/how-tos/adobe_sign_action.png
-
-
-
-
-
-.. _Power Automate (Microsoft Flow): https://flow.microsoft.com/en-us/
-.. _AdobeSign: https://acrobat.adobe.com/us/en/sign.html
-.. _Plumsail Documents: https://plumsail.com/documents/
-.. _AdobeSign connector: https://docs.microsoft.com/en-us/connectors/adobesign/
-.. _My Flows: https://emea.flow.microsoft.com/manage/flows
-.. _this page: https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template
-.. _Plumsail Documents connector: https://plumsail.com/actions/documents/
-.. _create an API key in your Plumsail Account page: https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html
-.. _Download: https://plumsailonline.sharepoint.com/:w:/s/Anjelika/EWJQZezSnjNJtrX5CkhDZ4oB6yHZ3bsxZfcO3nbYzwqleA?e=0eD1iR
-.. _here: https://plumsail.com/docs/documents/v1.x/document-generation/docx/how-it-works.html
-.. _DOCX: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-docx-from-template.html
-.. _XLXS: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-xlsx-from-template.html
-.. _HTML: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-html-from-template.html
-.. _TXT: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-text-from-template.html
-.. _Older MS office formats into new ones: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-doc-to-docx-xls-to-xlsx-ppt-to-pptx.html
-.. _HTML to PDF: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-html-to-pdf.html
-.. _Email message to PDF: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/convert-email-to-pdf.html
-.. _sign up for an account: https://account.plumsail.com/
-.. _See here: https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/index.html
-
+.. hint:: If you use a SignNow system for e-signs or just want to compare Adobe Sign with an alternative, read our article `How to create a document from a template and sign it using SignNow <./create-document-from-template-sign-signnow.html>`_.

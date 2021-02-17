@@ -25,7 +25,7 @@ Here is a step-by-step description on how to create such a process of generating
 Configure Process
 -----------------
 
-First, register or login to your `Plumsail account <https://account.plumsail.com/>`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
+First, register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_.
 
 Create new process
 ~~~~~~~~~~~~~~~~~~

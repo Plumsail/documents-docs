@@ -34,7 +34,7 @@ Follow `this instruction <../../../document-generation/fillable-pdf/index.html>`
 Configure the Process
 ~~~~~~~~~~~~~~~~~~~~~
 
-To create a process, which will populate our PDF form of application for employment, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+To create a process, which will populate our PDF form of application for employment, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Create a new process
 --------------------
