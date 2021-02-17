@@ -74,7 +74,7 @@ When our fillable PDF and Plumsail Form are ready, we proceed to configure the P
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-To create a new process, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+To create a new process, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 

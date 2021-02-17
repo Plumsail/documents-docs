@@ -43,7 +43,7 @@ To start with, let’s create and configure the process which will trigger on Wu
 It will populate a sales proposal template and will deliver the ready document attached to the personalized email to our customer. 
 It all will happen automatically.
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account and click on the *Add process* button:
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account and click on the *Add process* button:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button

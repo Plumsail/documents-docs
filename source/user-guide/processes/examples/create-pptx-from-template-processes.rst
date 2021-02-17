@@ -37,7 +37,7 @@ With its help, we’ll create a company report with tables and charts from a PPT
 Configure Process
 ~~~~~~~~~~~~~~~~~
 
-First, register or login to your `Plumsail account <https://account.plumsail.com/documents/processes>`_ to start configuring the process. 
+First, register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to start configuring the process. 
 
 Create Process
 --------------

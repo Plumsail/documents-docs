@@ -36,7 +36,7 @@ Or `learn how to create JotForms <https://www.jotform.com/help/2-how-to-create-y
 Create a new process in Plumsail Documents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now let's move to create the document generation process in Plumsail Documents. You can create a new process from `the Processes section <https://account.plumsail.com/documents/processes>`_ of your Plumsail account.
+Now let's move to create the document generation process in Plumsail Documents. You can create a new process from `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ of your Plumsail account.
 
 Click on the *Add process* button, and you'll see the creation starting page. In this step, you need to make up the process name and select the template type.
 In our case, it'll be XLSX:

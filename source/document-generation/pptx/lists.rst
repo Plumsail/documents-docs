@@ -9,10 +9,10 @@ Lists in PPTX templates
 .. _numbered-lists:
 .. _multilevel-lists:
 
-You can create all types of structired lists in you PowerPoint template. 
+You can create all types of structured lists in your PowerPoint template. 
 You don't need to declare any loops, the templating engine is smart enough to 
 understand the structure of source object applied to your document. 
-Thus, if you refer a property of an object inside a collection, it understands 
+Thus, if you refer to a property of an object inside a collection, it understands 
 that it needs to iterate it.
 
 .. 

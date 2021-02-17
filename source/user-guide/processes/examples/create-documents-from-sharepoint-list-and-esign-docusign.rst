@@ -23,7 +23,7 @@ To automate the process, we'll use the `Plumsail Documents <https://plumsail.com
 Configure document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a new document generation process in Plumsail Documents, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
+To create a new document generation process in Plumsail Documents, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 
