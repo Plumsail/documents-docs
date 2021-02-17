@@ -19,7 +19,7 @@ Here is a step-by-step description of how to create such a process of generating
 Configuring the Process
 -----------------------
 
-1. First, register or login to your `Plumsail account <https://account.plumsail.com/>`_. Then select *Documents* and go to the *Processes* section. 
+1. First, register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_.
 
 2. Click on the *Add Process* button.
 
@@ -111,7 +111,7 @@ Using the action for the first time, you’ll be asked for *''Connection Name''*
 
 You can type any name for the connection. For example, *''Plumsail Documents''*. 
 
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to *''Access Key''* field.
 
 There are two parameters:
 

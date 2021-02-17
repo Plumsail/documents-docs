@@ -29,7 +29,7 @@ To stick to the following steps, you're required to have:
 Set up contract creation process in Plumsail Documents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account to create a new process that will autofill a document template from a Google sheet. 
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account to create a new process that will autofill a document template from a Google sheet. 
 Click on the *Add process* button:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png

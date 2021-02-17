@@ -24,7 +24,7 @@ To build the following automation, you need to have a Plumsail account. If you h
 Create new process
 ~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account and add a new process. 
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account and add a new process. 
 Then you'll need to fill in the process name and select the template format. To stick to this guide, select **DOCX**:
 
 .. image:: ../../../_static/img/flow/how-tos/purchase-agreements-process.png

@@ -30,7 +30,7 @@ Configure process
 
 Before you proceed to create the Flow, you need to create and configure the process which will generate PDF invoices from a DOCX template. 
 
-To start, register or login to your `Plumsail account <https://account.plumsail.com/>`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
+To start, register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_. 
 
 Create new process
 ------------------

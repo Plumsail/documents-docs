@@ -54,7 +54,7 @@ You may see double :code:`{{curly braces}}`. They frame tokens that Teachable da
 Create new process
 ------------------
 
-Register or login to your `Plumsail account <https://account.plumsail.com/>`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
+Register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_.
 
 Click on the *Add Process* button.
 

@@ -1685,6 +1685,40 @@ Protects PDF by adding passwords, copy-, printing-, and other protections to PDF
    :alt: Protect PDF Example
 
 
+Get PDF protection information
+-------------------------------
+
+Returns **True** if the source PDF is protected and **False** otherwise.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  isPasswordProtected
+       -  **True** or **False**.
+       -  You can use **If** option in the flow to specify further stesp depending on the output.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  PDF Document Content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+.. image:: ../../_static/img/flow/documents/get-pdf-protection-info.png
+   :alt: get PDF protection info
+
 Parse CSV
 -------------------
 
