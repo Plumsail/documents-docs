@@ -1701,7 +1701,7 @@ Returns **True** if the source PDF is protected and **False** otherwise.
        -  Example
     *  -  isPasswordProtected
        -  **True** or **False**.
-       -  You can use **If** option in the flow to specify further stesp depending on the output.
+       -  You can use **If** option in the flow to specify further steps depending on the output.
 
 .. rubric:: Input Parameters
 
@@ -1717,7 +1717,7 @@ Returns **True** if the source PDF is protected and **False** otherwise.
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
 .. image:: ../../_static/img/flow/documents/get-pdf-protection-info.png
-   :alt: get PDF protection info
+   :alt: Get PDF protection info
 
 Parse CSV
 -------------------
