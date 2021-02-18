@@ -190,6 +190,15 @@ div.topic {
   width: 50%;
 }
 
+div.topic ul ul {
+  padding-bottom: 0;
+}
+
+div.topic p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .pl-left-column {
   float: left;
   width: 50%;
