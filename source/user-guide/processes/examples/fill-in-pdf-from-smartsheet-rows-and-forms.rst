@@ -22,7 +22,7 @@ Ideally, without any manual routine. This is exactly what we're going to do - **
 Systems involved:
 
 1. `Smartsheet <https://www.smartsheet.com/>`_
-2. `Plumsail Documents <https://auth.plumsail.com/account/Register>`_
+2. `Plumsail Documents <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_
 3. `Zapier <https://zapier.com/>`_
 
 Let's go step by step.
@@ -35,7 +35,7 @@ Create Plumsail Documents process
 ---------------------------------
 
 The first thing we need to do is to create the process inside Plumsail Documents. 
-`Go to the Processes <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+`Go to the Processes <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the 'Add process' button to create a new process. Give a name to it. Select 'Fillable PDF' as a template type.
 

@@ -25,7 +25,7 @@ Let’s go through each step from the very beginning:
 Configure Process
 ~~~~~~~~~~~~~~~~~
 
-First, register or login to your `Plumsail account`_. Then select *Documents* and go to the `Processes section <https://account.plumsail.com/documents/processes>`_. 
+First, register or login to your `Plumsail account`_.
 
 Create new process
 --------------------
@@ -146,6 +146,6 @@ You can start the process :
 
 
 
-.. _Plumsail account: https://account.plumsail.com/
+.. _Plumsail account: https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg
 .. _the documentation article: ../../../document-generation/docx/how-it-works.html
 .. _the tables section: ../../../document-generation/docx/tables.html

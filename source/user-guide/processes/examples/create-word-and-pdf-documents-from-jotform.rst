@@ -5,7 +5,7 @@
 
 
 How to create Word and PDF documents from JotForm in Power Automate (Microsoft Flow) and Azure Logic Apps
-=========================================================================================================
+==========================================================================================================
 
 This article demonstrates how to create PDF documents from a DOCX template on a `JotForm <https://www.jotform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 
@@ -39,7 +39,7 @@ Before creating the Flow, we also need to set a Process, which will generate PDF
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 
@@ -152,7 +152,7 @@ Using the action for the first time, you’ll be asked for *''Connection Name''*
 
 You can type any name for the connection. For example, *''Plumsail Documents''*. 
 
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to *''Access Key''* field.
 
 The action has two parameters:
 

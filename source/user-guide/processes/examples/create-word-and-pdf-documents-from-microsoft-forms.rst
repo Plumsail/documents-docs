@@ -4,7 +4,7 @@
    :description: Check out a ready-to-use example of Microsoft Forms populating Word DOCX templates and convert to PDF in Power Automate Flow.
 
 How to create Word and PDF documents from Microsoft Forms in Power Automate (MS Flow) and Azure Logic Apps
-==========================================================================================================
+===========================================================================================================
 
 This article demonstrates how to create PDF documents from a DOCX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
 
@@ -38,7 +38,7 @@ Before creating the Flow, we also need to configure the Process, which will gene
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 
@@ -158,7 +158,7 @@ Using the action for the first time, you’ll be asked for *''Connection Name''*
 
 You can type any name for the connection. For example, *''Plumsail Documents''*. 
 
-Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to *''Access Key''* field.
+Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to *''Access Key''* field.
 
 The action has two parameters:
 

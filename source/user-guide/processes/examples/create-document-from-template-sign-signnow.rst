@@ -27,7 +27,7 @@ Before creating the Flow, we need to set a Process, which will create a PDF purc
 Create a new process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. 
+Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. 
 
 Click on the *Add process* button.
 
@@ -191,4 +191,4 @@ Once the agreement has been signed, you will receive a notification e-mail with 
     :alt: email notification cotract was signed
 
 
-.. hint:: If you use an AdobeSign system for e-signs or just want to compare SignNow with an alternative variant, read our article `How to create a document from a template and sign it using AdobeSign <./create-document-from-template-and-sign-abobesign.html>`_.
+.. hint:: If you use an Adobe Sign system for e-signs or just want to compare SignNow with an alternative variant, read our article `How to create a document from a template and sign it using Adobe Sign <./create-document-from-template-and-sign-abobesign.html>`_.

@@ -39,7 +39,7 @@ You have already seen the result, and here is how our report template looks:
 Configure report generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To set up the process which will generate weekly reports from Trello boards and send them by e-mail automatically, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account and click on the *Add process* button:
+To set up the process which will generate weekly reports from Trello boards and send them by e-mail automatically, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account and click on the *Add process* button:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
     :alt: add process button

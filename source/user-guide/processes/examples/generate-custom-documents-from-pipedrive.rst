@@ -25,7 +25,7 @@ It will generate a PDF invoice from a Word template and will send the resulting 
 
 Create new process
 ------------------
-To start, go to `the Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account. If you haven't a one yet, then `register a new Plumsail account <https://auth.plumsail.com/Account/Register?ReturnUrl=https%3A%2F%2Faccount.plumsail.com%2Fdocuments%2Fprocesses>`_.
+To start, go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account. If you haven't a one yet, then `register a new Plumsail account <https://auth.plumsail.com/Account/Register?ReturnUrl=https%3A%2F%2Faccount.plumsail.com%2Fdocuments%2Fprocesses>`_.
 
 Click on the *Add process* button.
 
