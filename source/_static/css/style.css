@@ -193,11 +193,13 @@ div.topic {
 .pl-left-column {
   float: left;
   width: 50%;
+  padding: 0 5px;
 }
 
 .pl-right-column {
   float: right;
   width: 50%;
+  padding: 0 5px;
 }
 
 #search-input {
@@ -247,4 +249,37 @@ table.docutils td, table.docutils th {
 table .highlight {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 991px) {
+  .container-fluid {
+    padding: 0 30px;
+  }
+  div.topic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container-fluid {
+    padding: 0 20px;
+  }
+
+  .container, .container-sm {
+    max-width: 800px;
+  }
+
+  .pl-left-column {
+    float: initial;
+    width: 100%;
+  }
+  
+  .pl-right-column {
+    float: initial;
+    width: 100%;
+  }
 }
