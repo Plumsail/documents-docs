@@ -40,7 +40,7 @@ Now we need to create and configure the Process which will generate a loan calcu
 Create a new Process
 ~~~~~~~~~~~~~~~~~~~~
 
-Go to the `Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
+Go to the `Processes section <https://account.plumsail.com/documents/processes>`_ in your Plumsail account.
 
 Click on the *Add process* button.
 
@@ -173,7 +173,7 @@ Using the action for the first time, you’ll be asked for a *Connection Name* a
 You can type any name for the connection.
 For example, *Plumsail Documents*. 
 
-Then `create an API key in your Plumsail Account page <https://account.plumsail.com/documents/api-keys>`_, copy and paste it to the *API Key* field.
+Then `create an API key in your Plumsail Account page <https://plumsail.com/docs/documents/v1.x/getting-started/sign-up.html>`_, copy and paste it to the *API Key* field.
 
 The action has two parameters:
 
