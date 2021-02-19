@@ -4,7 +4,7 @@
    :description: An example of how to auto create Excel order requests from JotForm entries and convert to PDF in Power Automate and Azure Logic Apps
 
 
-How to create Excel and PDF documents from JotForm in Power Automate (Microsoft Flow) and Azure Logic Apps
+How to create Excel and PDF documents from JotForm in Power Automate (Microsoft Flow) and Azure Logic Apps
 ==========================================================================================================
 
 This article shows how to create PDF documents from an XLSX template on a `JotForm <https://www.jotform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow).
