@@ -36,34 +36,29 @@ List of actions
 ---------------
 The list of actions in the Plumsail Documents connector for Power Automate (Microsoft Flow):
 
-.. toctree::      
-    :name: toc-flow-actions
-    :maxdepth: 1
-    :titlesonly:
-
-    Start document generation process <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#start-document-generation-process>
-    Create DOCX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>
-    Create PPTX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-pptx-document-from-template>
-    Create XLSX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-xlsx-document-from-template>
-    Create HTML from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-html-from-template>
-    Fill Merge Fields in DOCX document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-merge-fields-in-docx-document>
-    Convert DOCX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-docx-to-pdf>
-    Convert XLSX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xlsx-to-pdf>
-    Convert DOC to DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-doc-to-docx>
-    Convert XLS to XLSX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xls-to-xlsx>
-    Convert PPT to PPTX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-ppt-to-pptx>
-    Convert PPTX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pptx-to-pdf>
-    Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>
-    Add watermark to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#add-watermark-to-pdf>
-    Split PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#split-pdf>
-    Merge PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-pdf>
-    Merge DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-docx>
-    Extract text from PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#extract-text-from-pdf-document>
-    Convert PDF to Image <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pdf-to-image>
-    Fill in PDF Form <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-in-pdf-form>
-    Get Form from PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#get-form-from-pdf>
-    Protect PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>
-    Parse CSV <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>
-    Regular Expression Match <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-match>
-    Regular Expression Replace <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-replace>
-    Regular Expression Test <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-test>
+- `Start document generation process <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#start-document-generation-process>`_
+- `Create DOCX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>`_
+- `Create PPTX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-pptx-document-from-template>`_
+- `Create XLSX document from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-xlsx-document-from-template>`_
+- `Create HTML from template <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-html-from-template>`_
+- `Fill Merge Fields in DOCX document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-merge-fields-in-docx-document>`_
+- `Convert DOCX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-docx-to-pdf>`_
+- `Convert XLSX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xlsx-to-pdf>`_
+- `Convert DOC to DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-doc-to-docx>`_
+- `Convert XLS to XLSX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-xls-to-xlsx>`_
+- `Convert PPT to PPTX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-ppt-to-pptx>`_
+- `Convert PPTX to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pptx-to-pdf>`_
+- `Convert HTML to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf>`_
+- `Add watermark to PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#add-watermark-to-pdf>`_
+- `Split PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#split-pdf>`_
+- `Merge PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-pdf>`_
+- `Merge DOCX <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#merge-docx>`_
+- `Extract text from PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#extract-text-from-pdf-document>`_
+- `Convert PDF to Image <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-pdf-to-image>`_
+- `Fill in PDF Form <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-in-pdf-form>`_
+- `Get Form from PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#get-form-from-pdf>`_
+- `Protect PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_
+- `Parse CSV <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_
+- `Regular Expression Match <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-match>`_
+- `Regular Expression Replace <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-replace>`_
+- `Regular Expression Test <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-test>`_

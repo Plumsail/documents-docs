@@ -16,19 +16,15 @@ The above example of Flow has a manual trigger for simplicity. But you can trigg
 
 .. rubric:: Please, find out examples of Power Automate Flows with processes:
 
-.. toctree::      
-  :name: toc-processes-flow-examples
-  :maxdepth: 1
-
-  Create documents from a template and electronically sign using AdobeSign <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-and-sign-abobesign.html>
-  Create documents from a template and electronically sign using SignNow <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-sign-signnow.html>
-  Create custom documents from Dynamics 365 CRM <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-custom-pdf-invoice-from-d365.html>
-  Create Word and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-microsoft-forms.html>
-  Create Word and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-cognito-forms.html>
-  Create Word and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-typeform.html>
-  Create Word and PDF documents from Jotform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-jotform.html>
-  Create Excel and PDF documents from Plumsail Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-plumsail-forms.html>
-  Create Excel and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-microsoft-forms.html>
-  Create Excel and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-Excel-and-pdf-documents-from-cognito-forms.html>
-  Create Excel and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-typeform.html>
-  Read CSV and batch generate PDF documents <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>
+- `Create documents from a template and electronically sign using AdobeSign <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-and-sign-abobesign.html>`_
+- `Create documents from a template and electronically sign using SignNow <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-document-from-template-sign-signnow.html>`_
+- `Create custom documents from Dynamics 365 CRM <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-custom-pdf-invoice-from-d365.html>`_
+- `Create Word and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-microsoft-forms.html>`_
+- `Create Word and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-cognito-forms.html>`_
+- `Create Word and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-typeform.html>`_
+- `Create Word and PDF documents from Jotform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-jotform.html>`_
+- `Create Excel and PDF documents from Plumsail Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-plumsail-forms.html>`_
+- `Create Excel and PDF documents from Microsoft Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-microsoft-forms.html>`_
+- `Create Excel and PDF documents from Cognito Forms <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-Excel-and-pdf-documents-from-cognito-forms.html>`_
+- `Create Excel and PDF documents from Typeform <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-excel-and-pdf-documents-from-typeform.html>`_
+- `Read CSV and batch generate PDF documents <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>`_

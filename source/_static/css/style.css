@@ -260,6 +260,27 @@ table .highlight {
   margin: 0;
 }
 
+.single-page-nav .toctree-l1{
+  list-style: none;
+}
+
+.single-page-nav .toctree-l1 > a{  
+  font-weight: 700;
+  color: initial;
+  margin-left: -16px;
+}
+
+.single-page-nav > .caption{    
+  display: none;
+}
+
+
+.pl-left-column .single-page-nav > ul > li > ul,
+.pl-right-column .single-page-nav > ul > li > ul {
+  padding-left: 0;
+  list-style: disc;
+}
+
 @media (max-width: 991px) {
   .container-fluid {
     padding: 0 30px;
