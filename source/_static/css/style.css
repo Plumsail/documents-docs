@@ -274,6 +274,9 @@ table .highlight {
   display: none;
 }
 
+.single-page-nav > ul > li ul {
+  padding-bottom: 0px;
+}
 
 .pl-left-column .single-page-nav > ul > li > ul,
 .pl-right-column .single-page-nav > ul > li > ul {
