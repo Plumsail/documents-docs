@@ -1,14 +1,14 @@
 Subscription and notifications
 ==============================
 
-Subscription page provides information about you current subscription and available documents.
-Also you can manage email notifications about reaching limit of documents for Plumsail Documents in the `personal account <https://account.plumsail.com/documents/subscription>`_.
+The subscription page provides information about your current subscription and available documents.
+Also, you can manage email notifications about reaching the limit of documents for Plumsail Documents in the `personal account <https://account.plumsail.com/documents/subscription>`_.
 
-There are 3 notifications options:
+If you enable the notification toggle, you will receive notifications when:
 
-- Less than 30% of documents are left  
-- Less than 10% of documents are left
-- All documents were exhausted 
+- less than 30% of documents are left,
+- less than 10% of documents are left,
+- all documents were exhausted.
 
 .. image:: ../_static/img/general/documents-email-notifications.png
    :alt: Documents email notifications
