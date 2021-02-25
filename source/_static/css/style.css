@@ -223,10 +223,18 @@ div.topic p {
   margin-top: 0.25rem;
 }
 
+.col-body .pl-left-column ul li ul {
+  padding-left: 1rem;
+}
+
 .col-body .pl-right-column ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0.25rem;
+}
+
+.col-body .pl-right-column ul li ul {
+  padding-left: 1rem;
 }
 
 .pl-left-column {
@@ -289,11 +297,11 @@ table .highlight {
   margin: 0;
 }
 
-.single-page-nav .toctree-l1 {
+.single-page-nav .toctree-l1{
   list-style: none;
 }
 
-.single-page-nav .toctree-l1 > a {  
+.single-page-nav .toctree-l1 > a{  
   font-weight: 700;
   font-size: 1rem;
   color: initial;
