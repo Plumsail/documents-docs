@@ -220,11 +220,13 @@ div.topic p {
 .col-body .pl-left-column ul {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0.25rem;
 }
 
 .col-body .pl-right-column ul {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0.25rem;
 }
 
 .pl-left-column {
