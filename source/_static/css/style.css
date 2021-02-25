@@ -61,6 +61,14 @@ ol li {
   margin-bottom: 0.25rem;
 }
 
+ol.arabic {
+  padding-left: 1rem;
+}
+
+dd {
+  margin-left: 0 !important;
+}
+
 p {
   color: #171717 !important;
   font-size: 16px;
@@ -73,14 +81,14 @@ p {
 }
 
 p.caption {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   font-weight: bold;
   color: #171717;
 }
 
 p.topic-title {
   margin-top: 0 !important;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   font-size: 1rem !important;
   color: #171717;
 }
@@ -121,7 +129,7 @@ p.topic-title {
 #sidebar-wrapper ul li {
   list-style-type: none;
   font-size: 0.78rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   margin-top: 0.2rem;
 }
 
@@ -279,14 +287,14 @@ table .highlight {
   margin: 0;
 }
 
-.single-page-nav .toctree-l1{
+.single-page-nav .toctree-l1 {
   list-style: none;
 }
 
-.single-page-nav .toctree-l1 > a{  
+.single-page-nav .toctree-l1 > a {  
   font-weight: 700;
+  font-size: 1rem;
   color: initial;
-  margin-left: -16px;
 }
 
 .single-page-nav > .caption{    
@@ -299,8 +307,8 @@ table .highlight {
 
 .pl-left-column .single-page-nav > ul > li > ul,
 .pl-right-column .single-page-nav > ul > li > ul {
+  margin-top: 0.25rem;
   padding-left: 0;
-  list-style: disc;
 }
 
 @media (max-width: 991px) {
