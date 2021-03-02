@@ -33,7 +33,7 @@ The documents amount will be reset on the 1st day of a month according to your c
 How to upgrade or renew subscription
 ------------------------------------
 
-`Managing the subscription`_ is available right in the Plumsail account.
+`Subscription management`_ is available in the Plumsail account.
 
 End-User Software License Agreement
 -----------------------------------
@@ -42,4 +42,4 @@ End-User Software License Agreement
 
 .. _`additional 100 documents`: ../user-guide/manage-email-notifications.html#how-to-increase-the-monthly-limit-of-documents
 .. _`start using another plan`: ./licensing-details.html#how-to-upgrade-or-renew-subscription
-.. _`Managing the subscription`: ../user-guide/manage-email-notifications.html#how-to-manage-subscription
+.. _`Subscription management`: ../user-guide/manage-email-notifications.html#how-to-manage-subscription

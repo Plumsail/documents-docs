@@ -30,7 +30,7 @@ The **auto-renewal toggle** is available when your last order was paid with a cr
 How to increase the monthly limit of documents
 ----------------------------------------------
 
-On the `subscription page`_, click **Get more documents** to purchase additional 100 documents.
+On the `subscription page`_, click **Get more documents** to purchase additional ones.
 The replenished documents will not remain after another monthly reset or renewal.
 
 |limit|
@@ -71,19 +71,19 @@ Here, you can:
 .. _`subscription page`: https://account.plumsail.com/documents/subscription
 .. _`2Checkout shopper account`: https://secure.2co.com/myaccount/
 
-.. |notifications| image:: ../_static/img/general/documents-email-notifications.png
+.. |notifications| image:: ../_static/img/user-guide/user-guide-subscription-notifications.png
    :alt: Notifications toggle
-.. |subscription| image:: ../_static/img/general/general-licensing-subscription.png
+.. |subscription| image:: ../_static/img/user-guide/user-guide-subscription-subscription.png
    :alt: Manage subscription
-.. |limit| image:: ../_static/img/general/general-licensing-limit.png
+.. |limit| image:: ../_static/img/user-guide/user-guide-subscription-limit.png
    :alt: Manage limit
-.. |billing| image:: ../_static/img/general/general-licensing-billing.png
+.. |billing| image:: ../_static/img/user-guide/user-guide-subscription-billing.png
    :alt: Manage billing
-.. |myaccount| image:: ../_static/img/general/general-licensing-myaccount.png
+.. |myaccount| image:: ../_static/img/user-guide/user-guide-subscription-myaccount.png
    :alt: 2Checkout MyAccount
-.. |orders| image:: ../_static/img/general/general-licensing-orders.png
+.. |orders| image:: ../_static/img/user-guide/user-guide-subscription-orders.png
    :alt: 2Checkout orders
-.. |lookup| image:: ../_static/img/general/general-licensing-lookup.png
+.. |lookup| image:: ../_static/img/user-guide/user-guide-subscription-lookup.png
    :alt: Lookup orders
-.. |myproducts| image:: ../_static/img/general/general-licensing-myproducts.png
+.. |myproducts| image:: ../_static/img/user-guide/user-guide-subscription-myproducts.png
    :alt: 2Checkout products
