@@ -23,7 +23,7 @@ How to manage subscription
 --------------------------
 
 On the `subscription page`_, click **Renew** or **Upgrade** to place an accordant order.
-The **auto-renewal toggle** is available when your last order was paid with a credit card.
+The **auto-renewal toggle** is available when your last order was paid with a credit card or PayPal.
 
 |subscription|
 
