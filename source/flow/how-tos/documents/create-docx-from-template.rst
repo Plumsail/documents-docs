@@ -7,7 +7,7 @@
 How to create DOCX document from template in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 =============================================================================================================
 
-.. note:: There is a more simple way to create Word and PDF documents from a template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_.
+.. note:: There is a `simpler way to create Word and PDF documents from a template and use the result in Power Automate <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_ if needed. 
 
 Let’s suppose you want to automate the generation of invoices in your company. By going through this article you will learn how to create a DOCX document from a template using `Create DOCX Document from Template`_ action from `Plumsail Documents connector <https://plumsail.com/documents/>`_ in  Power Automate (Microsoft Flow) and Azure Logic Apps.
 
@@ -157,7 +157,7 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _Create DOCX Document from Template: ../../actions/document-processing.html#create-docx-document-from-template
 .. _SharePoint connector: https://plumsail.com/actions/sharepoint/
 .. _this documentation page: ../../../document-generation/docx/demos.html#sales-invoice
-.. _registering an account: ../../../getting-started/sign-up.html
+.. _registering an account: https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg
 
 .. |invoice-result-document| image:: ../../../_static/img/flow/how-tos/invoice-result-document.png
 .. |invoice-template| image:: ../../../_static/img/flow/how-tos/invoice-template.png

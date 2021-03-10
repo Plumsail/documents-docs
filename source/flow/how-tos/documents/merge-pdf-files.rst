@@ -28,7 +28,7 @@ In this example, we will store our source DOCX files in SharePoint in a library 
 
 
 Merging PDF files
------------------
+------------------
 
 Here, we will guide you step by step through creating the flow. You also will find a screenshot of the complete flow at the end of the article.
 

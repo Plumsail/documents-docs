@@ -3,25 +3,28 @@
 .. meta::
    :description: Check out a ready-to-use example of Microsoft Forms populating Word DOCX templates and convert to PDF in Power Automate Flow.
 
-How to create Word and PDF documents from Microsoft Forms in Power Automate (MS Flow) and Azure Logic Apps
-===========================================================================================================
+Create Word and PDF from Microsoft Forms
+========================================
 
-This article demonstrates how to create PDF documents from a DOCX template on a `Microsoft Form <https://forms.office.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automize the generation of different documents like applications, requests, orders, etc., in your company. 
+This article demonstrates how to merge `Microsoft Form <https://forms.office.com/>`_ responses into a Word template and convert the resulting document to PDF. 
+It may help you to automate the generation of documents such as certificates, applications, requests, and others from Microsoft Forms. 
 
-**Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
+To follow the steps from the article, you will need these accounts:
 
-**Microsoft Forms** are an online form builder with themes and question branching that allows you to create surveys, quizzes, polls and collect other information.
+   1. `Plumsail Documents <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_
+   2. `Microsoft Forms <https://forms.microsoft.com/>`_
+   3. `Power Automate <https://flow.microsoft.com/>`_
 
-Let’s see how to connect them with the help of Power Automate (Microsoft Flow) to automatically collect data from a Microsoft Form, apply the data to our template, and generate a new PDF document.
+We'll connect Microsoft Forms to Plumsail Documents using the Power Automate (Microsoft Flow) platform. We'll create an automated flow to automatically export data from a Microsoft Form, apply the data to our Word template, and generate a new PDF document.
 
-.. contents::
+.. contents:: Table of contents
     :local:
     :depth: 2
 
-Create a Form
--------------
+Create Microsoft Form
+---------------------
 
-We наve already created a Microsoft Form with a guest's request. We will use data from its submission. If you haven't created MS Forms before, follow `the link to learn how to do it <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_.
+First, you need to create a Microsoft form. We наve already created a guest's request form. We will use data from its submission. If you haven't created MS Forms before, follow `the link to learn how to do it <https://support.office.com/en-gb/article/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d>`_.
 
 It's possible to use the form from this example. After you've logged into your Microsoft Forms account, click on `the link to duplicate the form <https://forms.office.com/Pages/ShareFormPage.aspx?id=sw17qLgWx0qMVHqdDlcIbmR30TR_6NdLl37R-A7gviRURUxUSDJTMjhVR1lWQjFDVkFOVDhLSkRDNC4u&sharetoken=Fp7WzOz6WSxbJFcBy8Qq>`_. After duplicating you'll be able to use the form as your own. 
 
@@ -30,32 +33,20 @@ Below is a screenshot of the form:
 .. image:: ../../../_static/img/flow/how-tos/microsoft-form.png
     :alt: Microsoft Form
 
-Configure the Process
----------------------
+Configure Plumsail Documents Process
+------------------------------------
 
-Before creating the Flow, we also need to configure the Process, which will generate PDF documents from a DOCX template.
+Next, you need to go to your Plumsail account - `Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ - and add a new process: 
 
-Create a new process
-~~~~~~~~~~~~~~~~~~~~
-
-Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
-
-Click on the *Add process* button.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-msforms.gif
+    :alt: add new process
 
 Set the Process name. Select **DOCX** for a template type.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-docx-process-forms.png
-    :alt: generate PDF from Microsoft Forms 
+Configure Word template
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Configure a template
-~~~~~~~~~~~~~~~~~~~~
-
-Once you're done with the first step *Create Process*, press the *Next* button, and you’ll proceed to the next step – *Configure Template*.
-
-It includes two substeps:
+Once the process is created, you'll see the Configure template step including two substeps:
 
 - Editor;
 - Settings.
@@ -75,23 +66,11 @@ Then upload it to the process.
 Templating syntax
 *****************
 
-When creating your own templates, mind the templating language. Plumsail Word DOCX templates use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
+When creating your own templates, mind the templating language. `Plumsail Word DOCX templates <../../../document-generation/docx/how-it-works.html>`_ use a different approach than most other templating solutions. It uses a minimal amount of syntax to make your work done.
 
 In short, the templating engine thinks that everything between curly :code:`{{ }}` brackets is variables where it will apply your specified data. 
-Read `this article <../../../document-generation/docx/how-it-works.html>`_ to get familiar with the templating engine.
 
-Test template
-*************
-
-You can test a template as well, to see how it will look at the end. After clicking on the *Test template* button, you’ll need to fill in the auto-generated testing form. 
-Fields of this form are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
-
-.. image:: ../../../_static/img/flow/how-tos/test-template-jotform-processes.png
-    :alt: test template
-
-It’s testing. We’re going to apply the data from the JotForm to our template. 
-
-Once you've tested the template, press *Save&Next* to proceed further - to the **Settings** substep:
+Press *Save&Next* to proceed further - to the **Settings** substep:
 
 - Switch to an active mode to remove Plumsail watermarks from resulting documents
 - Fill in the name of the result file
@@ -113,12 +92,12 @@ Select the folder where the ready document will be saved. Fill in the file's nam
 
 You can configure as many deliveries as you need.
 
-Start the Process
-~~~~~~~~~~~~~~~~~
+Start Process
+~~~~~~~~~~~~~
 We will start our Process from Power Automate (Microsoft Flow). 
 
-Create a Flow
--------------
+Create Flow
+-----------
 This is how our Flow looks:
 
 .. image:: ../../../_static/img/flow/how-tos/MSform-processes.png
@@ -134,7 +113,7 @@ We need to start the Flow every time somebody submits our request form. For that
 
 If this is your first Flow with Microsoft Forms, on this step, sign in to your Microsoft Forms Account from MS Flow to use your forms inside Flows.
 
-Then, you'll need to pick the form you want to track in the dropdown.
+Then, you'll need to pick the form you want to track from the dropdown.
 
 .. image:: ../../../_static/img/flow/how-tos/MSform-trigger.png
     :alt: Microsoft Form trigger
@@ -198,6 +177,6 @@ Add an action *Create an approval* from the *Approvals* connector. Select an out
 Sign up for Plumsail Documents
 ------------------------------
 
-As you can see, it's simple to automize the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms. A 30-day trial is free.
+As you can see, it's simple to automate the generation of documents on Microsoft Forms submission. If you're new to Plumsail Documents, `register an account <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ and follow the steps described in the article to set the process for automatic creation of PDFs from Microsoft Forms. A 30-day trial is free.
 
-.. hint:: You can generate PDFs from Web Forms even without Power Automate (Microsoft Flow). Check the article `How to generate PDF documents from a DOCX template on Plumsail Forms submission <../../../user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>`_.
+.. hint:: Check out how to `convert Microsoft Forms responses with attachments to one PDF file <../../../flow/how-tos/documents/convert-microsoft-forms-with-attachments-to-pdf.html>`_. 

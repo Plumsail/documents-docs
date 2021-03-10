@@ -120,7 +120,7 @@ Then we are using these keys values to create an item in our SharePoint 'Orders'
 Conclusion
 ~~~~~~~~~~
 Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Documents connector for Power Automate (Microsoft Flow)`_. 
-If you haven’t used it yet, registering an account would be the first step, you can learn about it `here`_. It is quite easy to get started.
+If you haven’t used it yet, `registering an account` would be the first step. It is quite easy to get started.
 
 .. _Regular Expression Match: ../../../flow/actions/document-processing.html#regular-expression-match
 .. _Actions: ../../../index.html
@@ -129,7 +129,7 @@ If you haven’t used it yet, registering an account would be the first step, yo
 .. _Plumsail Documents connector to Power Automate (Microsoft Flow): ../../../flow/create-custom-connector.html
 .. _named groups: https://www.regular-expressions.info/named.html
 .. _Plumsail Documents connector for Power Automate (Microsoft Flow): https://plumsail.com/documents/
-.. _here: ../../../getting-started/sign-up.html
+.. _registering an account: https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg
 .. _on this page: https://www.regular-expressions.info/named.html
 
 .. |regex-match-flow| image:: ../../../_static/img/flow/how-tos/regex-match-flow.png
