@@ -7,7 +7,7 @@
 Create PDF from DOCX template in Power Automate (Microsoft Flow) and Azure Logic Apps
 =====================================================================================
 
-.. note:: There is a more simple way to create Word and PDF documents from a template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_.
+.. note:: There is a `simpler way to create Word and PDF documents from a template and use the result in Power Automate <../../../user-guide/processes/examples/create-pdf-from-docx-template-processes.html>`_ if needed.
 
 This article demonstrates how to generate PDF document from a DOCX template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 
@@ -48,7 +48,7 @@ You can use any other connector to get files from your system.
 
 Create document from DOCX template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_.
+This is an action from `Plumsail Documents <https://plumsail.com/documents>`_ connector.
 
 There are two parameters:
 
@@ -118,19 +118,19 @@ This is our sample data:
         "total": 18872.94
     }
 
-You can find more information about this action `here <../../actions/document-processing.html#create-docx-document-from-template>`_.
+Learn more information `Create DOCX document from template <../../actions/document-processing.html#create-docx-document-from-template>`_ action.
 
 Convert DOCX to PDF
 ~~~~~~~~~~~~~~~~~~~
-This is also an action from Plumsail Documents connector.
+This is also an action from the Plumsail Documents connector for Power Automate Flows.
 
 Just put DOCX file content from the output of the previous action and receive PDF file content as an output of this action.
 
-You can find more information about this action `here <../../actions/document-processing.html#convert-docx-to-pdf>`_.
+Find more information about `Convert DOCX to PDF <../../actions/document-processing.html#convert-docx-to-pdf>`_ action.
 
 Create file
 ~~~~~~~~~~~
-Once the result document is generated, we need to store the Word file somewhere. In our example, we use "Create file" action from SharePoint connector to store the document in SharePoint document library.
+Once the result document is generated, we need to store the PDF file somewhere. In our example, we use "Create file" action from SharePoint connector to store the document in SharePoint document library.
 
 .. image:: ../../../_static/img/flow/how-tos/generated-pdf-from-docx-template-sp-library.png
    :alt: Select fields

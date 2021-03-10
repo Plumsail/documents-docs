@@ -3,8 +3,8 @@
 .. meta::
    :description: Easily convert Microsoft Forms with upload file fields to PDF format. Tty Plumsail Documents connector for Power Automate Flow.
 
-How to convert Microsoft Forms responses with attachments to PDF using Power Automate
-=====================================================================================
+Convert Microsoft Forms with attachments to PDF
+===============================================
 
 In this article, we'll go into how to convert `Microsoft Forms <https://forms.office.com/>`_ responses containing attachments to one PDF document. We'll use the `Plumsail Documents <https://plumsail.com/documents/>`_ connector for Power Automate to do the main job.
 
@@ -199,7 +199,7 @@ For Document content, insert :code:`File content` output of the previous step.
 Merge PDF
 ---------
 
-Now we need to merge the PDF file made from text fields responses into the PDF made from the attachments. We'll do that with the `Merge PDF <../../actions/document-processing.html#merge-pdf>`_. 
+Now we need to merge the PDF file made from text fields responses into the PDF made from the attachments. We'll do that with the `Merge PDF action <../../actions/document-processing.html#merge-pdf>`_. 
 
 Add outputs from *Convert HTML to PDF* and *Convert DOCX to PDF* actions to Content of PDF documents fields:
 

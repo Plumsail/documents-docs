@@ -45,7 +45,7 @@ Follow `this instruction <../../../document-generation/fillable-pdf/index.html>`
 |fill-in-pdf-form-template|
 
 Create Power Automate (Microsoft Flow)
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
 |fill-in-pdf-form-flow|
@@ -99,7 +99,7 @@ Now you should have an idea how to use Fill in PDF form action from `Plumsail Do
 .. _form submission: https://plumsail.com/docs/forms/microsoft-flow.html
 .. _extract data from incoming email messages: use-regex-match-to-extract-values.html
 .. _Download the template file: ../../../_static/files/flow/how-tos/fill-in-pdf-form-template.pdf
-.. _registering an account: ../../../getting-started/sign-up.html
+.. _registering an account: https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg
 .. _Get Form from PDF: ../../actions/document-processing.html#get-form-from-pdf
 .. _collect data from fillable PDF: collect-data-pdf-form.html
 
