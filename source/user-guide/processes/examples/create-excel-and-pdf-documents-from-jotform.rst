@@ -66,6 +66,9 @@ It includes two substeps:
 In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one.
 It’s also possible to modify the uploaded template online.
 
+.. note:: You can upload your template using **Upload** button or just drag and drop a file to the editor's window.
+
+
 Feel free to `download the loan calculation template <../../../_static/files/flow/how-tos/jotform-loan-template.xlsx>`_ that we have already prepared:
 
 .. image:: ../../../_static/img/flow/how-tos/jotform-xlsx-template.png
