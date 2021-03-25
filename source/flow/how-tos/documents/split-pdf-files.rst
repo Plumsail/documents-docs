@@ -6,11 +6,11 @@
 How to split PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps
 ==============================================================================
 
-This article demonstrates how to split a PDF file with the help of `Power Automate (Microsoft Flow) <https://emea.flow.microsoft.com/>`_.
+This article demonstrates how to separate PDF pages with the help of `Power Automate (Microsoft Flow) <https://emea.flow.microsoft.com/>`_.
 
-In this example, we will read a PDF file, split the file to get a specific page and send this page by email. 
+In this example, we will read a PDF file, split the file to get a particular page and send this page by email. 
 
-This approach can be used to extract a page or a section of a document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.
+This approach can be used to extract a page or a section of a PDF document. For example, you may extract specific pages from a contract and send it for approval to the responsible person.
 
 Our source PDF file has to be stored somewhere. Power Automate (Microsoft Flow) has a lot of connectors for different systems.
 
@@ -63,12 +63,12 @@ Put PDF file content from the output of the previous action. In the **Start Page
 
 As an output of this action, we receive an array of Result files. In our case, we have just one file in the array.
 
-You can find more detailed information about *Split PDF* action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html#split-pdf>`_.
+Find `more detailed information about *Split PDF* action <https://plumsail.com/docs/actions/v1.x/flow/actions/document-processing.html#split-pdf>`_.
 
 Send an email
 ~~~~~~~~~~~~~
 
-Once the result file is generated, we send an email  using Send email action from Office 365 Outlook connector. We fill in the **email fields**; in the **Attachments** section, we add a name for the new PDF file and choose **ResultFileContents - Item** as an output from previous steps. This will automatically transform this action into repeating one which will be performed for each Result file. In our case, there is just one file.
+Once the result file is generated, we send an email using Send email action from Office 365 Outlook connector. We fill in the **email fields**; in the **Attachments** section, we add a name for the new PDF file and choose **ResultFileContents - Item** as an output from previous steps. This will automatically transform this action into repeating one which will be performed for each Result file. In our case, there is just one file.
 
 Conclusion
 ----------
@@ -76,4 +76,4 @@ Conclusion
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/merge-pdf-files.html>`_ explaining how to Merge PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps.
+  You may also be interested in the `article explaining how to Merge PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/merge-pdf-files.html>`_.

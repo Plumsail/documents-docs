@@ -6,11 +6,14 @@
 How to create documents from a template in Zapier and sign them using SignNow
 #############################################################################
 
-In this article, we will show you how to create documents from a template using `Processes <../../../user-guide/processes/index.html>`_ and sign them with the help of `SignNow <https://www.signnow.com/>`_.
+In this article, we will show you how to create documents from a template using `Processes <../../../user-guide/processes/index.html>`_ and sign them with the help of `SignNow <https://www.signnow.com/?utm_source=plumsail&utm_medium=cpa&utm_campaign=main&utm_content=ad1>`_.
 
 **Processes** are a `Plumsail Documents <https://plumsail.com/documents/>`_ feature with an intuitive interface for creating documents from templates.
 
 **SignNow** is an electronic signature cloud-based software, which allows to sign and manage documents on any device.
+
+
+If you haven't tried it yet, you can `register a free signNow trial account <https://snseats.signnow.com/purchase/business_free_trial/loggedout?utm_source=plumsail&utm_medium=cpa&utm_campaign=signup&utm_content=ad1>`_. 
 
 We'll connect these tools in `Zapier <https://zapier.com/apps/plumsail-documents/integrations>`_ to automize the documents exchange and signing.
 

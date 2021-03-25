@@ -1,7 +1,7 @@
 signNow delivery
 ================
 
-The signNow delivery sends generated documents to `signNow <https://www.signnow.com/>`_ for electronic signing. 
+The signNow delivery sends generated documents to `signNow <https://www.signnow.com/?utm_source=plumsail&utm_medium=cpa&utm_campaign=main&utm_content=ad1>`_ for electronic signing. 
 
 Once you've added the signNow delivery to your process, you'll be asked to connect to your signNow account and grant Plumsail Documents access to it:
 
@@ -133,7 +133,7 @@ Consider more options:
 
 .. note:: We recommend you enclose signNow text tags in single curly brackets - :code:`{ }` - instead of double ones to avoid any conflicts with Plumsail Documents tokens.
 
-Find more detailed explanations and more examples in the `signNow documentation article <https://help.signnow.com/docs/how-to-generate-text-tags-on-a-document>`_.
+Find more detailed explanations and more examples in the `signNow documentation article <https://help.signnow.com/docs/how-to-generate-text-tags-on-a-document/?utm_source=plumsail&utm_medium=cpa&utm_campaign=main&utm_content=ad1>`_.
 
 Specify recipients dynamically based on your data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

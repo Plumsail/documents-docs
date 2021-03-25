@@ -627,7 +627,7 @@ Scroll down to see source data for the template in JSON format.
 .. code:: json    
 
     {
-      companyName": "Plumsail",
+      "companyName": "Plumsail",
       "site": "http://plumsail.com",
       "contacts": null,
       "employees1": [

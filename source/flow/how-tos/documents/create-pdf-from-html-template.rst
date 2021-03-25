@@ -7,7 +7,7 @@
 Create PDF from HTML template in Power Automate (Microsoft Flow) and Azure Logic Apps
 =====================================================================================
 
-.. note:: There is a more simple way to create PDF documents from an HTML template and use the result in Power Automate if needed. Please, check `how to do that with the help of the Plumsail Documents processes <../../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_.
+.. note:: There is a `simpler way to create PDF documents from an HTML template and use the result in Power Automate <../../../user-guide/processes/examples/create-pdf-from-html-template-processes.html>`_ if needed. 
 
 This article demonstrates how to generate PDF document from an HTML template with the help of `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_.
 
@@ -50,7 +50,7 @@ You can use any other connector to get files from your system.
 
 This is an action from `Plumsail Documents connector <https://plumsail.com/documents>`_. This action is suitable for generation of HTML and text documents.
 
-You can find more information about this action `here <../../actions/document-processing.html#create-html-from-template>`_.
+You can find more information about `Create HTML from template action <../../actions/document-processing.html#create-html-from-template>`_.
 
 There are two parameters:
 
@@ -135,7 +135,7 @@ This is also an action from Plumsail Documents connector.
 
 Just put HTML file content from the output of the previous action and receive PDF file content as an output of this action. You can also use raw HTML string as a source HTML.
 
-You can find more information about this action `here <../../actions/document-processing.html#convert-html-to-pdf>`_.
+You can find more information about `Convert HTML to PDF action <../../actions/document-processing.html#convert-html-to-pdf>`_.
 
 **Create file**
 
@@ -144,6 +144,6 @@ Now you need to store text file somewhere. In our example, we use *'Create file'
 .. image:: ../../../_static/img/flow/how-tos/pdf-from-html-template-lib-file.png
    :alt: Select fields
 
-You can use any other connector to store text document into your system.
+You can use any other connector to store PDF documents into your system.
 
-.. hint:: You can also `generate PDF from DOCX Word template <create-pdf-from-docx-template.html>`_.
+.. hint:: You can also `generate PDF from DOCX Word template <../../../user-guide/processes/examples/create-docx-from-template-processes.html>`_.

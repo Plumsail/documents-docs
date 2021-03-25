@@ -68,7 +68,7 @@ This is an action from `Plumsail Documents connector <https://plumsail.com/docum
 Put CSV file content from the output of the previous action. 
 In the **Headers** field, specify the CSV file headers, then you'll be able to select the headers in the dynamic content window.
 In our example, we're going to use the customer first name, last name and the company name.
-You can find more detailed information about Parse CSV action `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_.
+Find `more detailed information about Parse CSV action <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_.
 
 .. image:: ../../../_static/img/flow/how-tos/parse-csv-action.png
    :alt: Parse CSV action
@@ -93,4 +93,4 @@ Conclusion
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-docx-from-template.html>`_ explaining how to create docx document from template in Power Automate (Microsoft Flow) and Azure Logic Apps.
+Check out another article explaing `how to read CSV and batch generate HTML and PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps <../../../user-guide/processes/examples/create-html-and-pdf-from-template-from-csv.html>`_.

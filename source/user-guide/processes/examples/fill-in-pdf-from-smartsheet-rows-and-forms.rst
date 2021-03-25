@@ -1,12 +1,12 @@
-Automatically fill in PDF forms from Smartsheet in Zapier
-=========================================================
+Auto-fill in PDF forms with Smartsheet data
+===========================================
 
 .. title:: Generate PDF when a new record is added to Smartsheet
 
 .. meta::
    :description: Automate document workflow with Smartsheet and Plumsail Documents in Zapier
 
-From this article, you will learn how to automate the process of creating documents and filling in PDF forms from `Smartsheet <https://www.smartsheet.com/>`_ with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ in `Zapier <https://zapier.com/>`_.
+From this article, you will learn how to automate the process of creating documents and filling in PDF forms from `Smartsheet`_ with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ in `Zapier <https://zapier.com/>`_.
 Though Smartsheet has a PDF builder, it requires manual actions and not suitable for all the scenarios.
 
 .. note:: The approach we'll describe in the article is applicable for all the scenarios with creating and filling PDFs from Smartsheet. It doesn't matter what kind of project you're working on in your Smartsheet. 
@@ -21,7 +21,7 @@ Ideally, without any manual routine. This is exactly what we're going to do - **
 
 Systems involved:
 
-1. `Smartsheet <https://www.smartsheet.com/>`_
+1. `Smartsheet`_
 2. `Plumsail Documents <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_
 3. `Zapier <https://zapier.com/>`_
 
@@ -99,7 +99,16 @@ Connect Smartsheet to Plumsail Documents in Zapier
 We will start the process of populating PDF forms when a new row is added to Smartsheet. 
 For that, we'll create an automated connection between Smartsheet and Plumsail Documents in Zapier.
 
-Go to your Zapier account, add a new zap. For the zap trigger, search for Smartsheet:
+You can create a zap from scratch or start from a ready-to-go zap template, then customize it as described further in the guide. 
+To start from the zap template, click on **Use this zap** on the widget below:
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=484932"></script>
+
+To create a zap from scratch, go to your Zapier account, add a new zap. For the zap trigger, search for Smartsheet:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/smartsheet-trigger.png
     :alt: Smartsheet trigger in Zapier
@@ -140,3 +149,5 @@ Once you've picked it up, you see fields to complete. These are our fillable PDF
 Our Zap is done. Every time a new row is added to Smartsheet, you'll get a PDF form completed with its data by email. 
 
 .. hint:: Plumsail Documents supports not only fillable PDFs, but other document templates - Word, Excel, PowerPoint. So, you can create any custom documents based on Smartsheet data. Please, `check out some ready-to-use examples <../index.html#processes-examples>`_. You can combine approaches to adjust them to your needs. 
+
+.. _Smartsheet: https://www.smartsheet.com/

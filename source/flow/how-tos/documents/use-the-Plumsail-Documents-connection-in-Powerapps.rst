@@ -99,11 +99,6 @@ Select *Add everyone in my org* or choose the *users and groups* you need to sha
 Now your connection is available for every user you’ve chosen. They can see the connection on the *Connections* tab in their Power Automate (Microsoft Flow) workspace and, more importantly, use your app right away. 
 
 .. _Power Apps: https://powerapps.microsoft.com/
-.. _Actions: ../../../index.html
-.. _Document generation: ../../../../ /document-generation/docx/index.html
-.. _MS Flow examples: create-docx-from-template.html
-.. _DOCX template: create-docx-from-template.html
-.. _convert to PDF: convert-word-to-pdf.html
 
 
 .. |powerapps-flow-processes| image:: ../../../_static/img/flow/how-tos/powerapps-flow-processes.png

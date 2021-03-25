@@ -1690,6 +1690,8 @@ Get PDF protection information
 
 Returns **True** if the source PDF is protected and **False** otherwise.
 
+.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <../create-custom-connector.html>`_ .
+
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -1701,7 +1703,7 @@ Returns **True** if the source PDF is protected and **False** otherwise.
        -  Example
     *  -  isPasswordProtected
        -  **True** or **False**.
-       -  You can use **If** option in the flow to specify further stesp depending on the output.
+       -  You can use **If** option in the flow to specify further steps depending on the output.
 
 .. rubric:: Input Parameters
 
@@ -1717,7 +1719,43 @@ Returns **True** if the source PDF is protected and **False** otherwise.
        -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
 
 .. image:: ../../_static/img/flow/documents/get-pdf-protection-info.png
-   :alt: get PDF protection info
+   :alt: Get PDF protection info
+
+Compress PDF document
+-------------------------------
+
+Compresses a source PDF document.
+
+.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <../create-custom-connector.html>`_ .
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File Content
+       -  Raw content of result file
+       -  It is a Base64 encoded content of result file.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  PDF Document Content
+       -  Raw content of PDF document.
+       -  You may get the content of the source PDF file by "Get file content" action from "SharePoint" connector or from some other connector.
+
+.. image:: ../../_static/img/flow/documents/compress-pdf-document.png
+   :alt: Compress pdf document
 
 Parse CSV
 -------------------

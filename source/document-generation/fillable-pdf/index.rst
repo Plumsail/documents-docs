@@ -61,8 +61,8 @@ Click on the field -> Properties section to change field name:
 Create checkbox field
 ---------------------
 
-You can add and edit speciphic fields like **checkboxes** and **radiobuttons** the same way. 
-In order to check a checkbox, you'll need to submit an object with the **true** or **false** value. Use the following structure:
+You can add and edit specific fields like **checkboxes** and **radio buttons** the same way. 
+To check a box, you'll need to submit an object with a **true** or **false** value. Use the following structure:
 
 .. code:: json
 
@@ -70,17 +70,38 @@ In order to check a checkbox, you'll need to submit an object with the **true** 
       "Checkbox1": true
     }
 
-Create radiobutton field
-------------------------
+Create group of checkboxes
+--------------------------
 
-In order to choose a **radiobutton**, you'll need to create a **radiobutton group** in your pdf. To do this, 
-just give the same **Name** to several radiobutton fields and a group will be created automatically. 
-Then you need to speciphy the "Radio Button Choice" field for each option of the radiobutton group.
-This is the value you need to submit to check the radiobutton. Please note that you can style radiobuttons 
+The **checkbox group** allows selecting only one option in it, i.e. works like radio buttons.
+To create the one, add several checkboxes with the same name.
+They will be displayed in the list of fields with their indexes after the hash character.
+
+.. image:: ../../_static/img/document-generation/fill-in-pdf-group-add.png
+    :alt: Checkbox group
+
+For each checkbox from the group, set a different **export value** in properties and submit it as a string to check the accordant box.
+
+.. code:: json
+
+    {
+      "Checkbox1": "0"
+    }
+
+.. image:: ../../_static/img/document-generation/fill-in-pdf-group-export.png
+    :alt: Export value
+
+Create radio-button field
+-------------------------
+
+To choose a **radio button**, you'll need to create a **radio-button group** in your pdf. To do this, 
+just give the same **Name** to several radio-button fields and a group will be created automatically. 
+Then you need to specify the "Radio Button Choice" field for each option of the radio-button group.
+This is the value you need to submit to check the radio button. Please note that you can style radio buttons 
 as checkboxes for a better "paper-like" visualization:
 
-.. image:: ../../_static/img/document-generation/fill-in-pdf-style-radiobutton.png
-    :alt: Style Radiobuttons
+.. image:: ../../_static/img/document-generation/fill-in-pdf-style-radio button.png
+    :alt: Style radio buttons
 
 
 Example
