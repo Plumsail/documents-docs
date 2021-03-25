@@ -29,14 +29,15 @@ Use the links below to learn more about each delivery:
     
   deliveries/send-email
   deliveries/gmail
-  deliveries/docusign
-  deliveries/signnow
-  deliveries/hellosign
-  deliveries/eversign
   deliveries/sharepoint
-  deliveries/one-drive
   deliveries/dropbox
   deliveries/google-drive
+  deliveries/one-drive
+  deliveries/docusign
+  deliveries/signnow
+  deliveries/eversign
+  deliveries/hellosign
+  deliveries/adobe-sign
   deliveries/webhook
 
 .. Note:: 
