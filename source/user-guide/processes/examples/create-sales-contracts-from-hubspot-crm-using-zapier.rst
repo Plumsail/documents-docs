@@ -8,7 +8,6 @@
 How to create sales contracts from HubSpot CRM using Zapier and Plumsail Processes
 ====================================================================================
 
-
 Let's say there is this scenario: You want to create a sales contract each time a new deal is placed in HubSpot.
 
 We need to work with 3 platforms for this
