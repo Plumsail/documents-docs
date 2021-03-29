@@ -8,7 +8,7 @@ Processes
 .. image:: ../../_static/img/user-guide/processes/processes-list.png
    :alt: List of processes
 
-Processes are an easy way to automate the creation of documents from templates. You can generate and deliver documents in a few simple steps.
+Processes is a document generation tool by Plumsail Documents. With its help, you can automatically create and deliver documents in a few steps.
 
 Getting started
 ~~~~~~~~~~~~~~~

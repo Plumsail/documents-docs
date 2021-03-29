@@ -33,6 +33,7 @@ Use the links below to learn more about each delivery:
   deliveries/dropbox
   deliveries/google-drive
   deliveries/one-drive
+  deliveries/box
   deliveries/docusign
   deliveries/signnow
   deliveries/eversign
