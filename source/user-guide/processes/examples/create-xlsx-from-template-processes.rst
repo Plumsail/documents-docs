@@ -1,15 +1,15 @@
-.. title:: Create Excel XLSX documents from a template using Zapier and Power Automate Flow
+.. title:: Create Excel XLSX documents from a template Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Use Plumsail Documents processes to generate customized documents from Excel templates in a few simple steps.
 
 
-How to create Excel XLSX document from template in Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
-=============================================================================================================================
+How to create Excel document from template automatically 
+========================================================
 If you want to automate the generation of purchase orders in your company, this article will help you achieve that. 
-After going through it, you will know how to create an XLSX file from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature.
+After going through it, you will know how to create an Excel document from an XLSX template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ tool for document generation.
 
-The Processes are a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
+Processes provides a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
 
 With its help, we'll create a purchase order from a template. This is how the result document will look at the end:
 
@@ -25,16 +25,13 @@ Let’s go through each step from the very beginning.
 
 Configure Process
 -----------------
-First, register or login to your `Plumsail account`_.
+First, register or log in to your `Plumsail account`_.
 
 Create new process
 ~~~~~~~~~~~~~~~~~~
 
-Click on the *Add Process* button.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
-
+Add a new process by simply clicking on the *Add Process* button. It will show two options - Create from blank and Create from template. 
+Let's create from blank.
 
 Give a name to the Process to recognize it later. As we're going to create documents from an Excel template, select **XLSX** for the template type.
 
@@ -50,7 +47,7 @@ It includes two substeps:
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+In Editor, you can compose the template from scratch or upload a local file from your computer. It's also possible to modify the uploaded template online.
 
 Feel free to `download an XLSX purchase order template <../../../_static/files/user-guide/processes/create-xlsx-from-template.xlsx>`_ that we have already prepared.
 

@@ -1,17 +1,13 @@
-.. title:: Generate Word DOCX documents from a template using Zapier and Power Automate Flow
+.. title:: Create Word DOCX documents from a template in Zapier, Power Automate Flow, Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Use Plumsail Documents processes to generate customized documents from Word templates in a few simple steps.
 
+Automatically genetate Word document from template 
+===================================================
+From this article, you will learn how to create a document generation process in `Plumsail Documents <https://plumsail.com/documents/>`_. It will help you to automatically generate any Word DOCX documents from templates, so you can automate document generation in your company. 
 
-
-How to create Word DOCX document from a template in Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
-============================================================================================================================
-Let’s suppose you want to automate the process of generating invoices in your company. This article will describe how to create a DOCX document from a template with the help of `Processes <../../../user-guide/processes/index.html>`_, a `Plumsail Documents <https://plumsail.com/documents/>`_ feature. 
-
-The Processes are a user-friendly intuitive interface for creating documents from templates, converting them, and delivering to different systems for further management. 
-
-With its help, we'll create an invoice from a template, and this is how the result document will look:
+Particularly in this article, we'll create invoices. This is how the result document will look:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/invoice-result-document.png
     :alt: create docx from template
@@ -25,17 +21,15 @@ Let’s go through each step from the very beginning:
 Configure Process
 ~~~~~~~~~~~~~~~~~
 
-First, register or login to your `Plumsail account`_.
+First, register or log in to your `Plumsail account`_.
 
 Create new process
 --------------------
 
-Click on the *Add Process* button.
+Add a new process. You can either create a document generation process from scratch or start from one of premade templates. 
+Let's create a process from scratch to follow the steps from this instruction.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
-
-Give a name to the Process to recognize it later. Select DOCX for a template type. 
+After we clicked the *Add Process* button, we need to name our process and select a template type. In our case, it's DOCX:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-new-process.png
     :alt: create docx from template
@@ -43,16 +37,16 @@ Give a name to the Process to recognize it later. Select DOCX for a template typ
 Configure template
 --------------------
 
-Once you've created the Process, you'll proceed to its first step - **Configure template**.
+Once we've created the Process, we'll proceed to its first step - **Configure template**.
 
 It includes two substeps:
 
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+In Editor, you can compose the template from scratch or upload an existing one. It's also possible to modify the uploaded template online.
 
-Feel free to `download an invoice DOCX template <../../../_static/files/user-guide/processes/template-invoice.docx>`_ we have already prepared. Then upload it to the process.
+Feel free to `download the invoice DOCX template <../../../_static/files/user-guide/processes/template-invoice.docx>`_ we have already prepared. Then upload it to the process.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
     :alt: upload template file

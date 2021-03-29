@@ -6,7 +6,12 @@ To create a new process, navigate to the `Processes <https://account.plumsail.co
 .. image:: ../../_static/img/user-guide/processes/create-process-view.png
     :alt: Create process button
 
-Fill in the process name and select the template type. Plumsail Documents supports the following template formats:
+You can choose to start from one of the premade document templates. Then adjust it to your business and personal requirements:
+
+.. image:: ../../_static/img/user-guide/processes/create-process-from-template.png
+    :alt: Create process from template
+
+Or start from blank. You'll be asked to select one of the template types:
 
 - Word DOCX
 - Excel XLSX

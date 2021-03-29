@@ -1,16 +1,16 @@
-.. title::  Automatically populate PowerPoint PPTX presentations in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
+.. title::  Create PowerPoint PPTX presentations from a template in Zapier, Power Automate Flow, Azure Logic Apps and PowerApps
 
 .. meta::
-   :description: Streamline generation of presentation repots and create PPTX automatically from your web services and CRM systems using Plumsail Documents in Power Automate and Zapier.
+   :description: Streamline generation of presentation reports and create PPTX automatically from your web services and CRM systems using Plumsail Documents in Power Automate and Zapier.
 
-How to create PowerPoint PPTX presentations from a template in Zapier, Power Automate Flow, Azure Logic Apps and PowerApps
-==========================================================================================================================
+How to automatically generate PowerPoint PPTX presentations from template
+=========================================================================
 
-Let us say you need to create company report presentations every month. This article shows how to automate this process and generate PowerPoint presentations from PPTX templates automatically with the help of `Plumsail Documents processes <../index.html>`_.
+Let us say you need to create company report presentations every month. This article shows how to automate creating PowerPoint presentations from PPTX templates using the `Plumsail Documents <https://plumsail.com/documents/>`_ generation tool.
+We call it Processes. And with its help, we’ll create a company report with tables and charts from a PPTX template. 
 
-**Processes** are a handy interface for creating documents from templates, converting, and delivering them in a few simple steps.
-
-With its help, we’ll create a company report with tables and charts from a PPTX template. Below are the pictures of slides from a template and the resulting presentation - the title slide and one of the body ones. You can download complete files from the links above the screenshots to compare them.
+Below are the pictures of slides from a template and the resulting presentation - title and body slides.
+You can download complete files from the links above the screenshots to compare them.
 
 .. list-table::
     :header-rows: 1
@@ -37,15 +37,13 @@ With its help, we’ll create a company report with tables and charts from a PPT
 Configure Process
 ~~~~~~~~~~~~~~~~~
 
-First, register or login to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to start configuring the process. 
+First, register or log in to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ to start configuring the process. 
 
 Create Process
 --------------
 
-Click on the **Add Process** button.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
+Add a new process. It’s possible to create a new process from scratch or start from one of the pre-made templates.
+You can browse the template library and search for a company report template. Otherwise, create from blank. 
 
 Give a name to the Process to recognize it later. Select **PPTX** for a template type.
 
@@ -63,7 +61,7 @@ It includes two substeps:
 - Editor;
 - Settings.
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
+In Editor, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
 
 Feel free `to download the company report template <../../../_static/files/document-generation/demos/pptx-report-template.pptx>`_ if you haven't downloaded it yet as we gave the link above in the table showing the template and the result.
 
