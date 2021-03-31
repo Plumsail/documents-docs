@@ -5,16 +5,16 @@
 
 
 
-How to create sales contracts from HubSpot CRM using Zapier and Plumsail Processes
+How to create sales contracts from HubSpot CRM using Zapier and Plumsail Documents
 ====================================================================================
 
-Let's say there is this scenario: You want to create a sales contract each time a new deal is placed in HubSpot.
+Let us say you want to create sales documents based on Hubspot deals and send them to your clients for e-singing. In this article, we'll show how to create sales contracts from new HubSpot deals and send them to DocuSign for e-signing.
 
 We need to work with 3 platforms for this
 
 - Create a deal in HubSpot.
-- Create a process in Plumsail Processes to generate a sales contract from DOCX template.
-- Create a Zapier flow that starts this Plumsail process contract generation when a new deal is placed in HubSpot.
+- Create a process in Plumsail Documents to generate a sales contract from DOCX template.
+- Create a Zapier flow that starts this contract generation process when a new deal is placed in HubSpot.
 
 Let's check all 3 steps.
 
@@ -68,7 +68,7 @@ Click **Save & Next**. There are some settings in the next step
     :alt: Create process hubspot
 
 
-Now I need to select a delivery. I'd like to save the created contract in a SharePoint folder.
+Now I need to select a delivery. I'll take DocuSign delivery:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-hubspot3.png
     :alt: Create process hubspot
