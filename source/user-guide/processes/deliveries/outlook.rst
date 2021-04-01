@@ -8,6 +8,10 @@ For that, click **Connect to Outlook** and provide your credentials.
 .. image:: ../../../_static/img/user-guide/processes/outlook-delivery-1.png
     :alt: Connect to Outlook
 
+.. Note:: 
+  You can connect to a personal Outlook account as well as to Outlook for business account.
+  Please note that depending on the permissions policies in your company's Microsoft 365 tenant you might require admin approval to grant access to our app. 
+
 Once you're connected, you will see the Outlook delivery settings:
 
 .. image:: ../../../_static/img/user-guide/processes/outlook-delivery-1.png
