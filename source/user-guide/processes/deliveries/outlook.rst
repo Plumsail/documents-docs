@@ -10,7 +10,7 @@ For that, click **Connect to Outlook** and provide your credentials.
 
 Once you're connected, you will see the Outlook delivery settings:
 
-.. image:: ../../../_static/img/user-guide/processes/outlook-delivery-1.png
+.. image:: ../../../_static/img/user-guide/processes/outlook-delivery-2.png
     :alt: Outlook delivery settings
 
 Just fill the **To**, **Subject**, and **Body** fields of delivery as you do in any email client. 
