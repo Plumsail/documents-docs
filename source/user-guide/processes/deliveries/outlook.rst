@@ -22,11 +22,11 @@ You can specify **Cc** and **Bcc** if need be.
 
 Expand **Advanced** to set:
 
-- **Display name**. The name which recipients see when receiving emails. Default is your username from the connected Gmail account. If needed, you can change it.
+- **Display name**. The name which recipients see when receiving emails. Default is your username from the connected Outlook account. If needed, you can change it.
 - **Reply-to**. The default is the currently connected Outlook address. You also can replace it with another email address. 
 
 .. image:: ../../../_static/img/user-guide/processes/advanced-email-settings.png
-    :alt: Advanced email delivery settings
+    :alt: Advanced Outlook delivery settings
 
 Use tokens to specify recipients
 --------------------------------
