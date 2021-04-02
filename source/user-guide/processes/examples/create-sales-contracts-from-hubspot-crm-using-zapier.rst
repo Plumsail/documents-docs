@@ -18,7 +18,7 @@ We need to work with 3 platforms for this
 
 Let's check all 3 steps.
 
-Creatng a HubSpot deal
+Creating a HubSpot deal
 -----------------------
 
 `HubSpot <https://hubspot.com/>`_ is a CRM system that provides a full platform to work with sales, marketing, and customer support areas.
@@ -55,7 +55,7 @@ In the next step, we need to configure a template. We can either compose the tem
 
 .. note:: You can upload your template using **Upload** button or just drag and drop a file to the editor's window.
 
-I prepared a sales contract template and uploaded it to the Editor. You can download my template `here <../../_static/files/document-generation/demos/hubspot-invoice-template.docx>`_ .
+I prepared a sales contract template and uploaded it to the Editor. You can download my template `here <../../../_static/files/document-generation/demos/hubspot-invoice-template.docx>`_ .
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/hubspot-sales-contract-template.png
     :alt: Create process hubspot
