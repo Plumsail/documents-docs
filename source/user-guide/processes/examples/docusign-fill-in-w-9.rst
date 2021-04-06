@@ -55,7 +55,7 @@ It will contain an ``email`` field, so I added an accordant token to the deliver
 
 |delivery|
 
-The next step is creating a new web form to start the process by its submission.
+The next step is preparing a web form to start the process by its submission. We'll customize a default form that was generated based on the fields from the PDF template.
 
 |form|
 
@@ -65,7 +65,7 @@ Configure web form
 By default, the form grabs all the fields you have in the PDF template and name them accordingly.
 It does not fit our automation process in the current state and requires some improvements.
 To save time, you could `download the web form`_ we prepared and import it.
-Even if you create yours from scratch, it will come in handy as a guiding sample.
+Even if you decide to customize the default form by yourself or create one from scratch, it will come in handy as a guiding sample.
 
 |import|
 
@@ -116,8 +116,8 @@ Here is how the ready-for-use form looks:
 
 |look|
 
-What's next?
-------------
+Share web form
+--------------
 
 You can share a link to the form or copy it as an HTML widget and embed it into your site.
 
