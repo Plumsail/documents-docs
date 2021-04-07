@@ -22,7 +22,7 @@ The plan is the following:
    :alt: Compress PDF document action
 
 
-.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <../create-custom-connector.html>`_ .
+.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <https://plumsail.com/docs/documents/v1.x/flow/create-custom-connector.html>`_ .
 
 
 
