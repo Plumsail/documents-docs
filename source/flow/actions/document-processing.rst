@@ -1724,9 +1724,9 @@ Returns **True** if the source PDF is protected and **False** otherwise.
 Compress PDF document
 -------------------------------
 
-Compresses a source PDF document.
+Compresses a source PDF document. Please check out the `article <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/optimize-pdf-size.html>`_ about using the action.
 
-.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <../create-custom-connector.html>`_ .
+.. note:: Curently, the action is only available in custom connector. Please find out how to create one in this `article <https://plumsail.com/docs/documents/v1.x/flow/create-custom-connector.html>`_ .
 
 .. rubric:: Output Parameters
 
