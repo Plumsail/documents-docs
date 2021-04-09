@@ -9,6 +9,15 @@ Optimize PDF size using Power Automate (Microsoft Flow)
 
 Sometimes you need to reduce a PDF file size and it's easy to do with `Compress PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#compress-pdf-document>`_ from `Plumsail Documents <https://plumsail.com/documents/>`_ package.
 
+In this example, we will work with files from a SharePoint documents library and use the default SharePoint trigger and actions. You can use some other system. Power Automate (Microsoft Flow) has a lot of connectors for different systems. Here are just a few of them:
+- SharePoint
+- Box
+- OneDrive
+- Google Drive
+- Dropbox
+- SFTP
+- File System
+
 The plan is the following:
 
 - The flow will start with a SharePoint trigger **When a file is created or modified in a folder**
