@@ -91,4 +91,4 @@ It checks if the selected process is finished and returns an URL of the result f
 For example, `Process finished <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#triggers-when-a-process-is-finished>`_ returns an URL to a generated contract and you can send email with the result file URL as attachment in the Zapier flow.
 
 .. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
-    :alt: use resul file in Zapier
+    :alt: Process finished trigger
