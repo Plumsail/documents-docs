@@ -73,6 +73,7 @@ Plumsail Documents Documentation
     Add watermarks <../how-tos/index-watermarks.rst>
     Split PDF <../../../flow/how-tos/documents/split-pdf-files.rst>
     Merge PDF <../../../flow/how-tos/documents/merge-pdf-files.rst>
+    Compress PDF <../../../flow/how-tos/documents/optimize-pdf-size.rst>
     Read CSV files <../how-tos/index-parse-csv.rst>
     Extract data using regular expressions <../../../flow/how-tos/documents/use-regex-match-to-extract-values.rst>
     Fill merge fields in DOCX document <../../../flow/how-tos/documents/fill-docx-merge-fields.rst>
