@@ -95,7 +95,7 @@ Specify recipients dynamically based on your data
 
 You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
 
-.. image:: ../../../_static/img/user-guide/processes/email-token-eversign.png
+.. image:: ../../../_static/img/user-guide/processes/email-token-docusign.png
     :alt: tokens inside eversign recipients
 
 The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
