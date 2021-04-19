@@ -198,8 +198,6 @@ Create PPTX document from template
 
 Creates PPTX presentation from template. Review `PowerPoint PPTX templates <../../document-generation/pptx/index.html>`_ section for more information about template syntax.
 
-We have `an article <../how-tos/documents/create-pptx-from-template.html>`_ describing a case of creating a product sales presentation prom template.
-
 .. rubric:: Output Parameters
 
 .. list-table::
