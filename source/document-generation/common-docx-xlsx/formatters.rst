@@ -762,27 +762,7 @@ url
 
            http://ya.ru
 
-keep-token
-----------
 
-:code:`keep-token` keeps tokens as they are. It can be useful in case you have other system tags in double curly brackets (for instance, `Adobe Sign text tags <../../user-guide/processes/deliveries/adobe-sign.html#use-signature-and-other-related-tags>`_). Or you have some text enclosed with double curly brackets as a part of a document.
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Result
-    *   - .. code-block:: json
-    
-            {{value}:keep-token}
-            {{Sig_es_:signer1:signature}:keep-token}
-
-        - .. code-block:: json
-
-            {{value}}
-            {{Sig_es_:signer1:signature}}     
-
-            
 map
 ---
 
@@ -818,3 +798,26 @@ And we want to display them in a readable format
         - .. code-block:: json
     
            Email shipping
+
+
+
+keep-token
+----------
+
+:code:`keep-token` keeps tokens as they are. It can be useful in case you have other system tags in double curly brackets (for instance, `Adobe Sign text tags <../../user-guide/processes/deliveries/adobe-sign.html#use-signature-and-other-related-tags>`_). Or you have some text enclosed with double curly brackets as a part of a document.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:keep-token}
+            {{Sig_es_:signer1:signature}:keep-token}
+
+        - .. code-block:: json
+
+            {{value}}
+            {{Sig_es_:signer1:signature}}
+
