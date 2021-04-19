@@ -763,10 +763,10 @@ url
            http://ya.ru
 
 
-keep-token
+map
 ----------
 
-:code:`keep-token` keeps tokens as they are. It can be useful in case you have other system tags in double curly brackets (for instance, `Adobe Sign text tags <../../user-guide/processes/deliveries/adobe-sign.html#use-signature-and-other-related-tags>`_). Or you have some text enclosed with double curly brackets as a part of a document.
+:code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
 
 .. list-table::
     :header-rows: 1
