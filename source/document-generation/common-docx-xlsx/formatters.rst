@@ -764,21 +764,39 @@ url
 
 
 map
----
+------
 
 :code:`map` accepts an unlimited number of values and maps a specific value to a specific output. 
 
 For example, we have some property that stores delivery types and has values:
 
-- EmailShipping
-- ElectronicalShipping
+EmailShipping
+ElectronicalShipping
 
 And we want to display them in a readable format
 
-- Email shipping
-- Electronic shipping
+Email shipping
+Electronic shipping
 
+.. list-table::
+    :header-rows: 1
 
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{DeliveryType}:map(EmailShipping = Email shipping, ElectronicShipping = Electronic shipping)}
+
+        - .. code-block:: json
+
+            {                     
+                "DeliveryType": "EmailShipping"
+            }
+
+        - .. code-block:: json
+    
+           Email shipping
 
 keep-token
 ----------
