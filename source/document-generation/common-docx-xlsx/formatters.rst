@@ -784,7 +784,7 @@ keep-token
             {{Sig_es_:signer1:signature}}
 
 
-map
+maр
 ----------
 
 :code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
