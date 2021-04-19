@@ -779,27 +779,6 @@ And we want to display them in a readable format
 - Electronic shipping
 
 
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Data
-        - Result
-    *   - .. code-block:: json
-    
-            {{DeliveryType}:map(EmailShipping = Email shipping, ElectronicShipping = Electronic shipping)}
-
-        - .. code-block:: json
-
-            {                     
-                "DeliveryType": "EmailShipping"
-            }
-
-        - .. code-block:: json
-    
-           Email shipping
-
-
 
 keep-token
 ----------
