@@ -85,7 +85,6 @@ Process finished trigger
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
-
 You can use trigger `Process finished <../../actions/document-processing.html#triggers-when-a-process-is-finished>`_ .
 
 It checks if the selected process is finished and returns an URL of the result file.
