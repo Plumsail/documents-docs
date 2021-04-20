@@ -14,8 +14,8 @@ The connector has only one trigger. Find it below.
 
 .. _when-a-process-is-finished:
 
-When a process is finished
---------------------------
+Process finished
+----------------
 
 The Power Automate trigger starts when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
