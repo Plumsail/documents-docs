@@ -1,5 +1,5 @@
-Power Automate (Microsoft Flow)
-===============================
+Power Automate
+==============
 
 .. include:: start-process-ms-flow-part.rst
 
