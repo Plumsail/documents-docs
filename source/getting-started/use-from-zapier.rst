@@ -10,7 +10,7 @@ Use Zapier
     :depth: 3
 
 Introduction to Zapier
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 **Zaps** are automated connections between apps in Zapier. Every Zap has a **trigger** - an event that makes this Zap start. And after the trigger, an **action** or a series of actions follow to bring the desired result.
 
@@ -22,7 +22,7 @@ Plumsail Documents includes an action **Start Process**.
     :alt: Start process in Zapier
 
 Create zaps with Plumsail Documents
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 You can generate personalized documents based on data from thousands of apps in Zapier. Various events can trigger an automated connection of apps - a Zap. It can be web form entries, new rows in sheets, new events in calendars, new opportunities in CRM - the list is never-ending. 
 
@@ -36,14 +36,14 @@ This is how our Zap looks:
     :alt: sample zap
 
 Set trigger
------------
+~~~~~~~~~~~
 
 The first step is a trigger. In this particular case, it's a new event in the Google Calendar. 
 
 When a new event is added to the Google Calendar, the process of generating tickets for this event will start.
 
 Start Process in Plumsail Documents
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After setting a trigger, add an action Start process. For that, search for Plumsail Documents, choose an action Start Process.
 
@@ -60,7 +60,7 @@ Choose the process you want to start by this Zap from the dropdown.
 The next step is to customize Start Process.
 
 Customize Start Process
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Zapier pulls data on tokens from a document template when you create a new process and save the template. All you need to do is to fill the fields to populate the template. 
 Use the output from the trigger to specify values for populating the template:
@@ -69,7 +69,8 @@ Use the output from the trigger to specify values for populating the template:
     :alt: JSON data in Zapier
 
 Multiple line items
---------------------
+~~~~~~~~~~~~~~~~~~~
+
 Sometimes you need to display a collection of items. For example, a collection of products in the invoice. You used nested tags with a dot operator (like :code:`{{products.name}}`, :code:`{{products.cost}}`, etc.) to let the process know that you want to display properties from some object. 
 
 In Zapier, the object will be outlined. As the Plumsail Documents integration supports `line items <https://zapier.com/help/create/basics/use-line-items-in-zaps>`_, it's possible to use the output arrays from the trigger to specify values:
@@ -83,7 +84,7 @@ The templating engine will automatically add information for each item.
     :alt: Template table result
 
 Use the result file in Zapier
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 It's possible to use the output of the Start process action further in the zap. 
 
@@ -93,15 +94,12 @@ You'll be able to add the result file as an attachment:
     :alt: use result file in Zapier
 
     
-Process finished trigger
--------------------------
+Trigger zap flow when a process finished
+----------------------------------------
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
-You can use trigger `Process finished <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#triggers-when-a-process-is-finished>`_ .
-
-It checks if the selected process is finished and returns an URL of the result file.
-For example, `Process finished <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#triggers-when-a-process-is-finished>`_ returns an URL to a generated contract and you can send email with the result file URL as attachment in the Zapier flow.
+You can use "Process finished trigger" to start your zap when the document generation process is finished. The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
 
 .. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
     :alt: Process finished trigger
