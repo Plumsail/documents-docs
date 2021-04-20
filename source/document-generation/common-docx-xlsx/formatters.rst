@@ -22,7 +22,13 @@ It formats a tag value. You can use it with or without parameters:
 - :code:`{{date}:format(hh\:mm)}`
 
 
-It uses standard format strings. You can find more information in Microsoft documentation:
+It uses standard format strings and supports different Locales. For example, you can place tags with different locales in a docx template
+
+- :code:`{{num1}:format(C, ru-RU)}`
+- :code:`{{num2}:format(C, fr-FR)}`
+
+
+Please find more information about using Locale in the Microsoft documentation:
 
 - `Numeric format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`_
 - `Date and time format strings <https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings>`_
