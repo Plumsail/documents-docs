@@ -17,7 +17,7 @@ The process pulls tokens from your document template and creates a web form base
 
 You can modify it a bit and make it more user-friendly by changing token types. 
 
-Find out how to `change types of template tokens to customize the default form <./customize-forms.html#custom-testing-form>`_.
+Find out how to `change types of template tokens to customize the default form <./custom-testing-form.html>`_.
 
 You can share the form’s link or use the widget to publish it on the website. And every time somebody submits the form, the process will run.
 
