@@ -48,6 +48,7 @@ Examples
             Date: {{date}:format(MM/dd)}
             Date: {{date}:format(U)}
             Number: {{num}:format(C)}
+            Number: {{num}:format(C, fr-FR)}
             Number: {{num}:format(P)}
             Number: {{num}:format(N2)}
 
@@ -64,6 +65,7 @@ Examples
             Date: 04/22
             Date: Saturday, April 21, 2012 11:25:43 PM
             Number: $8.00
+            Number: 8,00 €
             Number: 800.00%
             Number: 8.00
    
