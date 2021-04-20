@@ -65,7 +65,7 @@ Examples
             Date: 04/22
             Date: Saturday, April 21, 2012 11:25:43 PM
             Number: $8.00
-            Number: 8,00 €
+            Number: 8.00 €
             Number: 800.00%
             Number: 8.00
    
