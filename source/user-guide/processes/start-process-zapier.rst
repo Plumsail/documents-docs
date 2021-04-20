@@ -80,15 +80,12 @@ You'll be able to add the result file as an attachment:
     :alt: use result file in Zapier
 
 
-Process finished trigger
--------------------------
+Trigger zap flow when a process finished
+----------------------------------------
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
-You can use trigger `Process finished <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#triggers-when-a-process-is-finished>`_ .
-
-It checks if the selected process is finished and returns an URL of the result file.
-For example, `Process finished <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#triggers-when-a-process-is-finished>`_ returns an URL to a generated contract and you can send email with the result file URL as attachment in the Zapier flow.
+You can use "Process finished trigger" to start your zap when the document generation process is finished. The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
 
 .. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
     :alt: Process finished trigger
