@@ -7,7 +7,7 @@ How to automatically generate contracts from Airtable data in Zapier
 ====================================================================
 
 This article describes how to automatically populate Word contracts from Airtable closed-won opportunities, convert to PDF, and save to OneDrive with the help of `Plumsail Documents processes <../../../user-guide/processes/index.html>`_ in Zapier. 
-This approach is suitable for creating any customized documents like invoices, proposals, presentations from Airtable data.
+This approach is suitable for creating customized documents such as invoices, proposals, presentations from Airtable data.
 
 `Airtable <https://airtable.com/>`_ is a spreadsheet-alike database for team collaborating and tracking projects, orders, contacts, and more.
 
@@ -23,12 +23,12 @@ Overview of Airtable base
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We’ve used an Airtable Sales CRM template to create a new base for tracking customers and contracts. 
-Here it is (hid some fields to show only those that will populate our service agreement template):
+Here it is (hid some fields to show only those that will populate our service contract template):
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/airtable-sales-crm.png
     :alt: Airtable Sales CRM
 
-We created fields in addition to default ones (like Services, Our company). And we added the 'Customer' field with the formula :code:`{Company name}`. 
+We created fields in addition to default ones (i.e. Services, Our company). And we added the 'Customer' field with the formula :code:`{Company name}`. 
 
 The default 'Company name' is a linked field. It enables you to open the customer profile right from the table. 
 
@@ -40,69 +40,38 @@ We used the formula to turn the linked field into a text value to be able to pul
 Configure document generation process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before creating a Zap (an automated connection in Zapier), we need to set a process that will generate PDFs from a DOCX template. Let’s start by preparing a Word template.
-
-Prepare Word contract template
-------------------------------
-
-For demonstration purposes, we use a simple general service agreement template. You can `download it by this link <../../../_static/files/user-guide/processes/service_agreement_template.docx>`_. 
-
-
-Do not forget to adjust the sample agreement to your unique circumstances and needs when using the document officially.
-
-This is how our template first page looks:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/service-agreement-docx-template.png
-    :alt: Service agreement Word DOCX template
-
-You may see tokens in :code:`{{ }}` brackets. We highlighted them in green. Airtable data will replace them.
-
-So, the templating engine thinks that everything in :code:`{{ }}` is variables where it will apply your custom data.
-
-With Plumsail Word DOCX templates, it's easy to build rich templates with lists, tables, charts, and other graphics. To learn more, check out `how Word DOCX templates work <../../../document-generation/docx/how-it-works.html>`_.
+Before creating a Zap (an automated connection of apps in Zapier), we need to set a process that will generate PDFs from a DOCX template.
 
 Create new process
 ------------------
 
-We've prepared our template and proceeding to create a document generation process.
+First, register or log in to your `Plumsail account <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_.
 
-Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account.
+In the Processes section, click on the 'Add process' button and select 'Start from template':
 
-Click on the *Add process* button. 
+.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-from-template.png
+    :alt: Add process from template
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
+You'll be redirected to the library of document templates. We select the service contract template for our scenario:
 
-Set the recognizable process name. Select **DOCX** for the template type.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/service-contract-template.png
+    :alt: Select ready-to-use template
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-airtable.png
-    :alt: create process to generate contracts from Airtable
+Name the process and click 'Next' to proceed. Then you'll jump to the 'Configure template' step. 
 
-Configure template
-------------------
+In the Editor mode, you can adjust the document template to your needs. Everything in the curly brackets will be replaced with Airtable data dynamically. 
+You can add more placeholders. They work quite simply and support even some complex logic with tables, charts, conditions, and more. 
+`Learn how Plumsail Documents Word DOCX templates work here <../../../document-generation/docx/how-it-works.html>`_. 
 
-Once you've created the process, you’ll jump to its first step – *Configure Template*.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/service-contract-template-editor.png
+    :alt: Editor mode of the Process
 
-It includes two substeps:
+Click Save & Next to go to the Settings substep. 
 
-- Editor;
-- Settings.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/template-settings-airtable.png
+    :alt: Template settings substep
 
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose the template from scratch or upload a pre-made one. It's also possible to modify the uploaded template online.
-
-As we have `already prepared the template <#prepare-word-contract-template>`_, upload it to the process:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/upload-template.png
-    :alt: upload template file
-
-To see how the resulting service agreement will look, click on the *Test template*
-You will see the dialog where you can fill in the auto-generated testing form. 
-Form fields are created based on tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-template-airtable.png
-    :alt: test template dialog
-
-Click Save & Next to go to the **Settings**. Here you'll see the following parameters:
+Here you'll see the following parameters:
 
 **Template mode**
 
@@ -110,7 +79,7 @@ It is *Testing* by default. It means you won't be charged for this process runs,
 
 **Output filename**
 
-Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{customer}}`. As a result, we'll receive an agreement with the name - *Service Agreement/Bear Paw Solutions*.
+Use tokens to make it personalized. They work the same way as in the template. For instance, we use the following tokens to define the output file name - :code:`{{customerName}}`. As a result, we'll receive an agreement with the name - *Service Contract/Bear Paw Solutions*.
 
 **Output type**
 
@@ -119,14 +88,15 @@ By default, it is the same as your template's format. In this particular case, i
 .. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../create-process.html#add-watermark>`_. 
 
 **Test template**
-Once you've customized all the settings, you can test the template to see the result as we did it before. 
+
+Once you've customized all the settings, you can test the template to see the result. 
 
 When everything is done here, click on Save & Next to set up deliveries.
 
-Delivery
---------
+Add OneDrive delivery
+----------------------
 
-The next step is delivery. For demonstration purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_.
+The next step is delivery. For demonstration purpose, we’ll store the result file in `OneDrive <../../../user-guide/processes/deliveries/one-drive.html>`_. But there are `other options <../../../user-guide/processes/create-delivery.html>`_. You can send contracts for e-signing to your customers dynamically.
 
 You need to connect to your OneDrive from the Plumsail account. After that, set the folder's name where to save the completed document.  
 
@@ -199,10 +169,7 @@ To complete them, use the output from the Airtable trigger.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/customize-plumsail-zap-airtable.png
     :alt: JSON data with Airtable trigger output
 
-That's it! Our Zap is ready🎉 See how the resulting file looks:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/airtable-completed-contract.png
-    :alt: Final service agreement populated with Airtable data
+That's it! Our Zap is ready🎉 Every time the opportunity in Airtable changes its status to Closed-won, you'll receive the finalized service contract saved to your OneDrive. 
 
 Conclusion
 ~~~~~~~~~~
