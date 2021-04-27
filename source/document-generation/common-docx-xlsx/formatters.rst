@@ -72,7 +72,7 @@ Examples
             Number: 8.00
 
 
-*map*
+map()
 ----------
 
 :code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
