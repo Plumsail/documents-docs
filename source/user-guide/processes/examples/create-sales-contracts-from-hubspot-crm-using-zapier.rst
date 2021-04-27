@@ -53,8 +53,6 @@ Click **Add process**, name the process, select DOCX template type and click **N
 
 In the next step, we need to configure a template. We can either compose the template from scratch or upload a pre-made one.
 
-.. note:: You can upload your template using **Upload** button or just drag and drop a file to the editor's window.
-
 I prepared a sales contract template and uploaded it to the Editor. You can download my template `here <../../../_static/files/document-generation/demos/hubspot-invoice-template.docx>`_ .
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/hubspot-sales-contract-template.png
