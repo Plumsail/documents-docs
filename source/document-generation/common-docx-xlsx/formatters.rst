@@ -16,6 +16,8 @@ It formats a tag value. You can use it with or without parameters:
 
 - :code:`format` - if encountered on date value it will format it as short date string.
 - :code:`format(val)` - formats current value using specified format string. For example, you can use :code:`N2` for a numbers with two decimals.
+- :code:`format(val, locale)` - formats current value using specified format string and Locale. For example, you can use :code:`format(C, fr-FR)` to apply a specific currency to the tag.
+
 
 .. note:: If you want to use colon character :code:`:` with the formatter then it must be escaped with a backslash \
 
