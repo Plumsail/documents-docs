@@ -70,7 +70,44 @@ Examples
             Number: 8.00 €
             Number: 800.00%
             Number: 8.00
-   
+
+
+maр
+----------
+
+:code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
+
+For example, we have some property that stores delivery types and has values:
+
+- EmailShipping
+- ElectronicalShipping
+
+And we want to display them in a readable format
+
+- Email shipping
+- Electronic shipping
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{DeliveryType}:map(EmailShipping = Email shipping, ElectronicShipping = Electronic shipping)}
+
+        - .. code-block:: json
+
+            {                     
+                "DeliveryType": "EmailShipping"
+            }
+
+        - .. code-block:: json
+    
+           Email shipping
+
+
 substring
 ---------
 
@@ -792,40 +829,3 @@ keep-token
 
             {{value}}
             {{Sig_es_:signer1:signature}}
-
-
-maр
-----------
-
-:code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
-
-For example, we have some property that stores delivery types and has values:
-
-- EmailShipping
-- ElectronicalShipping
-
-And we want to display them in a readable format
-
-- Email shipping
-- Electronic shipping
-
-.. list-table::
-    :header-rows: 1
-
-    *   - Template
-        - Data
-        - Result
-    *   - .. code-block:: json
-    
-            {{DeliveryType}:map(EmailShipping = Email shipping, ElectronicShipping = Electronic shipping)}
-
-        - .. code-block:: json
-
-            {                     
-                "DeliveryType": "EmailShipping"
-            }
-
-        - .. code-block:: json
-    
-           Email shipping
-
