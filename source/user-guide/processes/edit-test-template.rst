@@ -3,8 +3,6 @@ Prepare and test a template
 
 After you `created the process <./create-process.html>`_, its first step **Configure template** will appear showing the substep **Editor**. Here you can start composing a template online or upload a pre-made one.
 
-.. note:: You can upload your template using **Upload** button or just drag and drop a file to the editor's window.
-
 .. contents:: Table of contents
     :local:
     :depth: 1
