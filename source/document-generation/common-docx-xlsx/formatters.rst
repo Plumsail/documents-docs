@@ -71,9 +71,10 @@ Examples
             Number: 800.00%
             Number: 8.00
 
+.. _map:            
 
-maр
-----------
+map
+---
 
 :code:`map` accepts an unlimited number of values and maps a specific value to a specific output.
 
