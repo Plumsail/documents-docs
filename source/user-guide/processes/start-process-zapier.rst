@@ -85,7 +85,16 @@ Trigger zap flow when a process finished
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
-You can use "Process finished trigger" to start your zap when the document generation process is finished. The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
+You can use "Process finished trigger" to start your zap when the document generation process is finished.
 
 .. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
     :alt: Process finished trigger
+
+The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
+
+.. image:: ../../_static/img/user-guide/processes/zapier-send-email-action1.png
+    :alt: Zapier send email
+
+
+.. image:: ../../_static/img/user-guide/processes/zapier-send-email-action2.png
+    :alt: Zapier send email
