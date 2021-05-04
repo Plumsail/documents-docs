@@ -48,7 +48,7 @@ The Power Automate trigger starts when a `process <../../user-guide/processes/in
 .. rubric:: Example
 
 .. image:: ../../_static/img/user-guide/processes/trigger-process-finished.png
-    :alt: Triggers when a process is finished
+   :alt: Triggers when a process is finished
 
 Actions
 #######
