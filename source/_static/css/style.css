@@ -158,11 +158,11 @@ p.topic-title {
   background: none !important;
 }
 
-.highlight-default, .highlight-json, .highlight-javascript, .highlight-html, .highlight-css {
+.highlight-default, .highlight-json, .highlight-javascript, .highlight-html, .highlight-css, .highlight-c\# {
   border-left: 2px solid #dee2e6;
 }
 
-table .highlight-default, table .highlight-javascript, table .highlight-html, table .highlight-css {
+table .highlight-default, table .highlight-json, table .highlight-javascript, table .highlight-html, table .highlight-css, table .highlight-c\# {
   border-left: none;
 }
 

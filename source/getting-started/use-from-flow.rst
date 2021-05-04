@@ -14,6 +14,19 @@ Start a process and generate documents from a template
 
 .. include:: ../user-guide/processes/start-process-ms-flow-part.rst
 
+.. _trigger-flow-when-process-finished: 
+
+Trigger flow when a process finished
+--------------------------------------
+
+Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
+
+You can use "Process finished trigger" to start your zap when the document generation process is finished. The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
+
+.. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
+    :alt: Process finished trigger
+
+
 .. _advanced-document-processing: 
 
 Advanced document processing
