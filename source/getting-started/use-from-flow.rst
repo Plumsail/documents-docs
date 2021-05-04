@@ -21,12 +21,12 @@ Trigger flow when a process finished
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
 
-You can use "Process finished trigger" to start your zap when the document generation process is finished.
+You can use "Process finished trigger". The trigger returns an URL of the generated document. you can use the output from the ‘Process finished’ trigger further in the Flow or you can download the content of the generated document by URL using an HTTP action — GET method.
 
-.. image:: ../../_static/img/user-guide/processes/zapier-process-finished-trigger.png
-    :alt: Process finished trigger
 
-The trigger returns an URL of the generated document. You can use it to send an email with the document as an attachment.
+.. image:: ../../_static/img/user-guide/processes/trigger-process-finished.png
+    :alt: Triggers when a process is finished
+
 
 
 .. _advanced-document-processing: 
