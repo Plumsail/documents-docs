@@ -73,6 +73,8 @@ The list of actions in the Plumsail Documents connector for Power Automate (Micr
 - `Fill in PDF Form <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#fill-in-pdf-form>`_
 - `Get Form from PDF <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#get-form-from-pdf>`_
 - `Protect PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#protect-pdf-document>`_
+- `Get PDF protection information <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#get-pdf-protection-information>`_
+- `Compress PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#compress-pdf-document>`_
 - `Parse CSV <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_
 - `Regular Expression Match <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-match>`_
 - `Regular Expression Replace <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#regular-expression-replace>`_
