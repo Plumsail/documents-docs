@@ -80,7 +80,7 @@ You'll be able to add the result file as an attachment:
     :alt: use result file in Zapier
 
 
-Trigger zap flow when a process finished
+Trigger zap when a process finished
 ----------------------------------------
 
 Sometimes you need to do some actions when a `process <../../user-guide/processes/index.html>`_ of document generation is finished.
