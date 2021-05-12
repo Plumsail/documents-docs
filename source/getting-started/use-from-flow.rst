@@ -24,7 +24,7 @@ Sometimes you need to do some actions when a `process <../../user-guide/processe
 You can use "Process finished trigger". The trigger returns an URL of the generated document. You can use the output from the ‘Process finished’ trigger further in the Flow or you can download the content of the generated document by URL using an HTTP action — GET method.
 
 
-.. image:: ../../_static/img/user-guide/processes/trigger-process-finished.png
+.. image:: ../../_static/img/user-guide/processes/trigger-process-finished1.png
     :alt: Triggers when a process is finished
 
 
