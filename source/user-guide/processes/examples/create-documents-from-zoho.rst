@@ -6,184 +6,135 @@
 Create documents from Zoho CRM
 ===============================
 
-In this article, we’ll describe how to use Zapier automation to create contracts from new Google Sheets rows. 
-We’ll use `Plumsail Documents <https://plumsail.com/documents/>`_ integration in Zapier in conjunction with Google Spreadsheets integration to accomplish the task.
+Let us say you want to create a deal from template based on Zoho deals and send them to your clients. In this article, we'll show how to do this.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/google-sheet-to-contract.png
-    :alt: autofill contract from google spreadsheets
+We need to work with 3 platforms for this
 
-It might be useful for those who use Google Suite to operate business processes. 
-Imagine that you have a Google form and an associated Google sheet where form's submissions are stored, and you want to start document creation every time a new row is added to the spreadsheet. 
-It's just one case out of many. New sheet rows may come from any sources. 
+- Create a deal in Zoho.
+- Create a process in Plumsail Documents to generate a deal from DOCX template.
+- Create a Zapier flow that starts this deal generation process when a new deal is placed in Zoho.
 
-To stick to the following steps, you're required to have:
+Creating a Zoho deal
+-----------------------
 
-- Plumsail Documents account (if you haven’t a Plumsail account yet, `register for a 30-day free period <https://auth.plumsail.com/Account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_)
--	Google account
-- Zapier account
+`Zoho CRM <https://crm.zoho.com/>`_ is an online Sales CRM software that manages sales, marketing and support in one CRM platform.
 
-.. contents::
-    :local:
-    :depth: 2
+This is how creating an invoice looks in the Zoho CRM interface
 
-Set up contract creation process in Plumsail Documents
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-deal-example.png
+    :alt: Create Zoho deal
 
-Go to `the Processes section <https://auth.plumsail.com/account/Register?ReturnUrl=https://account.plumsail.com/documents/processes/reg>`_ in your Plumsail account to create a new process that will autofill a document template from a Google sheet. 
-Click on the *Add process* button:
+We fill the required fields and save the invoice. After that, it could be found in the Invoices section of the platform. You can change or add some details to it, change the state or close it.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-process-button.png
-    :alt: add process button
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-deals-interface.png
+    :alt: Zoho deals interface
 
-Make up the process name and select a template type. In our case, it's **DOCX**:
+Once we create a deal we can go further and configure a Plumsail process.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-contracts-process.png
-    :alt: new process for contract from Google Sheets
-
-Configure contract template
-----------------------------
-
-Click *Next* and you'll proceed to the **Configure template** step. It includes 2 substeps:
-
-- Editor;
-- Settings.
-
-In `Editor <../../../user-guide/processes/online-editor.html>`_, you can compose templates from scratch or upload pre-made ones. It's also possible to modify the uploaded template online.
-
-We have composed our contract template right in the online editor:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/create-template-online.gif
-    :alt: compose document template online
-
-**Download the template**. Feel free to `download the ready template <../../../_static/files/user-guide/processes/contract-template.docx>`_ to your computer and then upload the template file to the process. 
-
-**Templating syntax**. For you not to have difficulties when creating your own templates, let's take a quick look at how the templating syntax works.
-The main rule is that everything in :code:`{{curly braces}}` is a variable where the templating engine applies specified data. In our case, for example, the real name of the customer will replace :code:`{{customer}}` token, and so on.
-
-With Plumsail Documents templating syntax, it's also simple to implement more complex scenarios with tables, lists, charts, and even value and conditional formatting. The simplest example from our template is a value formatter to reduce date to the required format:
-
-.. code::
-
-    {{date }:format(MM/dd/yyyy)}
-    
-Check out the detailed information on `how Word DOCX templates work <../../../document-generation/docx/index.html>`_. 
-
-**Test template**. After uploading or modifying the template, you can test it to get an idea of how the resulting document will look. 
-
-Click on the *Test template*. You will see the dialog where you can fill in the auto-generated testing form. 
-Form fields are created based tokens from your document template. You can `adjust the look of the testing form by changing token types <../custom-testing-form.html>`_.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-contract-template.png
-    :alt: test template to see the result
-
-The resulting document will appear in a new tab. Once you're satisfied with it, proceed to the **Settings** substep.
-
-Here you customize the following parameters:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/configure-contract-template.png
-    :alt: configure contract template
-
-**Template mode**. It is *Testing* by default. The process runs in testing mode are free, but result documents have a Plumsail watermark. Change it to *Active* to remove the watermark.
-
-**Output filename**. Use tokens to make it personalized. They work the same way as in the template. 
-
-**Output type**. By default, it is the same as your template's format. In this particular case, it's DOCX. We're changing it to PDF to save contracts in PDF.
-
-.. hint:: You can `protect your final PDF document with a watermark, by setting a password, or disabling some actions <../configure-settings.html#add-watermark>`_. 
-
-**Test template**. You can test the template from the Settings as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've done in the Editor substep.
-
-Save contracts to Google Drive
+Configure a Plumsail Process
 ------------------------------
 
-The next step of the process is delivery - a way where to send or store generated documents. You can add as many deliveries as you need. 
- 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/add-delivery.png
-    :alt: add delivery
+`Sign in <https://account.plumsail.com/documents/processes>`_ to Plumsail account and go to Documents -> Processes.
 
-For demonstration purposes, we selected `saving ready contracts to Google Drive <../deliveries/google-drive.html>`_.
-
-First, connect to your Google Drive from the Plumsail account. Then, make up the folder name where to store completed contracts.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/save-google-drive.png
-    :alt: save contract to Google Drive
-
-As we've already mentioned, you can add more than one delivery. For example, additionally, to Google Drive, you can assign such e-signing deliveries as eversign or DocuSign, and send contracts for e-signature. Please, check out the `full list of available deliveries <../../../user-guide/processes/create-delivery.html>`_.
+.. image:: ../../../_static/img/user-guide/processes/how-tos/documents-interface.png
+    :alt: Documents interface
 
 
-Start contract creation process
--------------------------------
+Click **Add process**, name the process, select DOCX template type and click **Next**
 
-We'll start our process from Zapier.
-
-
-Create Zapier automation
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Zapier automation, or as it's shortly called Zap, is a connection between web services in Zapier. 
-
-You can create a Zapier automation from scratch, or you can utilize the zap template. Click **Use this zap**, and then just customize it as we'll describe further.
-
-|Widget|
-
-.. |Widget| raw:: html
-
-    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=134367"></script>
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-zoho1.png
+    :alt: Create process zoho
 
 
-This is how our completed Zap looks:
+In the next step, we need to configure a template. We can either compose the template from scratch or upload a pre-made one.
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/google-sheet-zap.png
-    :alt: Google Sheets zap
+I prepared a sales contract template and uploaded it to the Editor. You can download my template `here <../../../_static/files/document-generation/demos/zoho-invoice-template.docx>`_ .
 
-New spreadsheet row in Google Sheets
-------------------------------------
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-contract-template.png
+    :alt: Create process zoho
 
-We need to start the contract creation process every time a new row is added to the Google spreadsheet. That's why we use a trigger from the Google Sheets integration - **New Spreadsheet Row in Google Sheets**. 
+    
+    
+Click **Save & Next**. There are some settings in the next step
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/new-row-in-google-sheets.png
-    :alt: Google Sheets trigger on new row
-
-To proceed, you'll need to sign in to your Google account from Zapier. After that, Zapier enables you to customize the trigger. Please, select the required spreadsheet and worksheet. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/customize-spreadsheet-row.png
-    :alt: Customize Google Sheets row
-
-And the final step in the trigger is to test it. It's needed for pulling sample data from Google Sheets. Don't skip testing, otherwise, you won't be able to use the trigger outputs in the next step.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/test-spreadsheet-row.png
-    :alt: Test Google Sheets row
-
-Start process in Plumsail Documents
------------------------------------
-
-The action to execute when the trigger happens is from the Plumsail Documents integration - **Start process**. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-zapier.png
-    :alt: start process from Zapier action
-
-Click *Continue*. If this is your first Zap, at this point, you'll need to Sign in to your Plumsail Account from Zapier to establish a connection between the app and your account. If you already have a Plumsail account tied to the app, you can add another one at this step, and use it instead.
-
-Customize the action:
-
-- Expand the dropdown to choose the process you need to track by this zap:
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/select-process-contracts.png
-    :alt: select process from dropdown
-
-- Once you've selected the process, you'll see tokens from the contract template as fields to complete. Use output from the Google Sheets trigger to fill them.
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/customize-process-google-sheets.png
-    :alt: customize process
-
-Click *Done editing*, and turn on your zap. 
-
-.. image:: ../../../_static/img/user-guide/processes/how-tos/turn-on-zap-google-sheets.png
-    :alt: turn on zap
-
-That's it! From now, each new row in the Google spreadsheet will launch a process of creating contracts. 
-You can adjust this scenario to your needs, and create other documents from Google Sheets like sales proposals, applications, invoices, and more.
-
-.. hint:: Check out `other integrations examples with Plumsail Documents <https://plumsail.com/documents/integrations/>`_ to automate your document processes. 
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-zoho2.png
+    :alt: Create process zoho
 
 
+Now I need to select a delivery. I'll take DocuSign delivery:
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/create-process-zoho3.png
+    :alt: Create process zoho
+
+Ok, the process is done and now it can be used in the Zapier flow. Let's move to the next step.
+
+Create a Zapier flow
+----------------------
+
+`Zapier <https://zapier.com/>`_ connects with many services. Our Zap will be connected with two services: Zoho CRM and Plumsail Documents.
+
+Let's make a new Zap.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zap-home-interface.png
+    :alt: Zapier home interface
+
+
+Name this Zap, connect it with Zoho and select this trigger **New Module Entry**. The flow will start when a new deal is placed in the Zoho CRM.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract1.png
+    :alt: Zapier flow
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract2.png
+    :alt: Zapier flow
+
+Select your Zoho account in the next step
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract3.png
+    :alt: Zapier flow
+
+Set up the trigger, specify the entry.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract4.png
+    :alt: Zapier flow
+
+In the next step you can test the trigger and select an available deal.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract5.png
+    :alt: Zapier flow
+
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract6.png
+    :alt: Zapier flow
+
+
+Now I need to connect the flow with Plumsail Documents to transfer the deal's data to the DOCX template.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract7.png
+    :alt: Zapier flow
+
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract8.png
+    :alt: Zapier flow
+
+Select you Documents account
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract9.png
+    :alt: Zapier flow
+
+We select the process created previously
+
+And select values from the Zoho CRM trigger to fill the template fields
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract10.png
+    :alt: Zapier flow
+
+Eventually we can turn the Zap on and it will shoot whenever a new deal is placed in the Zoho CRM.
+
+.. image:: ../../../_static/img/user-guide/processes/how-tos/zapier-zoho-contract11.png
+    :alt: Zapier flow
+
+
+Conclusion
+-----------
+
+You can automate any document generation by combining Zapier, Zoho CRM, and Plumsail Documents. We checked a simple example in the article, but there are a lot more options and possibilities available with these products.
