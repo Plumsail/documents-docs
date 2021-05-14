@@ -1,7 +1,7 @@
 .. title:: Create documents from Zoho CRM 
 
 .. meta::
-   :description: When a new row is added to Google Sheets, generate customized documents from its data.
+   :description: Create documents from Zoho CRM .
 
 Create documents from Zoho CRM
 ===============================
@@ -24,7 +24,7 @@ This is how creating an invoice looks in the Zoho CRM interface
 .. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-deal-example.png
     :alt: Create Zoho deal
 
-We fill the required fields and save the invoice. After that, it could be found in the Invoices section of the platform. You can change or add some details to it, change the state or close it.
+We fill the required fields and save the deal. After that, it could be found in the Deals section of the platform. You can change or add some details to it.
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-deals-interface.png
     :alt: Zoho deals interface
@@ -48,7 +48,7 @@ Click **Add process**, name the process, select DOCX template type and click **N
 
 In the next step, we need to configure a template. We can either compose the template from scratch or upload a pre-made one.
 
-I prepared a sales contract template and uploaded it to the Editor. You can download my template `here <../../../_static/files/document-generation/demos/zoho-invoice-template.docx>`_ .
+I prepared a contract template and uploaded it to the Editor. You can download my template `here <../../../_static/files/document-generation/demos/zoho-invoice-template.docx>`_ .
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/zoho-contract-template.png
     :alt: Create process zoho
