@@ -830,3 +830,67 @@ keep-token
 
             {{value}}
             {{Sig_es_:signer1:signature}}
+
+
+
+barcode
+---------
+
+:code:`barcode(type, width, height)` inserts a barcode with a certain type, width and height into template.
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:barcode(CODE128, 301, 100)}
+
+        - .. code-block:: json
+
+            {                     
+                "value": "test barcode"
+            } 
+
+        - the barcode
+    
+           .. image:: ../../_static/img/document-generation/barcode-formatter-result.png
+                :alt: Barcode formatter result
+
+
+qrcode
+---------
+
+:code:`qrcode(size)` inserts a qrcode into template. You can specify only one dimension since width = height for qrcodes.
+
+There are different qrcode types, you can specify one in the JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "geo:42.65049,23.37925,100"
+    } 
+
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:qrcode(5)}
+
+        - .. code-block:: json
+
+            {                     
+                "value": "www.plumsail.com"
+            } 
+
+        - the qrcode
+    
+           .. image:: ../../_static/img/document-generation/qrcode-formatter-result.png
+                :alt: Qrcode formatter result
