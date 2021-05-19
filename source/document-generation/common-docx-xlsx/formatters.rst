@@ -865,14 +865,47 @@ qrcode
 
 :code:`qrcode(size)` inserts a qrcode into template. You can specify only one dimension since width = height for qrcodes.
 
-There are different qrcode types, you can specify one in the JSON:
+There are different types of qrcode, you can specify it in the JSON.
+
+1) URL
+
+To encode the text of a URL, for example, https://www.plumsail.com/, encode the https://www.plumsail.com/ URL text in the JSON. Include the :code:`http://` protocol to ensure it is recognized as a URL.
+
+.. code-block:: json
+
+    {                     
+          "value": "https://www.plumsail.com/"
+    } 
+
+2) Telephone Numbers
+
+To encode a telephone number, use a telephone URI to ensure that the digits are recognized as a telephone number and include prefixes which make the number internationally accessible.
+
+.. code-block:: json
+
+    {                     
+          "value": "tel:+1-234-555-6677"
+    } 
+
+3) SMS
+
+To encode an SMS short code or number, create an SMS URI. For example, to create a link to the 12345 number, encode :code:`sms:12345`. You may use other URI forms, such as :code:`sms:number:subject`, and other prefixes, such as :code:`smsto:`.
+
+.. code-block:: json
+
+    {                     
+          "value": "sms:12345"
+    } 
+
+4) Geolocations
+
+To encode a point on the earth, including altitude, use a geo URI.
 
 .. code-block:: json
 
     {                     
           "value": "geo:42.65049,23.37925,100"
     } 
-
 
 .. list-table::
     :header-rows: 1
@@ -887,7 +920,7 @@ There are different qrcode types, you can specify one in the JSON:
         - .. code-block:: json
 
             {                     
-                "value": "www.plumsail.com"
+                "value": "https://www.plumsail.com/"
             } 
 
         - the qrcode
