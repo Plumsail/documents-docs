@@ -838,6 +838,125 @@ barcode
 
 :code:`barcode(type, width, height)` inserts a barcode with a certain type, width and height into template.
 
+You need to specify the barcode type in the tag. There are `different types of the barcodes <https://www.barcodefaq.com/barcode-match/>`_ .
+
+1) CODE128
+
+Template:
+   
+:code:`barcode(CODE128, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "12345678"
+    } 
+
+2) CODE11
+
+Template:
+   
+:code:`barcode(CODE11, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "01234567"
+    } 
+
+
+3) CODE39
+
+Template:
+   
+:code:`barcode(CODE39, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "ABC1234"
+    } 
+    
+4) UPCA
+
+Template:
+   
+:code:`barcode(UPCA, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "72527273070"
+    } 
+
+
+5) MSI
+
+Template:
+   
+:code:`barcode(MSI, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "01234567"
+    } 
+
+
+6) ISBN
+
+Template:
+   
+:code:`barcode(ISBN, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "9781234567897"
+    } 
+
+
+7) JAN13
+
+Template:
+   
+:code:`barcode(EAN13, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "978020137962"
+    } 
+
+8) ITF14
+
+Template:
+   
+:code:`barcode(ITF14, 200, 100)`
+
+JSON:
+
+.. code-block:: json
+
+    {                     
+          "value": "01234567890123"
+    } 
+
+
 .. list-table::
     :header-rows: 1
 
