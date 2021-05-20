@@ -928,7 +928,7 @@ JSON:
     } 
 
 
-7) JAN13
+7) EAN13
 
 Template:
    
