@@ -836,7 +836,7 @@ keep-token
 barcode
 ---------
 
-:code:`barcode(type, width, height)` inserts a barcode with a certain type, width and height into template.
+:code:`{{value}:barcode(type, width, height)}` inserts a barcode with a certain type, width and height into template.
 
 You need to specify the barcode type in the tag. There are `different types of the barcodes <https://www.barcodefaq.com/barcode-match/>`_ .
 
@@ -844,7 +844,7 @@ You need to specify the barcode type in the tag. There are `different types of t
 
 Template:
    
-:code:`barcode(CODE128, 200, 100)`
+:code:`{{value}:barcode(CODE128, 200, 100)}`
 
 JSON:
 
@@ -858,7 +858,7 @@ JSON:
 
 Template:
    
-:code:`barcode(CODE11, 200, 100)`
+:code:`{{value}:barcode(CODE11, 200, 100)}`
 
 JSON:
 
@@ -873,7 +873,7 @@ JSON:
 
 Template:
    
-:code:`barcode(CODE39, 200, 100)`
+:code:`{{value}:barcode(CODE39, 200, 100)}`
 
 JSON:
 
@@ -887,7 +887,7 @@ JSON:
 
 Template:
    
-:code:`barcode(UPCA, 200, 100)`
+:code:`{{value}:barcode(UPCA, 200, 100)}`
 
 JSON:
 
@@ -902,7 +902,7 @@ JSON:
 
 Template:
    
-:code:`barcode(MSI, 200, 100)`
+:code:`{{value}:barcode(MSI, 200, 100)}`
 
 JSON:
 
@@ -917,7 +917,7 @@ JSON:
 
 Template:
    
-:code:`barcode(ISBN, 200, 100)`
+:code:`{{value}:barcode(ISBN, 200, 100)}`
 
 JSON:
 
@@ -932,7 +932,7 @@ JSON:
 
 Template:
    
-:code:`barcode(EAN13, 200, 100)`
+:code:`{{value}:barcode(EAN13, 200, 100)}`
 
 JSON:
 
@@ -946,7 +946,7 @@ JSON:
 
 Template:
    
-:code:`barcode(ITF14, 200, 100)`
+:code:`{{value}:barcode(ITF14, 200, 100)}`
 
 JSON:
 
