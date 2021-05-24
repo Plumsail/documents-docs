@@ -1,3 +1,5 @@
+.. Google Form is available in this Google account plumsail.test20@gmail.com, for a password, contact Anton Khritonenkov
+
 .. title:: Populate document templates with Google Forms data automatically with Plumsail Documents in Zapier
 
 .. meta::
@@ -25,7 +27,7 @@ We'll connect Google Forms to Plumsail Documents with the help of the `Zapier pl
 Prepare online form in Google Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using the Google Forms builder, we’ve prepared such an `online form for a purchase order <https://forms.gle/jeYBMXo8bv3qNq3T9>`_. 
+Using the Google Forms builder, we’ve prepared such an `online form for a purchase order <https://forms.gle/HzBKirZTCxn6b8388>`_. 
 
 The online form builder by Google Forms is easy to use. You add new fields and specify their types. We have a short text type for almost all fields. Also, we added a date field. 
 
@@ -46,7 +48,7 @@ If you already have a Plumsail account, then open the Processes section.
 
 Add a new process and select ‘Start from template’. 
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-from-template-google-forms.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-from-template.png
   :alt: add new process 
 
 Then choose the purchase order template from the document templates library. 
