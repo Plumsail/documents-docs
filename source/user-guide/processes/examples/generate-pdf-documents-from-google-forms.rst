@@ -46,7 +46,7 @@ If you already have a Plumsail account, then open the Processes section.
 
 Add a new process and select ‘Start from template’. 
 
-.. image:: ../../../_static/img/user-guide/processes/how-tos/start-from-template-google-forms.png
+.. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-from-template.png
   :alt: add new process 
 
 Then choose the purchase order template from the document templates library. 
