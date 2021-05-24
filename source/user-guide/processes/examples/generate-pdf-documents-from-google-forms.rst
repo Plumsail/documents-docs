@@ -25,7 +25,7 @@ We'll connect Google Forms to Plumsail Documents with the help of the `Zapier pl
 Prepare online form in Google Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using the Google Forms builder, we’ve prepared such an `online form for a purchase order <https://forms.gle/jeYBMXo8bv3qNq3T9>`_. 
+Using the Google Forms builder, we’ve prepared such an `online form for a purchase order <https://forms.gle/HzBKirZTCxn6b8388>`_. 
 
 The online form builder by Google Forms is easy to use. You add new fields and specify their types. We have a short text type for almost all fields. Also, we added a date field. 
 
