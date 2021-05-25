@@ -78,7 +78,15 @@ Connect Shopify to Plumsail Documents in Zapier
 
 We want to launch our document generation process each time a new order is placed through Shopify. 
 
-Let's create a Zapier automated connection called Zap. Here is a picture of the complete zap:
+Let's create a Zapier automated connection called Zap. You can create a zap from scratch or from a template - click on the 'Use this zap' button:
+
+|Widget|
+
+.. |Widget| raw:: html
+
+    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=611067"></script>
+
+Here is a picture of the complete zap:
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/zap-shopify.png
   :alt: email delivery settings
