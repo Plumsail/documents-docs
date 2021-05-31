@@ -325,6 +325,7 @@ To encode a point on the earth, including altitude, use a geo URI.
           "value": "geo:42.65049,23.37925,100"
     } 
 
+.. hint:: `Read this article <../../how-tos/create-documents-from-template-with-qrcodes.html>`_ to get inspired on how to enrich your documents with various QR codes. 
 
 substring
 ---------
