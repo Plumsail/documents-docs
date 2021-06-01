@@ -51,7 +51,7 @@ Add a new process and select ‘Start from template’.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-from-template.png
   :alt: add new process 
 
-Then choose the purchase order template from the document templates library. 
+Then `choose the purchase order template <https://plumsail.com/documents/templates/purchase-order>`_ from the document templates library. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/selec-po-template-google-forms.png
   :alt: select purchase order template from document templates library
