@@ -25,7 +25,7 @@ And then add a new document generation process. Select 'Start from template'.
 .. image:: ../../../_static/img/user-guide/processes/how-tos/start-process-from-template.png
   :alt: add new process 
 
-Choose the order confirmation template from the premade document templates. 
+`Choose the order confirmation template <https://plumsail.com/documents/templates/order-confirmation-template>`_ from the premade document templates. 
 
 .. image:: ../../../_static/img/user-guide/processes/how-tos/select-template-shopify.png
   :alt: select order confirmation template from document templates library
