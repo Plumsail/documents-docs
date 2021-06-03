@@ -42,7 +42,7 @@ You can customize more settings - for that, expand **Advanced**:
 
 Here you can switch on **Sequential signing**, then just drag and drop recipients to define an order in which they should sign the document. Like in the gif below:
 
-.. image:: ../../../_static/img/user-guide/processes/docusign-sequental.gif
+.. image:: ../../../_static/img/user-guide/processes/adobe-sign-sequental.gif
     :alt: drag and drop recipients to change the sequence of signing
 
 Also, you can set:
@@ -95,25 +95,17 @@ Specify recipients dynamically based on your data
 
 You may want to set recipients dynamically for each document. In this case, you can use tokens inside the Email field. Data passed to the process will define who will receive the document.
 
-.. image:: ../../../_static/img/user-guide/processes/email-token-docusign.png
-    :alt: tokens inside eversign recipients
+.. image:: ../../../_static/img/user-guide/processes/email-token-adobe-sign.png
+    :alt: tokens inside adobe sign recipients
 
 The token can contain not only one email address but the list of them comma- or semicolon-separated. Like this:
 
 .. code:: json
     
     {
-        "emails": "Derek Clark <d.clark@contoso.com>; Jessica Adams <j.adams@contoso.com>"
+        "emails": "d.clark@contoso.com>; j.adams@contoso.com; r.jones@contoso.com"
     }
 
-Mind that if you put the list of recipients into the single field, the information you typed in the Name field will be skipped.
-
-You can specify recipient names in the list by placing names before the email address. 
-
-.. image:: ../../../_static/img/user-guide/processes/name-before-email.png
-    :alt: name before email
-
-Or you can omit that, and the email address will be displayed as a recipient name.
 
 In case Sequential signing is enabled, the order in which recipients receive the document will be the same as in the list.
 
