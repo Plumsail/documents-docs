@@ -1,10 +1,10 @@
-.. title:: Create SharePoint list items from PDF form data in Power Automate Flow
+.. title:: How to create SharePoint list items from PDF form data in Power Automate Flow, Azure Logic Apps, or Power Apps
 
 .. meta::
    :description: Extract PDF form data and automatically save it to your favorite systems using Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
 
-How to collect data from fillable PDF and save it into your system in Power Automate (Microsoft Flow), Azure Logic Apps, or Power Apps
-======================================================================================================================================
+Collect data from fillable PDF and save it into your system in Power Automate
+=============================================================================
 
 
 .. note:: 

@@ -1,11 +1,11 @@
-.. title:: Create HTML from a template using Power Automate (Microsoft Flow)
+.. title:: How to create HTML from a template using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
    :description: Automate your document creation and generate HTML documents from a template automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
-Create HTML document from template in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================================================
+Create HTML document from template in Power Automate
+====================================================
 
 .. note:: There is a `simpler way to create HTML documents from a template and use the result in Power Automate <../../../user-guide/processes/examples/create-html-from-template-processes.html>`_ if needed. 
 

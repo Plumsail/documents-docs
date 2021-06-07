@@ -1,10 +1,10 @@
-.. title:: Split PDF documents into multiple ones in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+.. title:: How to split PDF documents into multiple ones in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Split a single PDF file into smaller multiple PDFs using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
-How to split PDF files in Power Automate (Microsoft Flow) and Azure Logic Apps
-==============================================================================
+Split PDF files in Power Automate
+=================================
 
 This article demonstrates how to separate PDF pages with the help of `Power Automate (Microsoft Flow) <https://emea.flow.microsoft.com/>`_.
 

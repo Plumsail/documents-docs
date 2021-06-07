@@ -1,10 +1,10 @@
-.. title:: Regular expression match in Power Automate (Microsoft Flow), and Azure Logic Apps
+.. title:: How to use regular expression match in Power Automate (Microsoft Flow), and Azure Logic Apps
 
 .. meta::
    :description: Use regular expression match to extract values from text in Power Automate (Microsoft Flow), and Azure Logic Apps
 
-How to use regular expression match to extract values from text in Power Automate (Microsoft Flow), and Azure Logic Apps
-========================================================================================================================
+Using regular expression match to extract values from text in Power Automate
+=============================================================================
 
 In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Documents connector <https://plumsail.com/documents/>`_ for `Power Automate (Microsoft Flow)`_ and `Azure Logic Apps`_.
 
