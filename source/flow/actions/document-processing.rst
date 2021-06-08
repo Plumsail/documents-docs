@@ -1610,7 +1610,11 @@ Fills in PDF form by provided data with the help of Power Automate (Microsoft Fl
                 "LastName": "Navarro",
                 "CompanyName": "Contoso LLC",
                 "Position": "Marketing manager"
-            }      
+            }
+
+    *  -  Lock form fields
+       -  Disable fields editing after filling them.
+       -  If you want to lock the fields after filling the PDF form activate the option.    
 
 .. rubric:: Example
 
