@@ -68,14 +68,17 @@ Fill in PDF form action
 ~~~~~~~~~~~~~~~~~~~~~~~
 `Fill in PDF form`_ is the action from `Plumsail Documents connector`_. You can use this action to fill PDF forms.
 
-There are two parameters:
+There are three parameters:
 
 1. Content of the PDF document
 2. JSON data
+3. Lock form fields 
 
 In the first parameter 'Content of the PDF document', you can put file content from some other action. In our case, we specified the output of the previous action as a source fillable PDF.
 
-In the second parameter ‘JSON data’ you can put a JSON object as a source data to fill in your form. Please make sure that you specified the same property names as you used in your fillable PDF. Thus, the action will match properties to fields in PDF and fill them.
+In the second parameter 'JSON data' you can put a JSON object as a source data to fill in your form. Please make sure that you specified the same property names as you used in your fillable PDF. Thus, the action will match properties to fields in PDF and fill them.
+
+Activate third parameter 'Lock form fields' if you want to lock the fields after filling the PDF form.
 
 Send an Email action
 ~~~~~~~~~~~~~~~~~~~~
