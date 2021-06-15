@@ -1,10 +1,10 @@
-.. title:: Create custom documents from Teachable with Plumsail Documents integration in Zapier
+.. title:: How to create custom documents from Teachable with Plumsail Documents integration in Zapier
 
 .. meta::
    :description: Teachable data populate certificates, diplomas, contracts, invoices, or other documents with Plumsail Documents integrations for Zapier. 
 
 
-How to automatically create custom Teachable certificates or diplomas and send them to students by e-mail using Zapier
+Automatically create custom Teachable certificates or diplomas and send them to students by e-mail using Zapier
 =======================================================================================================================
 
 Conducting online courses or coaching business is much easier with such platforms as `Teachable <https://teachable.com/>`_. 

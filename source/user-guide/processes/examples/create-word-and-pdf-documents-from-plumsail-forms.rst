@@ -1,10 +1,10 @@
-.. title::  Create Word DOCX and PDF documents from Plumsail Web Forms
+.. title:: How to create Word DOCX and PDF documents from Plumsail Web Forms
 
 .. meta::
    :description: A ready-to-use example of how use web forms to auto populate Word DOCX templates and convert the result to PDF format.
 
 
-How to generate PDF documents from a DOCX template on Plumsail Forms submission
+Generate PDF documents from DOCX template on Plumsail Forms submission
 ===============================================================================
 
 In this article, you will learn how to automate the generation of documents in your company. For example, applications, orders, invoices, cards and others. We’ll show you a simple way how to create PDF documents from a DOCX template on `Plumsail Forms <https://plumsail.com/forms/>`_ submission by its integration with `Processes <../../../user-guide/processes/index.html>`_. 

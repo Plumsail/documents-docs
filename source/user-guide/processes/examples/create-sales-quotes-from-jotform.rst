@@ -1,10 +1,11 @@
-Generate sales quotes from JotForm in Zapier
-============================================
-
 .. title:: How to create Excel and PDF documents from JotForm using Zapier
 
 .. meta::
    :description: Automatically apply JotForm submission data to fill in sales quotes and other sales documents
+
+Generate sales quotes from JotForm in Zapier
+============================================
+
 
 From this article, you will learn how to generate PDF documents from an Excel template on `Jotform <https://www.jotform.com/>`_ submission using the `Zapier integration platform <https://zapier.com/apps/plumsail-documents/integrations>`_. 
 With the help of `Plumsail Documents <https://plumsail.com/documents/>`_, we'll create a sales quote from a template, which will be populated with JotForm submission data. 

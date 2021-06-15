@@ -1,9 +1,9 @@
-.. title:: Generate PDF documents from Word templates and send for e-signature with SignNow in Zapier
+.. title:: How to generate PDF documents from Word templates and send for e-signature with SignNow in Zapier
 
 .. meta::
    :description: Automate your document generation and e-signing with SignNow in Zapier
 
-How to create documents from a template in Zapier and sign them using SignNow
+Create documents from template in Zapier and sign them using SignNow
 #############################################################################
 
 In this article, we will show you how to create documents from a template using `Processes <../../../user-guide/processes/index.html>`_ and sign them with the help of `SignNow <https://www.signnow.com/?utm_source=plumsail&utm_medium=cpa&utm_campaign=main&utm_content=ad1>`_.

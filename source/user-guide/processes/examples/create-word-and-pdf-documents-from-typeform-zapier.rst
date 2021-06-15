@@ -4,7 +4,7 @@
    :description: Try this Zapier integration for Typeform and Plumsail Documents to populate Word DOCX templates and then convert to PDF.
 
 
-How to create Word and PDF documents from Typeform in Zapier
+Create Word and PDF documents from Typeform in Zapier
 ============================================================
 
 This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Zapier. It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 

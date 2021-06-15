@@ -1,4 +1,4 @@
-.. title:: Automatically populate sales proposals from Wufoo
+.. title:: How to automatically populate sales proposals from Wufoo
 
 .. meta::
    :description: Connect Wufoo to Plumsail Documents in Zapier to capture leads and send personal sales proposals before they get cold.

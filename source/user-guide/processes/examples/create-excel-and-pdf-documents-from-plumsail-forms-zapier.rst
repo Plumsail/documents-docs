@@ -1,10 +1,10 @@
-.. title::  Create Excel and PDF documents from Plumsail Web Forms in Zapier
+.. title::  How to create Excel and PDF documents from Plumsail Web Forms in Zapier
 
 .. meta::
    :description: Zapier integration for Plumsail Web Forms to populate Excel and PDF documents.
 
 
-How to create Excel and PDF documents from Plumsail Forms in Zapier
+Create Excel and PDF documents from Plumsail Forms in Zapier
 ===================================================================
 
 This article describes how to create PDF documents from an XLSX template on `Plumsail Forms <https://plumsail.com/forms/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Zapier. It may help you to automize the generation of documents like applications, requests, orders, etc., in your company.

@@ -1,7 +1,7 @@
 Auto-fill in PDF forms with Smartsheet data
 ===========================================
 
-.. title:: Generate PDF when a new record is added to Smartsheet
+.. title:: How to generate PDF when a new record is added to Smartsheet
 
 .. meta::
    :description: Automate document workflow with Smartsheet and Plumsail Documents in Zapier

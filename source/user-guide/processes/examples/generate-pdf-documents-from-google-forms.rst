@@ -1,12 +1,12 @@
 .. Google Form is available in this Google account plumsail.test20@gmail.com, for a password, contact Anton Khritonenkov
 
-.. title:: Populate document templates with Google Forms data automatically with Plumsail Documents in Zapier
+.. title:: How to populate document templates with Google Forms data automatically with Plumsail Documents in Zapier
 
 .. meta::
    :description: How to create custom PDF, Word, Excel, or PowerPoint documents from templates on Google Forms submission
 
 
-Generate PDF documents from Google Forms and automatically save results to Google Drive
+Generate PDF documents from Google Forms and save results to Google Drive
 =======================================================================================
 
 From this article, you will learn how to generate PDF documents with you Google Forms data 

@@ -4,7 +4,7 @@
    :description: Try this Zapier integration for Typeform and Plumsail Documents to populate Excel templates from web forms and then convert to PDF.
 
 
-How to create Excel and PDF documents from Typeform in Zapier
+Create Excel and PDF documents from Typeform in Zapier
 =============================================================
 
 
