@@ -155,6 +155,8 @@ You can test the template from the Settings as well - to check how the customize
 .. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf.png
     :alt: Configure template
 
+.. note:: **Lock form fields** option is activated by default. If you want to keep an option to edit the result PDF file - disable the option.
+
 Delivery
 ~~~~~~~~
 
