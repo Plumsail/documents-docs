@@ -152,7 +152,7 @@ Use tokens to make it personalized. They work the same way as in the template.
 
 You can test the template from the Settings as well - to check how the customized settings will appear in the resulting document. The procedure is the same as we've already described above.
 
-.. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf.png
+.. image:: ../../../_static/img/flow/how-tos/Configure-template-fillable-pdf1.png
     :alt: Configure template
 
 .. note:: **Lock form fields** option is activated by default. If you want to edit fields in the result PDF file - disable the option.
