@@ -997,7 +997,7 @@ Examples
 pictureCompress
 ---------------
 
-:code:`pictureCompress` - it resolves URL or base64 string and converts it to an image. This formatter compress the source image.
+:code:`pictureCompress` - it resolves URL or base64 string and converts it to an image. This formatter compresses the source picture.
 :code:`pictureCompress` formatter can be used with resizing options, for example,  :code:`{{value}:pictureCompress(100,100)}` .
 Also you can specify only the width parameter and height will be calculated automatically to keep the image proportions. For example, :code:`{{value}:pictureCompress(50)}` .
 
