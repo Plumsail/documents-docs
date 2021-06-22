@@ -1,12 +1,12 @@
-.. title:: Create sales contracts from HubSpot CRM using Zapier
+.. title:: How to create sales contracts from HubSpot CRM using Zapier and Plumsail Documents
 
 .. meta::
    :description: Use Plumsail Documents processes to create sales contracts from HubSpot CRM using Zapier
 
 
 
-How to create sales contracts from HubSpot CRM using Zapier and Plumsail Documents
-====================================================================================
+Create sales contracts from HubSpot CRM using Zapier and Plumsail Documents
+=============================================================================
 
 Let us say you want to create sales documents based on Hubspot deals and send them to your clients for e-singing. In this article, we'll show how to create sales contracts from new HubSpot deals and send them to DocuSign for e-signing.
 

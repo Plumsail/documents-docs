@@ -1,9 +1,9 @@
-.. title:: Auto generate contracts from Airtable data in Zapier
+.. title:: How to auto generate contracts from Airtable data in Zapier
 
 .. meta::
   :description: Create flexible and customized documents from Airtable. Check out How to generate contracts from Airtable deals automatically with Plumsail Documents.
 
-How to automatically generate contracts from Airtable data in Zapier
+Automatically generate contracts from Airtable data in Zapier
 ====================================================================
 
 This article describes how to automatically populate Word contracts from Airtable closed-won opportunities, convert to PDF, and save to OneDrive with the help of `Plumsail Documents processes <../../../user-guide/processes/index.html>`_ in Zapier. 

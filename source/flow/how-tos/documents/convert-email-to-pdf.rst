@@ -1,10 +1,10 @@
-.. title:: Automatically convert email to PDF in Power Automate Flow
+.. title:: How to automatically convert email to PDF in Power Automate Flow and Azure Logic Apps
 
 .. meta::
    :description: Automatically convert Outlook 365 and other emails to PDF in Power Automate Flows and Azure Logic Apps
 
-Convert email message to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-====================================================================================
+Convert email message to PDF in Power Automate
+==============================================
 
 This article demonstrates how to convert an email message to PDF with the help of  `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 

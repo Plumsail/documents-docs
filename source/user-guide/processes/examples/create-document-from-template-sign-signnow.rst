@@ -1,10 +1,10 @@
-.. title:: Generate PDF agreements from a template and send them for e-signature with SignNow in Flows
+.. title:: How to generate PDF agreements from a template and send them for e-signature with SignNow in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Automate your document generation and signing with SignNow in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
-How to create documents from a template in Power Automate and sign them using SignNow
+Create documents from template in Power Automate and sign them using SignNow
 #####################################################################################
 
 In this article, we will show you how to create documents from a template using `Processes <../../../user-guide/processes/index.html>`_ and sign them with the help of `SignNow <https://www.signnow.com/?utm_source=plumsail&utm_medium=cpa&utm_campaign=main&utm_content=ad1>`_.

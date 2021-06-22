@@ -1,10 +1,10 @@
-.. title::  Generate PDF documents from HTML templates automatically in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
+.. title:: How to generate PDF documents from HTML templates automatically in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
 
 .. meta::
    :description: Check out how to populate HTML templates and convert the result to PDF using Plumsail Documents in Power Automate and Zapier.
 
-Create PDF document from HTML template in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
-=======================================================================================================
+Create PDF document from HTML template in Zapier or Power Automate
+=================================================================
 
 This article demonstrates how to generate PDF documents from an HTML template with the help of `Plumsail Documents processes <https://plumsail.com/docs/documents/v1.x/user-guide/processes/index.html>`_.
 
