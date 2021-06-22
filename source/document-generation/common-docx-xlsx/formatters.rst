@@ -954,7 +954,7 @@ Examples
 picture
 -------
 
-:code:`picture` - it resolves URL or base64 string and converts it to an image. 
+:code:`picture` - it resolves URL or base64 string and converts it to an image. The formatter doesn't compress the source picture and keeps its quality.
 :code:`picture` formatter can be used with resizing options, for example,  :code:`{{value}:picture(100,100)}` .
 Also you can specify only the width parameter and height will be calculated automatically to keep the image proportions. For example, :code:`{{value}:picture(50)}` .
 
@@ -977,6 +977,49 @@ Examples
     *   - .. code-block:: json
     
             {{value}:picture}, {{value}:picture(100,100)}, {{value}:picture(50)}
+
+        - .. code-block:: json
+
+            {                     
+                "value": "https://picturesite.com/pics/picture.png"
+            }         
+
+
+            {                     
+                "value": "iVBORw0KGgoAAAANSUhEUgAAAIAAAAA9CAYAAABlamFgAA"
+            }    
+
+        - .. code-block:: json
+    
+           the image
+
+
+pictureCompress
+---------------
+
+:code:`pictureCompress` - it resolves URL or base64 string and converts it to an image. This formatter compresses the source picture.
+:code:`pictureCompress` formatter can be used with resizing options, for example,  :code:`{{value}:pictureCompress(100,100)}` .
+Also you can specify only the width parameter and height will be calculated automatically to keep the image proportions. For example, :code:`{{value}:pictureCompress(50)}` .
+
+The formatter can be used in both DOCX and PPTX templates. Read the articles below for more information:
+
+- `Pictures in DOCX templates <../docx/pictures.html>`_
+- `Pictures in PPTX templates <../pptx/pictures.html>`_
+
+.. note:: Resizing of an image is not supported for PPTX templates yet.
+
+Examples
+~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Data
+        - Result
+    *   - .. code-block:: json
+    
+            {{value}:pictureCompress}, {{value}:pictureCompress(100,100)}, {{value}:pictureCompress(50)}
 
         - .. code-block:: json
 
