@@ -1,11 +1,11 @@
-.. title:: Generate Excel XLSX documents from a template using Power Automate (Microsoft Flow)
+.. title:: How to generate Excel XLSX documents from template using Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
-   :description: Generate Excel XLSX files from a template and save to a SharePoint library automatically in Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Generate Excel XLSX files from template and save to a SharePoint library automatically in Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
-How to create Excel XLSX document from template in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
-===================================================================================================================
+Create Excel XLSX document from template in Power Automate
+==========================================================
 
 .. note:: There is `simpler way to create Excel and PDF documents from a template and use the result in Power Automate <../../../user-guide/processes/examples/create-xlsx-from-template-processes.html>`_ if needed. 
 

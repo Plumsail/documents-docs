@@ -1,10 +1,10 @@
-.. title:: Create custom PDF invoices with logo from Microsoft Dynamics CRM with Plumsail Documents in Power Automate
+.. title:: How to create custom PDF invoices with logo from Microsoft Dynamics CRM with Plumsail Documents in Power Automate
 
 .. meta::
    :description: Generate custom PDF invoices with logos from Microsoft Dynamics 365 CRM in one click using Plumsail Documents in Power Automate.
 
-How to create custom invoices from Microsoft Dynamics 365 CRM in Power Automate (Microsoft Flow)
-================================================================================================
+Create custom invoices from Microsoft Dynamics 365 CRM in Power Automate
+========================================================================
 
 This article shows how to generate customized invoices for a selected order in Dynamics 365 CRM using Power Automate (Microsoft Flow). 
 Sometimes Dynamics 365 functionality for creating invoices is not enough if you need to include some additional information or even a company logo. 

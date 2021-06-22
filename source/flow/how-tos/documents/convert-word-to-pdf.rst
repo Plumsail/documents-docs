@@ -1,11 +1,11 @@
-.. title:: Convert DOCX to PDF using Power Automate (Microsoft Flow)
+.. title:: How to convert DOCX to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
    :description: Automatically convert Word Office documents to PDF using Power Automate and Azure Logic Apps
 
 
-Convert DOCX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-===========================================================================
+Convert DOCX to PDF in Power Automate 
+=====================================
 
 This article demonstrates how to convert DOCX Word document to PDF and receive a pixel-perfect output as a result of this conversion in `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 

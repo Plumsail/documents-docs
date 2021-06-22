@@ -1,9 +1,9 @@
-.. title:: Create PDF documents from SharePoint list and send them for e-signature with DocuSign
+.. title:: How to create PDF documents from SharePoint list and send them for e-signature with DocuSign
 
 .. meta::
    :description: Generate non-disclosure agreements from the SharePoint list and electronically sign using DocuSign and Plumsail Documents
 
-How to automatically generate documents from data in SharePoint list and send them for digital signature in DocuSign using Power Automate Flow
+Automatically generate documents from SharePoint list and send them for signature in DocuSign using Power Automate Flow
 ===============================================================================================================================================
 
 From this article, you will learn how to create an eSign document from data in the SharePoint list. Imagine that you have a list of employees on the SharePoint site. 

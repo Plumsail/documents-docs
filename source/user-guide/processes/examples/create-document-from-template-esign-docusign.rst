@@ -1,10 +1,10 @@
-.. title:: Create PDF documents from a template and send them for e-signature with DocuSign
+.. title:: How to create PDF documents from a template and send them for e-signature with DocuSign
 
 .. meta::
-   :description: Generate sales contracts from a template and sign using DocuSign and Plumsail Documents
+   :description: Generate sales contracts from template and sign using DocuSign and Plumsail Documents
 
-How to automatically create a document from a template and electronically sign it using DocuSign
-================================================================================================
+Automatically create document from template and sign it using DocuSign
+=======================================================================
 
 From this article, you will learn how to create a PDF document from a template and electronically sign it using `DocuSign <https://www.docusign.com/>`_. 
 

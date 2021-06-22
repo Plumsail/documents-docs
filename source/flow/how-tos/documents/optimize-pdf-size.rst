@@ -1,11 +1,11 @@
-.. title:: Optimize PDF size using Power Automate Power Automate (Microsoft Flow)
+.. title:: How to optimize PDF size using Power Automate Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Optimize PDF size using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
-Optimize PDF size using Power Automate (Microsoft Flow)
-==========================================================
+Optimize PDF size using Power Automate
+======================================
 
 Sometimes you need to reduce a PDF file size and it's easy to do with `Compress PDF document <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#compress-pdf-document>`_ from `Plumsail Documents <https://plumsail.com/documents/>`_ package.
 

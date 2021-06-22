@@ -1,10 +1,11 @@
-.. title:: Generate Word DOCX documents from a template in Zapier, Power Automate Flow, Azure Logic Apps, and PowerApps
+.. title:: Generate Word DOCX documents from template in Zapier, Power Automate Flow, Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Use Plumsail Documents processes to generate customized documents from Word templates in a few simple steps.
 
 Automatically generate Word document from template 
 ===================================================
+
 From this article, you will learn how to create a document generation process in `Plumsail Documents <https://plumsail.com/documents/>`_. It will help you to automatically generate any Word DOCX documents from templates, so you can automate document generation in your company. 
 
 Particularly in this article, we'll create invoices. This is how the result document will look:

@@ -1,9 +1,9 @@
-.. title:: Automatically create PDF documents from a Word template and send them for e-signature to eversign
+.. title:: How to automatically create PDF documents from Word template and send them for e-signature to eversign
 
 .. meta::
-   :description: Generate sales contracts from a template and sign using eversign and Plumsail Documents
+   :description: Generate sales contracts from template and sign using eversign and Plumsail Documents
 
-How to automatically generate documents from a template and send to eversign for e-signing
+Automatically generate documents from template and send to eversign for e-signing
 ==========================================================================================
 
 This how-to guide describes a way to create a document from a template and send it for electronical signing to `eversign <https://eversign.com/>`_.

@@ -1,9 +1,9 @@
-.. title:: Create custom documents from Pipedrive Sales CRM with Plumsail Documents integration in Zapier
+.. title:: How to create custom documents from Pipedrive Sales CRM with Plumsail Documents integration in Zapier
 
 .. meta::
    :description: Generate invoices for won Pipedrive deals and automatically send to customers by email.
 
-How to automatically generate Word and PDF invoices for deals in Pipedrive Sales CRM
+Automatically generate Word and PDF invoices for deals in Pipedrive Sales CRM
 ====================================================================================
 
 This article describes how to boost productivity by connecting `Pipedrive Sales CRM <https://www.pipedrive.com/>`_ to the document generation process. In this particular case, we’ll auto-generate invoices for deals in Pipedrive. 
