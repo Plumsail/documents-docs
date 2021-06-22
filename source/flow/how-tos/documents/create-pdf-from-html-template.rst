@@ -1,4 +1,4 @@
-.. title:: How to create HTML documents from a template and convert to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
+.. title:: How to create HTML documents from template and convert to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
    :description: Populate HTML templates and convert to PDF automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps

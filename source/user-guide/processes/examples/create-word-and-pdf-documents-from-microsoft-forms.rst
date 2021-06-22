@@ -1,7 +1,7 @@
 .. title:: How to create Word and PDF documents from Microsoft Forms in Power Automate and Azure Logic Apps
 
 .. meta::
-   :description: Check out a ready-to-use example of Microsoft Forms populating Word DOCX templates and convert to PDF in Power Automate Flow.
+   :description: Check out example of Microsoft Forms populating Word DOCX templates and convert to PDF in Power Automate Flow.
 
 Create Word and PDF documents from Microsoft Forms
 ===================================================

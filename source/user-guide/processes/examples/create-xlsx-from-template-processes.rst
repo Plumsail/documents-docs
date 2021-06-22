@@ -1,4 +1,4 @@
-.. title:: How to create Excel XLSX documents from a template Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+.. title:: How to create Excel XLSX documents from template in Zapier, Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Use Plumsail Documents processes to generate customized documents from Excel templates in a few simple steps.

@@ -1,7 +1,7 @@
-.. title:: How to create text documents from a template using Power Automate (Microsoft Flow) and Azure Logic Apps
+.. title:: How to create text documents from template using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
-   :description: Generate text files from a template automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Generate text files from template automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
 Create text document from template in Power Automate

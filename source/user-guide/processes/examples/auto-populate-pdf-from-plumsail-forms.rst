@@ -1,7 +1,7 @@
-.. title:: How to auto populate fillable PDF form fields on web form submission using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+.. title:: How to auto populate fillable PDF form fields on web form submission using Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
-   :description: Automatically apply form submission data to fillable PDFs using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Automatically apply form submission data to fillable PDFs using Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 Auto-populate fillable PDF on Plumsail Forms submission
 ==============================================================

@@ -1,7 +1,7 @@
 .. title:: How to use Cognito Forms to populate Word DOCX templates and then convert to PDF using Zapier integration
 
 .. meta::
-   :description: An example of how to auto create Word and PDF documents from Cognito Forms entries using Zapier integration
+   :description: Example of how to auto create Word and PDF documents from Cognito Forms entries using Zapier integration
 
 
 Create Word and PDF documents from Cognito Forms in Zapier

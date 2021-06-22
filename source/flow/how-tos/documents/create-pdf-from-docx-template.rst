@@ -1,7 +1,7 @@
-.. title:: How to create Word DOCX documents from a template and convert them to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
+.. title:: How to create Word DOCX documents from template and convert them to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
-   :description: Generate Word documents from a template and convert to PDF automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Generate Word documents from template and convert to PDF automatically using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
 Create PDF from DOCX template in Power Automate

@@ -1,7 +1,7 @@
 .. title:: How to use JotForm to populate Word DOCX templates and then convert to PDF using Zapier integration
 
 .. meta::
-   :description: An example of how to auto generate Word and PDF documents from JotForm entries with Plumsail Documents integration for Zapier.
+   :description: Example of how to auto generate Word and PDF documents from JotForm entries with Plumsail Documents integration for Zapier.
 
 Create Word and PDF documents from JotForm in Zapier
 ===========================================================

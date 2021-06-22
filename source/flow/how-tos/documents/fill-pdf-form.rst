@@ -1,7 +1,7 @@
 .. title:: How to auto populate fillable PDF forms from a SharePoint list using Power Automate (Microsoft Flow), Azure Logic Apps, or Power Apps
 
 .. meta::
-   :description: Automatically fill PDF forms from a database using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Automatically fill PDF forms from database using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
 Populate PDF forms from SharePoint in Power Automate

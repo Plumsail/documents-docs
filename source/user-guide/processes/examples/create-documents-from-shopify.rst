@@ -1,7 +1,7 @@
 .. title:: How to create custom contracts, receipts, and other documents from Shopify
 
 .. meta::
-   :description: Try this Zapier integration for Shopify and Plumsail Documents to create personalized documents when a new order is placed in Shopify.
+   :description: Try this Zapier integration for Shopify and Plumsail Documents to create personalized documents when new order is placed in Shopify.
 
 
 Create personalized documents from Shopify 

@@ -1,7 +1,7 @@
 .. title:: How to populate Word DOCX templates on JotForm submission and then convert to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
-   :description: An example of how to auto generate Word and PDF documents from JotForm entries in Power Automate (Microsoft Flow) and Azure Logic Apps
+   :description: Example of how to auto generate Word and PDF documents from JotForm entries in Power Automate (Microsoft Flow) and Azure Logic Apps
 
 
 Create Word and PDF documents from JotForm in Power Automate

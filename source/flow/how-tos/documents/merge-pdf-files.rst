@@ -1,7 +1,7 @@
 .. title:: How to merge PDF files in Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 .. meta::
-   :description: Automatically combine multiple PDF documents into a single PDF using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
+   :description: Automatically combine multiple PDF documents into single PDF using Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
 
 Merge PDF files in Power Automate
