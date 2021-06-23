@@ -1,10 +1,10 @@
-.. title::  Generate PDF documents from Word DOCX templates automatically in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
+.. title::  How to generate PDF documents from Word DOCX templates automatically in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
 
 .. meta::
-   :description: It will ensure automation of your document generation and save tons of time. Check out how to create PDF documents from a DOCX template in Flows and Zaps. 
+   :description: It will ensure automation of your document generation and save tons of time. Check out how to create PDF documents from DOCX template in Flows and Zaps. 
 
-Create PDF documents from DOCX template in Zapier, Power Automate (Microsoft Flow), and Azure Logic Apps
-========================================================================================================
+Create PDF documents from DOCX template in Zapier or Power Automate
+====================================================================
 
 This article demonstrates how to generate PDF documents from a DOCX template with the help of `Plumsail Documents <https://plumsail.com/documents/>`_ processes. We will use a DOCX document as a template. And with the help of `Processes <../index.html>`_, we will receive the result file in PDF format. 
 

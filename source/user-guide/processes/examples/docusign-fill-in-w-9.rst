@@ -1,4 +1,4 @@
-.. title:: Fill in W-9 tax form and securely sign it using DocuSign
+.. title:: How to fill in W-9 tax form and securely sign it using DocuSign
 
 .. meta::
    :description: Fill in W-9 tax form and securely sign it using DocuSign and Plumsail Documents

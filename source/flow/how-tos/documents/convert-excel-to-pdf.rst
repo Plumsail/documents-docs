@@ -1,10 +1,10 @@
-.. title:: Convert and save Excel to PDF in Power Automate Flow
+.. title:: How to convert and save Excel to PDF in Power Automate Flow and Azure Logic Apps
 
 .. meta::
    :description: Automatically convert XLSX to PDF format and save using Power Automate and Azure Logic Apps
 
-Convert XLSX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-===========================================================================
+Convert XLSX to PDF in Power Automate 
+=====================================
 
 This article describes how to achieve a pixel-perfect XLSX Excel document to PDF conversion in `Power Automate (Microsoft Flow) <https://flow.microsoft.com>`_. 
 

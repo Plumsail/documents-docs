@@ -1,11 +1,11 @@
-.. title:: Collect PDF form data and create Microsoft Dynamics CRM leads using Power Automate
+.. title:: How to collect PDF form data and create Microsoft Dynamics CRM leads using Power Automate or Azure Logic Apps
 
 .. meta::
    :description: Instantly create Microsoft Dynamics 365 CRM leads from fillable PDF forms. Automate the processes with the help of Plumsail Documents connector for Power Automate.
 
 
-Extract data from fillable PDF forms and automatically create new leads in Microsoft Dynamics 365 CRM using Power Automate or Azure Logic Apps
-==============================================================================================================================================
+Extract data from PDF and create new leads in Microsoft Dynamics 365 CRM using Power Automate
+=============================================================================================
 
 In this article, we’ll look into how to collect data from filled PDF forms and create Microsoft Dynamics 365 leads automatically using Power Automate or Azure Logic Apps. We will use `Get Form from PDF <../../actions/document-processing.html#get-form-from-pdf>`_ action from the `Plumsail Documents <https://plumsail.com/documents/>`_ connector.
 

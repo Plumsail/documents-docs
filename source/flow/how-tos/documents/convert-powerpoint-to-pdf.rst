@@ -1,11 +1,11 @@
-.. title:: Convert PPTX to PDF using Power Automate (Microsoft Flow)
+.. title:: How to convert PPTX to PDF using Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
    :description: Automatically convert PowerPoint presentations to PDF using Power Automate and Azure Logic Apps
 
 
-Convert PPTX to PDF in Power Automate (Microsoft Flow) and Azure Logic Apps
-===========================================================================
+Convert PPTX to PDF in Power Automate
+=====================================
 
 From this article, you will learn how to convert PPTX PowerPoint documents to PDF format and receive the pixel-perfect output as a result of this conversion. To achieve the aim, we'll use the `Plumsail Documents <https://plumsail.com/documents>`_ connector for `Power Automate <https://flow.microsoft.com>`_.
 

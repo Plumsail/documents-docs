@@ -1,11 +1,11 @@
-.. title::  How to create customized Word and PDF documents from Typeform in Power Automate Flow
+.. title::  How to create customized Word and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
 
 .. meta::
-   :description: A ready-to-use example of Typeform populating Word and PDF documents in Power Automate Flow and Azure Logic Apps.
+   :description: Example of Typeform populating Word and PDF documents in Power Automate Flow and Azure Logic Apps.
 
 
-How to create Word and PDF documents from Typeform in Power Automate (Microsoft Flow) and Azure Logic Apps
-==========================================================================================================
+Create Word and PDF documents from Typeform in Power Automate
+==============================================================
 
 This article demonstrates how to create PDF documents from a DOCX template on `Typeform <https://www.typeform.com/>`_ submission with the help of `Processes <../../../user-guide/processes/index.html>`_ in Power Automate (MS Flow). It may help you to automate the generation of different documents like applications, requests, orders, etc., in your company. 
 

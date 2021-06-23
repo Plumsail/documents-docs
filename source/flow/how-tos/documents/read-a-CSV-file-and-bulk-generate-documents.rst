@@ -1,10 +1,10 @@
-.. title:: Read CSV files and batch generate documents using Power Automate Flow
+.. title:: How to read CSV files and batch generate documents using Power Automate Flow, Azure Logic Apps, and PowerApps
 
 .. meta::
    :description: Automatically populate DOCX templates with CSV files data using Power Automate (Microsoft Flow), Azure Logic Apps, and PowerApps
 
-How to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents
-=====================================================================================
+Read CSV file in Power Automate and bulk generate documents
+=============================================================
 
 This article demonstrates how to read CSV files in Power Automate (Microsoft Flow) using **Parse CSV** action from Plumsail Documents connector. 
 We will use results from this action to bulk generate documents.

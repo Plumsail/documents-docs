@@ -1,3 +1,9 @@
+.. title:: How to Track DocuSign Envelope status, save and update documents in SharePoint using Power Automate Flow, Azure Logic Apps, and PowerApps
+
+.. meta::
+   :description: Track DocuSign Envelope status, save and update documents in SharePoint using Power Automate Flow (Microsoft Flow), Azure Logic Apps, and PowerApps
+
+
 Track DocuSign Envelope status, save and update documents in SharePoint using Power Automate Flow
 ===================================================================================================
 

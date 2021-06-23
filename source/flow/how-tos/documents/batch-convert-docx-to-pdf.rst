@@ -1,9 +1,9 @@
-.. title:: How to batch convert Word documents to PDF using Power Automate
+.. title:: How to batch convert Word documents to PDF using Power Automate, Azure Logic Apps, or PowerApps
 
 .. meta::
    :description: batch convert Word documents to PDF using Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
 
-How to batch convert Word documents to PDF using Power Automate
+Batch convert Word documents to PDF using Power Automate
 ================================================================
 
 This article demonstrates how to batch convert many DOCX files to PDF with the help of the `Plumsail Documents <https://plumsail.com/documents/>`_ connector for Power Automate (Microsoft Flow).
