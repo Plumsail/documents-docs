@@ -17,6 +17,7 @@ Word DOCX templates
         Charts <charts>
         Conditionally hide blocks <conditionally-hide-blocks>
         Pictures <pictures>
+        QR codes <https://plumsail.com/docs/documents/v1.x/how-tos/create-documents-from-template-with-qrcodes.html>
         Value formatters <../common-docx-xlsx/formatters>
         Value properties <../common-docx-xlsx/value-properties>
 
