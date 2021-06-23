@@ -696,3 +696,72 @@ To add a watermark please navigate to the *Design* tab in MS Word, click *Waterm
 
           .. image:: ../../_static/img/document-generation/watermark-result.png
                 :alt: hide blocks result
+
+
+QR codes
+----------
+
+This demo shows how to add QR codes to a document.
+
+JSON representation of the object:
+
+.. rubric:: Template data
+
+.. code:: json
+
+    {
+       "QRCodeURL": "https://plumsail.com/"
+    }
+
+.. code:: json
+
+    {
+       "QRCodePhoneNumber": "tel:+1-234-555-6677"
+    }
+
+.. code:: json
+
+    {
+       "QRCodeGeolocation": "geo:40.74018922726678,-74.00869124083648"
+    }
+
+To add a QR code add :code:`qrcode(size)` tag into your docx template. Find some examples below:
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/laboratory-test-template.docx>`_           
+            .. image:: ../../_static/img/document-generation/word-document-template-with-qrcode.png
+                :alt: word document template with dynamic qr code
+
+        - `Download result document <../../_static/files/document-generation/demos/completed-laboratory-report-with-qrcode.pdf>`_
+            .. image:: ../../_static/img/document-generation/pdf-document-with-qrcode.png
+                :alt: completed pdf document with qr code
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/demos/employee-card-template.docx>`_           
+            .. image:: ../../_static/img/document-generation/business-card-template-with-phone-qr-code.png
+                :alt: word document template with phine number qr code
+
+        - `Download result document <../../_static/files/document-generation/demos/employee-card-phone-qrcode.pdf>`_
+            .. image:: ../../_static/img/document-generation/completed-pdf-with-phone-qr-number.png
+                :alt: completed pdf document with phone number qr code
+
+.. list-table::
+    :header-rows: 1
+
+    *   - Template
+        - Result
+    *   - `Download template document <../../_static/files/document-generation/geo-location-qr-code-template.docx>`_           
+            .. image:: ../../_static/img/document-generation/docx-template-with-geo-qr-code.png
+                :alt: word document template with geo location qr code
+
+        - `Download result document <../../_static/files/document-generation/demos/geo-qr-code-result-pdf.pdf>`_
+            .. image:: ../../_static/img/document-generation/generated-pdf-with-geo-qr-code.png
+                :alt: completed pdf document with geo location qr code
