@@ -3,7 +3,7 @@ Configure output file format and other settings
 
 After you've finished `working on the template <./edit-test-template.html>`_, you proceed to the Configure template substep - *Settings*.
 
-.. image:: ../../_static/img/user-guide/processes/settings-of-template.png
+.. image:: ../../_static/img/user-guide/processes/settings-of-template1.png
     :alt: Settings of template substep
 
 Here you customize the following settings:
