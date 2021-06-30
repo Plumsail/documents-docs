@@ -11,6 +11,7 @@ Here you customize the following settings:
 - :ref:`Mode <process-mode>`
 - :ref:`output-filename`
 - :ref:`output-type`
+- :ref:`lock-form-fields`
 - :ref:`add-watermark`
 - :ref:`protect-pdf`
 
@@ -36,6 +37,14 @@ Output type
 -----------
 
 Type of the output file. By default, it is the same as your template but you can change it to PDF.
+
+.. _lock-form-fields:
+
+Lock form fields
+----------------
+
+The option locks the form fields once your process is completed. It's activated by default.
+If you want to edit fields in the result PDF file - disable the option.
 
 .. _add-watermark:
 
