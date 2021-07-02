@@ -600,7 +600,9 @@ Scroll down to see source data for the template in JSON format.
 
 Conditionally hide blocks
 -------------------------
-.. note::  If you are use multiple bullet lists or tables better to copy data array for each using ("employees1" for a table, "employees2" for bullet list, etc)
+.. note::
+
+  If you use multiple bullet lists or tables, it is better to create a separate alias for each case (``nonDev1`` and ``nonDev2`` of this sample).
 
 This demo shows how to hide table rows, bullet lists items and arbitrary sections of document if there is a specific value in the tag or empty.
 
@@ -620,7 +622,7 @@ Scroll down to see source data for the template in JSON format.
         - `Download result document <../../_static/files/document-generation/demos/conditionally-hide-blocks-result.docx>`_
          
           .. image:: ../../_static/img/document-generation/hide-blocks-demo-result.png
-                :alt: hide blocks result                    
+                :alt: hide blocks result
 
 .. rubric:: Template data
 
@@ -630,24 +632,7 @@ Scroll down to see source data for the template in JSON format.
       "companyName": "Plumsail",
       "site": "http://plumsail.com",
       "contacts": null,
-      "employees1": [
-        {
-          "name": "Derek Clark",
-          "hireDate": "2012-04-21T18:25:43-05:00",
-          "department": "marketing"
-        },
-        {
-          "name": "Jessica Adams",
-          "hireDate": "2012-04-21T18:25:43-05:00",
-          "department": "sales"
-        },
-        {
-          "name": "Anil Mittal",
-          "hireDate": "2016-04-11T14:22:13-02:00",
-          "department": "development"
-        }
-      ],
-      "employees2": [
+      "employees": [
         {
           "name": "Derek Clark",
           "hireDate": "2012-04-21T18:25:43-05:00",

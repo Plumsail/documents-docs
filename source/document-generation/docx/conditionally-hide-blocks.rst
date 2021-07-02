@@ -1,16 +1,9 @@
 Conditionally hide blocks in DOCX templates
 ===========================================
 
-You can use `hide-block-if formatter <../common-docx-xlsx/formatters.html#hhide-block-if>`_ to hide blocks of a document. 
-
-The formatter checks if a value for current tag is equal to a value of the parameter, then finds closest collapsible block and hides it:
-
-- Table row
-- Bullet list item
-
-First of all, review the `demo for this case <./demos.html#conditionally-hide-blocks>`_. 
-
-Here we will learn how it works:
+There are two types of blocks for hiding: single and repeatable.
+Use a `hide-block-if`_ formatter for the single blocks and a filter_ operation for the repeatable ones.
+Here, we will learn how it works, but additionally, review the demo_ for such case. 
 
 .. contents::
     :local:
@@ -21,7 +14,8 @@ Here we will learn how it works:
 Hide table rows
 ---------------
 
-Let us assume we have a collection of employees. We want to render a table with information about them, but we want to hide employees from a specific department (:code:`development`).
+Let us assume we have a collection of employees.
+We want to render a table with information about them, but we want to hide employees from a specific department (``development``).
 
 This is JSON representation of employees data:
 
@@ -46,18 +40,19 @@ This is JSON representation of employees data:
 
 We will use the template like this:
 
-.. image:: ../../_static/img/document-generation/hide-table-row-template.png
-    :alt: hide table row template
+|table-template|
 
-As you can see, we added this string to the template row: :code:`{{employees.department}:hide-block-if(development)}`. The :code:`hide-block-if(development)` formatter checks if the department is development and hides table row that contains this tag.
+The filter_ operation should be placed before the table:
 
-The result bullet list will look like this:
+``{{nonDev = employees|filter(value.department != "development")}}``
 
-.. image:: ../../_static/img/document-generation/hide-table-row-result.png
-    :alt: hide table row result
+The token ``{{nonDev}}`` does not contain the object of Anil Mittal.
+He was excluded because working in the development department.
+After that, the alias token can be used for rendering `table rows`_.
 
-The employee with the name "Anil Mittal" was hidden because he works in the development department.
+The result table will look like this:
 
+|table-result|
 
 Hide bullet list items
 ----------------------
@@ -66,15 +61,19 @@ We will use the same JSON data as in the example for table rows above.
 
 Our template will look like this:
 
-.. image:: ../../_static/img/document-generation/hide-bullet-list-item-template.png
-    :alt: hide bullet list template
+|list-template|
 
-As you can see, we added this string to the bullet list item template: :code:`{{employees.name}} {{employees.department}} {{employees.department}:hide-block-if(development)}` formatter works the same way as in `the example for table rows <#hide-table-rows>`_ above.
+The filter_ operation should be placed before the list:
 
-The result table will look like this:
+``{{nonDev = employees|filter(value.department != "development")}}``
 
-.. image:: ../../_static/img/document-generation/hide-bullet-list-item-result.png
-    :alt: hide bullet list result
+The token ``{{nonDev}}`` does not contain the object of Anil Mittal.
+He was excluded because working in the development department.
+After that, the alias token can be used for rendering `list items`_.
+
+The result list will look like this:
+
+|list-result|
 
 Hide arbitrary block
 --------------------
@@ -105,3 +104,18 @@ The result will look like this:
 
 .. image:: ../../_static/img/document-generation/hide-arbitrary-block-result.png
     :alt: hide arbitrary block result
+
+.. _hide-block-if: ../common-docx-xlsx/formatters.html#hide
+.. _filter: ../common-docx-xlsx/operations.html
+.. _demo:  ./demos.html#conditionally-hide-blocks
+.. _table rows: ./tables.html
+.. _list items: ./lists.html
+
+.. |table-template| image:: ../../_static/img/document-generation/hide-table-row-template.png
+    :alt: Hide table row template
+.. |table-result| image:: ../../_static/img/document-generation/hide-table-row-result.png
+    :alt: Hide table row result
+.. |list-template| image:: ../../_static/img/document-generation/hide-bullet-list-item-template.png
+    :alt: Hide bullet list template
+.. |list-result| image:: ../../_static/img/document-generation/hide-bullet-list-item-result.png
+    :alt: Hide bullet list result

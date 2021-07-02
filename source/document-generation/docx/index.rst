@@ -18,6 +18,8 @@ Word DOCX templates
         Conditionally hide blocks <conditionally-hide-blocks>
         Pictures <pictures>
         QR codes <https://plumsail.com/docs/documents/v1.x/how-tos/create-documents-from-template-with-qrcodes.html>
+        Aliases <../common-docx-xlsx/aliases>
+        Operations <../common-docx-xlsx/operations>
         Value formatters <../common-docx-xlsx/formatters>
         Value properties <../common-docx-xlsx/value-properties>
 

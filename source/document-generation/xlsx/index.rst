@@ -17,6 +17,8 @@ Excel XLSX templates
             Conditionally hide cells <conditionally-clear-cells>
             Merge cells vertically <merge-cells-vertically>
             Multiple worksheets <multiple-worksheets>
+            Aliases <../common-docx-xlsx/aliases>
+            Operations <../common-docx-xlsx/operations>
             Value formatters <../common-docx-xlsx/formatters>
             Value properties <../common-docx-xlsx/value-properties>
       
