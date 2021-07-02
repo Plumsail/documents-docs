@@ -114,6 +114,9 @@ barcode
 
 :code:`{{value}:barcode(type, width, height)}` inserts a barcode with a certain type, width and height into template.
 
+.. note:: To use the formatter with PowerPoint templates you need to prepare your pptx template. Please check out the article `QRCodes and barcodes in PPTX templates <../pptx/qrcodes-barcodes-pptx.html>`_ . 
+
+
 .. list-table::
     :header-rows: 1
 
@@ -260,6 +263,7 @@ qrcode
 
 :code:`qrcode(size)` inserts a qrcode into template. You can specify only one dimension since width = height for qrcodes.
 
+.. note:: To use the formatter with PowerPoint templates you need to prepare your ppts template. Please check out the article `QRCodes and barcodes in PPTX templates <../pptx/qrcodes-barcodes-pptx.html>`_ . 
 
 .. list-table::
     :header-rows: 1

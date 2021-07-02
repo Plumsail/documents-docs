@@ -695,19 +695,19 @@ JSON representation of the object:
 .. code:: json
 
     {
-       "QRCodeURL": "https://plumsail.com/"
+       "OnlineCopyURL": "https://plumsail.com/"
     }
 
 .. code:: json
 
     {
-       "QRCodePhoneNumber": "tel:+1-234-555-6677"
+       "employeePhone": "tel:+1-234-555-6677"
     }
 
 .. code:: json
 
     {
-       "QRCodeGeolocation": "geo:40.74018922726678,-74.00869124083648"
+       "officeAddress": "geo:40.74018922726678,-74.00869124083648"
     }
 
 To add a QR code add :code:`qrcode(size)` tag into your docx template. Find some examples below:
